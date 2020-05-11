@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://linkedu.eu/dedalo/explanationPattern.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://linkedu.eu/dedalo/explanationPattern.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl</Import>
+    <Declaration>
+        <Class IRI="#Explanation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://linkedu.eu/dedalo/data/interacts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExplanandum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExplanans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBasedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/CauseVariable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Component"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Condition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Constraint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/EffectVariable"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/EmpiricalLaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Entity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Experiment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInComputerScience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInLinguistics"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInNeuroscience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInSociology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/GeneralisedNewKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Grammar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/HumanCapacity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/HumanExperience"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/IntelligentBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Intervention"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Language"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/LanguageUniversal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Law"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/LinguisticFact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/MetaphysicalLaw"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/PositiveObservation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/PriorKnowledge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialBehaviour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialRegularity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialWorld"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Explanation"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasExplanandum"/>
+                <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasExplanans"/>
+                <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Explanation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCondition"/>
+            <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/CauseVariable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Component"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Condition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Constraint"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/EffectVariable"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/EmpiricalLaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Entity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Experiment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInComputerScience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInLinguistics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInNeuroscience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Explanation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInSociology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/GeneralisedNewKnowledge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Grammar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/HumanCapacity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/HumanExperience"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/IntelligentBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Intervention"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Language"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/LanguageUniversal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Law"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/LinguisticFact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/MetaphysicalLaw"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Phenomenon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/PositiveObservation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/PriorKnowledge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialBehaviour"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialRegularity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialWorld"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://linkedu.eu/dedalo/data/interacts"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Activity"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Entity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://linkedu.eu/dedalo/data/interacts"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Entity"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInComputerScience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/GeneralisedNewKnowledge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInComputerScience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/PositiveObservation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInComputerScience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/PriorKnowledge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInComputerScience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Constraint"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInLinguistics"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Language"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInLinguistics"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Grammar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInLinguistics"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/LinguisticFact"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInLinguistics"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/LanguageUniversal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInNeuroscience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Intervention"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInNeuroscience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/EffectVariable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInNeuroscience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/CauseVariable"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInNeuroscience"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Experiment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Phenomenon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Phenomenon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Law"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/EmpiricalLaw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPhilosophy"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/MetaphysicalLaw"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/IntelligentBehaviour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Phenomenon"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Entity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Component"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/Activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInPsychology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/HumanCapacity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCondition"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInSociology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialWorld"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInSociology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialRegularity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInSociology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/SocialBehaviour"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/ExplanationInSociology"/>
+        <NamedIndividual IRI="http://linkedu.eu/dedalo/data/HumanExperience"/>
+    </ObjectPropertyAssertion>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://linkedu.eu/dedalo/data/interacts"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="#Explanation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <Class IRI="#Explanation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <Class IRI="#Explanation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <Class IRI="#Explanation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/>
+        <Class IRI="#Explanation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCondition"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExplanandum"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExplanans"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBasedOn"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/>
+        <Class IRI="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasExplanandum"/>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasCondition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#hasExplanans"/>
+            <ObjectProperty IRI="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#hasCondition"/>
+    </SubObjectPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://linkedu.eu/dedalo/data/ExplanationInComputerScience</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Explanation in Computer Science .
+
+A practical example: a caveman is roasting a lizard (Constraint) on the end of a pointed stick and he is watched by an amazed crowd of cavemen, who have been using for years only their bare hands. The cavemen can explain by generalisation that (Explanans) any long, rigid, sharp object can be used to painless roasting (Explanandum) by observing (which is equivalent to using their background knowledge) how the stick supports the lizard while keeping the hand away from the fire (Theory).
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://linkedu.eu/dedalo/data/ExplanationInLinguistics</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Explanation in Linguistics
+For example, to explain that English (Situation) does not allow the expression “*the my book” (Explanandum), one has to know that in English (Explanans) both my and the are deter- miners, and that (Theory) only one determiner is accepted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://linkedu.eu/dedalo/data/ExplanationInNeuroscience</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Explanations in Neuroscience.
+For example, we explain why humans can do math calculations (Explanandum) by the fact (Explanans) that some particular neurons respond actively to quantities. The neuroimaging has proven that (Experiment) some areas on the parietal lobe are used to provide preverbal representations. The Situation in which the explanation holds is the one of numerical calculations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://linkedu.eu/dedalo/data/ExplanationInPhilosophy</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Plato’s model for an explanation : an initial Fact (Explanans), a posterior fact (Explanandum) occurring due to some circumstances happening under the law of the Forms (Theory).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://linkedu.eu/dedalo/data/ExplanationInPsychology</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Example:  “slipping on a banana” (Explanadum) can be explained by the fact that the person did not to pay attention to the path (Explanans). A psychological explanation would attempt to relate the two events to (Situation) the mental state and feelings of the person slipping as, for instance, anger or tiredness. The Theory The theory is the human’s mind  capacity  to change  actions depending on the feelings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://linkedu.eu/dedalo/data/ExplanationInSociology</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The social trend (Explanandum) that Italians live with their parents until later ages is explained by (Explanans) the constantly decreasing job opportunities, which makes impossible living on its own (Situation). The Theory behind it are the rules governing the socio-economical behaviours.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Explanation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Class explanation defined as &quot;when X happens, then, due to a given set of circumstances C, Y will occur because of a given law L&quot;. 
+In order to be complete, an explanation needs at least one antecedent event (explanans), a posterior event (a posterior event) and has to happen in a context that relates the two events (the context), governed by a law (theory). </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCondition</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">contextualises an explanation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasExplanandum</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Relates the explanation to its posterior event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasExplanans</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">relates an explanation to its antecedent event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isBasedOn</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">If there exists a situation in which an explanation is contextualised (according to the object property hasCondition), then both the explanans and the explanan- dum do share this same situation, meaning that they are in the same context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/participation.owl#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Phenomena, facts, variables, observations, knowledge that trigger the explanation.
+Extracted from the Participation ontology design pattern. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Two events have to be related in context, otherwise it is not possible to distinguish their correlation from a coincidence. 
+From the Situation ontology design pattern, which represents contexts or situations, and the things that have something in common, or are associated” </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">specifies the setting in which the event occur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The agent producing/deducing/inducing/inferringd/describing the explanaiton. Agent class from Dolce Ultralight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">The theory that has the binding force or effect on some events under analysis.
+From Dolce: &quot;A theory is a description that represents a set of assumptions for describing something, usually general. Scientific, philosophical, and common-sense theories can be included here&quot;</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
