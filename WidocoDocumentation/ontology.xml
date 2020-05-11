@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#"
+     xml:base="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0"/>
+        <owl:imports rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <terms:contributor>Amar K. Das</terms:contributor>
+        <terms:contributor>Daniel M. Gruen</terms:contributor>
+        <terms:contributor>Deborah L. McGuinness</terms:contributor>
+        <terms:contributor>Morgan Foreman</terms:contributor>
+        <terms:contributor>Oshani Seneviratne</terms:contributor>
+        <terms:creator>Shruthi Chari</terms:creator>
+        <terms:description>A simple ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. We develop this resource mainly for system designers guiding them to think about the available AI methods and reasoning tasks within their system that would be capable of generating explanations to suit the end-users&apos; situation and requirements. We model attributes which are directly included in explanations and others that would help in their process of generation. We have used this schema to model different explanation types that address a range of questions each and their generational needs. We welcome feedback on extending this ontology to help in ontology generation in different use cases.</terms:description>
+        <terms:license>Copyright 2019 IBM Research and Rensselaer Polytechnic Institute
+
+			Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+		http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.</terms:license>
+        <terms:title>Ontology of Explanations</terms:title>
+        <rdfs:label>Explanations Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://linkedu.eu/dedalo/data/interacts -->
+
+
+    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/data/interacts"/>
+    
+
+
+    <!-- http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans -->
+
+
+    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans"/>
+    
+
+
+    <!-- http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000294"/>
+        <rdfs:label>addresses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000365"/>
+        <terms:description>a property between a creator and the question that the creator poses</terms:description>
+        <rdfs:label>asks</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
+        <rdfs:label>is consumer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
+        <rdfs:label>has preference for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+        <rdfs:label>has presentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000132"/>
+        <terms:description>implements is a relationship that associates a process with an object/informational content entity that it addresses</terms:description>
+        <rdfs:label>implements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000223"/>
+        <terms:description>maps a quality with its associated object</terms:description>
+        <rdfs:label>possess</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://linkedu.eu/dedalo/explanationPattern.owl#Explanation -->
+
+
+    <owl:Class rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000010 -->
+
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000010">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001194 -->
+
+
+    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001194">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001194"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory -->
+
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Artificial Intelligence Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Case Based Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:description>Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation.</dc:description>
+        <rdfs:label>Contextual Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <rdfs:label>Contextual Knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Contrastive Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Counterfactual Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"/>
+        <rdfs:label>Environmental Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Everyday Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation"/>
+        <rdfs:label>Evidence Based Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000337"/>
+        <terms:description>the impact that an explanation has on a user or the puroose it was designed to achieve</terms:description>
+        <rdfs:label>Explanation Goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation"/>
+        <rdfs:label>Mechanistic Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000612"/>
+        <rdfs:label>Mode of Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001243"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Numerical Evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Simulation Based Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Statistical Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Trace Based Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>User Context</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation">
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:label>Scientific Explanation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdfs:label>System Recommendation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/data/interacts"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes"/>
+                <owl:someValuesFrom rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>User</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

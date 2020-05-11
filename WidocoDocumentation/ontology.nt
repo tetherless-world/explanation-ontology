@@ -1,0 +1,336 @@
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#imports> <http://linkedu.eu/dedalo/explanationPattern.owl> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#imports> <http://semanticscience.org/ontology/sio.owl> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Amar K. Das" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Daniel M. Gruen" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Deborah L. McGuinness" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Morgan Foreman" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Oshani Seneviratne" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/creator> "Shruthi Chari" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/description> "A simple ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. We develop this resource mainly for system designers guiding them to think about the available AI methods and reasoning tasks within their system that would be capable of generating explanations to suit the end-users' situation and requirements. We model attributes which are directly included in explanations and others that would help in their process of generation. We have used this schema to model different explanation types that address a range of questions each and their generational needs. We welcome feedback on extending this ontology to help in ontology generation in different use cases." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/license> "Copyright 2019 IBM Research and Rensselaer Polytechnic Institute\n\n\t\t\tLicensed under the Apache License, Version 2.0 (the \"License\");\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n\t\thttp://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \"AS IS\" BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/title> "Ontology of Explanations" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Explanations Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://linkedu.eu/dedalo/data/interacts
+<http://linkedu.eu/dedalo/data/interacts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans
+<http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn
+<http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000294> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://www.w3.org/2000/01/rdf-schema#label> "addresses" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000365> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://purl.org/dc/terms/description> "a property between a creator and the question that the creator poses" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://www.w3.org/2000/01/rdf-schema#label> "asks" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_001403> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "is consumer of" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000628> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://www.w3.org/2000/01/rdf-schema#label> "has preference for" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000008> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#label> "has presentation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000132> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://purl.org/dc/terms/description> "implements is a relationship that associates a process with an object/informational content entity that it addresses" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000223> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://purl.org/dc/terms/description> "maps a quality with its associated object" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/2000/01/rdf-schema#label> "possess" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://linkedu.eu/dedalo/explanationPattern.owl#Explanation
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000602> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000776> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation" .
+# 
+# http://semanticscience.org/resource/SIO_000010
+<http://semanticscience.org/resource/SIO_000010> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000776> .
+# 
+# http://semanticscience.org/resource/SIO_001194
+<http://semanticscience.org/resource/SIO_001194> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001194> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000649> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000229> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000230> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Intelligence Task" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Case Based Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000004> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://purl.org/dc/elements/1.1/description> "Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Contextual Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> <http://www.w3.org/2000/01/rdf-schema#label> "Contextual Knowledge" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Contrastive Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2000/01/rdf-schema#label> "Counterfactual Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context> <http://www.w3.org/2000/01/rdf-schema#label> "Environmental Context" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/2000/01/rdf-schema#label> "Everyday Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence Based Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000337> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://purl.org/dc/terms/description> "the impact that an explanation has on a user or the puroose it was designed to achieve" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation Goal" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanistic Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000612> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/2000/01/rdf-schema#label> "Mode of Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001243> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Numerical Evidence" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Based Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Statistical Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/2000/01/rdf-schema#label> "Trace Based Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://www.w3.org/2000/01/rdf-schema#label> "User Context" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Explanation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000602> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> <http://www.w3.org/2000/01/rdf-schema#label> "System Recommendation" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000498> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/data/interacts> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
