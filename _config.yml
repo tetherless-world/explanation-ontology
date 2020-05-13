@@ -6,8 +6,8 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-url:              https://tetherless-world.github.io/explanations-ontology/
-baseurl:          https://tetherless-world.github.io/explanations-ontology/
+url:              https://tetherless-world.github.io/
+baseurl:         /explanations-ontology
 
 author:
   name:           'Mark Otto'
