@@ -128,6 +128,12 @@
     
 
 
+    <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -408,39 +414,7 @@
     <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge"/>
-                                    <owl:Class>
-                                        <owl:unionOf rdf:parseType="Collection">
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"/>
-                                            </owl:Restriction>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-                                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
-                                            </owl:Restriction>
-                                        </owl:unionOf>
-                                    </owl:Class>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000747"/>
         <dc:description>involves a question and suggested explanation (hypothesis) based on observation, followed by the careful design and execution of controlled experiments, and finally validation, refinement or rejection of this hypothesis.</dc:description>
         <rdfs:isDefinedBy>https://www.nature.com/articles/nmeth0409-237</rdfs:isDefinedBy>
         <rdfs:label>Scientific Method</rdfs:label>
@@ -530,12 +504,12 @@
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"/>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
                                             </owl:Restriction>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
-                                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"/>
                                             </owl:Restriction>
                                         </owl:unionOf>
                                     </owl:Class>
