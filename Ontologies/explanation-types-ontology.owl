@@ -8,11 +8,13 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/TR/prov-o/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:prov1="http://www.w3.org/ns/prov#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -22,6 +24,7 @@
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0"/>
         <owl:imports rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-20130430"/>
         <terms:contributor>Amar K. Das</terms:contributor>
         <terms:contributor>Daniel M. Gruen</terms:contributor>
         <terms:contributor>Deborah L. McGuinness</terms:contributor>
@@ -393,6 +396,58 @@
     
 
 
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <rdfs:label>Scientific Knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description>involves a question and suggested explanation (hypothesis) based on observation, followed by the careful design and execution of controlled experiments, and finally validation, refinement or rejection of this hypothesis.</dc:description>
+        <rdfs:isDefinedBy>https://www.nature.com/articles/nmeth0409-237</rdfs:isDefinedBy>
+        <rdfs:label>Scientific Method</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based">
@@ -463,6 +518,38 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge"/>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                                                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001066"/>
+                                            </owl:Restriction>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Scientific Explanation</rdfs:label>
     </owl:Class>
     
