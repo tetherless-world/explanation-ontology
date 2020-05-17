@@ -372,7 +372,12 @@ technical and physical environments” (I.O. for standardization).</dc:descripti
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <terms:description>Contextual knowledge is all the knowledge that is relevant and can be mobilized to understand a given situated decision problem. By &quot;situated&quot; we mean in given, dated, well specified circumstances (Clancey 1991). Contextual knowledge is evoked by situations and events, and loosely
+tied to a task or a goal. However, when the task becomes more precise (e.g., an event occurs), a large part of this contextual knowledge can be proceduralized according to the current focus of the decision making.</terms:description>
+        <terms:source>Brézillon, P., &amp; Pomerol, J. C. (1999, July). Contextual knowledge and proceduralized context. In Proceedings of the AAAI-99 Workshop on Modeling Context in AI Applications, Orlando, Florida, USA, July. AAAI Technical Report.</terms:source>
+        <terms:source>Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7.</terms:source>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual Knowledge</rdfs:label>
+        <skos:definition>all the knowledge that is relevant and can be mobilized to understand a given situated decision problem.</skos:definition>
     </owl:Class>
     
 
@@ -415,6 +420,8 @@ event that did not occur), the output of interest.</dc:description>
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"/>
+        <dc:description>deals with the physical aspects of the experimental situation</dc:description>
+        <terms:source>Smith, S. M., Glenberg, A., &amp; Bjork, R. A. (1978). Environmental context and human memory. Memory &amp; Cognition, 6(4), 342-353.</terms:source>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Context</rdfs:label>
     </owl:Class>
     
@@ -454,6 +461,58 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000337"/>
         <terms:description>the impact that an explanation has on a user or the puroose it was designed to achieve</terms:description>
         <rdfs:label>Explanation Goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <terms:description>inputs and other considerations that led to a system recommendation</terms:description>
+        <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
+        <rdfs:label>Factual Knowledge that supports recommendation A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <terms:description>facts that would have/led to a system recommendation B</terms:description>
+        <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
+        <rdfs:label>Factual Knowledge that supports a system recommendation B</rdfs:label>
     </owl:Class>
     
 
@@ -582,6 +641,8 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <terms:description>any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby.</terms:description>
+        <terms:source>https://www.igi-global.com/dictionary/researching-mobile-learning/37179</terms:source>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Context</rdfs:label>
     </owl:Class>
     
@@ -591,6 +652,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
+        <rdfs:label>Knowledge</rdfs:label>
     </owl:Class>
     
 
@@ -647,7 +709,9 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
         <rdfs:label>System Recommendation</rdfs:label>
+        <skos:definition>an output of an AI system that stitches together the system&apos;s output from tasks and/or includes external knowledge used by the task (s)</skos:definition>
     </owl:Class>
     
 
