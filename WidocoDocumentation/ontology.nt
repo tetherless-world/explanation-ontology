@@ -55,39 +55,43 @@
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000294> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://purl.org/dc/elements/1.1/description> "a addresses b if a provides an answer to b" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses> <http://www.w3.org/2000/01/rdf-schema#label> "addresses" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000365> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://purl.org/dc/terms/description> "a property between a creator and the question that the creator poses" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://purl.org/dc/elements/1.1/description> "a property between a creator and the question that the creator poses" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> <http://www.w3.org/2000/01/rdf-schema#label> "asks" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_001403> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://purl.org/dc/elements/1.1/description> "a property that associates a person entity with the object they consume" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "is consumer of" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000628> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor> <http://www.w3.org/2000/01/rdf-schema#label> "has preference for" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000008> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> <http://www.w3.org/2000/01/rdf-schema#label> "has presentation" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000132> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://purl.org/dc/terms/description> "implements is a relationship that associates a process with an object/informational content entity that it addresses" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://purl.org/dc/elements/1.1/description> "a property that associates a process with an object/informational content entity that it addresses" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://semanticscience.org/resource/SIO_000223> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://purl.org/dc/terms/description> "maps a quality with its associated object" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://purl.org/dc/elements/1.1/description> "maps a property with its associated object" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/2000/01/rdf-schema#label> "possess" .
 # 
 # http://www.w3.org/ns/prov#wasGeneratedBy

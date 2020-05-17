@@ -126,6 +126,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000294"/>
+        <dc:description>a addresses b if a provides an answer to b</dc:description>
         <rdfs:label>addresses</rdfs:label>
     </owl:ObjectProperty>
     
@@ -136,7 +137,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000365"/>
-        <terms:description>a property between a creator and the question that the creator poses</terms:description>
+        <dc:description>a property between a creator and the question that the creator poses</dc:description>
         <rdfs:label>asks</rdfs:label>
     </owl:ObjectProperty>
     
@@ -147,6 +148,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
+        <dc:description>a property that associates a person entity with the object they consume</dc:description>
         <rdfs:label>is consumer of</rdfs:label>
     </owl:ObjectProperty>
     
@@ -157,6 +159,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
+        <dc:description>a property that captures what form of output an entity a is presented in</dc:description>
         <rdfs:label>has preference for</rdfs:label>
     </owl:ObjectProperty>
     
@@ -167,6 +170,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
+        <dc:description>a property that captures what form of output an entity a is presented in</dc:description>
         <rdfs:label>has presentation</rdfs:label>
     </owl:ObjectProperty>
     
@@ -177,7 +181,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000132"/>
-        <terms:description>implements is a relationship that associates a process with an object/informational content entity that it addresses</terms:description>
+        <dc:description>a property that associates a process with an object/informational content entity that it addresses</dc:description>
         <rdfs:label>implements</rdfs:label>
     </owl:ObjectProperty>
     
@@ -188,7 +192,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000223"/>
-        <terms:description>maps a quality with its associated object</terms:description>
+        <dc:description>maps a property with its associated object</dc:description>
         <rdfs:label>possess</rdfs:label>
     </owl:ObjectProperty>
     

@@ -73,45 +73,49 @@
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses
 :addresses rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000294> ;
+           <http://purl.org/dc/elements/1.1/description> "a addresses b if a provides an answer to b" ;
            rdfs:label "addresses" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks
 :asks rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000365> ;
-      <http://purl.org/dc/terms/description> "a property between a creator and the question that the creator poses" ;
+      <http://purl.org/dc/elements/1.1/description> "a property between a creator and the question that the creator poses" ;
       rdfs:label "asks" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes
 :consumes rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_001403> ;
+          <http://purl.org/dc/elements/1.1/description> "a property that associates a person entity with the object they consume" ;
           rdfs:label "is consumer of" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor
 :hasPreferenceFor rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000628> ;
+                  <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" ;
                   rdfs:label "has preference for" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation
 :hasPresentation rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000008> ;
+                 <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" ;
                  rdfs:label "has presentation" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements
 :implements rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000132> ;
-            <http://purl.org/dc/terms/description> "implements is a relationship that associates a process with an object/informational content entity that it addresses" ;
+            <http://purl.org/dc/elements/1.1/description> "a property that associates a process with an object/informational content entity that it addresses" ;
             rdfs:label "implements" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess
 :possess rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000223> ;
-         <http://purl.org/dc/terms/description> "maps a quality with its associated object" ;
+         <http://purl.org/dc/elements/1.1/description> "maps a property with its associated object" ;
          rdfs:label "possess" .
 
 

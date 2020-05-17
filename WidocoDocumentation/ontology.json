@@ -779,6 +779,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a addresses b if a provides an answer to b"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "addresses"
   } ],
@@ -788,7 +791,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a property between a creator and the question that the creator poses"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -800,6 +803,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that associates a person entity with the object they consume"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is consumer of"
   } ],
@@ -809,6 +815,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that captures what form of output an entity a is presented in"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has preference for"
   } ],
@@ -818,6 +827,9 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that captures what form of output an entity a is presented in"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has presentation"
   } ],
@@ -827,8 +839,8 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "implements is a relationship that associates a process with an object/informational content entity that it addresses"
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that associates a process with an object/informational content entity that it addresses"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "implements"
@@ -845,8 +857,8 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "maps a quality with its associated object"
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "maps a property with its associated object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "possess"
