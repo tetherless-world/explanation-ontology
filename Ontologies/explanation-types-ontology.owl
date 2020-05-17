@@ -498,7 +498,13 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <terms:description>Simulation-based explanations are those based on an imagined or implemented imitation of a system or process and the results that emerge from similar inputs. As simulations can often be run numerous
+times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can often be observed and traced directly, simulation-based explanations can have elements of statistical and trace-based explanations. Heal suggests that these explanations (Heals, 1996) contain facts that humans would use to determine an outcome in a specified case, and these explanations are intended to “replace and amplify real experiences with guided ones, often “immersive” in nature, that evoke or replicate substantial aspects of the real world in a fully interactive fashion” (Lateef, 2010)</terms:description>
+        <terms:source>F. Lateef, “Simulation-based learning: Just like the real thing,” J. of Emergencies, Trauma and Shock, vol. 3, no. 4, p. 348, 2010</terms:source>
+        <terms:source>J. Heal, “Simulation, theory, and content,” Theories of theories of mind, pp. 75–89, 1996.</terms:source>
         <rdfs:label>Simulation Based Explanation</rdfs:label>
+        <skos:definition>Uses an imagined or implemented imitation of a system or process and the results that emerge from similar inputs</skos:definition>
+        <skos:example>Addresses a question of the form, &quot;What would happen if this recommendation is followed?&quot;</skos:example>
     </owl:Class>
     
 
@@ -524,6 +530,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Statistical Explanation</rdfs:label>
+        <skos:definition>Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.</skos:definition>
     </owl:Class>
     
 
@@ -596,7 +603,14 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description>Scientific explanations reference the results of rigorous scientific methods, such as observations and measurements, to explain something we see in the natural world (Moore, 2000). Adapting from (Miller, 2019),
+we add that scientific explanations usually contain different components of interacting knowledge, including theories or mechanisms such as physiological ones, which are sets of principles that form building blocks for models; models which represent the relationships between entities and their attributes informed by taxonomies and other classification schemes; and data (e.g. measurements, observations).</dc:description>
+        <terms:source>J. Moore, “Varieties of scientific explanation,” The Behavior Analyst, vol. 23, no. 2, pp. 173–190, 2000.</terms:source>
+        <terms:source>T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence,
+vol. 267, pp. 1–38, 2019.</terms:source>
         <rdfs:label>Scientific Explanation</rdfs:label>
+        <skos:definition>References the results of rigorous scientific methods, observations, and measurements.</skos:definition>
+        <skos:example>Addresses a question of the form, &quot;What is the biological basis for this recommendation?&quot;</skos:example>
     </owl:Class>
     
 
