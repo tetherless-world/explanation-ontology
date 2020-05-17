@@ -304,7 +304,10 @@ current situation.</terms:description>
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday"/>
+        <terms:source>Lorin, M.I., Palazzi, D.L., Turner, T.L., Ward, M.A.: What is a clinical pearl andwhat is its role in medical education? Medical teacher30(9-10), 870–874 (2008)</terms:source>
         <rdfs:label>Clinical Pearls</rdfs:label>
+        <skos:definition>small bits of free-standing, clinically relevant information based on experience or observation</skos:definition>
+        <skos:example>Addresses a question of the form, &quot;What is a fact a system should consider when prescribing this medication?&quot;</skos:example>
     </owl:Class>
     
 
@@ -391,9 +394,15 @@ event that did not occur), the output of interest.</dc:description>
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <terms:contributor>Amar Das</terms:contributor>
+        <terms:contributor>Deborah L. McGuinness</terms:contributor>
+        <terms:contributor>Morgan Foreman</terms:contributor>
+        <terms:contributor>Oshani Seneviratne</terms:contributor>
+        <rdfs:isDefinedBy>Daniel M. Gruen</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
         <rdfs:label>Counterfactual Explanation</rdfs:label>
         <skos:definition>Addresses the question of what solutions would have been obtained with a different set of inputs than those used.</skos:definition>
-        <skos:example>What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?</skos:example>
+        <skos:example>Addresses a question of the form, &quot;What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?&quot;</skos:example>
     </owl:Class>
     
 
@@ -426,7 +435,11 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation"/>
+        <dc:description>account that articulates how or why an event occured that is supported by evidence and scientific ideas</dc:description>
+        <terms:modified>Shruthi Chari</terms:modified>
+        <terms:source>https://www.sciencepracticesleadership.com/definitions.html</terms:source>
         <rdfs:label>Evidence Based Explanation</rdfs:label>
+        <skos:example>Address questions of the form, &quot;What studies support this recommendation?&quot;</skos:example>
     </owl:Class>
     
 
@@ -445,7 +458,10 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation"/>
+        <dc:description>a mechanistic explanation involves presenting a model of the mechanism (the explanans) responsible for some phenomenon of interest (the explanandum). A mechanism is an entity or structure, such as an organ (though a mechanism need not be delineated by such clear physical boundaries) that performs a function by virtue of its component parts, operations and, importantly, their spatial and temporal organisation (Bechtel &amp; Abrahamsen 2005: 421–23). That is, a mechanism does not just consist in its physical parts, but in the ‘organised interplay’ of the activities of those parts (Soom 2012: 656). Examples of phenomena (i.e.,functions or behaviours performed by mechanisms) include such things as the heart’s pumping blood, metabolism and memory.</dc:description>
+        <terms:source>Dessaix, D. Mechanistic Explanation: Some Limits and their Significance. The ANU Undergraduate Research Journal, 51.</terms:source>
         <rdfs:label>Mechanistic Explanation</rdfs:label>
+        <skos:example>Addresses a question of the form, &quot;What is a biological basis for this recommendation?&quot;</skos:example>
     </owl:Class>
     
 
@@ -529,8 +545,12 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <terms:description>Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.
+(Hempel, 1962) add that a particularly high probability allows the outcome to be expected with practical certainty in any one case where the specified conditions occur.</terms:description>
+        <terms:source>C. G. Hempel, “Deductive-nomological vs. statistical explanation,” University of Minnesota Press, Minneapolis, 1962.</terms:source>
         <rdfs:label>Statistical Explanation</rdfs:label>
         <skos:definition>Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.</skos:definition>
+        <skos:example>Addresses questions of the form, &quot;What percentage of similar patients who received this treatment recovered?&quot;</skos:example>
     </owl:Class>
     
 
@@ -539,7 +559,11 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <dc:description>Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009).</dc:description>
+        <terms:source>B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128</terms:source>
         <rdfs:label>Trace Based Explanation</rdfs:label>
+        <skos:definition>Provides the underlying sequence of steps used by the system to arrive at a specific result, containing the line of reasoning per case and addressing the question of why and how the application did something.</skos:definition>
+        <skos:example>Addresses a question of the form, &quot;What steps were taken by the system to generate this recommendation?&quot;</skos:example>
     </owl:Class>
     
 
