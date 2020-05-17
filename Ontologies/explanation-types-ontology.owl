@@ -24,7 +24,7 @@
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0"/>
         <owl:imports rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <owl:imports rdf:resource="http://www.w3.org/ns/prov-20130430"/>
+        <owl:imports rdf:resource="https://www.w3.org/ns/prov-o#"/>
         <terms:contributor>Amar K. Das</terms:contributor>
         <terms:contributor>Daniel M. Gruen</terms:contributor>
         <terms:contributor>Deborah L. McGuinness</terms:contributor>
