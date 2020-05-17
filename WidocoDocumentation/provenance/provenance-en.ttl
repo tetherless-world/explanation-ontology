@@ -1,0 +1,19 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0> a prov:Entity;
+	 dc:title "Ontology of Explanations";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Shruthi Chari".
+:agent1 a prov:Agent; foaf:name "Amar K. Das".
+:agent2 a prov:Agent; foaf:name "Daniel M. Gruen".
+:agent3 a prov:Agent; foaf:name "Deborah L. McGuinness".
+:agent4 a prov:Agent; foaf:name "Morgan Foreman".
+:agent5 a prov:Agent; foaf:name "Oshani Seneviratne".

@@ -2,6 +2,7 @@
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#imports> <http://linkedu.eu/dedalo/explanationPattern.owl> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#imports> <http://semanticscience.org/ontology/sio.owl> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2002/07/owl#imports> <https://www.w3.org/ns/prov-o#> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Amar K. Das" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Daniel M. Gruen" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/contributor> "Deborah L. McGuinness" .
@@ -12,6 +13,24 @@
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/license> "Copyright 2019 IBM Research and Rensselaer Polytechnic Institute\n\n\t\t\tLicensed under the Apache License, Version 2.0 (the \"License\");\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n\t\thttp://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \"AS IS\" BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://purl.org/dc/terms/title> "Ontology of Explanations" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Explanations Ontology" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -71,6 +90,9 @@
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://purl.org/dc/terms/description> "maps a quality with its associated object" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> <http://www.w3.org/2000/01/rdf-schema#label> "possess" .
 # 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -111,7 +133,9 @@ _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> .
 _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://purl.org/dc/terms/source> "Chari, S., Gruen, D. M., Seneviratne, O., & McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520." .
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation" .
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2004/02/skos/core#definition> "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs" .
 # 
 # http://semanticscience.org/resource/SIO_000010
 <http://semanticscience.org/resource/SIO_000010> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
@@ -151,7 +175,21 @@ _:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://purl.org/dc/terms/description> "Case-based explanations contain results that “are based on actual prior cases that can be presented to the user to provide\ncompelling support for the system’s conclusions” (Cunningham et al., 2003). Borrowing from Leake, 1988 and Ahmed, 2015, we opine\nthat an AI system generating case-based explanations needs to remember and adapt explanations of similar prior cases (Leake, 1988), or, “has to reason from experiences (old cases) in an effort to solve\nproblems, critique solutions and explain anomalous situation” (Ahmed, 2015). Case-based explanations can involve analogical reasoning, relying on similarities between features of the case and of the\ncurrent situation." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://purl.org/dc/terms/source> "Ahmed IM, Alfonse M, Aref M, Salem ABM. Reasoning Techniques for Diabetics Expert Systems. Procedia Computer Science. 2015;65:813–820" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://purl.org/dc/terms/source> "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://purl.org/dc/terms/source> "Leake DB. Evaluating Explanations. In: AAAI; 1988. p. 251–255" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Case Based Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/2004/02/skos/core#definition> "Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses question of the form, \"To what other situations has this recommendation been applied?\"" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl> <http://purl.org/dc/terms/source> "Lorin, M.I., Palazzi, D.L., Turner, T.L., Ward, M.A.: What is a clinical pearl andwhat is its role in medical education? Medical teacher30(9-10), 870–874 (2008)" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Pearls" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl> <http://www.w3.org/2004/02/skos/core#definition> "small bits of free-standing, clinically relevant information based on experience or observation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a fact a system should consider when prescribing this medication?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -201,8 +239,11 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://purl.org/dc/elements/1.1/description> "Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://purl.org/dc/elements/1.1/description> "Contextual explanations are those that refer to information\nabout items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. Providing such information requires that a system be “context-aware,” and can include information about a “user’s tasks, significant user attributes, organizational environment, and\ntechnical and physical environments” (I.O. for standardization)." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://purl.org/dc/terms/source> "I. O. for Standardization, Human-centred design processes for interactive systems. Int. Organization for Standardization, 1999" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Contextual Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/2004/02/skos/core#definition> "Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What broader information about the current situation prompted the suggestion of this recommendation?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -212,12 +253,25 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://purl.org/dc/elements/1.1/description> "As described\nby (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present\ncontrasts between the fact (the event that did occur), the given output, and the foil (the\nevent that did not occur), the output of interest." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://purl.org/dc/terms/source> "J. van der Waa, M. Robeer, J. van Diggelen, M. Brinkhuis, and M. Neerincx, “Contrastive explanations with local foil trees,” arXiv preprint arXiv:1806.07470, 2018." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://purl.org/dc/terms/source> "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence, vol. 267, pp. 1–38, 2019" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Contrastive Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/2004/02/skos/core#definition> "Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it)." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why administer this new drug over the one I would typically prescribe?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://purl.org/dc/terms/contributor> "Amar Das" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://purl.org/dc/terms/contributor> "Deborah L. McGuinness" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://purl.org/dc/terms/contributor> "Morgan Foreman" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://purl.org/dc/terms/contributor> "Oshani Seneviratne" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Daniel M. Gruen" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Shruthi Chari" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2000/01/rdf-schema#label> "Counterfactual Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2004/02/skos/core#definition> "Addresses the question of what solutions would have been obtained with a different set of inputs than those used." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -227,12 +281,21 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://purl.org/dc/elements/1.1/description> "Accounts of the real world that appeal to the user based on their general\nunderstanding and knowledge [(McNeil and Krajack, 2008) of how the world works, and that help them understand why particular facts (events, properties, decisions, etc.) occurred (Miller, 2019)." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://purl.org/dc/terms/source> "K. L. McNeill and J. Krajcik, “Inquiry and scientific explanations: Helping students use evidence and reasoning,” Sci. as inquiry in the secondary setting, pp. 121–134, 2008" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://purl.org/dc/terms/source> "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence, vol. 267, pp. 1–38, 2019." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/2000/01/rdf-schema#label> "Everyday Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/2004/02/skos/core#definition> "Uses accounts of the real world that appeal to the user, given their general understanding and knowledge." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://purl.org/dc/elements/1.1/description> "account that articulates how or why an event occured that is supported by evidence and scientific ideas" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://purl.org/dc/terms/modified> "Shruthi Chari" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://purl.org/dc/terms/source> "https://www.sciencepracticesleadership.com/definitions.html" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence Based Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Address questions of the form, \"What studies support this recommendation?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -243,7 +306,10 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://purl.org/dc/elements/1.1/description> "a mechanistic explanation involves presenting a model of the mechanism (the explanans) responsible for some phenomenon of interest (the explanandum). A mechanism is an entity or structure, such as an organ (though a mechanism need not be delineated by such clear physical boundaries) that performs a function by virtue of its component parts, operations and, importantly, their spatial and temporal organisation (Bechtel & Abrahamsen 2005: 421–23). That is, a mechanism does not just consist in its physical parts, but in the ‘organised interplay’ of the activities of those parts (Soom 2012: 656). Examples of phenomena (i.e.,functions or behaviours performed by mechanisms) include such things as the heart’s pumping blood, metabolism and memory." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://purl.org/dc/terms/source> "Dessaix, D. Mechanistic Explanation: Some Limits and their Significance. The ANU Undergraduate Research Journal, 51." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanistic Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a biological basis for this recommendation?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -259,10 +325,27 @@ _:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org
 _:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001243> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Numerical Evidence" .
 # 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Knowledge" .
+# 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000747> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod> <http://purl.org/dc/elements/1.1/description> "involves a question and suggested explanation (hypothesis) based on observation, followed by the careful design and execution of controlled experiments, and finally validation, refinement or rejection of this hypothesis." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.nature.com/articles/nmeth0409-237" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Method" .
+# 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://purl.org/dc/terms/description> "Simulation-based explanations are those based on an imagined or implemented imitation of a system or process and the results that emerge from similar inputs. As simulations can often be run numerous\ntimes (e.g. Monte Carlo simulations), and the mechanisms in the simulation can often be observed and traced directly, simulation-based explanations can have elements of statistical and trace-based explanations. Heal suggests that these explanations (Heals, 1996) contain facts that humans would use to determine an outcome in a specified case, and these explanations are intended to “replace and amplify real experiences with guided ones, often “immersive” in nature, that evoke or replicate substantial aspects of the real world in a fully interactive fashion” (Lateef, 2010)" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://purl.org/dc/terms/source> "F. Lateef, “Simulation-based learning: Just like the real thing,” J. of Emergencies, Trauma and Shock, vol. 3, no. 4, p. 348, 2010" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://purl.org/dc/terms/source> "J. Heal, “Simulation, theory, and content,” Theories of theories of mind, pp. 75–89, 1996." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/2000/01/rdf-schema#label> "Simulation Based Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/2004/02/skos/core#definition> "Uses an imagined or implemented imitation of a system or process and the results that emerge from similar inputs" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What would happen if this recommendation is followed?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -282,12 +365,20 @@ _:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://purl.org/dc/terms/description> "Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.\n(Hempel, 1962) add that a particularly high probability allows the outcome to be expected with practical certainty in any one case where the specified conditions occur." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://purl.org/dc/terms/source> "C. G. Hempel, “Deductive-nomological vs. statistical explanation,” University of Minnesota Press, Minneapolis, 1962." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Statistical Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/2004/02/skos/core#definition> "Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://purl.org/dc/elements/1.1/description> "Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009)." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://purl.org/dc/terms/source> "B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/2000/01/rdf-schema#label> "Trace Based Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/2004/02/skos/core#definition> "Provides the underlying sequence of steps used by the system to arrive at a specific result, containing the line of reasoning per case and addressing the question of why and how the application did something." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What steps were taken by the system to generate this recommendation?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -305,7 +396,49 @@ _:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid43 <http://www.w3.org/2002/07/owl#unionOf> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001066> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://purl.org/dc/elements/1.1/description> "Scientific explanations reference the results of rigorous scientific methods, such as observations and measurements, to explain something we see in the natural world (Moore, 2000). Adapting from (Miller, 2019),\nwe add that scientific explanations usually contain different components of interacting knowledge, including theories or mechanisms such as physiological ones, which are sets of principles that form building blocks for models; models which represent the relationships between entities and their attributes informed by taxonomies and other classification schemes; and data (e.g. measurements, observations)." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://purl.org/dc/terms/source> "J. Moore, “Varieties of scientific explanation,” The Behavior Analyst, vol. 23, no. 2, pp. 173–190, 2000." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://purl.org/dc/terms/source> "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence,\nvol. 267, pp. 1–38, 2019." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific Explanation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2004/02/skos/core#definition> "References the results of rigorous scientific methods, observations, and measurements." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is the biological basis for this recommendation?\"" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -315,22 +448,22 @@ _:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000498> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/data/interacts> .
-_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> .
-_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> .
-_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/data/interacts> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
