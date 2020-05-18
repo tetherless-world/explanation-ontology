@@ -280,7 +280,23 @@
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Artificial Intelligence Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000667"/>
+        <dc:description>a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value</dc:description>
+        <rdfs:label>AI Method</rdfs:label>
     </owl:Class>
     
 
@@ -572,6 +588,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001243"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:description>a statistical value that backs and quantifies a recommendation</dc:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Evidence</rdfs:label>
     </owl:Class>
     
@@ -581,7 +598,9 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+        <terms:source>https://www.thefreedictionary.com/scientific+knowledge</terms:source>
         <rdfs:label>Scientific Knowledge</rdfs:label>
+        <skos:definition>knowledge accumulated by systematic study and organized by general principles</skos:definition>
     </owl:Class>
     
 
@@ -642,10 +661,57 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     
 
 
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000097"/>
+        <dc:description>sequence of underlying system steps and rules that led to a system recommendation</dc:description>
+        <terms:source>Swartout, W. R., &amp; Moore, J. D. (1993). Explanation in second generation expert systems. In Second generation expert systems (pp. 543-585). Springer, Berlin, Heidelberg.</terms:source>
+        <rdfs:label>System Trace</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:description>Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009).</dc:description>
         <terms:source>B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128</terms:source>
         <rdfs:label>Trace Based Explanation</rdfs:label>
