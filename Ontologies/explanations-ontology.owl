@@ -386,6 +386,36 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <dc:description>As described
 by (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present
 contrasts between the fact (the event that did occur), the given output, and the foil (the
@@ -403,6 +433,30 @@ event that did not occur), the output of interest.</dc:description>
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual">
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <terms:contributor>Amar Das</terms:contributor>
         <terms:contributor>Deborah L. McGuinness</terms:contributor>
         <terms:contributor>Morgan Foreman</terms:contributor>
@@ -480,36 +534,6 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <terms:description>facts that would have/led to a system recommendation B</terms:description>
         <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
         <rdfs:label>Factual Knowledge that supports a system recommendation B</rdfs:label>
@@ -653,6 +677,23 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">
         <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
         <rdfs:label>Knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000231"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>a collection of fields that has been gathered for a particular object and the selection is fed to a computer program</terms:description>
+        <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
+        <rdfs:label>Object Record</rdfs:label>
     </owl:Class>
     
 
