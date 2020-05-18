@@ -276,6 +276,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements"/>
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
             </owl:Restriction>
@@ -590,6 +596,15 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         </rdfs:subClassOf>
         <dc:description>a statistical value that backs and quantifies a recommendation</dc:description>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000097"/>
+        <rdfs:label>Reasoning Mode</rdfs:label>
     </owl:Class>
     
 
