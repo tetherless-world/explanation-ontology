@@ -8,8 +8,8 @@
 
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> rdf:type owl:Ontology ;
                                                                                   owl:versionIRI <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0> ;
-                                                                                  owl:imports <http://linkedu.eu/dedalo/explanationPattern.owl> ,
-                                                                                              <http://semanticscience.org/ontology/sio.owl> ,
+                                                                                  owl:imports <http://semanticscience.org/ontology/sio.owl> ,
+                                                                                              <https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl> ,
                                                                                               <https://www.w3.org/ns/prov-o#> ;
                                                                                   <http://purl.org/dc/terms/contributor> "Amar K. Das" ,
                                                                                                                          "Daniel M. Gruen" ,
@@ -53,26 +53,6 @@
 #################################################################
 #    Object Properties
 #################################################################
-
-###  http://linkedu.eu/dedalo/data/interacts
-<http://linkedu.eu/dedalo/data/interacts> rdf:type owl:ObjectProperty .
-
-
-###  http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans
-<http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> rdf:type owl:ObjectProperty .
-
-
-###  http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn
-<http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> rdf:type owl:ObjectProperty .
-
-
-###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting
-<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> rdf:type owl:ObjectProperty .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> rdf:type owl:ObjectProperty .
-
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses
 :addresses rdf:type owl:ObjectProperty ;
@@ -132,8 +112,7 @@
 #################################################################
 
 ###  http://linkedu.eu/dedalo/explanationPattern.owl#Explanation
-<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> rdf:type owl:Class ;
-                                                              rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ,
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ,
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> ;
                                                                                 owl:someValuesFrom <http://semanticscience.org/resource/SIO_000776>
@@ -179,14 +158,6 @@
                                                                        owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
                                                                        owl:someValuesFrom <http://semanticscience.org/resource/SIO_001194>
                                                                      ] .
-
-
-###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
-<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> rdf:type owl:Class .
-
-
-###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory
-<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> rdf:type owl:Class .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask

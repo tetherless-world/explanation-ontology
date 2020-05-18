@@ -16,11 +16,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:resource="http://semanticscience.org/resource/">
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0"/>
-        <owl:imports rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl"/>
         <owl:imports rdf:resource="https://www.w3.org/ns/prov-o#"/>
         <terms:contributor>Amar K. Das</terms:contributor>
         <terms:contributor>Daniel M. Gruen</terms:contributor>
@@ -90,41 +91,6 @@
      -->
 
 
-    
-
-
-    <!-- http://linkedu.eu/dedalo/data/interacts -->
-
-
-    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/data/interacts"/>
-    
-
-
-    <!-- http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans -->
-
-
-    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans"/>
-    
-
-
-    <!-- http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn -->
-
-
-    <owl:ObjectProperty rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"/>
     
 
 
@@ -227,7 +193,7 @@
     <!-- http://linkedu.eu/dedalo/explanationPattern.owl#Explanation -->
 
 
-    <owl:Class rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">
+    <rdf:Description rdf:about="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -274,7 +240,7 @@
         <terms:source>Chari, S., Gruen, D. M., Seneviratne, O., &amp; McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520.</terms:source>
         <rdfs:label>Explanation</rdfs:label>
         <skos:definition>an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user&apos;s understanding, context, and current needs</skos:definition>
-    </owl:Class>
+    </rdf:Description>
     
 
 
@@ -303,20 +269,6 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </rdf:Description>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
-    
-
-
-    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory -->
-
-
-    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"/>
     
 
 

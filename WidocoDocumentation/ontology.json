@@ -840,11 +840,7 @@
     } ]
   } ]
 }, {
-  "@id" : "http://linkedu.eu/dedalo/data/interacts",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "Chari, S., Gruen, D. M., Seneviratne, O., & McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520."
   } ],
@@ -872,12 +868,6 @@
     "@value" : "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs"
   } ]
 }, {
-  "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -890,18 +880,6 @@
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid9"
   } ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -932,9 +910,9 @@
     "@value" : "Explanations Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl"
-  }, {
     "@id" : "http://semanticscience.org/ontology/sio.owl"
+  }, {
+    "@id" : "https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl"
   }, {
     "@id" : "https://www.w3.org/ns/prov-o#"
   } ],
