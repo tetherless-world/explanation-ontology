@@ -1202,7 +1202,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "the impact that an explanation has on a user or the purpose it was designed to achieve"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1217,7 +1217,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "inputs and other considerations that led to a system recommendation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -1232,7 +1232,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "facts that would have/led to a system recommendation B"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -1415,7 +1415,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby."
   } ],
   "http://purl.org/dc/terms/source" : [ {
@@ -1513,7 +1513,7 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {

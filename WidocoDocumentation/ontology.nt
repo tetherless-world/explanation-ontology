@@ -496,21 +496,21 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000337> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://purl.org/dc/terms/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://purl.org/dc/elements/1.1/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation Goal" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2004/02/skos/core#example> "educational" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://purl.org/dc/terms/description> "inputs and other considerations that led to a system recommendation" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://purl.org/dc/elements/1.1/description> "inputs and other considerations that led to a system recommendation" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Daniel Gruen" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://www.w3.org/2000/01/rdf-schema#label> "Factual Knowledge that supports recommendation A" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB> <http://purl.org/dc/terms/description> "facts that would have/led to a system recommendation B" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB> <http://purl.org/dc/elements/1.1/description> "facts that would have/led to a system recommendation B" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Daniel Gruen" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB> <http://www.w3.org/2000/01/rdf-schema#label> "Factual Knowledge that supports a system recommendation B" .
 # 
@@ -719,7 +719,7 @@ _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid130 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
 _:genid130 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://purl.org/dc/terms/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://purl.org/dc/elements/1.1/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://purl.org/dc/terms/source> "https://www.igi-global.com/dictionary/researching-mobile-learning/37179" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context> <http://www.w3.org/2000/01/rdf-schema#label> "User Context" .
 # 
@@ -735,7 +735,7 @@ _:genid130 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticwe
 _:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000231> .
 _:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record> <http://purl.org/dc/terms/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record> <http://purl.org/dc/elements/1.1/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Shruthi Chari" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record> <http://www.w3.org/2000/01/rdf-schema#label> "Object Record" .
 # 

@@ -639,7 +639,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000337"/>
-        <terms:description>the impact that an explanation has on a user or the purpose it was designed to achieve</terms:description>
+        <dc:description>the impact that an explanation has on a user or the purpose it was designed to achieve</dc:description>
         <rdfs:label>Explanation Goal</rdfs:label>
         <skos:example>educational</skos:example>
     </owl:Class>
@@ -650,7 +650,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
-        <terms:description>inputs and other considerations that led to a system recommendation</terms:description>
+        <dc:description>inputs and other considerations that led to a system recommendation</dc:description>
         <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
         <rdfs:label>Factual Knowledge that supports recommendation A</rdfs:label>
     </owl:Class>
@@ -661,7 +661,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"/>
-        <terms:description>facts that would have/led to a system recommendation B</terms:description>
+        <dc:description>facts that would have/led to a system recommendation B</dc:description>
         <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
         <rdfs:label>Factual Knowledge that supports a system recommendation B</rdfs:label>
     </owl:Class>
@@ -911,7 +911,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description>any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby.</terms:description>
+        <dc:description>any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby.</dc:description>
         <terms:source>https://www.igi-global.com/dictionary/researching-mobile-learning/37179</terms:source>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Context</rdfs:label>
     </owl:Class>
@@ -937,7 +937,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description>a collection of fields that has been gathered for a particular object and the selection is fed to a computer program</terms:description>
+        <dc:description>a collection of fields that has been gathered for a particular object and the selection is fed to a computer program</dc:description>
         <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
         <rdfs:label>Object Record</rdfs:label>
     </owl:Class>

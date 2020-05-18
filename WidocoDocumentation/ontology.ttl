@@ -478,7 +478,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal
 :ExplanationGoal rdf:type owl:Class ;
                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_000337> ;
-                 <http://purl.org/dc/terms/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" ;
+                 <http://purl.org/dc/elements/1.1/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" ;
                  rdfs:label "Explanation Goal" ;
                  <http://www.w3.org/2004/02/skos/core#example> "educational" .
 
@@ -486,7 +486,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA
 :FactInSupportOfA rdf:type owl:Class ;
                   rdfs:subClassOf :knowledge ;
-                  <http://purl.org/dc/terms/description> "inputs and other considerations that led to a system recommendation" ;
+                  <http://purl.org/dc/elements/1.1/description> "inputs and other considerations that led to a system recommendation" ;
                   rdfs:isDefinedBy "Daniel Gruen" ;
                   rdfs:label "Factual Knowledge that supports recommendation A" .
 
@@ -494,7 +494,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB
 :FoilInSupportOfB rdf:type owl:Class ;
                   rdfs:subClassOf :knowledge ;
-                  <http://purl.org/dc/terms/description> "facts that would have/led to a system recommendation B" ;
+                  <http://purl.org/dc/elements/1.1/description> "facts that would have/led to a system recommendation B" ;
                   rdfs:isDefinedBy "Daniel Gruen" ;
                   rdfs:label "Factual Knowledge that supports a system recommendation B" .
 
@@ -678,7 +678,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                 owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
                                 owl:someValuesFrom :user
                               ] ;
-              <http://purl.org/dc/terms/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." ;
+              <http://purl.org/dc/elements/1.1/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." ;
               <http://purl.org/dc/terms/source> "https://www.igi-global.com/dictionary/researching-mobile-learning/37179" ;
               rdfs:label "User Context" .
 
@@ -696,7 +696,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                  owl:onProperty <http://semanticscience.org/resource/SIO_000231> ;
                                  owl:someValuesFrom :AITask
                                ] ;
-               <http://purl.org/dc/terms/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" ;
+               <http://purl.org/dc/elements/1.1/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" ;
                rdfs:isDefinedBy "Shruthi Chari" ;
                rdfs:label "Object Record" .
 
