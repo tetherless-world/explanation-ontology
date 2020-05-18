@@ -16,6 +16,7 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:void="http://rdfs.org/ns/void#"
      xmlns:prov1="http://www.w3.org/ns/prov#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -60,6 +61,34 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+     <!---copying from omit-->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     
 
 
@@ -1052,6 +1081,148 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdfs:label>User</rdfs:label>
         <skos:definition>the person that receives and ultimately uses the good, service, or technology</skos:definition>
     </owl:Class>
+
+    <!--Adding AI methods from OMIT-->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0001177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001177">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Heuristics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0001480 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001480">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0001483 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001483">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001480"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Machine Learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0001486 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001480"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Machine Learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod -->
+
+   <!--  <owl:Class rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod">
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Artificial Intelligence</rdfs:label>
+    </owl:Class>   -->
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0006327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0006327">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert Systems</rdfs:label>
+    </owl:Class> 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0010354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0010354">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing</rdfs:label>
+    </owl:Class>   
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0013278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0013278">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotics</rdfs:label>
+    </owl:Class>    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0017046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0017046">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Networks (Computer)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0017538 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0017538">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuzzy Logic</rdfs:label>
+    </owl:Class>  
+
+
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0027764 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0027764">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001483"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support Vector Machine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0028314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0028314">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0028401"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene Ontology</rdfs:label>
+    </owl:Class>
+    
+    <!-- http://purl.obolibrary.org/obo/OMIT_0028401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0024712">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge Bases</rdfs:label>
+    </owl:Class>
+
+    <!-- http://purl.obolibrary.org/obo/OMIT_0028401 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0028401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0024712"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological Ontologies</rdfs:label>
+    </owl:Class>
+
+
+
 </rdf:RDF>
 
 
