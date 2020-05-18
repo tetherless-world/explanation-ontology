@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0> a prov:Entity;
-	 dc:title "Ontology of Explanations";
+	 dc:title "Explanations Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;

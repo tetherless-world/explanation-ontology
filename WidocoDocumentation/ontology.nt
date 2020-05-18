@@ -139,7 +139,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality> .
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://purl.org/dc/terms/source> "Chari, S., Gruen, D. M., Seneviratne, O., & McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520." .
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation" .
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2004/02/skos/core#definition> "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs" .
@@ -185,7 +185,11 @@ _:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
 _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://purl.org/dc/elements/1.1/description> "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://purl.org/dc/terms/source> "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://purl.org/dc/terms/source> "https://en.wikipedia.org/wiki/Task_(project_management)" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Intelligence Task" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask> <http://www.w3.org/2004/02/skos/core#example> "Deductive task" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -500,6 +504,13 @@ _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation Goal" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal> <http://www.w3.org/2004/02/skos/core#example> "educational" .
 # 
+# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000612> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality> <http://purl.org/dc/elements/1.1/description> "a particular form/media in which an explanation exists is expressed" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Shruthi Chari" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality> <http://www.w3.org/2000/01/rdf-schema#label> "Explanation Modality" .
+# 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
@@ -537,11 +548,6 @@ _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanistic Explanation" .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a biological basis for this recommendation?\"" .
 # 
-# http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000612> .
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation> <http://www.w3.org/2000/01/rdf-schema#label> "Mode of Explanation" .
-# 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge> .
@@ -555,6 +561,9 @@ _:genid92 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000097> .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode> <http://purl.org/dc/elements/1.1/description> "a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks" .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode> <http://purl.org/dc/terms/source> "Ramoni, M., Stefanelli, M., Magnani, L., & Barosi, G. (1992). An epistemological framework for medical knowledge-based systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6), 1361-1375." .
+<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode> <http://semanticscience.org/resource/example> "The treatment planning process proceeds in four steps. First, the play therapist must develop accurate, comprehensive treatment goals that are consistent with the case formulation and the theoretical model being used. Because these goals are formulated from a theoretical perspective, they may not fully align with the goals of the child and his or her caregivers. Therefore, in the second step, the play therapist must work with both the child client and his or her caregivers to develop a treatment contract that takes the goals created in the first step and addresses each party’s needs. This will ensure they will remain actively engaged in the treatment process over time. Third, the play therapist must organize the treatment goals and the treatment contracts into a realistic and sequential treatment plan. Finally, the play therapist must devise both experiential and cognitive/verbal interventions to move the client toward the treatment goals.\n\nSource: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and interventions: The ecosystemic model and workbook. Academic Press." .
 <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode> <http://www.w3.org/2000/01/rdf-schema#label> "Reasoning Mode" .
 # 
 # http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge

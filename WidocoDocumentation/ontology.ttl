@@ -160,7 +160,7 @@
                                                                               ] ,
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty :hasPresentation ;
-                                                                                owl:someValuesFrom :ModeOfExplanation
+                                                                                owl:someValuesFrom :ExplanationModality
                                                                               ] ;
                                                               <http://purl.org/dc/terms/source> "Chari, S., Gruen, D. M., Seneviratne, O., & McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520." ;
                                                               rdfs:label "Explanation" ;
@@ -212,7 +212,11 @@
                           owl:onProperty <http://www.w3.org/ns/prov#used> ;
                           owl:someValuesFrom :ArtificialIntelligenceMethod
                         ] ;
-        rdfs:label "Artificial Intelligence Task" .
+        <http://purl.org/dc/elements/1.1/description> "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem" ;
+        <http://purl.org/dc/terms/source> "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289." ,
+                                          "https://en.wikipedia.org/wiki/Task_(project_management)" ;
+        rdfs:label "Artificial Intelligence Task" ;
+        <http://www.w3.org/2004/02/skos/core#example> "Deductive task" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod
@@ -483,6 +487,14 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                  <http://www.w3.org/2004/02/skos/core#example> "educational" .
 
 
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality
+:ExplanationModality rdf:type owl:Class ;
+                     rdfs:subClassOf <http://semanticscience.org/resource/SIO_000612> ;
+                     <http://purl.org/dc/elements/1.1/description> "a particular form/media in which an explanation exists is expressed" ;
+                     rdfs:isDefinedBy "Shruthi Chari" ;
+                     rdfs:label "Explanation Modality" .
+
+
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA
 :FactInSupportOfA rdf:type owl:Class ;
                   rdfs:subClassOf :knowledge ;
@@ -519,12 +531,6 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                          <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a biological basis for this recommendation?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation
-:ModeOfExplanation rdf:type owl:Class ;
-                   rdfs:subClassOf <http://semanticscience.org/resource/SIO_000612> ;
-                   rdfs:label "Mode of Explanation" .
-
-
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence
 :Numerical_Evidence rdf:type owl:Class ;
                     rdfs:subClassOf :knowledge ,
@@ -539,6 +545,11 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode
 :Reasoning_Mode rdf:type owl:Class ;
                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
+                <http://purl.org/dc/elements/1.1/description> "a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks" ;
+                <http://purl.org/dc/terms/source> "Ramoni, M., Stefanelli, M., Magnani, L., & Barosi, G. (1992). An epistemological framework for medical knowledge-based systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6), 1361-1375." ;
+                <http://semanticscience.org/resource/example> """The treatment planning process proceeds in four steps. First, the play therapist must develop accurate, comprehensive treatment goals that are consistent with the case formulation and the theoretical model being used. Because these goals are formulated from a theoretical perspective, they may not fully align with the goals of the child and his or her caregivers. Therefore, in the second step, the play therapist must work with both the child client and his or her caregivers to develop a treatment contract that takes the goals created in the first step and addresses each party’s needs. This will ensure they will remain actively engaged in the treatment process over time. Third, the play therapist must organize the treatment goals and the treatment contracts into a realistic and sequential treatment plan. Finally, the play therapist must devise both experiential and cognitive/verbal interventions to move the client toward the treatment goals.
+
+Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and interventions: The ecosystemic model and workbook. Academic Press.""" ;
                 rdfs:label "Reasoning Mode" .
 
 

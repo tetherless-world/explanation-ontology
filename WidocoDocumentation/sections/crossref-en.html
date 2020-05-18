@@ -60,6 +60,10 @@ This section provides details for each class and property defined by Explanation
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal">Explanation Goal</a>
       </li>
       <li>
+         <a href="#ExplanationModality"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality">Explanation Modality</a>
+      </li>
+      <li>
          <a href="#FoilInSupportOfB"
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB">Factual Knowledge that supports a system recommendation B</a>
       </li>
@@ -74,10 +78,6 @@ This section provides details for each class and property defined by Explanation
       <li>
          <a href="#Mechanistic_Explanation"
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation">Mechanistic Explanation</a>
-      </li>
-      <li>
-         <a href="#ModeOfExplanation"
-            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation">Mode of Explanation</a>
       </li>
       <li>
          <a href="#Numerical_Evidence"
@@ -156,6 +156,20 @@ This section provides details for each class and property defined by Explanation
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask</p>
+      <div class="info">
+         <span class="markdown">is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., &amp; Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289.</dd>
+         <dd>https://en.wikipedia.org/wiki/Task_(project_management)</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>Deductive task</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -541,6 +555,27 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ExplanationModality">
+      <h3>Explanation Modality<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality</p>
+      <div class="info">
+         <span class="markdown">a particular form/media in which an explanation exists is expressed</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://semanticscience.org/resource/SIO_000612">s i o 000612</span>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="FoilInSupportOfB">
       <h3>Factual Knowledge that supports a system recommendation B<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -648,20 +683,6 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="ModeOfExplanation">
-      <h3>Mode of Explanation<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://semanticscience.org/resource/SIO_000612">s i o 000612</span>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Numerical_Evidence">
       <h3>Numerical Evidence<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -709,6 +730,13 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode</p>
+      <div class="info">
+         <span class="markdown">a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>Ramoni, M., Stefanelli, M., Magnani, L., &amp; Barosi, G. (1992). An epistemological framework for medical knowledge-based systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6), 1361-1375.</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>

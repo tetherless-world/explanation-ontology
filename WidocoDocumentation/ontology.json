@@ -666,7 +666,7 @@
     "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation"
+    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality"
   } ]
 }, {
   "@id" : "_:genid70",
@@ -944,6 +944,14 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289."
+  }, {
+    "@value" : "https://en.wikipedia.org/wiki/Task_(project_management)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Artificial Intelligence Task"
   } ],
@@ -959,6 +967,9 @@
     "@id" : "_:genid13"
   }, {
     "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Deductive task"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod",
@@ -1215,6 +1226,21 @@
     "@value" : "educational"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a particular form/media in which an explanation exists is expressed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation Modality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000612"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
@@ -1265,15 +1291,6 @@
     "@value" : "Addresses a question of the form, \"What is a biological basis for this recommendation?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ModeOfExplanation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Mode of Explanation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000612"
-  } ]
-}, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
@@ -1290,6 +1307,15 @@
 }, {
   "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Ramoni, M., Stefanelli, M., Magnani, L., & Barosi, G. (1992). An epistemological framework for medical knowledge-based systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6), 1361-1375."
+  } ],
+  "http://semanticscience.org/resource/example" : [ {
+    "@value" : "The treatment planning process proceeds in four steps. First, the play therapist must develop accurate, comprehensive treatment goals that are consistent with the case formulation and the theoretical model being used. Because these goals are formulated from a theoretical perspective, they may not fully align with the goals of the child and his or her caregivers. Therefore, in the second step, the play therapist must work with both the child client and his or her caregivers to develop a treatment contract that takes the goals created in the first step and addresses each party’s needs. This will ensure they will remain actively engaged in the treatment process over time. Third, the play therapist must organize the treatment goals and the treatment contracts into a realistic and sequential treatment plan. Finally, the play therapist must devise both experiential and cognitive/verbal interventions to move the client toward the treatment goals.\n\nSource: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and interventions: The ecosystemic model and workbook. Academic Press."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Reasoning Mode"
   } ],
