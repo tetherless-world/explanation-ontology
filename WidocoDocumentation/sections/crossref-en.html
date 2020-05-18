@@ -4,6 +4,10 @@ This section provides details for each class and property defined by Explanation
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#ArtificialIntelligenceMethod"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod">AI Method</a>
+      </li>
+      <li>
          <a href="#AITask"
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask">Artificial Intelligence Task</a>
       </li>
@@ -44,6 +48,10 @@ This section provides details for each class and property defined by Explanation
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation">Evidence Based Explanation</a>
       </li>
       <li>
+         <a href="#ExperentialKnowledge"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge">Experential Knowledge</a>
+      </li>
+      <li>
          <a href="#http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
             title="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">Explanation</a>
       </li>
@@ -52,10 +60,16 @@ This section provides details for each class and property defined by Explanation
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal">Explanation Goal</a>
       </li>
       <li>
+         <a href="#FoilInSupportOfB"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB">Factual Knowledge that supports a system recommendation B</a>
+      </li>
+      <li>
+         <a href="#FactInSupportOfA"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA">Factual Knowledge that supports recommendation A</a>
+      </li>
+      <li>
          <a href="#knowledge"
-            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">
-            <span>knowledge</span>
-         </a>
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
       </li>
       <li>
          <a href="#Mechanistic_Explanation"
@@ -68,6 +82,14 @@ This section provides details for each class and property defined by Explanation
       <li>
          <a href="#Numerical_Evidence"
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence">Numerical Evidence</a>
+      </li>
+      <li>
+         <a href="#object_record"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record">Object Record</a>
+      </li>
+      <li>
+         <a href="#Reasoning_Mode"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode">Reasoning Mode</a>
       </li>
       <li>
          <a href="#scientificExplanation"
@@ -94,6 +116,10 @@ This section provides details for each class and property defined by Explanation
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation">System Recommendation</a>
       </li>
       <li>
+         <a href="#SystemTrace"
+            title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace">System Trace</a>
+      </li>
+      <li>
          <a href="#Trace_Based"
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based">Trace Based Explanation</a>
       </li>
@@ -106,6 +132,23 @@ This section provides details for each class and property defined by Explanation
             title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context">User Context</a>
       </li>
    </ul>
+   <div class="entity" id="ArtificialIntelligenceMethod">
+      <h3>AI Method<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod</p>
+      <div class="info">
+         <span class="markdown">a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://semanticscience.org/resource/SIO_000667">s i o 000667</span>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="AITask">
       <h3>Artificial Intelligence Task<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -221,11 +264,19 @@ technical and physical environments” (I.O. for standardization).</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge</p>
+      <div class="comment">
+         <span class="markdown">all the knowledge that is relevant and can be mobilized to understand a given situated decision problem.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>Brézillon, P., &amp; Pomerol, J. C. (1999, July). Contextual knowledge and proceduralized context. In Proceedings of the AAAI-99 Workshop on Modeling Context in AI Applications, Orlando, Florida, USA, July. AAAI Technical Report.</dd>
+         <dd>Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7.</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#knowledge"
-               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">knowledge</a>
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>has sub-classes</dt>
@@ -311,6 +362,13 @@ event that did not occur), the output of interest.</span>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context</p>
+      <div class="info">
+         <span class="markdown">deals with the physical aspects of the experimental situation</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>Smith, S. M., Glenberg, A., &amp; Bjork, R. A. (1978). Environmental context and human memory. Memory &amp; Cognition, 6(4), 342-353.</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -389,6 +447,34 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="ExperentialKnowledge">
+      <h3>Experential Knowledge<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge</p>
+      <div class="comment">
+         <span class="markdown">information and wisdom gained from lived experience</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>https://methods.sagepub.com/reference/sage-encyc-qualitative-research-methods/n162.xml</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#knowledge"
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">
       <h3>Explanation<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -439,6 +525,12 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal</p>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <pre>educational</pre>
+         </dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -446,8 +538,48 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
          </dd>
       </dl>
    </div>
+   <div class="entity" id="FoilInSupportOfB">
+      <h3>Factual Knowledge that supports a system recommendation B<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#knowledge"
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FactInSupportOfA">
+      <h3>Factual Knowledge that supports recommendation A<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#knowledge"
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="knowledge">
-      <h3>knowledge<sup class="type-c" title="class">c</sup>
+      <h3>Knowledge<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -464,6 +596,12 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
          <dd>
             <a href="#Contextual_Knowledge"
                title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge">Contextual Knowledge</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ExperentialKnowledge"
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge">Experential Knowledge</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FoilInSupportOfB"
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB">Factual Knowledge that supports a system recommendation B</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FactInSupportOfA"
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA">Factual Knowledge that supports recommendation A</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Numerical_Evidence"
                title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence">Numerical Evidence</a>
             <sup class="type-c" title="class">c</sup>, <a href="#ScientificKnowledge"
@@ -522,12 +660,47 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence</p>
+      <div class="info">
+         <span class="markdown">a statistical value that backs and quantifies a recommendation</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#knowledge"
-               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">knowledge</a>
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="object_record">
+      <h3>Object Record<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record</p>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://semanticscience.org/resource/SIO_000069">s i o 000069</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Reasoning_Mode">
+      <h3>Reasoning Mode<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://semanticscience.org/resource/SIO_000097">s i o 000097</span>
          </dd>
       </dl>
    </div>
@@ -581,11 +754,18 @@ vol. 267, pp. 1–38, 2019.</dd>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge</p>
+      <div class="comment">
+         <span class="markdown">knowledge accumulated by systematic study and organized by general principles</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>https://www.thefreedictionary.com/scientific+knowledge</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <a href="#knowledge"
-               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">knowledge</a>
+               title="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge">Knowledge</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -677,10 +857,38 @@ vol. 267, pp. 1–38, 2019.</dd>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation</p>
+      <div class="comment">
+         <span class="markdown">an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://semanticscience.org/resource/SIO_000602">s i o 000602</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="SystemTrace">
+      <h3>System Trace<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace</p>
+      <div class="info">
+         <span class="markdown">sequence of underlying system steps and rules that led to a system recommendation</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>Swartout, W. R., &amp; Moore, J. D. (1993). Explanation in second generation expert systems. In Second generation expert systems (pp. 543-585). Springer, Berlin, Heidelberg.</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://semanticscience.org/resource/SIO_000097">s i o 000097</span>
          </dd>
       </dl>
    </div>
@@ -723,6 +931,13 @@ vol. 267, pp. 1–38, 2019.</dd>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user</p>
+      <div class="comment">
+         <span class="markdown">the person that receives and ultimately uses the good, service, or technology</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -737,6 +952,10 @@ vol. 267, pp. 1–38, 2019.</dd>
       </h3>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context</p>
+      <dl class="definedBy">
+         <dt>Source</dt>
+         <dd>https://www.igi-global.com/dictionary/researching-mobile-learning/37179</dd>
+      </dl>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>

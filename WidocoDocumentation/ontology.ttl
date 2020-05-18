@@ -66,6 +66,10 @@
 <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> rdf:type owl:ObjectProperty .
 
 
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy
 <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> rdf:type owl:ObjectProperty .
 
@@ -197,15 +201,55 @@
                           owl:someValuesFrom :knowledge
                         ] ,
                         [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ;
+                          owl:someValuesFrom :Reasoning_Mode
+                        ] ,
+                        [ rdf:type owl:Restriction ;
                           owl:onProperty :implements ;
                           owl:someValuesFrom <http://semanticscience.org/resource/SIO_000085>
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                          owl:someValuesFrom :ArtificialIntelligenceMethod
                         ] ;
         rdfs:label "Artificial Intelligence Task" .
 
 
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod
+:ArtificialIntelligenceMethod rdf:type owl:Class ;
+                              rdfs:subClassOf <http://semanticscience.org/resource/SIO_000667> ;
+                              <http://purl.org/dc/elements/1.1/description> "a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value" ;
+                              rdfs:label "AI Method" .
+
+
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation
 :Case_Based_Explanation rdf:type owl:Class ;
-                        rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                        rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                          owl:someValuesFrom [ owl:intersectionOf ( <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation>
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                                      owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                                  owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                                                                                              owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                                                                                                                                                              owl:someValuesFrom :object_record
+                                                                                                                                                                            ]
+                                                                                                                                                                          ) ;
+                                                                                                                                                       rdf:type owl:Class
+                                                                                                                                                     ]
+                                                                                                                                ]
+                                                                                                                              ) ;
+                                                                                                           rdf:type owl:Class
+                                                                                                         ]
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ]
+                                        ] ;
                         <http://purl.org/dc/terms/description> """Case-based explanations contain results that “are based on actual prior cases that can be presented to the user to provide
 compelling support for the system’s conclusions” (Cunningham et al., 2003). Borrowing from Leake, 1988 and Ahmed, 2015, we opine
 that an AI system generating case-based explanations needs to remember and adapt explanations of similar prior cases (Leake, 1988), or, “has to reason from experiences (old cases) in an effort to solve
@@ -272,12 +316,42 @@ technical and physical environments” (I.O. for standardization).""" ;
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge
 :Contextual_Knowledge rdf:type owl:Class ;
                       rdfs:subClassOf :knowledge ;
-                      rdfs:label "Contextual Knowledge" .
+                      <http://purl.org/dc/terms/description> """Contextual knowledge is all the knowledge that is relevant and can be mobilized to understand a given situated decision problem. By \"situated\" we mean in given, dated, well specified circumstances (Clancey 1991). Contextual knowledge is evoked by situations and events, and loosely
+tied to a task or a goal. However, when the task becomes more precise (e.g., an event occurs), a large part of this contextual knowledge can be proceduralized according to the current focus of the decision making.""" ;
+                      <http://purl.org/dc/terms/source> "Brézillon, P., & Pomerol, J. C. (1999, July). Contextual knowledge and proceduralized context. In Proceedings of the AAAI-99 Workshop on Modeling Context in AI Applications, Orlando, Florida, USA, July. AAAI Technical Report." ,
+                                                        "Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7." ;
+                      rdfs:label "Contextual Knowledge" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "all the knowledge that is relevant and can be mobilized to understand a given situated decision problem." .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation
 :Contrastive_Explanation rdf:type owl:Class ;
-                         rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                         rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                                         [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                                         owl:someValuesFrom :system_recommendation
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                         owl:someValuesFrom :FactInSupportOfA
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ]
+                                                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                                         owl:someValuesFrom :system_recommendation
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                         owl:someValuesFrom :FoilInSupportOfB
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
                          <http://purl.org/dc/elements/1.1/description> """As described
 by (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present
 contrasts between the fact (the event that did occur), the given output, and the foil (the
@@ -291,7 +365,25 @@ event that did not occur), the output of interest.""" ;
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual
 :Counterfactual rdf:type owl:Class ;
-                rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                  owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                            [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                     owl:someValuesFrom :knowledge
+                                                                                                   ]
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                     owl:someValuesFrom :object_record
+                                                                                                   ]
+                                                                                                 ) ;
+                                                                              rdf:type owl:Class
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                ] ;
                 <http://purl.org/dc/terms/contributor> "Amar Das" ,
                                                        "Deborah L. McGuinness" ,
                                                        "Morgan Foreman" ,
@@ -306,12 +398,43 @@ event that did not occur), the output of interest.""" ;
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context
 :Environmental_Context rdf:type owl:Class ;
                        rdfs:subClassOf :Contextual_Knowledge ;
+                       <http://purl.org/dc/elements/1.1/description> "deals with the physical aspects of the experimental situation" ;
+                       <http://purl.org/dc/terms/source> "Smith, S. M., Glenberg, A., & Bjork, R. A. (1978). Environmental context and human memory. Memory & Cognition, 6(4), 342-353." ;
                        rdfs:label "Environmental Context" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday
 :Everyday rdf:type owl:Class ;
-          rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+          rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                            owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                      [ rdf:type owl:Restriction ;
+                                                                        owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                             owl:unionOf ( [ owl:intersectionOf ( <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                    owl:someValuesFrom :user
+                                                                                                                                  ]
+                                                                                                                                ) ;
+                                                                                                             rdf:type owl:Class
+                                                                                                           ]
+                                                                                                           [ owl:intersectionOf ( :ExperentialKnowledge
+                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                    owl:someValuesFrom :user
+                                                                                                                                  ]
+                                                                                                                                ) ;
+                                                                                                             rdf:type owl:Class
+                                                                                                           ]
+                                                                                                         )
+                                                                                           ]
+                                                                      ]
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ]
+                          ] ;
           <http://purl.org/dc/elements/1.1/description> """Accounts of the real world that appeal to the user based on their general
 understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, and that help them understand why particular facts (events, properties, decisions, etc.) occurred (Miller, 2019).""" ;
           <http://purl.org/dc/terms/source> "K. L. McNeill and J. Krajcik, “Inquiry and scientific explanations: Helping students use evidence and reasoning,” Sci. as inquiry in the secondary setting, pp. 121–134, 2008" ,
@@ -323,7 +446,18 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation
 :Evidence_Based_Explanation rdf:type owl:Class ;
-                            rdfs:subClassOf :scientificExplanation ;
+                            rdfs:subClassOf :scientificExplanation ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                              owl:someValuesFrom [ owl:intersectionOf ( :ScientificKnowledge
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                          owl:someValuesFrom <http://semanticscience.org/resource/SIO_001066>
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ]
+                                            ] ;
                             <http://purl.org/dc/elements/1.1/description> "account that articulates how or why an event occured that is supported by evidence and scientific ideas" ;
                             <http://purl.org/dc/terms/modified> "Shruthi Chari" ;
                             <http://purl.org/dc/terms/source> "https://www.sciencepracticesleadership.com/definitions.html" ;
@@ -331,16 +465,54 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                             <http://www.w3.org/2004/02/skos/core#example> "Address questions of the form, \"What studies support this recommendation?\"" .
 
 
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge
+:ExperentialKnowledge rdf:type owl:Class ;
+                      rdfs:subClassOf :knowledge ;
+                      <http://purl.org/dc/terms/source> "https://methods.sagepub.com/reference/sage-encyc-qualitative-research-methods/n162.xml" ;
+                      rdfs:isDefinedBy "Marsha A. Schubert" ,
+                                       "Thomasina J. Borkman" ;
+                      rdfs:label "Experential Knowledge" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "information and wisdom gained from lived experience" .
+
+
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal
 :ExplanationGoal rdf:type owl:Class ;
                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_000337> ;
-                 <http://purl.org/dc/terms/description> "the impact that an explanation has on a user or the puroose it was designed to achieve" ;
-                 rdfs:label "Explanation Goal" .
+                 <http://purl.org/dc/terms/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" ;
+                 rdfs:label "Explanation Goal" ;
+                 <http://www.w3.org/2004/02/skos/core#example> "educational" .
+
+
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA
+:FactInSupportOfA rdf:type owl:Class ;
+                  rdfs:subClassOf :knowledge ;
+                  <http://purl.org/dc/terms/description> "inputs and other considerations that led to a system recommendation" ;
+                  rdfs:isDefinedBy "Daniel Gruen" ;
+                  rdfs:label "Factual Knowledge that supports recommendation A" .
+
+
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB
+:FoilInSupportOfB rdf:type owl:Class ;
+                  rdfs:subClassOf :knowledge ;
+                  <http://purl.org/dc/terms/description> "facts that would have/led to a system recommendation B" ;
+                  rdfs:isDefinedBy "Daniel Gruen" ;
+                  rdfs:label "Factual Knowledge that supports a system recommendation B" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation
 :Mechanistic_Explanation rdf:type owl:Class ;
-                         rdfs:subClassOf :scientificExplanation ;
+                         rdfs:subClassOf :scientificExplanation ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                           owl:someValuesFrom [ owl:intersectionOf ( :ScientificKnowledge
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                       owl:someValuesFrom :ScientificMethod
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ]
+                                         ] ;
                          <http://purl.org/dc/elements/1.1/description> "a mechanistic explanation involves presenting a model of the mechanism (the explanans) responsible for some phenomenon of interest (the explanandum). A mechanism is an entity or structure, such as an organ (though a mechanism need not be delineated by such clear physical boundaries) that performs a function by virtue of its component parts, operations and, importantly, their spatial and temporal organisation (Bechtel & Abrahamsen 2005: 421–23). That is, a mechanism does not just consist in its physical parts, but in the ‘organised interplay’ of the activities of those parts (Soom 2012: 656). Examples of phenomena (i.e.,functions or behaviours performed by mechanisms) include such things as the heart’s pumping blood, metabolism and memory." ;
                          <http://purl.org/dc/terms/source> "Dessaix, D. Mechanistic Explanation: Some Limits and their Significance. The ANU Undergraduate Research Journal, 51." ;
                          rdfs:label "Mechanistic Explanation" ;
@@ -360,13 +532,22 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                                       owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
                                       owl:someValuesFrom <http://semanticscience.org/resource/SIO_001243>
                                     ] ;
+                    <http://purl.org/dc/elements/1.1/description> "a statistical value that backs and quantifies a recommendation" ;
                     rdfs:label "Numerical Evidence" .
+
+
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode
+:Reasoning_Mode rdf:type owl:Class ;
+                rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
+                rdfs:label "Reasoning Mode" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge
 :ScientificKnowledge rdf:type owl:Class ;
                      rdfs:subClassOf :knowledge ;
-                     rdfs:label "Scientific Knowledge" .
+                     <http://purl.org/dc/terms/source> "https://www.thefreedictionary.com/scientific+knowledge" ;
+                     rdfs:label "Scientific Knowledge" ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "knowledge accumulated by systematic study and organized by general principles" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod
@@ -379,7 +560,43 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based
 :Simulation_Based rdf:type owl:Class ;
-                  rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                  rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                              [ rdf:type owl:Class ;
+                                                                                owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                       owl:someValuesFrom :Contextual_Knowledge
+                                                                                                                     ]
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                       owl:someValuesFrom :user
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ]
+                                                                                              [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                       owl:someValuesFrom :knowledge
+                                                                                                                     ]
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                       owl:someValuesFrom :object_record
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ]
+                                                                                            )
+                                                                              ]
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                owl:someValuesFrom :AITask
+                                                                              ]
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ;
                   <http://purl.org/dc/terms/description> """Simulation-based explanations are those based on an imagined or implemented imitation of a system or process and the results that emerge from similar inputs. As simulations can often be run numerous
 times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can often be observed and traced directly, simulation-based explanations can have elements of statistical and trace-based explanations. Heal suggests that these explanations (Heals, 1996) contain facts that humans would use to determine an outcome in a specified case, and these explanations are intended to “replace and amplify real experiences with guided ones, often “immersive” in nature, that evoke or replicate substantial aspects of the real world in a fully interactive fashion” (Lateef, 2010)""" ;
                   <http://purl.org/dc/terms/source> "F. Lateef, “Simulation-based learning: Just like the real thing,” J. of Emergencies, Trauma and Shock, vol. 3, no. 4, p. 348, 2010" ,
@@ -411,9 +628,42 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                          <http://www.w3.org/2004/02/skos/core#example> "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\"" .
 
 
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace
+:SystemTrace rdf:type owl:Class ;
+             rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
+             <http://purl.org/dc/elements/1.1/description> "sequence of underlying system steps and rules that led to a system recommendation" ;
+             <http://purl.org/dc/terms/source> "Swartout, W. R., & Moore, J. D. (1993). Explanation in second generation expert systems. In Second generation expert systems (pp. 543-585). Springer, Berlin, Heidelberg." ;
+             rdfs:label "System Trace" .
+
+
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based
 :Trace_Based rdf:type owl:Class ;
-             rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+             rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                           owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                     [ rdf:type owl:Restriction ;
+                                                                                                                       owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                                                                                                                                                   owl:someValuesFrom :SystemTrace
+                                                                                                                                                                 ]
+                                                                                                                                                               ) ;
+                                                                                                                                            rdf:type owl:Class
+                                                                                                                                          ]
+                                                                                                                     ]
+                                                                                                                   ) ;
+                                                                                                rdf:type owl:Class
+                                                                                              ]
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
              <http://purl.org/dc/elements/1.1/description> "Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009)." ;
              <http://purl.org/dc/terms/source> "B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128" ;
              rdfs:label "Trace Based Explanation" ;
@@ -428,12 +678,27 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                 owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
                                 owl:someValuesFrom :user
                               ] ;
+              <http://purl.org/dc/terms/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." ;
+              <http://purl.org/dc/terms/source> "https://www.igi-global.com/dictionary/researching-mobile-learning/37179" ;
               rdfs:label "User Context" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge
 :knowledge rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> .
+           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> ;
+           rdfs:label "Knowledge" .
+
+
+###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record
+:object_record rdf:type owl:Class ;
+               rdfs:subClassOf <http://semanticscience.org/resource/SIO_000069> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://semanticscience.org/resource/SIO_000231> ;
+                                 owl:someValuesFrom :AITask
+                               ] ;
+               <http://purl.org/dc/terms/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" ;
+               rdfs:isDefinedBy "Shruthi Chari" ;
+               rdfs:label "Object Record" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation
@@ -477,7 +742,9 @@ vol. 267, pp. 1–38, 2019.""" ;
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation
 :system_recommendation rdf:type owl:Class ;
                        rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ;
-                       rdfs:label "System Recommendation" .
+                       rdfs:isDefinedBy "Shruthi Chari" ;
+                       rdfs:label "System Recommendation" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
 
 
 ###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user
@@ -486,6 +753,10 @@ vol. 267, pp. 1–38, 2019.""" ;
                       [ rdf:type owl:Restriction ;
                         owl:onProperty <http://linkedu.eu/dedalo/data/interacts> ;
                         owl:someValuesFrom :AITask
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ;
+                        owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :asks ;
@@ -499,7 +770,9 @@ vol. 267, pp. 1–38, 2019.""" ;
                         owl:onProperty :possess ;
                         owl:someValuesFrom :knowledge
                       ] ;
-      rdfs:label "User" .
+      rdfs:isDefinedBy "https://www.law.cornell.edu/uscode/text/22/8541" ;
+      rdfs:label "User" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "the person that receives and ultimately uses the good, service, or technology" .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
