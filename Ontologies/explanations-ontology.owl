@@ -23,7 +23,7 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology">
         <owl:versionIRI rdf:resource="http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0"/>
-        <owl:imports rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <owl:imports rdf:resource="https://www.w3.org/ns/prov-o#"/>
         <terms:contributor>Amar K. Das</terms:contributor>
