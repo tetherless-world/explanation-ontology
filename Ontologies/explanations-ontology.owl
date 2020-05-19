@@ -700,6 +700,17 @@ event that did not occur), the output of interest.</dc:description>
     
 
 
+    <!-- https://purl.org/heals/eo#DecisionTree -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#DecisionTree">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001483"/>
+        <terms:source>https://en.wikipedia.org/wiki/Decision_tree</terms:source>
+        <rdfs:label>Decision Tree</rdfs:label>
+        <skos:definition>is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements.</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#DeductiveTask -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#DeductiveTask">
@@ -1086,7 +1097,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                                         <owl:intersectionOf rdf:parseType="Collection">
                                                             <owl:Class>
                                                                 <owl:unionOf rdf:parseType="Collection">
-                                                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0001483"/>
+                                                                    <rdf:Description rdf:about="https://purl.org/heals/eo#DecisionTree"/>
                                                                     <rdf:Description rdf:about="https://purl.org/heals/eo#KnowledgeBasedSystems"/>
                                                                 </owl:unionOf>
                                                             </owl:Class>
