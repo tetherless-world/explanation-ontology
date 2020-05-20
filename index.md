@@ -38,7 +38,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </tr>
   <tr>
     <td>1. Ontology:</td>
-    <td>(a) <a href="{{site.baseurl}}/index#ontology">Explanations Ontology</a> </td> 
+    <td>(a) <a href="./index#ontology">Explanations Ontology</a> </td> 
   </tr>
   <tr>
     <td>2. Modeling Snippets:</td>
