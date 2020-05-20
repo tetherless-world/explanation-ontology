@@ -27,6 +27,40 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
  </ul>
  </content>
  
+ <article class="mb-5" id="resources">
+<content>
+<h2>List of Resources </h2>
+<ul>
+ <table style="width:100%">
+    <tr>
+    <th>Resources</th>
+    <th>Links</th> 
+  </tr>
+  <tr>
+    <td>1. Ontology:</td>
+    <td>(a) <a href="{{site.baseurl}}/index#ontology">Explanations Ontology</a> </td> 
+  </tr>
+  <tr>
+    <td>2. Modeling Snippets:</td>
+    <td>(a) <a href="{{site.baseurl}}/index#explanationtypes">Explanation Types</a> </td> 
+  </tr>
+    <!--<tr>
+    <td> </td>
+    <td> (b) <a href="./application.html">Faceted Browser</a> </td> 
+  </tr>-->
+    <tr>
+    <td></td>
+    <td>(b) <a href="{{site.baseurl}}/index#clinical">Example of a Contrastive Explanation</a> </td> 
+  </tr>
+   <tr>
+    <td>3. Competency Questions </td>
+    <td> (a) <a href="{{site.baseurl}}/index#sparql">SPARQL Queries</a> </td> 
+  </tr>
+</table>
+  
+ </ul>
+ </content>
+ 
  <article class="mb-5" id="ontology">
 <content>
   
