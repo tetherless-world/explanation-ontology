@@ -88,6 +88,60 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <li><a href="https://www.w3.org/TR/prov-o/">The Provenance Ontology (PROV-O)</a></li>
   <li><a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl">Explanations Pattern Ontology</a></li>
   </ul>
+    
+  <h4> Ontology Prefixes </h4>
+  <table style="width:100%">
+    <tr>
+    <th>Prefix</th>
+    <th>Links</th> 
+  </tr>
+  <tr>
+    <td>rdf</td>
+    <td><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns">Resource Description Framework</a></td> 
+  </tr>
+  <tr>
+    <td>rdfs</td>
+    <td><a href="http://www.w3.org/2000/01/rdf-schema"> RDF Schema</a> </td> 
+  </tr>
+  <tr>
+    <td>owl</td>
+    <td><a href="http://www.w3.org/2002/07/owl#">Web Ontology Language </a> </td> 
+  </tr>
+    <tr>
+    <td> xsd</td>
+    <td> <a href="http://www.w3.org/2001/XMLSchema#"></a> XML Schema Definition</td> 
+  </tr>
+    <tr>
+    <td>dct</td>
+    <td> <a href="http://purl.org/dc/terms/">Dublin Core Term</a> </td> 
+  </tr>
+   <tr>
+    <td>skos</td>
+    <td> <a href="http://www.w3.org/2004/02/skos/core#"></a>  Simple Knowledge Organization System</td> 
+  </tr>
+    <tr>
+    <td>eo</td>
+    <td> <a href="https://purl.org/heals/eo#"> Explanations Ontology</a> </td> 
+  </tr>   
+    <tr>
+    <td>sio</td>
+    <td> <a href="http://semanticscience.org/resource/">SemanticScience Integrated Ontology</a> </td> 
+  </tr>
+  <tr>
+    <td>ep</td>
+    <td> <a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl#">Explanations Pattern Ontology</a> </td>
+    <!--Note to self update this to the dedalo upon consulting with Ilaria-->
+  </tr>
+  <tr>
+    <td>ep</td>
+    <td> <a href="https://www.w3.org/TR/prov-o/">Provenance Ontology</a> </td> 
+  </tr>
+     <tr>
+    <td>obo</td>
+    <td> <a href="http://purl.obolibrary.org/obo/">OBO Foundry</a> </td> 
+  </tr>
+    
+</table>
   </content>
   <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
  </content>
