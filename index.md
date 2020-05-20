@@ -16,6 +16,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </tbody>
 </table> -->
 
+<hr>
 <article class="mb-5" id="abstract">
 <content>
   
@@ -27,6 +28,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
  </ul>
  </content>
  
+ <hr/>
  <article class="mb-5" id="resources">
 <content>
 <h2>List of Resources </h2>
@@ -61,6 +63,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
  </ul>
  </content>
  
+ <hr/>
  <article class="mb-5" id="ontology">
 <content>
   
@@ -143,9 +146,8 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </tr>
     
 </table>
-  </content>
+ 
   <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
- </content>
  
 <!-- 
 <div class="posts">
