@@ -262,7 +262,7 @@ a.sidebar-nav-item:focus {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
+  font-size: inherit;
 }
 
 .collapsible .sidebar-nav-item {
