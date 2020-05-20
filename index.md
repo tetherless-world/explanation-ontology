@@ -39,6 +39,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <figcaption>A conceptual overview of our <strong>Explanations Ontology</strong> with the relationships between the main classes highlighted. We have used color shading in this diagram to depict the separation between user, system and interface attributes. The interface attributes are those which would be visible to the end-user via system's views.</figcaption>
   </figure>
   
+  <h3>Ontology Links</h3>
   <p>Ontology documentation which was generated using the Widoco tool can be browsed at: <a href="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html</a></p>
   <iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>
 <ul>
