@@ -282,7 +282,7 @@ a.sidebar-nav-item:focus {
   content: "\2212";
 }
 
-.content {
+.button-content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
