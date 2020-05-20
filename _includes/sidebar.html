@@ -10,9 +10,11 @@
     </div> -->
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index">About</a>
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resources">Resources</a>
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#ontology">Ontology</a>
+      <ul>
+      <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index">About</a></li>
+      <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resources">Resources</a></li>
+      <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#ontology">Ontology</a></li>
+      
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -29,7 +31,8 @@
       {% endfor %} -->
 
       <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>-->
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+        <li><a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a></li>
+      </ul>
       <!--<span class="sidebar-nav-item">Currently v{{ site.version }}</span>-->
     </nav>
 
