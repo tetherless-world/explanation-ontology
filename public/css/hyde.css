@@ -260,7 +260,7 @@ a.sidebar-nav-item:focus {
   cursor: pointer;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: inherit;
   outline: none;
   font-size: inherit;
 }
