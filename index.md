@@ -38,11 +38,11 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </tr>
   <tr>
     <td>1. Ontology:</td>
-    <td>(a) <a href=".index#ontology">Explanations Ontology</a> </td> 
+    <td>(a) <a href="index#ontology">Explanations Ontology</a> </td> 
   </tr>
   <tr>
     <td>2. Modeling Snippets:</td>
-    <td>(a) <a href=".index#explanationtypes">Explanation Types</a> </td> 
+    <td>(a) <a href="index#explanationtypes">Explanation Types</a> </td> 
   </tr>
     <!--<tr>
     <td> </td>
@@ -50,11 +50,11 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </tr>-->
     <tr>
     <td></td>
-    <td>(b) <a href=".index#clinical">Example of a Contrastive Explanation</a> </td> 
+    <td>(b) <a href="index#clinical">Example of a Contrastive Explanation</a> </td> 
   </tr>
    <tr>
     <td>3. Competency Questions </td>
-    <td> (a) <a href=".index#sparql">SPARQL Queries</a> </td> 
+    <td> (a) <a href="index#sparql">SPARQL Queries</a> </td> 
   </tr>
 </table>
   
