@@ -73,7 +73,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <figcaption>A conceptual overview of our <strong>Explanations Ontology</strong> with the relationships between the main classes highlighted. We have used color shading in this diagram to depict the separation between user, system and interface attributes. The interface attributes are those which would be visible to the end-user via system's views.</figcaption>
   </figure>
   
-  <h3>Ontology Links</h3>
+  <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
   <li>Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html</a></li>
   <li>Ontology can be accessed from <a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a></li>
