@@ -79,12 +79,16 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <li>Ontology can be accessed from <a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a></li>
   </ul>
   
-  <h3 id="ontologiesreused">Ontologies Reused</h3>
+  <article class="mb-5" id="ontologymetadata">
+  <content>
+    <h3>Ontology Metadata</h3>
+  <h4 id="ontologiesreused">Ontologies Reused</h4>
   <ul>
   <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
   <li><a href="https://www.w3.org/TR/prov-o/">The Provenance Ontology (PROV-O)</a></li>
   <li><a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl">Explanations Pattern Ontology</a></li>
   </ul>
+  </content>
   <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
  </content>
  
