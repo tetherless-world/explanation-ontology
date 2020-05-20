@@ -296,3 +296,8 @@ a.sidebar-nav-item:focus {
 .button-content a {
   color:purple;
 }
+
+.button-content li {
+  color:purple;
+  list-style-type:disc;
+}
