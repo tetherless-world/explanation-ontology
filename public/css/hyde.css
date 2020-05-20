@@ -265,6 +265,10 @@ a.sidebar-nav-item:focus {
   font-size: 20px;
 }
 
+.collapsible .sidebar-nav-item {
+  display:inline;
+}
+
 .active, .collapsible:hover {
   background-color: #aa759f;
 }
@@ -286,4 +290,8 @@ a.sidebar-nav-item:focus {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #fde6ea;
+}
+
+.button-content a {
+  color:purple;
 }
