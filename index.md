@@ -3,7 +3,7 @@ layout: default
 title: Explanations Ontology - Treating Explanations as Primary Consideration
 ---
 
-<h1 class="page-title" id="header">Explanations Ontology - Treating Explanations as Primary Consideration</h1>
+<h1 class="page-title" style="text-transform: uppercase;" id="header">Explanations Ontology - Treating Explanations as Primary Consideration</h1>
 <h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>, Amar K. Das<sup>2</sup></h3>
 <h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://www.research.ibm.com/labs/cambridge/"><sup>2</sup>IBM Research, Cambridge</a></h3>
 <p class="message">A website to navigate resources open-sourced via the associated ISWC 2020 submission</p>
