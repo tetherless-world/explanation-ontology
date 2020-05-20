@@ -55,6 +55,10 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
     <td>3. Competency Questions </td>
     <td> (a) <a href="index#sparql">SPARQL Queries</a> </td> 
   </tr>
+   <tr>
+    <td>3. Tools Used </td>
+    <td> (a) <a href="index#toolsused">References to tools used</a> </td> 
+  </tr>
 </table>
   
  </ul>
@@ -83,7 +87,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <article class="mb-5" id="ontologymetadata">
   <content>
     <h3>Ontology Metadata</h3>
-    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanations ontology in an ontology editor, like, Protege.
+    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanations ontology in an ontology editor, like,<a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
   <h4 id="ontologiesreused">Ontologies Reused</h4>
   <ul>
   <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
@@ -163,7 +167,19 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; case based, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions, which we depict here in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL Syntax</a>. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   <!--can cite our book chapter here-->
  </content>
- </content>
+ 
+ <article class="mb-5" id="toolsused">
+<content>
+  
+  
+<h2>Tools Used during Development</h2>
+  <ul>
+  <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</li></li>
+  <li>Conceptual Diagram created using <a href="https://www.omnigroup.com/omnigraffle/">Omnigraffle</li></li>
+  <li>Ontology documentation tool, <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
+  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a></li>
+  </ul>
+  </content>
   <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
  
 <!-- 
