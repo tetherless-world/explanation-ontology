@@ -13,11 +13,13 @@
       <ul style="list-style: none;">
       <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index">About</a></li>
       <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#resources">Resources</a></li>
-      <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#ontology">Ontology</a>
+      <li><button class="collapsible">
+<a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#ontology">Ontology</a></button>
+        <div class="content">
         <ul>
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#ontologylinks">Ontology Links</a>
+          <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{site.baseurl}}index#ontologylinks">Ontology Links</a></li>
         </ul>
-        
+        </div>
         </li>
          
       
