@@ -145,8 +145,6 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
     
 </table>
  
-</content>
-</content>
 
 <!--Modeling section-->
 <hr>
