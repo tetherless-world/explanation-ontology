@@ -78,6 +78,13 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <li>Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html</a></li>
   <li>Ontology can be accessed from <a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a></li>
   </ul>
+  
+  <h3 id="ontologiesreused">Ontologies Reused</h3>
+  <ul>
+  <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
+  <li><a href="https://www.w3.org/TR/prov-o/">The Provenance Ontology (PROV-O)</a></li>
+  <li><a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl">Explanations Pattern Ontology</a></li>
+  </ul>
   <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
  </content>
  
