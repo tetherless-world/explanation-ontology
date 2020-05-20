@@ -40,7 +40,8 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </figure>
   
   <h3>Ontology Links</h3>
-  <p>Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html</a></p>
+  *Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html</a>
+  *Ontology can be accessed from <a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a>
   <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
 <ul>
   
