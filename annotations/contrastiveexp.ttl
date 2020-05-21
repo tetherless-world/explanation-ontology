@@ -26,7 +26,7 @@
 :ContrastiveExpInstance 
     a eo:contrastiveExplanation;
     ep:isBasedOn :SystemRecExample;
-    rdfs:label "Guidelines recommend GLP-1 for this patient";
+    rdfs:label "Guidelines recommend Drug B for this patient";
     :addresses :ContrastiveQuestion .
     
 :SystemRecExample 
@@ -34,12 +34,12 @@
     rdfs:label "Drug A is not sufficient for the patient" . 
     
 :ContextualKnowledgePatient 
-    a eo:ContextualKnowledge;
-    sio:inRelationTo sio:Patient;
+    a eo:ContextualKnowledge, eo:Foil;
+    sio:inRelationTo [a sio:Patient];
     rdfs:label "patient has hyperglycemia" .
 
 :GuidelineEvidence 
-    a eo:ScientificEvidence;
+    a eo:ScientificKnowledge, eo:Fact;
     rdfs:label "Drug B is the preferred drug" .
 
 
