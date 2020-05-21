@@ -462,7 +462,7 @@
 
     <owl:Class rdf:about="https://purl.org/heals/eo#AbductiveTask">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#AITask"/>
-        <dc:description>Abduction is a task which tries to identify those initial conditions which deduction starts from, given general laws and some singular statements called final states.</dc:description>
+        <dc:description>Abduction is a task which tries to identify those initial conditions which deduction starts from, given general laws and some singular statements called final states.</dc:description>
         <terms:source>Stefanelli, M., &amp; Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg.</terms:source>
         <rdfs:label>Abductive Task</rdfs:label>
     </owl:Class>
