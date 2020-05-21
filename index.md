@@ -173,7 +173,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
     <li> <strong>Definition:</strong> Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation. </li>
     <li><strong>Prototypical Question:</strong> To what other situations has this recommendation been applied? </li>
     <li><strong>Sufficency Condition:</strong> Is there at least one other prior `case' similar to this situation that requires an `explanation'? Is there a similarity between this case, and that other case?</li>
-    <li> <strong>OWL Restriction</strong>
+    <li> <strong>OWL Restriction:</strong>
       <code>
       isBasedOn some 
     (Explanation
