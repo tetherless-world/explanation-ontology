@@ -87,7 +87,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <article class="mb-5" id="ontologymetadata">
   <content>
     <h3>Ontology Metadata</h3>
-    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanations ontology in an ontology editor, like,<a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
+    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanations ontology in an ontology editor, like, <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
   <h4 id="ontologiesreused">Ontologies Reused</h4>
   <ul>
   <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
