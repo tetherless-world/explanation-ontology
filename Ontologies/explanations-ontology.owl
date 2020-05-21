@@ -1,39 +1,40 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.org/heals/eo#"
      xml:base="https://purl.org/heals/eo"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:eo="https://purl.org/heals/eo#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:schema="http://schema.org/"
+     xmlns:void="http://rdfs.org/ns/void#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:eo="https://purl.org/heals/eo#"
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.org/vocab/frbr/core#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:prov="http://www.w3.org/TR/prov-o/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:prov1="http://www.w3.org/ns/prov#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:resource="http://semanticscience.org/resource/"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:prov1="http://www.w3.org/ns/prov#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:prov="http://www.w3.org/TR/prov-o/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://purl.org/heals/eo">
         <owl:versionIRI rdf:resource="https://purl.org/heals/eo/1.0.0"/>
-        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl"/>
         <owl:imports rdf:resource="https://www.w3.org/ns/prov-o#"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users&apos; situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.</terms:description>
         <terms:contributor>Amar K. Das</terms:contributor>
-        <terms:contributor>Daniel M. Gruen</terms:contributor>
-        <terms:contributor>Deborah L. McGuinness</terms:contributor>
-        <terms:contributor>Morgan Foreman</terms:contributor>
-        <terms:contributor>Oshani Seneviratne</terms:contributor>
         <terms:creator>Shruthi Chari</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simple ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. We develop this resource mainly for system designers guiding them to think about the available AI methods and reasoning tasks within their system that would be capable of generating explanations to suit the end-users&apos; situation and requirements. We model attributes which are directly included in explanations and others that would help in their process of generation. We have used this schema to model different explanation types that address a range of questions each and their generational needs. We welcome feedback on extending this ontology to help in ontology generation in different use cases.</terms:description>
+        <terms:contributor>Morgan Foreman</terms:contributor>
+        <terms:title>Ontology of Explanations</terms:title>
+        <terms:contributor>Deborah L. McGuinness</terms:contributor>
+        <terms:contributor>Daniel M. Gruen</terms:contributor>
+        <rdfs:label>Explanations Ontology</rdfs:label>
         <terms:license>Copyright 2019 IBM Research and Rensselaer Polytechnic Institute
 
 			Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
@@ -47,8 +48,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.</terms:license>
-        <terms:title>Ontology of Explanations</terms:title>
-        <rdfs:label>Explanations Ontology</rdfs:label>
+        <terms:contributor>Oshani Seneviratne</terms:contributor>
     </owl:Ontology>
     
 
@@ -84,9 +84,39 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/example -->
+
+    <owl:AnnotationProperty rdf:about="http://semanticscience.org/resource/example"/>
     
 
 
@@ -116,6 +146,72 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000008 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000008"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000132 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000132"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000223 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000223"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000229 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000229"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000230 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000230"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000231 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000231"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000294 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000294"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000365 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000365"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000628 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000628"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000668 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000668"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001403 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001403"/>
     
 
 
@@ -389,29 +485,113 @@
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_000004 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000004"/>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_000010 -->
 
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_000010">
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000010">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans"/>
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000069 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000069"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000085 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000085"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000097 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000097"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000337 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000337"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000498 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000498"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000602 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000602"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000612 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000612"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000649 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000649"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000667 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000667"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000747 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000747"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000776 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000776"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001066 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001066"/>
     
 
 
     <!-- http://semanticscience.org/resource/SIO_001194 -->
 
-    <rdf:Description rdf:about="http://semanticscience.org/resource/SIO_001194">
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001194">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
                 <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001194"/>
             </owl:Restriction>
         </owl:equivalentClass>
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001243 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001243"/>
     
 
 
@@ -1271,5 +1451,5 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
