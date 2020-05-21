@@ -34,12 +34,12 @@
     rdfs:label "Drug A is not sufficient for the patient" . 
     
 :ContextualKnowledgePatient 
-    a eo:ContextualKnowledge;
+    a eo:ContextualKnowledge, eo:Foil;
     sio:inRelationTo [a sio:Patient];
     rdfs:label "patient has hyperglycemia" .
 
 :GuidelineEvidence 
-    a eo:ScientificKnowledge;
+    a eo:ScientificKnowledge, eo:Fact;
     rdfs:label "Drug B is the preferred drug" .
 
 
