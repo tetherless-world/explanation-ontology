@@ -1,40 +1,39 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://purl.org/heals/eo#"
      xml:base="https://purl.org/heals/eo"
-     xmlns:schema="http://schema.org/"
-     xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:resource="http://semanticscience.org/resource/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:eo="https://purl.org/heals/eo#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.org/vocab/frbr/core#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:prov1="http://www.w3.org/ns/prov#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:prov="http://www.w3.org/TR/prov-o/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:prov="http://www.w3.org/TR/prov-o/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:prov1="http://www.w3.org/ns/prov#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://purl.org/heals/eo">
         <owl:versionIRI rdf:resource="https://purl.org/heals/eo/1.0.0"/>
+        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl"/>
         <owl:imports rdf:resource="https://www.w3.org/ns/prov-o#"/>
-        <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users&apos; situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.</terms:description>
         <terms:contributor>Amar K. Das</terms:contributor>
-        <terms:creator>Shruthi Chari</terms:creator>
-        <terms:contributor>Morgan Foreman</terms:contributor>
-        <terms:title>Ontology of Explanations</terms:title>
-        <terms:contributor>Deborah L. McGuinness</terms:contributor>
         <terms:contributor>Daniel M. Gruen</terms:contributor>
-        <rdfs:label>Explanations Ontology</rdfs:label>
+        <terms:contributor>Deborah L. McGuinness</terms:contributor>
+        <terms:contributor>Morgan Foreman</terms:contributor>
+        <terms:contributor>Oshani Seneviratne</terms:contributor>
+        <terms:creator>Shruthi Chari</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users&apos; situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.</terms:description>
         <terms:license>Copyright 2019 IBM Research and Rensselaer Polytechnic Institute
 
 			Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
@@ -48,7 +47,8 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.</terms:license>
-        <terms:contributor>Oshani Seneviratne</terms:contributor>
+        <terms:title>Ontology of Explanations</terms:title>
+        <rdfs:label>Explanations Ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -807,7 +807,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#FactInSupportOfA"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Fact"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -819,7 +819,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#FoilInSupportOfB"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Foil"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1031,24 +1031,24 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#FactInSupportOfA -->
+    <!-- https://purl.org/heals/eo#Fact -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#FactInSupportOfA">
+    <owl:Class rdf:about="https://purl.org/heals/eo#Fact">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#knowledge"/>
-        <dc:description>inputs and other considerations that led to a system recommendation</dc:description>
+        <dc:description>inputs and other considerations that led to a system recommendation that did occur</dc:description>
         <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
-        <rdfs:label>Factual Knowledge that supports recommendation A</rdfs:label>
+        <rdfs:label>Fact</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://purl.org/heals/eo#FoilInSupportOfB -->
+    <!-- https://purl.org/heals/eo#Foil -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#FoilInSupportOfB">
+    <owl:Class rdf:about="https://purl.org/heals/eo#Foil">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#knowledge"/>
-        <dc:description>facts that would have/led to a system recommendation B</dc:description>
+        <dc:description>facts that would have led to a system recommendation that could have occured</dc:description>
         <rdfs:isDefinedBy>Daniel Gruen</rdfs:isDefinedBy>
-        <rdfs:label>Factual Knowledge that supports a system recommendation B</rdfs:label>
+        <rdfs:label>Foil</rdfs:label>
     </owl:Class>
     
 
@@ -1447,9 +1447,85 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdfs:label>User</rdfs:label>
         <skos:definition>the person that receives and ultimately uses the good, service, or technology</skos:definition>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo#AITaskExample -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#AITaskExample">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
+        <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#ContextualKnowledgePatientA -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContextualKnowledgePatientA">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <rdfs:label>Patient has hyperglycemia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#ContrastiveExpInstance -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Contrastive_Explanation"/>
+        <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#ContrastiveQuestion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>&quot;Why Drug A over Drug B?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#GuidelineEvidence -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#GuidelineEvidence">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ScientificKnowledge"/>
+        <rdfs:label>Drug B is a preferred drug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#HyperglycemiaPatient -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#HyperglycemiaPatient">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
+        <rdfs:label>Patient A with a condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExp -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+        <rdfs:label>Drug A is not sufficient for this patient</rdfs:label>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
