@@ -1,24 +1,24 @@
-@prefix : <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#> .
+@prefix : <https://purl.org/heals/eo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> .
+@base <https://purl.org/heals/eo> .
 
-<http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology> rdf:type owl:Ontology ;
-                                                                                  owl:versionIRI <http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0> ;
-                                                                                  owl:imports <http://semanticscience.org/ontology/sio.owl> ,
-                                                                                              <https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl> ,
-                                                                                              <https://www.w3.org/ns/prov-o#> ;
-                                                                                  <http://purl.org/dc/terms/contributor> "Amar K. Das" ,
-                                                                                                                         "Daniel M. Gruen" ,
-                                                                                                                         "Deborah L. McGuinness" ,
-                                                                                                                         "Morgan Foreman" ,
-                                                                                                                         "Oshani Seneviratne" ;
-                                                                                  <http://purl.org/dc/terms/creator> "Shruthi Chari" ;
-                                                                                  <http://purl.org/dc/terms/description> "A simple ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. We develop this resource mainly for system designers guiding them to think about the available AI methods and reasoning tasks within their system that would be capable of generating explanations to suit the end-users' situation and requirements. We model attributes which are directly included in explanations and others that would help in their process of generation. We have used this schema to model different explanation types that address a range of questions each and their generational needs. We welcome feedback on extending this ontology to help in ontology generation in different use cases." ;
-                                                                                  <http://purl.org/dc/terms/license> """Copyright 2019 IBM Research and Rensselaer Polytechnic Institute
+<https://purl.org/heals/eo> rdf:type owl:Ontology ;
+                             owl:versionIRI <https://purl.org/heals/eo/1.0.0> ;
+                             owl:imports <http://semanticscience.org/ontology/sio.owl> ,
+                                         <https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl> ,
+                                         <https://www.w3.org/ns/prov-o#> ;
+                             <http://purl.org/dc/terms/contributor> "Amar K. Das" ,
+                                                                    "Daniel M. Gruen" ,
+                                                                    "Deborah L. McGuinness" ,
+                                                                    "Morgan Foreman" ,
+                                                                    "Oshani Seneviratne" ;
+                             <http://purl.org/dc/terms/creator> "Shruthi Chari" ;
+                             <http://purl.org/dc/terms/description> "A simple ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. We develop this resource mainly for system designers guiding them to think about the available AI methods and reasoning tasks within their system that would be capable of generating explanations to suit the end-users' situation and requirements. We model attributes which are directly included in explanations and others that would help in their process of generation. We have used this schema to model different explanation types that address a range of questions each and their generational needs. We welcome feedback on extending this ontology to help in ontology generation in different use cases." ;
+                             <http://purl.org/dc/terms/license> """Copyright 2019 IBM Research and Rensselaer Polytechnic Institute
 
 			Licensed under the Apache License, Version 2.0 (the \"License\");
 	you may not use this file except in compliance with the License.
@@ -31,15 +31,33 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.""" ;
-                                                                                  <http://purl.org/dc/terms/title> "Ontology of Explanations" ;
-                                                                                  rdfs:label "Explanations Ontology" .
+                             <http://purl.org/dc/terms/title> "Ontology of Explanations" ;
+                             rdfs:label "Explanations Ontology" .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/IAO_0000115
+<http://purl.obolibrary.org/obo/IAO_0000115> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000115> "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ,
+                                                                                          "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en ;
+                                             rdfs:label "definition"@en ,
+                                                        "definition" ,
+                                                        "textual definition" .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "imported from"@en .
+
+
 ###  http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#definition
@@ -54,57 +72,57 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses
+###  http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
+
+
+###  https://purl.org/heals/eo#addresses
 :addresses rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000294> ;
            <http://purl.org/dc/elements/1.1/description> "a addresses b if a provides an answer to b" ;
            rdfs:label "addresses" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks
+###  https://purl.org/heals/eo#asks
 :asks rdf:type owl:ObjectProperty ;
       rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000365> ;
       <http://purl.org/dc/elements/1.1/description> "a property between a creator and the question that the creator poses" ;
       rdfs:label "asks" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes
+###  https://purl.org/heals/eo#consumes
 :consumes rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_001403> ;
           <http://purl.org/dc/elements/1.1/description> "a property that associates a person entity with the object they consume" ;
           rdfs:label "is consumer of" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor
+###  https://purl.org/heals/eo#hasPreferenceFor
 :hasPreferenceFor rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000628> ;
                   <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" ;
                   rdfs:label "has preference for" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation
+###  https://purl.org/heals/eo#hasPresentation
 :hasPresentation rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000008> ;
                  <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" ;
                  rdfs:label "has presentation" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements
+###  https://purl.org/heals/eo#implements
 :implements rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000132> ;
             <http://purl.org/dc/elements/1.1/description> "a property that associates a process with an object/informational content entity that it addresses" ;
             rdfs:label "implements" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess
+###  https://purl.org/heals/eo#possess
 :possess rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000223> ;
          <http://purl.org/dc/elements/1.1/description> "maps a property with its associated object" ;
          rdfs:label "possess" .
-
-
-###  http://www.w3.org/ns/prov#wasGeneratedBy
-<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -146,6 +164,97 @@
                                                               <http://www.w3.org/2004/02/skos/core#definition> "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs" .
 
 
+###  http://purl.obolibrary.org/obo/OMIT_0001177
+<http://purl.obolibrary.org/obo/OMIT_0001177> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Computer Heuristics" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0001480
+<http://purl.obolibrary.org/obo/OMIT_0001480> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Machine Learning" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0001483
+<http://purl.obolibrary.org/obo/OMIT_0001483> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0001480> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Supervised Machine Learning" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0001486
+<http://purl.obolibrary.org/obo/OMIT_0001486> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0001480> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Unsupervised Machine Learning" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0006327
+<http://purl.obolibrary.org/obo/OMIT_0006327> rdf:type owl:Class ;
+                                              rdfs:subClassOf :KnowledgeBasedSystems ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Expert Systems" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0010354
+<http://purl.obolibrary.org/obo/OMIT_0010354> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Natural Language Processing" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0013278
+<http://purl.obolibrary.org/obo/OMIT_0013278> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Robotics" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0017046
+<http://purl.obolibrary.org/obo/OMIT_0017046> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Neural Networks (Computer)" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0017538
+<http://purl.obolibrary.org/obo/OMIT_0017538> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Fuzzy Logic" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0024712
+<http://purl.obolibrary.org/obo/OMIT_0024712> rdf:type owl:Class ;
+                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Knowledge Bases" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0027764
+<http://purl.obolibrary.org/obo/OMIT_0027764> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0001483> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Support Vector Machine" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0028314
+<http://purl.obolibrary.org/obo/OMIT_0028314> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0028401> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Gene Ontology" .
+
+
+###  http://purl.obolibrary.org/obo/OMIT_0028401
+<http://purl.obolibrary.org/obo/OMIT_0028401> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0024712> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
+                                              rdfs:label "Biological Ontologies" .
+
+
 ###  http://semanticscience.org/resource/SIO_000010
 <http://semanticscience.org/resource/SIO_000010> rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                    owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> ;
@@ -160,7 +269,7 @@
                                                                      ] .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask
+###  https://purl.org/heals/eo#AITask
 :AITask rdf:type owl:Class ;
         rdfs:subClassOf <http://semanticscience.org/resource/SIO_000649> ,
                         [ rdf:type owl:Restriction ;
@@ -176,12 +285,12 @@
                           owl:someValuesFrom :Reasoning_Mode
                         ] ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :implements ;
-                          owl:someValuesFrom <http://semanticscience.org/resource/SIO_000085>
-                        ] ,
-                        [ rdf:type owl:Restriction ;
                           owl:onProperty <http://www.w3.org/ns/prov#used> ;
                           owl:someValuesFrom :ArtificialIntelligenceMethod
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :implements ;
+                          owl:someValuesFrom <http://semanticscience.org/resource/SIO_000085>
                         ] ;
         <http://purl.org/dc/elements/1.1/description> "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem" ;
         <http://purl.org/dc/terms/source> "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289." ,
@@ -190,14 +299,22 @@
         <http://www.w3.org/2004/02/skos/core#example> "Deductive task" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod
+###  https://purl.org/heals/eo#AbductiveTask
+:AbductiveTask rdf:type owl:Class ;
+               rdfs:subClassOf :AITask ;
+               <http://purl.org/dc/elements/1.1/description> "Abduction is a task which tries to identify those initial conditions which deduction starts from, given general laws and some singular statements called final states." ;
+               <http://purl.org/dc/terms/source> "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg." ;
+               rdfs:label "Abductive Task" .
+
+
+###  https://purl.org/heals/eo#ArtificialIntelligenceMethod
 :ArtificialIntelligenceMethod rdf:type owl:Class ;
                               rdfs:subClassOf <http://semanticscience.org/resource/SIO_000667> ;
                               <http://purl.org/dc/elements/1.1/description> "a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value" ;
                               rdfs:label "AI Method" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation
+###  https://purl.org/heals/eo#Case_Based_Explanation
 :Case_Based_Explanation rdf:type owl:Class ;
                         rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                         [ rdf:type owl:Restriction ;
@@ -238,7 +355,7 @@ current situation.""" ;
                         <http://www.w3.org/2004/02/skos/core#example> "Addresses question of the form, \"To what other situations has this recommendation been applied?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl
+###  https://purl.org/heals/eo#ClinicalPearl
 :ClinicalPearl rdf:type owl:Class ;
                rdfs:subClassOf :Everyday ;
                <http://purl.org/dc/terms/source> "Lorin, M.I., Palazzi, D.L., Turner, T.L., Ward, M.A.: What is a clinical pearl andwhat is its role in medical education? Medical teacher30(9-10), 870–874 (2008)" ;
@@ -247,7 +364,7 @@ current situation.""" ;
                <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a fact a system should consider when prescribing this medication?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation
+###  https://purl.org/heals/eo#Contextual_Explanation
 :Contextual_Explanation rdf:type owl:Class ;
                         rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -288,7 +405,7 @@ technical and physical environments” (I.O. for standardization).""" ;
                         <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What broader information about the current situation prompted the suggestion of this recommendation?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge
+###  https://purl.org/heals/eo#Contextual_Knowledge
 :Contextual_Knowledge rdf:type owl:Class ;
                       rdfs:subClassOf :knowledge ;
                       <http://purl.org/dc/terms/description> """Contextual knowledge is all the knowledge that is relevant and can be mobilized to understand a given situated decision problem. By \"situated\" we mean in given, dated, well specified circumstances (Clancey 1991). Contextual knowledge is evoked by situations and events, and loosely
@@ -299,7 +416,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                       <http://www.w3.org/2004/02/skos/core#definition> "all the knowledge that is relevant and can be mobilized to understand a given situated decision problem." .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation
+###  https://purl.org/heals/eo#Contrastive_Explanation
 :Contrastive_Explanation rdf:type owl:Class ;
                          rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                          [ owl:intersectionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -338,7 +455,7 @@ event that did not occur), the output of interest.""" ;
                          <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why administer this new drug over the one I would typically prescribe?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual
+###  https://purl.org/heals/eo#Counterfactual
 :Counterfactual rdf:type owl:Class ;
                 rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                 [ rdf:type owl:Restriction ;
@@ -370,7 +487,23 @@ event that did not occur), the output of interest.""" ;
                 <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context
+###  https://purl.org/heals/eo#DecisionTree
+:DecisionTree rdf:type owl:Class ;
+              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0001483> ;
+              <http://purl.org/dc/terms/source> "https://en.wikipedia.org/wiki/Decision_tree" ;
+              rdfs:label "Decision Tree" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements." .
+
+
+###  https://purl.org/heals/eo#DeductiveTask
+:DeductiveTask rdf:type owl:Class ;
+               rdfs:subClassOf :AITask ;
+               <http://purl.org/dc/elements/1.1/description> "Deduction allows us to derive from each candidate hypothesis what one expects to be true (consequence) if that hypothesis is true" ;
+               <http://purl.org/dc/terms/source> "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg." ;
+               rdfs:label "Deductive Task" .
+
+
+###  https://purl.org/heals/eo#Environmental_Context
 :Environmental_Context rdf:type owl:Class ;
                        rdfs:subClassOf :Contextual_Knowledge ;
                        <http://purl.org/dc/elements/1.1/description> "deals with the physical aspects of the experimental situation" ;
@@ -378,7 +511,7 @@ event that did not occur), the output of interest.""" ;
                        rdfs:label "Environmental Context" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday
+###  https://purl.org/heals/eo#Everyday
 :Everyday rdf:type owl:Class ;
           rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                           [ rdf:type owl:Restriction ;
@@ -419,7 +552,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
           <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation
+###  https://purl.org/heals/eo#Evidence_Based_Explanation
 :Evidence_Based_Explanation rdf:type owl:Class ;
                             rdfs:subClassOf :scientificExplanation ,
                                             [ rdf:type owl:Restriction ;
@@ -440,7 +573,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                             <http://www.w3.org/2004/02/skos/core#example> "Address questions of the form, \"What studies support this recommendation?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge
+###  https://purl.org/heals/eo#ExperentialKnowledge
 :ExperentialKnowledge rdf:type owl:Class ;
                       rdfs:subClassOf :knowledge ;
                       <http://purl.org/dc/terms/source> "https://methods.sagepub.com/reference/sage-encyc-qualitative-research-methods/n162.xml" ;
@@ -450,7 +583,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                       <http://www.w3.org/2004/02/skos/core#definition> "information and wisdom gained from lived experience" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal
+###  https://purl.org/heals/eo#ExplanationGoal
 :ExplanationGoal rdf:type owl:Class ;
                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_000337> ;
                  <http://purl.org/dc/elements/1.1/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" ;
@@ -458,7 +591,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                  <http://www.w3.org/2004/02/skos/core#example> "educational" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality
+###  https://purl.org/heals/eo#ExplanationModality
 :ExplanationModality rdf:type owl:Class ;
                      rdfs:subClassOf <http://semanticscience.org/resource/SIO_000612> ;
                      <http://purl.org/dc/elements/1.1/description> "a particular form/media in which an explanation exists is expressed" ;
@@ -466,7 +599,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                      rdfs:label "Explanation Modality" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA
+###  https://purl.org/heals/eo#FactInSupportOfA
 :FactInSupportOfA rdf:type owl:Class ;
                   rdfs:subClassOf :knowledge ;
                   <http://purl.org/dc/elements/1.1/description> "inputs and other considerations that led to a system recommendation" ;
@@ -474,7 +607,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                   rdfs:label "Factual Knowledge that supports recommendation A" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB
+###  https://purl.org/heals/eo#FoilInSupportOfB
 :FoilInSupportOfB rdf:type owl:Class ;
                   rdfs:subClassOf :knowledge ;
                   <http://purl.org/dc/elements/1.1/description> "facts that would have/led to a system recommendation B" ;
@@ -482,7 +615,21 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                   rdfs:label "Factual Knowledge that supports a system recommendation B" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation
+###  https://purl.org/heals/eo#InductiveTask
+:InductiveTask rdf:type owl:Class ;
+               rdfs:subClassOf :AITask ;
+               <http://purl.org/dc/elements/1.1/description> "Induction is able to match single statement to single statement and, therefore, to match a single statement derived as a prediction from a hypothesis with a single statement describing a portion of the real state of airs in the patient." ;
+               <http://purl.org/dc/terms/source> "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg." ;
+               rdfs:label "Inductive Task" .
+
+
+###  https://purl.org/heals/eo#KnowledgeBasedSystems
+:KnowledgeBasedSystems rdf:type owl:Class ;
+                       rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                       rdfs:label "Knowledge based Systems" .
+
+
+###  https://purl.org/heals/eo#Mechanistic_Explanation
 :Mechanistic_Explanation rdf:type owl:Class ;
                          rdfs:subClassOf :scientificExplanation ,
                                          [ rdf:type owl:Restriction ;
@@ -502,7 +649,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                          <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a biological basis for this recommendation?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence
+###  https://purl.org/heals/eo#Numerical_Evidence
 :Numerical_Evidence rdf:type owl:Class ;
                     rdfs:subClassOf :knowledge ,
                                     [ rdf:type owl:Restriction ;
@@ -513,7 +660,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                     rdfs:label "Numerical Evidence" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode
+###  https://purl.org/heals/eo#Reasoning_Mode
 :Reasoning_Mode rdf:type owl:Class ;
                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
                 <http://purl.org/dc/elements/1.1/description> "a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks" ;
@@ -524,7 +671,7 @@ Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and
                 rdfs:label "Reasoning Mode" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge
+###  https://purl.org/heals/eo#ScientificKnowledge
 :ScientificKnowledge rdf:type owl:Class ;
                      rdfs:subClassOf :knowledge ;
                      <http://purl.org/dc/terms/source> "https://www.thefreedictionary.com/scientific+knowledge" ;
@@ -532,7 +679,7 @@ Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and
                      <http://www.w3.org/2004/02/skos/core#definition> "knowledge accumulated by systematic study and organized by general principles" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod
+###  https://purl.org/heals/eo#ScientificMethod
 :ScientificMethod rdf:type owl:Class ;
                   rdfs:subClassOf <http://semanticscience.org/resource/SIO_000747> ;
                   <http://purl.org/dc/elements/1.1/description> "involves a question and suggested explanation (hypothesis) based on observation, followed by the careful design and execution of controlled experiments, and finally validation, refinement or rejection of this hypothesis." ;
@@ -540,7 +687,7 @@ Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and
                   rdfs:label "Scientific Method" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based
+###  https://purl.org/heals/eo#Simulation_Based
 :Simulation_Based rdf:type owl:Class ;
                   rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                   [ rdf:type owl:Restriction ;
@@ -588,7 +735,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                   <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What would happen if this recommendation is followed?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation
+###  https://purl.org/heals/eo#Statistical_Explanation
 :Statistical_Explanation rdf:type owl:Class ;
                          rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                          [ rdf:type owl:Restriction ;
@@ -610,7 +757,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                          <http://www.w3.org/2004/02/skos/core#example> "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace
+###  https://purl.org/heals/eo#SystemTrace
 :SystemTrace rdf:type owl:Class ;
              rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
              <http://purl.org/dc/elements/1.1/description> "sequence of underlying system steps and rules that led to a system recommendation" ;
@@ -618,7 +765,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
              rdfs:label "System Trace" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based
+###  https://purl.org/heals/eo#Trace_Based
 :Trace_Based rdf:type owl:Class ;
              rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                              [ rdf:type owl:Restriction ;
@@ -629,7 +776,11 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                                                            owl:someValuesFrom [ owl:intersectionOf ( :AITask
                                                                                                                      [ rdf:type owl:Restriction ;
                                                                                                                        owl:onProperty <http://www.w3.org/ns/prov#used> ;
-                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                       owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                                                   owl:unionOf ( :DecisionTree
+                                                                                                                                                                                 :KnowledgeBasedSystems
+                                                                                                                                                                               )
+                                                                                                                                                                 ]
                                                                                                                                                                  [ rdf:type owl:Restriction ;
                                                                                                                                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
                                                                                                                                                                    owl:someValuesFrom :SystemTrace
@@ -653,7 +804,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
              <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What steps were taken by the system to generate this recommendation?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context
+###  https://purl.org/heals/eo#User_Context
 :User_Context rdf:type owl:Class ;
               rdfs:subClassOf :Contextual_Knowledge ,
                               [ rdf:type owl:Restriction ;
@@ -665,13 +816,13 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
               rdfs:label "User Context" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge
+###  https://purl.org/heals/eo#knowledge
 :knowledge rdf:type owl:Class ;
            rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> ;
            rdfs:label "Knowledge" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record
+###  https://purl.org/heals/eo#object_record
 :object_record rdf:type owl:Class ;
                rdfs:subClassOf <http://semanticscience.org/resource/SIO_000069> ,
                                [ rdf:type owl:Restriction ;
@@ -683,7 +834,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                rdfs:label "Object Record" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation
+###  https://purl.org/heals/eo#scientificExplanation
 :scientificExplanation rdf:type owl:Class ;
                        rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
                                        [ rdf:type owl:Restriction ;
@@ -721,7 +872,7 @@ vol. 267, pp. 1–38, 2019.""" ;
                        <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is the biological basis for this recommendation?\"" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation
+###  https://purl.org/heals/eo#system_recommendation
 :system_recommendation rdf:type owl:Class ;
                        rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ;
                        rdfs:isDefinedBy "Shruthi Chari" ;
@@ -729,7 +880,7 @@ vol. 267, pp. 1–38, 2019.""" ;
                        <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
 
 
-###  http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user
+###  https://purl.org/heals/eo#user
 :user rdf:type owl:Class ;
       rdfs:subClassOf <http://semanticscience.org/resource/SIO_000498> ,
                       [ rdf:type owl:Restriction ;

@@ -14,7 +14,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000229"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid100",
@@ -33,7 +33,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record"
+    "@id" : "https://purl.org/heals/eo#object_record"
   } ]
 }, {
   "@id" : "_:genid104",
@@ -42,7 +42,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
   "@id" : "_:genid106",
@@ -61,7 +61,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"
+    "@id" : "https://purl.org/heals/eo#user"
   } ]
 }, {
   "@id" : "_:genid11",
@@ -70,7 +70,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000230"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
   "@id" : "_:genid110",
@@ -79,7 +79,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"
+    "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
   } ]
 }, {
   "@id" : "_:genid112",
@@ -95,7 +95,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence"
+      "@id" : "https://purl.org/heals/eo#Numerical_Evidence"
     }, {
       "@id" : "_:genid115"
     } ]
@@ -107,7 +107,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid117",
@@ -123,7 +123,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#system_recommendation"
     }, {
       "@id" : "_:genid120"
     } ]
@@ -135,7 +135,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode"
+    "@id" : "https://purl.org/heals/eo#Reasoning_Mode"
   } ]
 }, {
   "@id" : "_:genid120",
@@ -151,7 +151,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"
+      "@id" : "https://purl.org/heals/eo#AITask"
     }, {
       "@id" : "_:genid123"
     } ]
@@ -170,7 +170,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"
+      "@id" : "_:genid128"
     }, {
       "@id" : "_:genid126"
     } ]
@@ -182,53 +182,44 @@
     "@id" : "http://semanticscience.org/resource/SIO_000229"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace"
+    "@id" : "https://purl.org/heals/eo#SystemTrace"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#DecisionTree"
+    }, {
+      "@id" : "https://purl.org/heals/eo#KnowledgeBasedSystems"
+    } ]
   } ]
 }, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements"
+    "@id" : "http://www.w3.org/ns/prov#used"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000085"
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
   } ]
 }, {
-  "@id" : "_:genid130",
+  "@id" : "_:genid133",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"
+    "@id" : "https://purl.org/heals/eo#user"
   } ]
 }, {
-  "@id" : "_:genid131",
+  "@id" : "_:genid134",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000231"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"
-  } ]
-}, {
-  "@id" : "_:genid132",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid133"
-  } ]
-}, {
-  "@id" : "_:genid133",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid137"
-    }, {
-      "@id" : "_:genid135"
-    } ]
+    "@id" : "https://purl.org/heals/eo#AITask"
   } ]
 }, {
   "@id" : "_:genid135",
@@ -237,48 +228,67 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "_:genid136"
   } ]
 }, {
-  "@id" : "_:genid137",
+  "@id" : "_:genid136",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge"
+      "@id" : "_:genid140"
     }, {
-      "@id" : "_:genid139"
+      "@id" : "_:genid138"
     } ]
   } ]
 }, {
-  "@id" : "_:genid139",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid143"
-    }, {
-      "@id" : "_:genid141"
-    } ]
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/prov#used"
+    "@id" : "https://purl.org/heals/eo#implements"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod"
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
   } ]
 }, {
-  "@id" : "_:genid141",
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+    }, {
+      "@id" : "_:genid142"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid146"
+    }, {
+      "@id" : "_:genid144"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid144",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"
+    "@id" : "https://purl.org/heals/eo#ScientificMethod"
   } ]
 }, {
-  "@id" : "_:genid143",
+  "@id" : "_:genid146",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
@@ -287,49 +297,22 @@
     "@id" : "http://semanticscience.org/resource/SIO_001066"
   } ]
 }, {
-  "@id" : "_:genid145",
+  "@id" : "_:genid148",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://linkedu.eu/dedalo/data/interacts"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"
+    "@id" : "https://purl.org/heals/eo#AITask"
   } ]
 }, {
-  "@id" : "_:genid146",
+  "@id" : "_:genid149",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
-  } ]
-}, {
-  "@id" : "_:genid147",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000085"
-  } ]
-}, {
-  "@id" : "_:genid148",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
-  } ]
-}, {
-  "@id" : "_:genid149",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
   } ]
 }, {
   "@id" : "_:genid15",
@@ -339,6 +322,33 @@
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "_:genid150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#asks"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#consumes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ]
+}, {
+  "@id" : "_:genid152",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#possess"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
   "@id" : "_:genid16",
@@ -364,7 +374,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#system_recommendation"
     }, {
       "@id" : "_:genid21"
     } ]
@@ -376,7 +386,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -392,7 +402,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"
+      "@id" : "https://purl.org/heals/eo#AITask"
     }, {
       "@id" : "_:genid24"
     } ]
@@ -404,7 +414,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000230"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record"
+    "@id" : "https://purl.org/heals/eo#object_record"
   } ]
 }, {
   "@id" : "_:genid28",
@@ -423,7 +433,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid30",
@@ -449,7 +459,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"
+      "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
     }, {
       "@id" : "_:genid35"
     } ]
@@ -468,7 +478,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"
+      "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
     }, {
       "@id" : "_:genid40"
     } ]
@@ -480,7 +490,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000008"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal"
+    "@id" : "https://purl.org/heals/eo#ExplanationGoal"
   } ]
 }, {
   "@id" : "_:genid40",
@@ -498,7 +508,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid44",
@@ -527,7 +537,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB"
+    "@id" : "https://purl.org/heals/eo#FoilInSupportOfB"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -536,7 +546,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"
+    "@id" : "https://purl.org/heals/eo#AITask"
   } ]
 }, {
   "@id" : "_:genid50",
@@ -545,7 +555,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid52",
@@ -564,7 +574,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA"
+    "@id" : "https://purl.org/heals/eo#FactInSupportOfA"
   } ]
 }, {
   "@id" : "_:genid56",
@@ -573,7 +583,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#system_recommendation"
   } ]
 }, {
   "@id" : "_:genid57",
@@ -589,7 +599,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#system_recommendation"
     }, {
       "@id" : "_:genid60"
     } ]
@@ -598,7 +608,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses"
+    "@id" : "https://purl.org/heals/eo#addresses"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000085"
@@ -620,7 +630,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record"
+    "@id" : "https://purl.org/heals/eo#object_record"
   } ]
 }, {
   "@id" : "_:genid64",
@@ -629,7 +639,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
   "@id" : "_:genid66",
@@ -645,7 +655,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#system_recommendation"
     }, {
       "@id" : "_:genid69"
     } ]
@@ -663,10 +673,10 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation"
+    "@id" : "https://purl.org/heals/eo#hasPresentation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality"
+    "@id" : "https://purl.org/heals/eo#ExplanationModality"
   } ]
 }, {
   "@id" : "_:genid70",
@@ -683,7 +693,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge"
+      "@id" : "https://purl.org/heals/eo#ExperentialKnowledge"
     }, {
       "@id" : "_:genid74"
     } ]
@@ -695,7 +705,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"
+    "@id" : "https://purl.org/heals/eo#user"
   } ]
 }, {
   "@id" : "_:genid77",
@@ -714,7 +724,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000668"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user"
+    "@id" : "https://purl.org/heals/eo#user"
   } ]
 }, {
   "@id" : "_:genid8",
@@ -739,7 +749,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge"
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
     }, {
       "@id" : "_:genid85"
     } ]
@@ -767,7 +777,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge"
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
     }, {
       "@id" : "_:genid90"
     } ]
@@ -788,7 +798,7 @@
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod"
+    "@id" : "https://purl.org/heals/eo#ScientificMethod"
   } ]
 }, {
   "@id" : "_:genid92",
@@ -813,7 +823,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#system_recommendation"
     }, {
       "@id" : "_:genid98"
     }, {
@@ -827,7 +837,7 @@
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask"
+    "@id" : "https://purl.org/heals/eo#AITask"
   } ]
 }, {
   "@id" : "_:genid98",
@@ -868,6 +878,187 @@
     "@value" : "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs"
   } ]
 }, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@language" : "en",
+    "@value" : "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+  }, {
+    "@language" : "en",
+    "@value" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "definition"
+  }, {
+    "@value" : "definition"
+  }, {
+    "@value" : "textual definition"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "imported from"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001177",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Computer Heuristics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001480",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Machine Learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Supervised Machine Learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001480"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001486",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unsupervised Machine Learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001480"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0006327",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expert Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#KnowledgeBasedSystems"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0010354",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Natural Language Processing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0013278",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Robotics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0017046",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Neural Networks (Computer)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0017538",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fuzzy Logic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0024712",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge Bases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0027764",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Support Vector Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0028314",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gene Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0028401"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0028401",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biological Ontologies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0024712"
+  } ]
+}, {
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -881,7 +1072,19 @@
     "@id" : "_:genid9"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology",
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://purl.org/heals/eo",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Amar K. Das"
@@ -917,10 +1120,10 @@
     "@id" : "https://www.w3.org/ns/prov-o#"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology/1.0.0"
+    "@id" : "https://purl.org/heals/eo/1.0.0"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#AITask",
+  "@id" : "https://purl.org/heals/eo#AITask",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem"
@@ -950,7 +1153,22 @@
     "@value" : "Deductive task"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ArtificialIntelligenceMethod",
+  "@id" : "https://purl.org/heals/eo#AbductiveTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Abduction is a task which tries to identify those initial conditions which deduction starts from, given general laws and some singular statements called final states."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abductive Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value"
@@ -962,7 +1180,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000667"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Case_Based_Explanation",
+  "@id" : "https://purl.org/heals/eo#Case_Based_Explanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Case-based explanations contain results that “are based on actual prior cases that can be presented to the user to provide\ncompelling support for the system’s conclusions” (Cunningham et al., 2003). Borrowing from Leake, 1988 and Ahmed, 2015, we opine\nthat an AI system generating case-based explanations needs to remember and adapt explanations of similar prior cases (Leake, 1988), or, “has to reason from experiences (old cases) in an effort to solve\nproblems, critique solutions and explain anomalous situation” (Ahmed, 2015). Case-based explanations can involve analogical reasoning, relying on similarities between features of the case and of the\ncurrent situation."
@@ -989,7 +1207,7 @@
     "@value" : "Addresses question of the form, \"To what other situations has this recommendation been applied?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ClinicalPearl",
+  "@id" : "https://purl.org/heals/eo#ClinicalPearl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "Lorin, M.I., Palazzi, D.L., Turner, T.L., Ward, M.A.: What is a clinical pearl andwhat is its role in medical education? Medical teacher30(9-10), 870–874 (2008)"
@@ -998,7 +1216,7 @@
     "@value" : "Clinical Pearls"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday"
+    "@id" : "https://purl.org/heals/eo#Everyday"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "small bits of free-standing, clinically relevant information based on experience or observation"
@@ -1007,7 +1225,7 @@
     "@value" : "Addresses a question of the form, \"What is a fact a system should consider when prescribing this medication?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Explanation",
+  "@id" : "https://purl.org/heals/eo#Contextual_Explanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Contextual explanations are those that refer to information\nabout items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. Providing such information requires that a system be “context-aware,” and can include information about a “user’s tasks, significant user attributes, organizational environment, and\ntechnical and physical environments” (I.O. for standardization)."
@@ -1030,7 +1248,7 @@
     "@value" : "Addresses a question of the form, \"What broader information about the current situation prompted the suggestion of this recommendation?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge",
+  "@id" : "https://purl.org/heals/eo#Contextual_Knowledge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Contextual knowledge is all the knowledge that is relevant and can be mobilized to understand a given situated decision problem. By \"situated\" we mean in given, dated, well specified circumstances (Clancey 1991). Contextual knowledge is evoked by situations and events, and loosely\ntied to a task or a goal. However, when the task becomes more precise (e.g., an event occurs), a large part of this contextual knowledge can be proceduralized according to the current focus of the decision making."
@@ -1044,13 +1262,13 @@
     "@value" : "Contextual Knowledge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "all the knowledge that is relevant and can be mobilized to understand a given situated decision problem."
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contrastive_Explanation",
+  "@id" : "https://purl.org/heals/eo#Contrastive_Explanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "As described\nby (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present\ncontrasts between the fact (the event that did occur), the given output, and the foil (the\nevent that did not occur), the output of interest."
@@ -1075,7 +1293,7 @@
     "@value" : "Addresses a question of the form, \"Why administer this new drug over the one I would typically prescribe?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Counterfactual",
+  "@id" : "https://purl.org/heals/eo#Counterfactual",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@value" : "Amar Das"
@@ -1106,7 +1324,37 @@
     "@value" : "Addresses a question of the form, \"What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Environmental_Context",
+  "@id" : "https://purl.org/heals/eo#DecisionTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Decision_tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Decision Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements."
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#DeductiveTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Deduction allows us to derive from each candidate hypothesis what one expects to be true (consequence) if that hypothesis is true"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Deductive Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Environmental_Context",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "deals with the physical aspects of the experimental situation"
@@ -1118,10 +1366,10 @@
     "@value" : "Environmental Context"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"
+    "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Everyday",
+  "@id" : "https://purl.org/heals/eo#Everyday",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Accounts of the real world that appeal to the user based on their general\nunderstanding and knowledge [(McNeil and Krajack, 2008) of how the world works, and that help them understand why particular facts (events, properties, decisions, etc.) occurred (Miller, 2019)."
@@ -1146,7 +1394,7 @@
     "@value" : "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Evidence_Based_Explanation",
+  "@id" : "https://purl.org/heals/eo#Evidence_Based_Explanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "account that articulates how or why an event occured that is supported by evidence and scientific ideas"
@@ -1161,7 +1409,7 @@
     "@value" : "Evidence Based Explanation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation"
+    "@id" : "https://purl.org/heals/eo#scientificExplanation"
   }, {
     "@id" : "_:genid82"
   } ],
@@ -1169,7 +1417,7 @@
     "@value" : "Address questions of the form, \"What studies support this recommendation?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExperentialKnowledge",
+  "@id" : "https://purl.org/heals/eo#ExperentialKnowledge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "https://methods.sagepub.com/reference/sage-encyc-qualitative-research-methods/n162.xml"
@@ -1183,13 +1431,13 @@
     "@value" : "Experential Knowledge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "information and wisdom gained from lived experience"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationGoal",
+  "@id" : "https://purl.org/heals/eo#ExplanationGoal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "the impact that an explanation has on a user or the purpose it was designed to achieve"
@@ -1204,7 +1452,7 @@
     "@value" : "educational"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ExplanationModality",
+  "@id" : "https://purl.org/heals/eo#ExplanationModality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a particular form/media in which an explanation exists is expressed"
@@ -1219,7 +1467,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000612"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FactInSupportOfA",
+  "@id" : "https://purl.org/heals/eo#FactInSupportOfA",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "inputs and other considerations that led to a system recommendation"
@@ -1231,10 +1479,10 @@
     "@value" : "Factual Knowledge that supports recommendation A"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#FoilInSupportOfB",
+  "@id" : "https://purl.org/heals/eo#FoilInSupportOfB",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "facts that would have/led to a system recommendation B"
@@ -1246,10 +1494,34 @@
     "@value" : "Factual Knowledge that supports a system recommendation B"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Mechanistic_Explanation",
+  "@id" : "https://purl.org/heals/eo#InductiveTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Induction is able to match single statement to single statement and, therefore, to match a single statement derived as a prediction from a hypothesis with a single statement describing a portion of the real state of airs in the patient."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Inductive Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#KnowledgeBasedSystems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge based Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Mechanistic_Explanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a mechanistic explanation involves presenting a model of the mechanism (the explanans) responsible for some phenomenon of interest (the explanandum). A mechanism is an entity or structure, such as an organ (though a mechanism need not be delineated by such clear physical boundaries) that performs a function by virtue of its component parts, operations and, importantly, their spatial and temporal organisation (Bechtel & Abrahamsen 2005: 421–23). That is, a mechanism does not just consist in its physical parts, but in the ‘organised interplay’ of the activities of those parts (Soom 2012: 656). Examples of phenomena (i.e.,functions or behaviours performed by mechanisms) include such things as the heart’s pumping blood, metabolism and memory."
@@ -1261,7 +1533,7 @@
     "@value" : "Mechanistic Explanation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation"
+    "@id" : "https://purl.org/heals/eo#scientificExplanation"
   }, {
     "@id" : "_:genid87"
   } ],
@@ -1269,7 +1541,7 @@
     "@value" : "Addresses a question of the form, \"What is a biological basis for this recommendation?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Numerical_Evidence",
+  "@id" : "https://purl.org/heals/eo#Numerical_Evidence",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a statistical value that backs and quantifies a recommendation"
@@ -1278,12 +1550,12 @@
     "@value" : "Numerical Evidence"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   }, {
     "@id" : "_:genid92"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Reasoning_Mode",
+  "@id" : "https://purl.org/heals/eo#Reasoning_Mode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks"
@@ -1301,7 +1573,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000097"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificKnowledge",
+  "@id" : "https://purl.org/heals/eo#ScientificKnowledge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "https://www.thefreedictionary.com/scientific+knowledge"
@@ -1310,13 +1582,13 @@
     "@value" : "Scientific Knowledge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "knowledge accumulated by systematic study and organized by general principles"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#ScientificMethod",
+  "@id" : "https://purl.org/heals/eo#ScientificMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "involves a question and suggested explanation (hypothesis) based on observation, followed by the careful design and execution of controlled experiments, and finally validation, refinement or rejection of this hypothesis."
@@ -1331,7 +1603,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000747"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Simulation_Based",
+  "@id" : "https://purl.org/heals/eo#Simulation_Based",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Simulation-based explanations are those based on an imagined or implemented imitation of a system or process and the results that emerge from similar inputs. As simulations can often be run numerous\ntimes (e.g. Monte Carlo simulations), and the mechanisms in the simulation can often be observed and traced directly, simulation-based explanations can have elements of statistical and trace-based explanations. Heal suggests that these explanations (Heals, 1996) contain facts that humans would use to determine an outcome in a specified case, and these explanations are intended to “replace and amplify real experiences with guided ones, often “immersive” in nature, that evoke or replicate substantial aspects of the real world in a fully interactive fashion” (Lateef, 2010)"
@@ -1356,7 +1628,7 @@
     "@value" : "Addresses a question of the form, \"What would happen if this recommendation is followed?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Statistical_Explanation",
+  "@id" : "https://purl.org/heals/eo#Statistical_Explanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.\n(Hempel, 1962) add that a particularly high probability allows the outcome to be expected with practical certainty in any one case where the specified conditions occur."
@@ -1379,7 +1651,7 @@
     "@value" : "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#SystemTrace",
+  "@id" : "https://purl.org/heals/eo#SystemTrace",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "sequence of underlying system steps and rules that led to a system recommendation"
@@ -1394,7 +1666,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000097"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Trace_Based",
+  "@id" : "https://purl.org/heals/eo#Trace_Based",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009)."
@@ -1417,7 +1689,7 @@
     "@value" : "Addresses a question of the form, \"What steps were taken by the system to generate this recommendation?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#User_Context",
+  "@id" : "https://purl.org/heals/eo#User_Context",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby."
@@ -1429,12 +1701,12 @@
     "@value" : "User Context"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#Contextual_Knowledge"
+    "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
   }, {
-    "@id" : "_:genid130"
+    "@id" : "_:genid133"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#addresses",
+  "@id" : "https://purl.org/heals/eo#addresses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a addresses b if a provides an answer to b"
@@ -1446,7 +1718,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000294"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#asks",
+  "@id" : "https://purl.org/heals/eo#asks",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a property between a creator and the question that the creator poses"
@@ -1458,7 +1730,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000365"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#consumes",
+  "@id" : "https://purl.org/heals/eo#consumes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a property that associates a person entity with the object they consume"
@@ -1470,7 +1742,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_001403"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPreferenceFor",
+  "@id" : "https://purl.org/heals/eo#hasPreferenceFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a property that captures what form of output an entity a is presented in"
@@ -1482,7 +1754,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000628"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#hasPresentation",
+  "@id" : "https://purl.org/heals/eo#hasPresentation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a property that captures what form of output an entity a is presented in"
@@ -1494,7 +1766,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000008"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#implements",
+  "@id" : "https://purl.org/heals/eo#implements",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a property that associates a process with an object/informational content entity that it addresses"
@@ -1506,7 +1778,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000132"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#knowledge",
+  "@id" : "https://purl.org/heals/eo#knowledge",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Knowledge"
@@ -1515,7 +1787,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#object_record",
+  "@id" : "https://purl.org/heals/eo#object_record",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program"
@@ -1529,10 +1801,10 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000069"
   }, {
-    "@id" : "_:genid131"
+    "@id" : "_:genid134"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#possess",
+  "@id" : "https://purl.org/heals/eo#possess",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "maps a property with its associated object"
@@ -1544,7 +1816,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000223"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#scientificExplanation",
+  "@id" : "https://purl.org/heals/eo#scientificExplanation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Scientific explanations reference the results of rigorous scientific methods, such as observations and measurements, to explain something we see in the natural world (Moore, 2000). Adapting from (Miller, 2019),\nwe add that scientific explanations usually contain different components of interacting knowledge, including theories or mechanisms such as physiological ones, which are sets of principles that form building blocks for models; models which represent the relationships between entities and their attributes informed by taxonomies and other classification schemes; and data (e.g. measurements, observations)."
@@ -1560,7 +1832,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
   }, {
-    "@id" : "_:genid132"
+    "@id" : "_:genid135"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "References the results of rigorous scientific methods, observations, and measurements."
@@ -1569,7 +1841,7 @@
     "@value" : "Addresses a question of the form, \"What is the biological basis for this recommendation?\""
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#system_recommendation",
+  "@id" : "https://purl.org/heals/eo#system_recommendation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "Shruthi Chari"
@@ -1584,7 +1856,7 @@
     "@value" : "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/shruthichari/ontologies/2020/3/explanation-ontology#user",
+  "@id" : "https://purl.org/heals/eo#user",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "https://www.law.cornell.edu/uscode/text/22/8541"
@@ -1595,26 +1867,17 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000498"
   }, {
-    "@id" : "_:genid145"
-  }, {
-    "@id" : "_:genid146"
-  }, {
-    "@id" : "_:genid147"
-  }, {
     "@id" : "_:genid148"
   }, {
     "@id" : "_:genid149"
+  }, {
+    "@id" : "_:genid150"
+  }, {
+    "@id" : "_:genid151"
+  }, {
+    "@id" : "_:genid152"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "the person that receives and ultimately uses the good, service, or technology"
   } ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/2004/02/skos/core#example",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
