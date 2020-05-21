@@ -192,7 +192,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
  
  <hr/>
  
- <article class="mb-5" id="sparql">
+ <article class="mb-5" id="competencyquestions">
 <content>
   
   
@@ -235,7 +235,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
 </tbody>
 </table>
 
-<h3 id="sparqlimp>SPARQL Queries</h3>
+<h3 id="sparql">SPARQL Queries</h3>
 <ol>
   <li id="question1"><strong>Which AI models can generate trace based explanations?</strong>
   <ul type = "circle">
@@ -280,7 +280,7 @@ select ?class ?property ?taskObject where {
 </ol>
   </content>
   
-  </hr>
+  <hr/>
  <article class="mb-5" id="toolsused">
 <content>
   
