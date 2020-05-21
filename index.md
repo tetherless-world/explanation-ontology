@@ -234,6 +234,50 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   </tr>
 </tbody>
 </table>
+
+<h3 id="sparqlimp>SPARQL Queries</h3>
+<ol>
+  <li id="question1"><strong>Which AI models can generate trace based explanations?</strong>
+  <ul type = "circle">
+    <li> <strong>Query:</strong> <br/>
+      <pre>
+     prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:<http://www.w3.org/2002/07/owl#>
+prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+
+select ?class ?property ?taskObject where {
+?class (rdfs:subClassOf|owl:equivalentClass)/owl:onProperty ep:isBasedOn .
+?class (rdfs:subClassOf|owl:equivalentClass)/owl:someValuesFrom ?object .
+?object owl:intersectionOf ?collections .
+ ?collections rdf:rest*/rdf:first ?comps .
+?comps rdf:type owl:Restriction .
+?comps owl:onProperty ?property .
+?comps owl:someValuesFrom ?taskObject .
+?class rdfs:label "Trace Based Explanation" .
+}
+      </pre></li>
+      <li><strong>Answer</strong> <br/>
+  <table>
+<thead>
+  <tr>
+    <th>Class</th>
+    <th>Property</th>
+    <th>Restriction</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Trace based <br>Explanation</td>
+    <td>wasGeneratedBy</td>
+    <td>'Artificial Intelligence Task' and (used some ('Decision Tree' or 'Knowledge based System'))</td>
+  </tr>
+</tbody>
+</table>
+  </li>
+  </ul>
+  </li>
+</ol>
   </content>
   
   </hr>
