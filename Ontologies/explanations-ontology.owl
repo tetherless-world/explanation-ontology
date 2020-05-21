@@ -877,7 +877,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="https://purl.org/heals/eo#InductiveTask">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#AITask"/>
-        <dc:description>Induction is able to match single statement to single statement and, therefore, to match a single statement derived as a prediction from a hypothesis with a single statement describing a portion of the real state of aairs in the patient.</dc:description>
+        <dc:description>Induction is able to match single statement to single statement and, therefore, to match a single statement derived as a prediction from a hypothesis with a single statement describing a portion of the real state of airs in the patient.</dc:description>
         <terms:source>Stefanelli, M., &amp; Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg.</terms:source>
         <rdfs:label>Inductive Task</rdfs:label>
     </owl:Class>
