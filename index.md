@@ -156,18 +156,18 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
 <content>
   
   
-<h2>Modeling Snippets</h2>
-  <p>In this section, we show how our <a href="#ontology">Explanations Ontology</a> can be used to represent the generational needs of different explanation types we identified from our literature review as well as support generation of some examples of explanations we observed or encoded into our prototype AI system that we designed during our requirements gathering session with Duke clinicians. For more details about our requirements gathering sessions or the explanation types itself, refer to our paper submission. In this website we present modeling snippets with reference to classes and properties from our ontology in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL syntax</a> and Turtle respectively.</p>
+<h2 id="modelingabout">Modeling Snippets</h2>
+  <p>In this section, we show how our <a href="#ontology">Explanations Ontology</a> can be used to represent the generational needs of different explanation types we identified from our literature review as well as support generation of some examples of explanations we observed or encoded into our prototype AI system that we designed during our requirements gathering session with Duke clinicians. For more details about our requirements gathering sessions or the explanation types itself, refer to our paper submission. In this website we present modeling snippets that use classes and properties from our ontology.</p>
   
   <article class="mb-5" id="explanationtypes">
 <content>
   
   
 <h3>Modeling of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions, which we depict here in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL Syntax</a>. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   
   <h4> Explanation Types </h4>
-  <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in Manchester OWL syntax, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
+  <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL syntax</a>, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
  <ol>
   <li id="casebased"><strong>Case Based Explanation</strong>
   <ul type = "circle">
