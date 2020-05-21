@@ -20,7 +20,7 @@
 <http://www.omg.org/techprocess/ab/SpecificationMetadata/> .
 
 :ContrastiveQuestion 
-    a sio:question;
+    a sio:SIO_000085;
     rdfs:label "Why Drug A over Drug B?" .
 
 :ContrastiveExpInstance 
@@ -35,7 +35,7 @@
     
 :ContextualKnowledgePatient 
     a eo:ContextualKnowledge, eo:Foil;
-    sio:inRelationTo [a sio:Patient];
+    sio:SIO_000668 [a sio:Patient];
     rdfs:label "patient has hyperglycemia" .
 
 :GuidelineEvidence 
@@ -45,7 +45,7 @@
 
 :AITaskExample 
     a eo:DeductiveTask;
-    sio:hasOutput :SystemRecExample;
+    sio:SIO_000229 :SystemRecExample;
     ep:hasSetting [a eo:ReasoningMode; rdfs:label "Differential Diagnosis"];
     prov:used :ContextualKnowledgePatient, :GuidelineEvidence;
     rdfs:label "Deductive task" .
