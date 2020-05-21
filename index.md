@@ -165,6 +165,18 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   
 <h3>Modeling of Explanation Types</h3>
   <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; case based, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions, which we depict here in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL Syntax</a>. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
+  
+  <h4> Explanation Types </h4>
+ <ol>
+ <li>Case Based Explanation
+  <ul type = "circle">
+  <li> Definition: Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation. </li>
+  <li> Prototypical Question: To what other situations has this recommendation been applied? </li>
+  <li> Example: "10-Year Follow-up of Intensive Glucose Control in Type 2 Diabetes"</li>
+  <li> Reused From: Hasco</li>
+  </ul>
+  </li>
+
   <!--can cite our book chapter here-->
  </content>
  
