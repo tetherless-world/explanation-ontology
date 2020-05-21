@@ -167,6 +167,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions, which we depict here in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL Syntax</a>. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   
   <h4> Explanation Types </h4>
+  <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in Manchester OWL syntax, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
  <ol>
   <li id="casebased"><strong>Case Based Explanation</strong>
   <ul type = "circle">
@@ -179,7 +180,7 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
     (Explanation
      <span style="color:##39bfaf">and</span> (isBasedOn <span style="color:#bf399e">some</span>
         ('System Recommendation'
-         <span style="color:#39bfaf">and</span> (prov:wasGeneratedBy some 
+         <span style="color:#39bfaf">and</span> (prov:wasGeneratedBy <span style="color:#bf399e">some</span>
             ('Artificial Intelligence Task'
              <span style="color:#39bfaf">and</span> ('has input' <span style="color:#bf399e">some</span> 'Object Record'))))))
       </pre></li>
