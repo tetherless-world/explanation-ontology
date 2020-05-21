@@ -164,16 +164,17 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   
   
 <h3>Modeling of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; case based, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions, which we depict here in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL Syntax</a>. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions, which we depict here in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL Syntax</a>. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   
   <h4> Explanation Types </h4>
  <ol>
- <li>Case Based Explanation
+  <li id="casebased"><strong>Case Based Explanation</strong>
   <ul type = "circle">
-  <li> Definition: Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation. </li>
-  <li> Prototypical Question: To what other situations has this recommendation been applied? </li>
-    <li>Sufficency Condition: Is there at least one other prior `case' similar to this situation that requires an `explanation'? Is there a similarity between this case, and that other case?</li>
-    <li> <code>
+    <li> <strong>Definition:</strong> Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation. </li>
+    <li><strong>Prototypical Question:</strong> To what other situations has this recommendation been applied? </li>
+    <li><strong>Sufficency Condition:</strong> Is there at least one other prior `case' similar to this situation that requires an `explanation'? Is there a similarity between this case, and that other case?</li>
+    <li> <strong>OWL Restriction</strong>
+      <code>
       isBasedOn some 
     (Explanation
      and (isBasedOn some 
@@ -183,8 +184,8 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
              and ('has input' some 'Object Record'))))))
       </code></li>
   </ul>
-
-
+  </li>
+</ol>
   <!--can cite our book chapter here-->
  </content>
  
