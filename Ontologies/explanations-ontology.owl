@@ -3,20 +3,20 @@
      xml:base="https://purl.org/heals/eo"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:eo="https://purl.org/heals/eo#"
+     xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
      xmlns:prov="http://www.w3.org/TR/prov-o/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:sio="http://semanticscience.org/resource/"
      xmlns:void="http://rdfs.org/ns/void#"
      xmlns:prov1="http://www.w3.org/ns/prov#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -48,7 +48,7 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.</terms:license>
-        <terms:title>Ontology of Explanations</terms:title>
+        <terms:title>Explanations Ontology</terms:title>
         <rdfs:label>Explanations Ontology</rdfs:label>
     </owl:Ontology>
     
@@ -136,6 +136,12 @@
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/TR/prov-o/used -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/TR/prov-o/used"/>
     
 
 
@@ -1124,10 +1130,10 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000097"/>
         <dc:description>a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks</dc:description>
         <terms:source>Ramoni, M., Stefanelli, M., Magnani, L., &amp; Barosi, G. (1992). An epistemological framework for medical knowledge-based systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6), 1361-1375.</terms:source>
+        <rdfs:label>Reasoning Mode</rdfs:label>
         <skos:example>The treatment planning process proceeds in four steps. First, the play therapist must develop accurate, comprehensive treatment goals that are consistent with the case formulation and the theoretical model being used. Because these goals are formulated from a theoretical perspective, they may not fully align with the goals of the child and his or her caregivers. Therefore, in the second step, the play therapist must work with both the child client and his or her caregivers to develop a treatment contract that takes the goals created in the first step and addresses each party’s needs. This will ensure they will remain actively engaged in the treatment process over time. Third, the play therapist must organize the treatment goals and the treatment contracts into a realistic and sequential treatment plan. Finally, the play therapist must devise both experiential and cognitive/verbal interventions to move the client toward the treatment goals.
 
 Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment planning and interventions: The ecosystemic model and workbook. Academic Press.</skos:example>
-        <rdfs:label>Reasoning Mode</rdfs:label>
     </owl:Class>
     
 
@@ -1466,10 +1472,10 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#AITaskExample">
         <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
+        <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
         <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
-         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-         <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatient"/>
-         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatient"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
     </owl:NamedIndividual>
     
 
@@ -1489,8 +1495,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
         <rdf:type rdf:resource="https://purl.org/heals/eo#Contrastive_Explanation"/>
-        <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
+        <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
     </owl:NamedIndividual>
     
 
