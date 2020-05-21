@@ -35,11 +35,11 @@
     
 :ContextualKnowledgePatient 
     a eo:ContextualKnowledge;
-    sio:inRelationTo sio:Patient;
+    sio:inRelationTo [a sio:Patient];
     rdfs:label "patient has hyperglycemia" .
 
 :GuidelineEvidence 
-    a eo:ScientificEvidence;
+    a eo:ScientificKnowledge;
     rdfs:label "Drug B is the preferred drug" .
 
 
