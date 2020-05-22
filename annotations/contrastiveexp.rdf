@@ -37,7 +37,8 @@
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#AITaskExample">
         <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
-        <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
+        <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
+        <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
         <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatient"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
@@ -60,6 +61,7 @@
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
         <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
@@ -91,14 +93,7 @@
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#HyperglycemiaPatient">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
         <rdfs:label>Patient A with a condition</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExp -->
-
-    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
-    
+    </owl:NamedIndividual>    
 
 
     <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA -->
