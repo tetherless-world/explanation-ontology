@@ -60,7 +60,7 @@
     <!-- https://purl.org/heals/eo#ContrastiveExpInstance -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
-        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#ContrastiveExplanation"/>
         <eo:addresses rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
