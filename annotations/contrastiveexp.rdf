@@ -130,11 +130,42 @@
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000008"/>
 
-    <!-- https://purl.org/heals/eo#implements -->
+    <!-- http://semanticscience.org/resource/SIO_000231 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000231">
-        <dc:description>a property that associates a process with an object/informational content entity that it addresses</dc:description>
         <rdfs:label>is input in</rdfs:label>
     </owl:ObjectProperty>
+
+    <!-- http://semanticscience.org/resource/SIO_000229 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000229">
+        <rdfs:label>has output</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- http://semanticscience.org/resource/SIO_000668 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000668">
+        <rdfs:label>in relation to</rdfs:label>
+    </owl:ObjectProperty>
+
+     <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+     <!-- http://semanticscience.org/resource/SIO_000085 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000085">
+        <rdfs:label>question</rdfs:label>
+    </owl:Class>
+
+    <!-- http://semanticscience.org/resource/SIO_0000393 -->
+
+    <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000393">
+        <rdfs:label>patient</rdfs:label>
+    </owl:Class>
 
 </rdf:RDF>
