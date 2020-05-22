@@ -334,6 +334,36 @@ select ?questionLabel where {
   </li>
   </ul>
   </li>
+   <li id="question1"><strong>What are the components of a scientific explanation?</strong>
+  <ul type = "circle">
+    <li> <strong>Query:</strong> <br/>
+      <pre>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:<http://www.w3.org/2002/07/owl#>
+select ?class ?restriction where {
+?class (rdfs:subClassOf|owl:equivalentClass) ?restriction .
+?class rdfs:label "Scientific Explanation" .
+}
+      </pre></li>
+      <li><strong>Answer</strong> <br/>
+  <table>
+<thead>
+  <tr>
+    <th>Class</th>
+    <th>Restriction</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Scientific <br>Explanation</td>
+    <td>'(ep:isBasedOn some (eo:`Scientific Knowledge' and ((prov:wasGeneratedBy <br> some `Study')  or (prov:wasAssociatedWith some `Scientific Method'))) and <br>  (isBasedOn some `System Recommendation')) or <br>
+(ep:isBasedOn some (`System Recommendation' and <br> (prov:used some (eo:`Scientific Knowledge' and ((prov:wasGeneratedBy <br> some `Study') or (prov:wasAssociatedWith some <br> `Scientific Method'))))))</td>
+  </tr>
+</tbody>
+</table>
+  </li>
+  </ul>
+  </li>
 </ol>
   </content>
   
