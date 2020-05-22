@@ -260,7 +260,7 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
   <ul type = "circle">
     <li> <strong>Query:</strong> <br/>
       <pre>
-     prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix owl:<http://www.w3.org/2002/07/owl#>
 prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
 prefix prov: <http://www.w3.org/ns/prov#>
@@ -330,7 +330,6 @@ select ?questionLabel where {
     <td>What if the major problem was a fasting plasma glucose?</td>   
   </tr>
 </tbody>
-</table>
 </table>
   </li>
   </ul>
