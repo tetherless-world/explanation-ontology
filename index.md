@@ -296,6 +296,45 @@ select ?class ?property ?taskObject where {
   </li>
   </ul>
   </li>
+  <li id="question2"><strong>What example questions have been identified for counterfactual explanations?</strong>
+  <ul type = "circle">
+    <li> <strong>Query:</strong> <br/>
+      <pre>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:<http://www.w3.org/2002/07/owl#>
+prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+prefix eo: <https://purl.org/heals/eo#>
+prefix sio: <http://semanticscience.org/resource/>
+
+select ?questionLabel where {
+   ?explanation a eo:CounterfactualExplanation .
+   ?explanation eo:addresses ?question .
+   ?question a sio:SIO_000085 .
+   ?question rdfs:label ?questionLabel .
+  
+}
+      </pre></li>
+      <li><strong>Answer</strong> <br/>
+  <table>
+<thead>
+  <tr>
+    <th>Question Label</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>What other factors about the patient does the system know of?</td>   
+  </tr>
+  <tr>
+    <td>What if the major problem was a fasting plasma glucose?</td>   
+  </tr>
+</tbody>
+</table>
+</table>
+  </li>
+  </ul>
+  </li>
 </ol>
   </content>
   
