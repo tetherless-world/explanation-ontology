@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/heals/eo#"
+     xml:base="https://purl.org/heals/eo"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:eo="https://purl.org/heals/eo#"
+     xmlns:ep="http://linkedu.eu/dedalo/explanationPattern.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:core="http://purl.org/vocab/frbr/core#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov1="http://www.w3.org/TR/prov-o/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"><!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo#AITaskExample -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#AITaskExample">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
+        <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
+        <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
+        <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatient"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#ContextualKnowledgePatientA -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContextualKnowledgePatientA">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <sio:SIO_000668 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
+        <rdfs:label>Patient has hyperglycemia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#ContrastiveExpInstance -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
+        <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
+        <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#ContrastiveQuestion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>&quot;Why Drug A over Drug B?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#GuidelineEvidence -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#GuidelineEvidence">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ScientificKnowledge"/>
+        <rdfs:label>Drug B is a preferred drug</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#HyperglycemiaPatient -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#HyperglycemiaPatient">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
+        <rdfs:label>Patient A with a condition</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExp -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExp"/>
+    
+
+
+    <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
+        <rdfs:label>Drug A is not sufficient for this patient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
+        <rdfs:label>Guidelines recommend Drug B</rdfs:label>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
