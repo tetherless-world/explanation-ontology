@@ -13,12 +13,12 @@
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:prov="http://www.w3.org/TR/prov-o/"
+     xmlns:prov1="http://www.w3.org/TR/prov-o/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:prov1="http://www.w3.org/ns/prov#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -1678,7 +1678,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA">
         <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
-        <sio:SIO_000668 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
         <rdfs:label>Drug A is not sufficient for this patient</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1688,7 +1688,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB">
         <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
-        <sio:SIO_000668 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
