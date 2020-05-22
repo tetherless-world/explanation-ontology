@@ -201,8 +201,6 @@ title: Explanations Ontology - Treating Explanations as Primary Consideration
   <caption id="fig2">Fig 2. A visual overview of the RDF representation of a contrastive explanation that addresses the question, "Why Drug B over A?"</caption>
   <br>
     <p>The RDF snippet can be browsed at and is available within our Github repository at : <a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/annotations/contrastiveexp.rdf">https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/annotations/contrastiveexp.rdf</a></p>
-
-  <iframe src="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/annotations/contrastiveexp.rdf"/>
   
   
  </content>
