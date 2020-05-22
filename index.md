@@ -227,12 +227,12 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
 </thead>
 <tbody>
   <tr>
-    <td><a href="#question1">(Q1).</a> Which AI model (s) is capable of <br>generating this explanation type?<br>E.g. E.g. Which AI model is capable of generating <br>a trace-based explanation?</td>
+    <td><a href="#question1">(Q1).</a> Which AI model (s) is capable of <br>generating this explanation type?<br>E.g. Which AI model is capable of generating <br>a trace-based explanation?</td>
     <td>System <br>Planning</td>
     <td>Knowledge-based systems<br>Machine learning model: decision trees</td>
   </tr>
   <tr>
-    <td<a href="#question2">(Q1).</a> What example questions have been<br>identified for counterfactual explanations?</td>
+    <td<a href="#question2">(Q2).</a> What example questions have been<br>identified for counterfactual explanations?</td>
     <td>System <br>Planning</td>
     <td>What other factors about the patient does the system know of?<br>What if the major problem was a fasting plasma  glucose?</td>
   </tr>
