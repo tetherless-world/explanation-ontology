@@ -40,8 +40,6 @@
         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
-        <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
     </owl:NamedIndividual>
     
 
