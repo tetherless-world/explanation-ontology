@@ -39,6 +39,7 @@
         <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
+        <eo:implements rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
     </owl:NamedIndividual>
     
