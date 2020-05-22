@@ -115,4 +115,26 @@
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
     </owl:NamedIndividual>
 
+     <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000008 -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000008"/>
+
+    <!-- https://purl.org/heals/eo#implements -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000231">
+        <dc:description>a property that associates a process with an object/informational content entity that it addresses</dc:description>
+        <rdfs:label>is input in</rdfs:label>
+    </owl:ObjectProperty>
+
 </rdf:RDF>
