@@ -232,7 +232,7 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
     <td>Knowledge-based systems<br>Machine learning model: decision trees</td>
   </tr>
   <tr>
-    <td<a href="#question2">(Q2).</a> What example questions have been<br>identified for counterfactual explanations?</td>
+    <td><a href="#question2">(Q2).</a> What example questions have been<br>identified for counterfactual explanations?</td>
     <td>System <br>Planning</td>
     <td>What other factors about the patient does the system know of?<br>What if the major problem was a fasting plasma  glucose?</td>
   </tr>
