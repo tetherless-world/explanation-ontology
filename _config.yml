@@ -9,7 +9,7 @@ permalink:        pretty
 
 # Setup
 url:              https://tetherless-world.github.io/
-baseurl:          https://tetherless-world.github.io/explanations-ontology/
+baseurl:          https://tetherless-world.github.io/explanation-ontology/
 
 author:
   name:           'Mark Otto'
@@ -21,4 +21,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/tetherless-world/explanations-ontology
+  repo:           https://github.com/tetherless-world/explanation-ontology
