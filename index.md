@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Explanations Ontology: Modeling Explainability in User-Centered AI System Design
+title: Explanation Ontology: A Model of Explanations for User-Centered AI
 ---
 
-<h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATIONS ONTOLOGY: MODELING EXPLAINABILITY IN A USER-CENTERED AI SYSTEM DESIGN</h1>
+<h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATION ONTOLOGY: A MODEL OF EXPLANATIONS FOR USER-CENTERED AI</h1>
 <h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>, Amar K. Das<sup>2</sup></h3>
 <h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://www.research.ibm.com/labs/cambridge/"><sup>2</sup>IBM Research, Cambridge</a></h3>
 <p class="message">A website to navigate resources open-sourced via the associated ISWC 2020 submission. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
@@ -80,7 +80,7 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
   
   <h3 id="ontologylinks">Ontology Links</h3>
   <ul>
-  <li>Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html</a></li>
+  <li>Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html</a></li>
   <li>Ontology can be accessed from <a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a></li>
   </ul>
   
@@ -92,7 +92,7 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
   <ul>
   <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
   <li><a href="https://www.w3.org/TR/prov-o/">The Provenance Ontology (PROV-O)</a></li>
-  <li><a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl">Explanations Pattern Ontology</a></li>
+  <li><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/Ontologies/explanations-pattern-ontology.owl">Explanations Pattern Ontology</a></li>
   </ul>
     
   <h4> Ontology Prefixes </h4>
@@ -135,7 +135,7 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
   </tr>
   <tr>
     <td>ep</td>
-    <td> <a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl#">Explanations Pattern Ontology</a> </td>
+    <td> <a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/Ontologies/explanations-pattern-ontology.owl#">Explanations Pattern Ontology</a> </td>
     <!--Note to self update this to the dedalo upon consulting with Ilaria-->
   </tr>
   <tr>
@@ -200,7 +200,7 @@ title: Explanations Ontology: Modeling Explainability in User-Centered AI System
   <img src="images/rdfviewerexample.png"/>
   <caption id="fig2">Fig 2. A visual overview of the RDF representation of a contrastive explanation that addresses the question, "Why Drug B over A?"</caption>
   <br>
-    <p>The RDF snippet can be browsed at and is available within our Github repository at : <a href="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/annotations/contrastiveexp.rdf">https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/annotations/contrastiveexp.rdf</a></p>
+    <p>The RDF snippet can be browsed at and is available within our Github repository at : <a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/annotations/contrastiveexp.rdf">https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/annotations/contrastiveexp.rdf</a></p>
   
   <br>
   <br>
@@ -380,7 +380,7 @@ select ?class ?restriction where {
   <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a></li>
   </ul>
   </content>
-  <!--<iframe src="https://tetherless-world.github.io/explanations-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
+  <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
  
 <!-- 
 <div class="posts">
