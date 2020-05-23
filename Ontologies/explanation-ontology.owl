@@ -13,12 +13,12 @@
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:core="http://purl.org/vocab/frbr/core#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:prov1="http://www.w3.org/TR/prov-o/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:prov1="http://www.w3.org/TR/prov-o/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -666,9 +666,9 @@
     
 
 
-    <!-- https://purl.org/heals/eo#Case_Based_Explanation -->
+    <!-- https://purl.org/heals/eo#CaseBasedExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Case_Based_Explanation">
+    <owl:Class rdf:about="https://purl.org/heals/eo#CaseBasedExplanation">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
@@ -776,7 +776,7 @@ current situation.</terms:description>
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#Everyday"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#EverydayExplanation"/>
         <terms:source>Lorin, M.I., Palazzi, D.L., Turner, T.L., Ward, M.A.: What is a clinical pearl andwhat is its role in medical education? Medical teacher30(9-10), 870–874 (2008)</terms:source>
         <rdfs:label>Clinical Pearls</rdfs:label>
         <skos:definition>small bits of free-standing, clinically relevant information based on experience or observation</skos:definition>
@@ -785,9 +785,9 @@ current situation.</terms:description>
     
 
 
-    <!-- https://purl.org/heals/eo#Contextual_Explanation -->
+    <!-- https://purl.org/heals/eo#ContextualExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Contextual_Explanation">
+    <owl:Class rdf:about="https://purl.org/heals/eo#ContextualExplanation">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -856,9 +856,9 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
     
 
 
-    <!-- https://purl.org/heals/eo#Contrastive_Explanation -->
+    <!-- https://purl.org/heals/eo#ContrastiveExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Contrastive_Explanation">
+    <owl:Class rdf:about="https://purl.org/heals/eo#ContrastiveExplanation">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -907,9 +907,9 @@ event that did not occur), the output of interest.</dc:description>
     
 
 
-    <!-- https://purl.org/heals/eo#Counterfactual -->
+    <!-- https://purl.org/heals/eo#CounterfactualExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Counterfactual">
+    <owl:Class rdf:about="https://purl.org/heals/eo#CounterfactualExplanation">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
@@ -983,9 +983,9 @@ event that did not occur), the output of interest.</dc:description>
     
 
 
-    <!-- https://purl.org/heals/eo#Everyday -->
+    <!-- https://purl.org/heals/eo#EverydayExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Everyday">
+    <owl:Class rdf:about="https://purl.org/heals/eo#EverydayExplanation">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1272,9 +1272,9 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
     
 
 
-    <!-- https://purl.org/heals/eo#Simulation_Based -->
+    <!-- https://purl.org/heals/eo#SimulationBasedExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Simulation_Based">
+    <owl:Class rdf:about="https://purl.org/heals/eo#SimulationBasedExplanation">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
@@ -1323,9 +1323,9 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     
 
 
-    <!-- https://purl.org/heals/eo#Statistical_Explanation -->
+    <!-- https://purl.org/heals/eo#StatisticalExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Statistical_Explanation">
+    <owl:Class rdf:about="https://purl.org/heals/eo#StatisticalExplanation">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1362,9 +1362,9 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     
 
 
-    <!-- https://purl.org/heals/eo#Trace_Based -->
+    <!-- https://purl.org/heals/eo#TraceBasedExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#Trace_Based">
+    <owl:Class rdf:about="https://purl.org/heals/eo#TraceBasedExplanation">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
@@ -1603,13 +1603,16 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-      <!-- https://purl.org/heals/eo#AITaskExample -->
+    
+
+
+    <!-- https://purl.org/heals/eo#AITaskExample -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#AITaskExample">
         <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <sio:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <eo:implements rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
+        <implements rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1619,8 +1622,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContextualKnowledgePatientA">
         <rdf:type rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
-        <sio:SIO_000231 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <sio:SIO_000231 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
         <sio:SIO_000668 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
         <rdfs:label>Patient has hyperglycemia</rdfs:label>
     </owl:NamedIndividual>
@@ -1631,9 +1634,9 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
         <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
-        <eo:addresses rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <ep:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
+        <addresses rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1644,8 +1647,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveQuestion">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
         <rdfs:label>&quot;Why Drug A over Drug B?&quot;</rdfs:label>
-    </owl:NamedIndividual>
-    
+    </owl:NamedIndividual>    
 
 
     <!-- https://purl.org/heals/eo#GuidelineEvidence -->
@@ -1664,7 +1666,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#HyperglycemiaPatient">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
         <rdfs:label>Patient A with a condition</rdfs:label>
-    </owl:NamedIndividual>    
+    </owl:NamedIndividual>
+    
 
 
     <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA -->
@@ -1683,6 +1686,40 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- https://purl.org/heals/eo#QuestionFromUserStudy1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy1">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>What other factors about the patient does the system know of?</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#QuestionFromUserStudy2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy2">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>What if the major problem was a fasting plasma glucose?</rdfs:label>
+    </owl:NamedIndividual>
+
+    
+    <!-- https://purl.org/heals/eo#CounterfactualProbable1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable1">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
+        <rdfs:label>Addresses "What other factors about the patient does the system know of?"</rdfs:label>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
+    </owl:NamedIndividual>
+
+    <!-- https://purl.org/heals/eo#CounterfactualProbable2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable2">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
+        <rdfs:label>Addresses "What if the major problem was a fasting plasma glucose?"</rdfs:label>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
