@@ -48,8 +48,8 @@
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.</terms:license>
-        <terms:title>Explanations Ontology</terms:title>
-        <rdfs:label>Explanations Ontology</rdfs:label>
+        <terms:title>Explanation Ontology</terms:title>
+        <rdfs:label>Explanation Ontology</rdfs:label>
     </owl:Ontology>
     
 
@@ -1647,7 +1647,28 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveQuestion">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
         <rdfs:label>&quot;Why Drug A over Drug B?&quot;</rdfs:label>
-    </owl:NamedIndividual>    
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#CounterfactualProbable1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable1">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
+        <addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
+        <rdfs:label>Addresses &quot;What other factors about the patient does the system know of?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#CounterfactualProbable2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable2">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
+        <addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
+        <rdfs:label>Addresses &quot;What if the major problem was a fasting plasma glucose?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
 
 
     <!-- https://purl.org/heals/eo#GuidelineEvidence -->
@@ -1670,6 +1691,24 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     
 
 
+    <!-- https://purl.org/heals/eo#QuestionFromUserStudy1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy1">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>What other factors about the patient does the system know of?</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#QuestionFromUserStudy2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy2">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>What if the major problem was a fasting plasma glucose?</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA">
@@ -1686,40 +1725,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
-    </owl:NamedIndividual>
-
-
-    <!-- https://purl.org/heals/eo#QuestionFromUserStudy1 -->
-
-    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy1">
-        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
-        <rdfs:label>What other factors about the patient does the system know of?</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://purl.org/heals/eo#QuestionFromUserStudy2 -->
-
-    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy2">
-        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
-        <rdfs:label>What if the major problem was a fasting plasma glucose?</rdfs:label>
-    </owl:NamedIndividual>
-
-    
-    <!-- https://purl.org/heals/eo#CounterfactualProbable1 -->
-
-    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable1">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
-        <rdfs:label>Addresses "What other factors about the patient does the system know of?"</rdfs:label>
-        <eo:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-    </owl:NamedIndividual>
-
-    <!-- https://purl.org/heals/eo#CounterfactualProbable2 -->
-
-    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable2">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
-        <rdfs:label>Addresses "What if the major problem was a fasting plasma glucose?"</rdfs:label>
-        <eo:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
