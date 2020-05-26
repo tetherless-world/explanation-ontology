@@ -187,6 +187,26 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   </ul>
   </li>
 </ol>
+
+<ol>
+  <li id="casebased"><strong>Contextual Explanation</strong>
+  <ul type = "circle">
+    <li> <strong>Definition:</strong> Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. </li>
+    <li><strong>Prototypical Question:</strong> What broader information about the current situation prompted the suggestion of this recommendation?</li>
+    <li><strong>Sufficency Condition:</strong> Are there any other extra inputs that are not contained in the `situation' description itself? <br/> And by including those, can better insights be included in the `explanation'?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+     ((isBasedOn <span style="color:#bf399e">some</span>  
+    ('Contextual Knowledge'
+     <span style="color:#39bfaf">and</span> ('in relation to' some Situation))) 
+     <span style="color:#39bfaf">or</span> 
+     (isBasedOn <span style="color:#bf399e">some</span> ('Contextual Knowledge'
+     <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span>  'Object Record'))))
+ <span style="color:#39bfaf">and</span> (isBasedOn <span style="color:#bf399e">some</span>  'System Recommendation')
+      </pre></li>
+  </ul>
+  </li>
+</ol>
   <!--can cite our book chapter here-->
  </content>
  
