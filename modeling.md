@@ -3,6 +3,8 @@ layout: default
 title: Modeling Snippets
 ---
 
+[Modeling of Explanation Types](#explanationtypes) | [A Clinical Example](#clinicalexample)
+
 <article class="mb-5" id="modelingsnippets">
 <content>
   
