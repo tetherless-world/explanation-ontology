@@ -3,6 +3,8 @@ layout: default
 title: Explanation Ontology
 ---
 
+[About](#ontologyabout) | [Access Links](#ontologylinks) | [Ontology Metadata](#ontologymetadata) 
+
 <article class="mb-5" id="ontology">
 <content>
   
