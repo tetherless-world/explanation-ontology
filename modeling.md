@@ -1,15 +1,13 @@
+---
 layout: default
 title: Modeling Snippets
 ---
-
-<h1 class="page-title" style="text-transform:uppercase;" id="header">MODELING OF EXPLANTION TYPES AND A CLINICAL EXAMPLE</h1>
-
 
 <article class="mb-5" id="modelingsnippets">
 <content>
   
   
-<h2 id="modelingabout">Modeling Snippets</h2>
+<h2 id="modelingabout">Modeling of Explanation Types and a Clinical Example</h2>
   <p>In this section, we show how our <a href="#ontology">Explanations Ontology</a> can be used to represent the generational needs of different explanation types we identified from our literature review as well as support generation of some examples of explanations we observed or encoded into our prototype AI system that we designed during our requirements gathering session with Duke clinicians. For more details about our requirements gathering sessions or the explanation types itself, refer to our paper submission. In this website we present modeling snippets that use classes and properties from our ontology.</p>
   
   <article class="mb-5" id="explanationtypes">
