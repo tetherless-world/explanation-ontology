@@ -196,7 +196,8 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
     <li><strong>Sufficency Condition:</strong> Are there any other extra inputs that are not contained in the `situation' description itself? <br/> And by including those, can better insights be included in the `explanation'?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
-     ((isBasedOn <span style="color:#bf399e">some</span>  
+     (
+     (isBasedOn <span style="color:#bf399e">some</span>  
     ('Contextual Knowledge'
      <span style="color:#39bfaf">and</span> ('in relation to' some Situation))) 
      <span style="color:#39bfaf">or</span> 
