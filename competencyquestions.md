@@ -2,6 +2,7 @@
 layout: default
 title: Competency Questions
 ---
+[Questions](#competencyquestions) | [SPARQL Queries](#sparql) 
 
 <article class="mb-5" id="competencyquestions">
 <content>
