@@ -2,8 +2,6 @@ layout: default
 title: Explanation Ontology
 ---
 
-<h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATION ONTOLOGY</h1>
-
 <article class="mb-5" id="ontology">
 <content>
   
