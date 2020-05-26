@@ -95,7 +95,7 @@ title: Modeling Snippets
   
   <br>
   <br>
- ![rdf-viewer](images/protegesnapshot.png)  
+ ![rdf-viewer](images/ProtegeSnapshot.png)  
   <caption id="fig3">Fig 3. A snapshot of classification results obtained by running <a href="https://github.com/stardog-union/pellet">Pellet reasoner</a> within <a href="https://protege.stanford.edu/">Protege</a> which depict how an explanation based on two system recommendations that were supported by a fact and foil respectively were inferred to be of a contrastive type. The reasoner leveraged the encoding of <a href="#explanationtypes">sufficiency conditions for each explanation type</a> that we support as OWL restrictions within our ontology.</caption>
   
  </content>
