@@ -1,0 +1,15 @@
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:<http://www.w3.org/2002/07/owl#>
+prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+
+select ?class ?property ?taskObject where {
+?class (rdfs:subClassOf|owl:equivalentClass)/owl:onProperty ep:isBasedOn .
+?class (rdfs:subClassOf|owl:equivalentClass)/owl:someValuesFrom ?object .
+?object owl:intersectionOf ?collections .
+ ?collections rdf:rest*/rdf:first ?comps .
+?comps rdf:type owl:Restriction .
+?comps owl:onProperty ?property .
+?comps owl:someValuesFrom ?taskObject .
+?class rdfs:label "Trace Based Explanation" .
+}
