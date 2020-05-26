@@ -164,7 +164,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   
   
 <h3>Modeling of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, contextual, contrastive, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, <a href="#contextual">contextual</a>, <a href="#contrastive">contrastive</a>, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   
   <h4> Explanation Types </h4>
   <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL syntax</a>, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
@@ -189,7 +189,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
 </ol>
 
 <ol>
-  <li id="casebased"><strong>Contextual Explanation</strong>
+  <li id="contextual"><strong>Contextual Explanation</strong>
   <ul type = "circle">
     <li> <strong>Definition:</strong> Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. </li>
     <li><strong>Prototypical Question:</strong> What broader information about the current situation prompted the suggestion of this recommendation?</li>
@@ -204,6 +204,25 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
      (isBasedOn <span style="color:#bf399e">some</span> ('Contextual Knowledge'
      <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span>  'Object Record'))))
  <span style="color:#39bfaf">and</span> (isBasedOn <span style="color:#bf399e">some</span>  'System Recommendation')
+      </pre></li>
+  </ul>
+  </li>
+</ol>
+<ol>
+  <li id="contrastive"><strong>Contrastive Explanation</strong>
+  <ul type = "circle">
+    <li> <strong>Definition:</strong> Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it).</li>
+    <li><strong>Prototypical Question:</strong>Why drug A over drug B the one I am typically prescribed?</li>
+    <li><strong>Sufficency Condition:</strong> Is there a `system recommendation' that was made let’s call it A)? <br/> What `facts' led to it? <br/> Is there another `system recommendation' that could have happened or did occur, (let’s call it B)? <br/> What was the `foil that led to B? <br/> Can A and B be compared?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+     (isBasedOn <span style="color:#bf399e">some</span> 
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (used some Fact)))
+ <span style="color:#39bfaf">and</span> 
+ (isBasedOn <span style="color:#bf399e">some</span>
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span> Foil)))
       </pre></li>
   </ul>
   </li>
