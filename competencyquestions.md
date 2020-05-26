@@ -1,3 +1,8 @@
+---
+layout: default
+title: Competency Questions
+---
+
 <article class="mb-5" id="competencyquestions">
 <content>
   
