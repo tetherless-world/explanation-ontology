@@ -173,7 +173,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   <ul type = "circle">
     <li> <strong>Definition:</strong> Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation. </li>
     <li><strong>Prototypical Question:</strong> To what other situations has this recommendation been applied? </li>
-    <li><strong>Sufficency Condition:</strong> Is there at least one other prior `case' similar to this situation that requires an `explanation'? Is there a similarity between this case, and that other case?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there at least one other prior `case' similar to this situation that requires an `explanation'? <br/>Is there a similarity between this case, and that other case?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
      isBasedOn <span style="color:#bf399e">some</span> 
@@ -193,7 +193,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   <ul type = "circle">
     <li> <strong>Definition:</strong> Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. </li>
     <li><strong>Prototypical Question:</strong> What broader information about the current situation prompted the suggestion of this recommendation?</li>
-    <li><strong>Sufficency Condition:</strong> Are there any other extra inputs that are not contained in the `situation' description itself? <br/> And by including those, can better insights be included in the `explanation'?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Are there any other extra inputs that are not contained in the `situation' description itself? <br/> And by including those, can better insights be included in the `explanation'?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
      (
@@ -212,11 +212,11 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   <li id="contrastive"><strong>Contrastive Explanation</strong>
   <ul type = "circle">
     <li> <strong>Definition:</strong> Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it).</li>
-    <li><strong>Prototypical Question:</strong>Why drug A over drug B the one I am typically prescribed?</li>
-    <li><strong>Sufficency Condition:</strong> Is there a `system recommendation' that was made let’s call it A)? <br/> What `facts' led to it? <br/> Is there another `system recommendation' that could have happened or did occur, (let’s call it B)? <br/> What was the `foil that led to B? <br/> Can A and B be compared?</li>
+    <li><strong>Prototypical Question:</strong> Why drug A over drug B the one I am typically prescribed?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there a `system recommendation' that was made let’s call it A)? <br/> What `facts' led to it? <br/> Is there another `system recommendation' that could have happened or did occur, (let’s call it B)? <br/> What was the `foil that led to B? <br/> Can A and B be compared?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
-     (isBasedOn <span style="color:#bf399e">some</span> 
+    (isBasedOn <span style="color:#bf399e">some</span> 
     ('System Recommendation'
      <span style="color:#39bfaf">and</span> (used some Fact)))
  <span style="color:#39bfaf">and</span> 
