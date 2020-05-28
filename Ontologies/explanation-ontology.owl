@@ -639,7 +639,7 @@
         <dc:description>is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem</dc:description>
         <terms:source>Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., &amp; Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289.</terms:source>
         <terms:source>https://en.wikipedia.org/wiki/Task_(project_management)</terms:source>
-        <rdfs:label>Artificial Intelligence Task</rdfs:label>
+        <rdfs:label>AI Task</rdfs:label>
         <skos:example>Deductive task</skos:example>
     </owl:Class>
     

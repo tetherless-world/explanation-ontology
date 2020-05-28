@@ -17,7 +17,7 @@ title: Modeling Snippets
   
   
 <h3>Modeling of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, <a href="#contextual">contextual</a>, <a href="#contrastive">contrastive</a>, <a href="#counterfactual">counterfactual</a>, <a href="#everyday">everyday</a>, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, <a href="#contextual">contextual</a>, <a href="#contrastive">contrastive</a>, <a href="#counterfactual">counterfactual</a>, <a href="#everyday">everyday</a>, <a href="#scientific">scientific</a>, <a href="#simulationbased">simulation based</a>, <a href="#statistical">statistical</a> and <a href="tracebased">trace based</a>. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   
   <h4> Explanation Types </h4>
   <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL syntax</a>, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
@@ -107,7 +107,7 @@ title: Modeling Snippets
      <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> User))) <span style="color:#39bfaf">or</span> (isBasedOn <span style="color:#bf399e">some</span>  
     ('Experential Knowledge'
      <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span>  User))))
- <span style="color:#39bfaf">and</span> (isBasedOn <span style="color:#bf399e">some</span>  'System Recommendation')) 
+ <span style="color:#39bfaf">and</span> (isBasedOn <span style="color:#bf399e">some</span> 'System Recommendation')) 
 <span style="color:#39bfaf">or</span>
 (isBasedOn <span style="color:#bf399e">some</span>  
     ('System Recommendation'
@@ -117,6 +117,81 @@ title: Modeling Snippets
         ('Experential Knowledge'
          <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> User)))))
 )
+      </pre></li>
+  </ul>
+  </li>
+
+  <li id="scientific">
+<table><td><strong>Scientific Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
+    <li> <strong>Definition:</strong>References the results of rigorous scientific methods, observations, and measurements.</li>
+    <li><strong>Prototypical Question:</strong> What studies have backed this recommendation?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Are there results of rigorous `scientific methods' to explain the situation? <br> Is there `evidence' from the literature to explain this `situation'?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+    (
+(isBasedOn <span style="color:#bf399e">some</span> 'System Recommendation')
+ and (isBasedOn <span style="color:#bf399e">some</span> 
+    ('Scientific Knowledge'
+     <span style="color:#39bfaf">and</span> ((wasGeneratedBy <span style="color:#bf399e">some</span> study) <span style="color:#39bfaf">or</span> (wasGeneratedBy <span style="color:#bf399e">some</span> 'Scientific Method'))))) 
+<span style="color:#39bfaf">or</span>
+(isBasedOn <span style="color:#bf399e">some</span> 
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span> 
+        ('Scientific Knowledge'
+         <span style="color:#39bfaf">and</span> ((wasGeneratedBy some study) <span style="color:#39bfaf">or</span> (wasGeneratedBy <span style="color:#bf399e">some</span><span style="color:#bf399e">some</span> 'Scientific Method')))))
+)
+      </pre></li>
+  </ul>
+  </li>
+
+  <li id="simulationbased">
+<table><td><strong>Simulation Based Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
+    <li> <strong>Definition:</strong>Uses an imagined or implemented imitation of a system or process and the results that emerge from similar inputs.</li>
+    <li><strong>Prototypical Question:</strong> What would happened if this recommendation is followed?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there an `implemented' imitation of the `situation' at hand? <br> Does that other scenario have inputs similar to the current `situation'?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+    isBasedOn <span style="color:#bf399e">some</span> 
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (wasGeneratedBy <span style="color:#bf399e">some</span> 
+        ('AI Task'
+         <span style="color:#39bfaf">and</span> ('has input' <span style="color:#bf399e">some</span> 
+            ('Object Record'
+             and (hasSetting <span style="color:#bf399e">some</span> Situation))))))
+      </pre></li>
+  </ul>
+  </li>
+
+  <li id="statistical">
+<table><td><strong>Statistical Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
+    <li> <strong>Definition:</strong>Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.</li>
+    <li><strong>Prototypical Question:</strong> What percentage of people with this condition have recovered?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there `numerical evidence'/likelihood account of the `system recommendation' based on data about the occurrence of the outcome described in the recommendation?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+     isBasedOn <span style="color:#bf399e">some</span> 
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span> 
+        ('Numerical Evidence'
+         <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> 'Object Record'))))
+      </pre></li>
+  </ul>
+  </li>
+
+   <li id="tracebased">
+<table><td><strong>Trace Based Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
+    <li> <strong>Definition:</strong>Provides the underlying sequence of steps used by the system to arrive at a specific result, containing the line of reasoning per case and addressing the question of why and how the application did something.</li>
+    <li><strong>Prototypical Question:</strong>What steps were taken by the system to generate this recommendation?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there a record of the underlying sequence of steps (`system trace') used by the `system' to arrive at a specific `recommendation'?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+     isBasedOn <span style="color:#bf399e">some</span> 
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (wasGeneratedBy <span style="color:#bf399e">some</span>  
+        ('AI Task'
+         <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span>  
+            (('Decision Tree' <span style="color:#39bfaf">or</span> 'Knowledge based Systems')
+             <span style="color:#39bfaf">and</span> ('has output' <span style="color:#bf399e">some</span> 'System Trace'))))))
       </pre></li>
   </ul>
   </li>
