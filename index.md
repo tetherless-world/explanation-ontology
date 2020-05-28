@@ -39,28 +39,28 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
     <th>Links</th> 
   </tr>
   <tr>
-    <td>1. Ontology:</td>
-    <td>(a) <a href="ontology">Explanations Ontology</a> </td> 
+    <td>Ontology</td>
+    <td><a href="ontology">Explanation Ontology</a> </td> 
   </tr>
   <tr>
-    <td>2. Modeling Snippets:</td>
-    <td>(a) <a href="modeling#explanationtypes">Explanation Types</a> </td> 
+    <td>Explanation Types</td>
+    <td><a href="modeling#explanationtypes">Modeling</a> </td> 
   </tr>
     <!--<tr>
     <td> </td>
     <td> (b) <a href="./application.html">Faceted Browser</a> </td> 
   </tr>-->
     <tr>
-    <td></td>
-    <td>(b) <a href="modeling#clinicalexample">Example of a Contrastive Explanation</a> </td> 
+    <td>Clincal Example</td>
+    <td><a href="modeling#clinicalexample">Example of a Contrastive Explanation</a> </td> 
   </tr>
    <tr>
-    <td>3. Competency Questions </td>
-    <td> (a) <a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
+    <td>Competency Questions </td>
+    <td><a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
   </tr>
    <tr>
-    <td>3. Tools Used </td>
-    <td> (a) <a href="index#toolsused">References to tools used</a> </td> 
+    <td>Tools Used </td>
+    <td><a href="index#toolsused">References to tools used</a> </td> 
   </tr>
 </table>
   
