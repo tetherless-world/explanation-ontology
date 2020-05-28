@@ -26,7 +26,7 @@ title: Explanation Ontology
   <article class="mb-5" id="ontologymetadata">
   <content>
     <h3>Ontology Metadata</h3>
-    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanations ontology in an ontology editor, like, <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
+    <p>Metadata that would be useful to navigate our <a href="#resources">resources</a>, i.e., ontology, modeling snippets and SPARQL queries. The content below can also be viewed by inspecting our explanation ontology in an ontology editor, like, <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a>.
   <h4 id="ontologiesreused">Ontologies Reused</h4>
   <ul>
   <li><a href="https://raw.githubusercontent.com/MaastrichtU-IDS/semanticscience/master/ontology/sio.owl">SemanticScience Integrated Ontology (SIO)</a></li>
@@ -66,7 +66,7 @@ title: Explanation Ontology
   </tr>
     <tr>
     <td>eo</td>
-    <td> <a href="https://purl.org/heals/eo#"> Explanations Ontology</a> </td> 
+    <td> <a href="https://purl.org/heals/eo#"> Explanation Ontology</a> </td> 
   </tr>   
     <tr>
     <td>sio</td>
