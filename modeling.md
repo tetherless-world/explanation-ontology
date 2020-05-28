@@ -39,9 +39,7 @@ title: Modeling Snippets
       </pre></li>
   </ul>
   </li>
-</ol>
 
-<ol>
   <li id="contextual">
     <table><td><strong>Contextual Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>
   <ul type = "circle">
@@ -61,8 +59,7 @@ title: Modeling Snippets
       </pre></li>
   </ul>
   </li>
-</ol>
-<ol>
+
   <li id="contrastive">
 <table><td><strong>Contrastive Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong> Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it).</li>
