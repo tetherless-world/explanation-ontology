@@ -169,11 +169,11 @@ _:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#knowledge> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemRecommendation> .
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#knowledge> .
 <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
@@ -334,7 +334,7 @@ _:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.
 <https://purl.org/heals/eo#AITask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000229> .
-_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemRecommendation> .
 <https://purl.org/heals/eo#AITask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000230> .
@@ -354,7 +354,7 @@ _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience
 <https://purl.org/heals/eo#AITask> <http://purl.org/dc/elements/1.1/description> "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem" .
 <https://purl.org/heals/eo#AITask> <http://purl.org/dc/terms/source> "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289." .
 <https://purl.org/heals/eo#AITask> <http://purl.org/dc/terms/source> "https://en.wikipedia.org/wiki/Task_(project_management)" .
-<https://purl.org/heals/eo#AITask> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Intelligence Task" .
+<https://purl.org/heals/eo#AITask> <http://www.w3.org/2000/01/rdf-schema#label> "AI Task" .
 <https://purl.org/heals/eo#AITask> <http://www.w3.org/2004/02/skos/core#example> "Deductive task" .
 # 
 # https://purl.org/heals/eo#AbductiveTask
@@ -387,7 +387,7 @@ _:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid19 .
 _:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid26 .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
@@ -430,7 +430,7 @@ _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
@@ -458,7 +458,7 @@ _:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid31 .
 _:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid38 .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
@@ -532,7 +532,7 @@ _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid51 .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#ContextualExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
@@ -562,7 +562,7 @@ _:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid75 .
 _:genid75 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid78 .
 _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
@@ -579,7 +579,7 @@ _:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid69 .
 _:genid69 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
@@ -606,7 +606,7 @@ _:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid80 .
 _:genid80 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid87 .
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
@@ -709,7 +709,7 @@ _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid110 .
 _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
@@ -720,7 +720,7 @@ _:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/e
 _:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid91 .
 _:genid91 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid106 .
 _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
 _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
@@ -770,6 +770,7 @@ _:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 <https://purl.org/heals/eo#EverydayExplanation> <http://www.w3.org/2000/01/rdf-schema#label> "Everyday Explanation" .
 <https://purl.org/heals/eo#EverydayExplanation> <http://www.w3.org/2004/02/skos/core#definition> "Uses accounts of the real world that appeal to the user, given their general understanding and knowledge." .
 <https://purl.org/heals/eo#EverydayExplanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\"" .
+<https://purl.org/heals/eo#EverydayExplanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why does option A make sense?\"" .
 # 
 # https://purl.org/heals/eo#Evidence_Based_Explanation
 <https://purl.org/heals/eo#Evidence_Based_Explanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -907,7 +908,7 @@ _:genid136 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/
 _:genid136 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid137 .
 _:genid137 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid148 .
 _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
 _:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid138 .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid139 .
@@ -930,8 +931,8 @@ _:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid144 .
 _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid145 .
 _:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000008> .
-_:genid145 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#knowledge> .
+_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+_:genid145 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
 _:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 _:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
@@ -949,26 +950,44 @@ _:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://purl.org/heals/eo#StatisticalExplanation
 <https://purl.org/heals/eo#StatisticalExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid149 .
-_:genid149 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid152 .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid153 .
-_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid153 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#Numerical_Evidence> .
-_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid150 .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid151 .
-_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid151 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
-_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid149 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid149 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid150 .
+_:genid150 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid152 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
+_:genid152 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid153 .
+_:genid153 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid156 .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#Numerical_Evidence> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
+_:genid155 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#object_record> .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://purl.org/dc/terms/description> "Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.\n(Hempel, 1962) add that a particularly high probability allows the outcome to be expected with practical certainty in any one case where the specified conditions occur." .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://purl.org/dc/terms/source> "C. G. Hempel, “Deductive-nomological vs. statistical explanation,” University of Minnesota Press, Minneapolis, 1962." .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://www.w3.org/2000/01/rdf-schema#label> "Statistical Explanation" .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://www.w3.org/2004/02/skos/core#definition> "Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result." .
 <https://purl.org/heals/eo#StatisticalExplanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\"" .
+# 
+# https://purl.org/heals/eo#SystemRecommendation
+<https://purl.org/heals/eo#SystemRecommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/heals/eo#SystemRecommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000602> .
+<https://purl.org/heals/eo#SystemRecommendation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Shruthi Chari" .
+<https://purl.org/heals/eo#SystemRecommendation> <http://www.w3.org/2000/01/rdf-schema#label> "System Recommendation" .
+<https://purl.org/heals/eo#SystemRecommendation> <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
 # 
 # https://purl.org/heals/eo#SystemTrace
 <https://purl.org/heals/eo#SystemTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -979,51 +998,51 @@ _:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://purl.org/heals/eo#TraceBasedExplanation
 <https://purl.org/heals/eo#TraceBasedExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/eo#TraceBasedExplanation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid154 .
-_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid154 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid154 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid155 .
-_:genid155 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid169 .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
-_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid156 .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid157 .
-_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid157 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid157 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid158 .
-_:genid158 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid168 .
+<https://purl.org/heals/eo#TraceBasedExplanation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid158 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid158 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid159 .
+_:genid159 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid161 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid161 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid162 .
+_:genid162 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#AITask> .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid164 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
+_:genid164 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid165 .
+_:genid165 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid168 .
 _:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#AITask> .
-_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid160 .
-_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid160 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
-_:genid160 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid161 .
-_:genid161 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid164 .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid165 .
-_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid165 <http://www.w3.org/2002/07/owl#unionOf> _:genid167 .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#DecisionTree> .
-_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid166 .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid169 <http://www.w3.org/2002/07/owl#unionOf> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#DecisionTree> .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#KnowledgeBasedSystems> .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid166 .
 _:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#KnowledgeBasedSystems> .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid167 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000229> .
+_:genid167 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemTrace> .
 _:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid162 .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid163 .
-_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid163 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000229> .
-_:genid163 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemTrace> .
-_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#TraceBasedExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
 <https://purl.org/heals/eo#TraceBasedExplanation> <http://purl.org/dc/elements/1.1/description> "Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009)." .
 <https://purl.org/heals/eo#TraceBasedExplanation> <http://purl.org/dc/terms/source> "B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128" .
@@ -1034,10 +1053,10 @@ _:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://purl.org/heals/eo#User_Context
 <https://purl.org/heals/eo#User_Context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#User_Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/heals/eo#Contextual_Knowledge> .
-<https://purl.org/heals/eo#User_Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid170 .
-_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid170 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
-_:genid170 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#user> .
+<https://purl.org/heals/eo#User_Context> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid174 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000668> .
+_:genid174 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#user> .
 <https://purl.org/heals/eo#User_Context> <http://purl.org/dc/elements/1.1/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." .
 <https://purl.org/heals/eo#User_Context> <http://purl.org/dc/terms/source> "https://www.igi-global.com/dictionary/researching-mobile-learning/37179" .
 <https://purl.org/heals/eo#User_Context> <http://www.w3.org/2000/01/rdf-schema#label> "User Context" .
@@ -1050,97 +1069,97 @@ _:genid170 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heal
 # https://purl.org/heals/eo#object_record
 <https://purl.org/heals/eo#object_record> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#object_record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000069> .
-<https://purl.org/heals/eo#object_record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid171 .
-_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid171 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000231> .
-_:genid171 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#AITask> .
+<https://purl.org/heals/eo#object_record> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid175 .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid175 <http://www.w3.org/2002/07/owl#onProperty> <http://semanticscience.org/resource/SIO_000231> .
+_:genid175 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#AITask> .
 <https://purl.org/heals/eo#object_record> <http://purl.org/dc/elements/1.1/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" .
 <https://purl.org/heals/eo#object_record> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Shruthi Chari" .
 <https://purl.org/heals/eo#object_record> <http://www.w3.org/2000/01/rdf-schema#label> "Object Record" .
 # 
 # https://purl.org/heals/eo#scientificExplanation
 <https://purl.org/heals/eo#scientificExplanation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/eo#scientificExplanation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid172 .
-_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid172 <http://www.w3.org/2002/07/owl#unionOf> _:genid187 .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid188 .
-_:genid188 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid199 .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid200 .
-_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid200 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid200 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#system_recommendation> .
-_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid189 .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid190 .
-_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid190 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid190 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid191 .
-_:genid191 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid198 .
-_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#ScientificKnowledge> .
-_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid192 .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid193 .
-_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid193 <http://www.w3.org/2002/07/owl#unionOf> _:genid196 .
+<https://purl.org/heals/eo#scientificExplanation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid176 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid176 <http://www.w3.org/2002/07/owl#unionOf> _:genid191 .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid192 .
+_:genid192 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid204 .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid204 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#SystemRecommendation> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid193 .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid194 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid194 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid195 .
+_:genid195 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid202 .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#ScientificKnowledge> .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid196 .
 _:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid197 .
-_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid197 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid197 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001066> .
-_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid194 .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid195 .
-_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid195 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid195 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#ScientificMethod> .
-_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid173 .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid174 .
-_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid174 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
-_:genid174 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid175 .
-_:genid175 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid186 .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#system_recommendation> .
-_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid177 .
-_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid177 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
-_:genid177 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid178 .
-_:genid178 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid185 .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#ScientificKnowledge> .
-_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid179 .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid180 .
-_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid180 <http://www.w3.org/2002/07/owl#unionOf> _:genid183 .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid197 <http://www.w3.org/2002/07/owl#unionOf> _:genid200 .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid201 .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001066> .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid198 .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid199 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid199 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#ScientificMethod> .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid178 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> .
+_:genid178 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid179 .
+_:genid179 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid190 .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#SystemRecommendation> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid180 .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid181 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#used> .
+_:genid181 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid182 .
+_:genid182 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid189 .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/heals/eo#ScientificKnowledge> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid183 .
 _:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid184 .
-_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid184 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid184 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001066> .
-_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid181 .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid182 .
-_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid182 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
-_:genid182 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#ScientificMethod> .
-_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid184 <http://www.w3.org/2002/07/owl#unionOf> _:genid187 .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid188 .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid188 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid188 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_001066> .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid185 .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid186 .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid186 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/prov#wasGeneratedBy> .
+_:genid186 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#ScientificMethod> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <https://purl.org/heals/eo#scientificExplanation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
 <https://purl.org/heals/eo#scientificExplanation> <http://purl.org/dc/elements/1.1/description> "Scientific explanations reference the results of rigorous scientific methods, such as observations and measurements, to explain something we see in the natural world (Moore, 2000). Adapting from (Miller, 2019),\nwe add that scientific explanations usually contain different components of interacting knowledge, including theories or mechanisms such as physiological ones, which are sets of principles that form building blocks for models; models which represent the relationships between entities and their attributes informed by taxonomies and other classification schemes; and data (e.g. measurements, observations)." .
 <https://purl.org/heals/eo#scientificExplanation> <http://purl.org/dc/terms/source> "J. Moore, “Varieties of scientific explanation,” The Behavior Analyst, vol. 23, no. 2, pp. 173–190, 2000." .
@@ -1149,36 +1168,29 @@ _:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 <https://purl.org/heals/eo#scientificExplanation> <http://www.w3.org/2004/02/skos/core#definition> "References the results of rigorous scientific methods, observations, and measurements." .
 <https://purl.org/heals/eo#scientificExplanation> <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is the biological basis for this recommendation?\"" .
 # 
-# https://purl.org/heals/eo#system_recommendation
-<https://purl.org/heals/eo#system_recommendation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/heals/eo#system_recommendation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000602> .
-<https://purl.org/heals/eo#system_recommendation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Shruthi Chari" .
-<https://purl.org/heals/eo#system_recommendation> <http://www.w3.org/2000/01/rdf-schema#label> "System Recommendation" .
-<https://purl.org/heals/eo#system_recommendation> <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
-# 
 # https://purl.org/heals/eo#user
 <https://purl.org/heals/eo#user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://semanticscience.org/resource/SIO_000498> .
-<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid201 .
-_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/data/interacts> .
-_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#AITask> .
-<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid202 .
-_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid202 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
-_:genid202 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
-<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid203 .
-_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid203 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/heals/eo#asks> .
-_:genid203 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
-<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid204 .
-_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/heals/eo#consumes> .
-_:genid204 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
 <https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid205 .
 _:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/heals/eo#possess> .
-_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#knowledge> .
+_:genid205 <http://www.w3.org/2002/07/owl#onProperty> <http://linkedu.eu/dedalo/data/interacts> .
+_:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#AITask> .
+<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid206 .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid206 <http://www.w3.org/2002/07/owl#onProperty> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> .
+_:genid206 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> .
+<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid207 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/heals/eo#asks> .
+_:genid207 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://semanticscience.org/resource/SIO_000085> .
+<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid208 .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid208 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/heals/eo#consumes> .
+_:genid208 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> .
+<https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid209 .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid209 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.org/heals/eo#possess> .
+_:genid209 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heals/eo#knowledge> .
 <https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://www.law.cornell.edu/uscode/text/22/8541" .
 <https://purl.org/heals/eo#user> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
 <https://purl.org/heals/eo#user> <http://www.w3.org/2004/02/skos/core#definition> "the person that receives and ultimately uses the good, service, or technology" .
@@ -1257,13 +1269,13 @@ _:genid205 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://purl.org/heal
 # 
 # https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA
 <https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/heals/eo#system_recommendation> .
+<https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/heals/eo#SystemRecommendation> .
 <https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA> <http://www.w3.org/ns/prov#used> <https://purl.org/heals/eo#ContextualKnowledgePatientA> .
 <https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA> <http://www.w3.org/2000/01/rdf-schema#label> "Drug A is not sufficient for this patient" .
 # 
 # https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB
 <https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/heals/eo#system_recommendation> .
+<https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/heals/eo#SystemRecommendation> .
 <https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB> <http://www.w3.org/ns/prov#used> <https://purl.org/heals/eo#GuidelineEvidence> .
 <https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB> <http://www.w3.org/2000/01/rdf-schema#label> "Guidelines recommend Drug B" .
 # 

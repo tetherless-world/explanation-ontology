@@ -14,7 +14,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000229"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
   } ]
 }, {
   "@id" : "_:genid101",
@@ -70,7 +70,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
   } ]
 }, {
   "@id" : "_:genid112",
@@ -235,7 +235,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid139"
     } ]
@@ -291,20 +291,19 @@
   "@id" : "_:genid145",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000008"
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#knowledge"
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
   } ]
 }, {
   "@id" : "_:genid149",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid153"
-    }, {
-      "@id" : "_:genid151"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid150"
   } ]
 }, {
   "@id" : "_:genid15",
@@ -316,59 +315,60 @@
     "@id" : "_:genid16"
   } ]
 }, {
-  "@id" : "_:genid151",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
-  } ]
-}, {
-  "@id" : "_:genid153",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#Numerical_Evidence"
-  } ]
-}, {
-  "@id" : "_:genid154",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid155"
-  } ]
-}, {
-  "@id" : "_:genid155",
+  "@id" : "_:genid150",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
-      "@id" : "_:genid157"
+      "@id" : "_:genid152"
     } ]
   } ]
 }, {
-  "@id" : "_:genid157",
+  "@id" : "_:genid152",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+    "@id" : "http://www.w3.org/ns/prov#used"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid158"
+    "@id" : "_:genid153"
   } ]
 }, {
-  "@id" : "_:genid158",
+  "@id" : "_:genid153",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#AITask"
+      "@id" : "https://purl.org/heals/eo#Numerical_Evidence"
     }, {
-      "@id" : "_:genid160"
+      "@id" : "_:genid155"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid158",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid159"
+  } ]
+}, {
+  "@id" : "_:genid159",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid161"
     } ]
   } ]
 }, {
@@ -382,26 +382,45 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid160",
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid162"
+  } ]
+}, {
+  "@id" : "_:genid162",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid164"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid164",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#used"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid161"
+    "@id" : "_:genid165"
   } ]
 }, {
-  "@id" : "_:genid161",
+  "@id" : "_:genid165",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid165"
+      "@id" : "_:genid169"
     }, {
-      "@id" : "_:genid163"
+      "@id" : "_:genid167"
     } ]
   } ]
 }, {
-  "@id" : "_:genid163",
+  "@id" : "_:genid167",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000229"
@@ -410,7 +429,7 @@
     "@id" : "https://purl.org/heals/eo#SystemTrace"
   } ]
 }, {
-  "@id" : "_:genid165",
+  "@id" : "_:genid169",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -420,7 +439,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid170",
+  "@id" : "_:genid174",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000668"
@@ -429,7 +448,7 @@
     "@id" : "https://purl.org/heals/eo#user"
   } ]
 }, {
-  "@id" : "_:genid171",
+  "@id" : "_:genid175",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000231"
@@ -438,51 +457,32 @@
     "@id" : "https://purl.org/heals/eo#AITask"
   } ]
 }, {
-  "@id" : "_:genid172",
+  "@id" : "_:genid176",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid188"
+      "@id" : "_:genid192"
     }, {
-      "@id" : "_:genid174"
+      "@id" : "_:genid178"
     } ]
   } ]
 }, {
-  "@id" : "_:genid174",
+  "@id" : "_:genid178",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid175"
+    "@id" : "_:genid179"
   } ]
 }, {
-  "@id" : "_:genid175",
+  "@id" : "_:genid179",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
-      "@id" : "_:genid177"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid177",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/prov#used"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid178"
-  } ]
-}, {
-  "@id" : "_:genid178",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
-    }, {
-      "@id" : "_:genid180"
+      "@id" : "_:genid181"
     } ]
   } ]
 }, {
@@ -495,17 +495,36 @@
     "@id" : "_:genid19"
   } ]
 }, {
-  "@id" : "_:genid180",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid184"
-    }, {
-      "@id" : "_:genid182"
-    } ]
+  "@id" : "_:genid181",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid182"
   } ]
 }, {
   "@id" : "_:genid182",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+    }, {
+      "@id" : "_:genid184"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid184",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid188"
+    }, {
+      "@id" : "_:genid186"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid186",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
@@ -514,80 +533,71 @@
     "@id" : "https://purl.org/heals/eo#ScientificMethod"
   } ]
 }, {
-  "@id" : "_:genid184",
+  "@id" : "_:genid188",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_001066"
-  } ]
-}, {
-  "@id" : "_:genid188",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "_:genid200"
-    }, {
-      "@id" : "_:genid190"
-    } ]
   } ]
 }, {
   "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid21"
     } ]
   } ]
 }, {
-  "@id" : "_:genid190",
+  "@id" : "_:genid192",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid204"
+    }, {
+      "@id" : "_:genid194"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid194",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid191"
+    "@id" : "_:genid195"
   } ]
 }, {
-  "@id" : "_:genid191",
+  "@id" : "_:genid195",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
     }, {
-      "@id" : "_:genid193"
+      "@id" : "_:genid197"
     } ]
   } ]
 }, {
-  "@id" : "_:genid193",
+  "@id" : "_:genid197",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "_:genid197"
+      "@id" : "_:genid201"
     }, {
-      "@id" : "_:genid195"
+      "@id" : "_:genid199"
     } ]
   } ]
 }, {
-  "@id" : "_:genid195",
+  "@id" : "_:genid199",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://purl.org/heals/eo#ScientificMethod"
-  } ]
-}, {
-  "@id" : "_:genid197",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_001066"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -596,19 +606,28 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#knowledge"
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
   } ]
 }, {
-  "@id" : "_:genid200",
+  "@id" : "_:genid201",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001066"
+  } ]
+}, {
+  "@id" : "_:genid204",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
   } ]
 }, {
-  "@id" : "_:genid201",
+  "@id" : "_:genid205",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://linkedu.eu/dedalo/data/interacts"
@@ -617,7 +636,7 @@
     "@id" : "https://purl.org/heals/eo#AITask"
   } ]
 }, {
-  "@id" : "_:genid202",
+  "@id" : "_:genid206",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
@@ -626,7 +645,7 @@
     "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
   } ]
 }, {
-  "@id" : "_:genid203",
+  "@id" : "_:genid207",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/heals/eo#asks"
@@ -635,7 +654,7 @@
     "@id" : "http://semanticscience.org/resource/SIO_000085"
   } ]
 }, {
-  "@id" : "_:genid204",
+  "@id" : "_:genid208",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/heals/eo#consumes"
@@ -644,7 +663,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
   } ]
 }, {
-  "@id" : "_:genid205",
+  "@id" : "_:genid209",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://purl.org/heals/eo#possess"
@@ -697,7 +716,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#knowledge"
   } ]
 }, {
   "@id" : "_:genid30",
@@ -713,7 +732,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid33"
     } ]
@@ -800,7 +819,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
   } ]
 }, {
   "@id" : "_:genid49",
@@ -828,7 +847,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://purl.org/heals/eo#system_recommendation"
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
   } ]
 }, {
   "@id" : "_:genid53",
@@ -929,7 +948,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid71"
     } ]
@@ -966,7 +985,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid77"
     } ]
@@ -1003,7 +1022,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid82"
     } ]
@@ -1069,7 +1088,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://purl.org/heals/eo#system_recommendation"
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
     }, {
       "@id" : "_:genid93"
     } ]
@@ -1492,7 +1511,7 @@
     "@value" : "https://en.wikipedia.org/wiki/Task_(project_management)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Artificial Intelligence Task"
+    "@value" : "AI Task"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000649"
@@ -1822,6 +1841,8 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\""
+  }, {
+    "@value" : "Addresses a question of the form, \"Why does option A make sense?\""
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#Evidence_Based_Explanation",
@@ -2113,7 +2134,7 @@
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/heals/eo#system_recommendation" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/heals/eo#SystemRecommendation" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Drug A is not sufficient for this patient"
   } ],
@@ -2122,12 +2143,27 @@
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/heals/eo#system_recommendation" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://purl.org/heals/eo#SystemRecommendation" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Guidelines recommend Drug B"
   } ],
   "http://www.w3.org/ns/prov#used" : [ {
     "@id" : "https://purl.org/heals/eo#GuidelineEvidence"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemRecommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System Recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000602"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)"
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#SystemTrace",
@@ -2160,7 +2196,7 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid154"
+    "@id" : "_:genid158"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Provides the underlying sequence of steps used by the system to arrive at a specific result, containing the line of reasoning per case and addressing the question of why and how the application did something."
@@ -2183,7 +2219,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
   }, {
-    "@id" : "_:genid170"
+    "@id" : "_:genid174"
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#addresses",
@@ -2281,7 +2317,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000069"
   }, {
-    "@id" : "_:genid171"
+    "@id" : "_:genid175"
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#possess",
@@ -2313,28 +2349,13 @@
     "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid172"
+    "@id" : "_:genid176"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "References the results of rigorous scientific methods, observations, and measurements."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@value" : "Addresses a question of the form, \"What is the biological basis for this recommendation?\""
-  } ]
-}, {
-  "@id" : "https://purl.org/heals/eo#system_recommendation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "Shruthi Chari"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "System Recommendation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://semanticscience.org/resource/SIO_000602"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@value" : "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)"
   } ]
 }, {
   "@id" : "https://purl.org/heals/eo#user",
@@ -2348,15 +2369,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://semanticscience.org/resource/SIO_000498"
   }, {
-    "@id" : "_:genid201"
-  }, {
-    "@id" : "_:genid202"
-  }, {
-    "@id" : "_:genid203"
-  }, {
-    "@id" : "_:genid204"
-  }, {
     "@id" : "_:genid205"
+  }, {
+    "@id" : "_:genid206"
+  }, {
+    "@id" : "_:genid207"
+  }, {
+    "@id" : "_:genid208"
+  }, {
+    "@id" : "_:genid209"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "the person that receives and ultimately uses the good, service, or technology"

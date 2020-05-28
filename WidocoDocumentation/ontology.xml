@@ -356,13 +356,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#knowledge"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#knowledge"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -673,7 +673,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -703,7 +703,7 @@
         <dc:description>is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem</dc:description>
         <terms:source>Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., &amp; Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289.</terms:source>
         <terms:source>https://en.wikipedia.org/wiki/Task_(project_management)</terms:source>
-        <rdfs:label>Artificial Intelligence Task</rdfs:label>
+        <rdfs:label>AI Task</rdfs:label>
         <skos:example>Deductive task</skos:example>
     </owl:Class>
     
@@ -748,7 +748,7 @@
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
                                                 <owl:someValuesFrom>
@@ -799,7 +799,7 @@ current situation.</terms:description>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
@@ -822,7 +822,7 @@ current situation.</terms:description>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                                    <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
                                         <owl:someValuesFrom>
@@ -894,7 +894,7 @@ current situation.</terms:description>
                     </owl:Class>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -938,7 +938,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                                    <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
                                         <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Fact"/>
@@ -952,7 +952,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                                    <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
                                         <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Foil"/>
@@ -988,7 +988,7 @@ event that did not occur), the output of interest.</dc:description>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
                                 <owl:someValuesFrom>
@@ -1101,7 +1101,7 @@ event that did not occur), the output of interest.</dc:description>
                             </owl:Class>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1110,7 +1110,7 @@ event that did not occur), the output of interest.</dc:description>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                                    <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                                     <owl:Class>
                                         <owl:unionOf rdf:parseType="Collection">
                                             <owl:Restriction>
@@ -1158,6 +1158,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:label>Everyday Explanation</rdfs:label>
         <skos:definition>Uses accounts of the real world that appeal to the user, given their general understanding and knowledge.</skos:definition>
         <skos:example>Addresses a question of the form, &quot;Why are gloves recommended when dealing with high-risk patients?&quot;</skos:example>
+        <skos:example>Addresses a question of the form, &quot;Why does option A make sense?&quot;</skos:example>
     </owl:Class>
     
 
@@ -1371,7 +1372,7 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
                                 <owl:someValuesFrom>
@@ -1385,8 +1386,8 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
                                                         <owl:intersectionOf rdf:parseType="Collection">
                                                             <rdf:Description rdf:about="https://purl.org/heals/eo#object_record"/>
                                                             <owl:Restriction>
-                                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000008"/>
-                                                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#knowledge"/>
+                                                                <owl:onProperty rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"/>
                                                             </owl:Restriction>
                                                         </owl:intersectionOf>
                                                     </owl:Class>
@@ -1418,18 +1419,30 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
     <owl:Class rdf:about="https://purl.org/heals/eo#StatisticalExplanation">
         <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Numerical_Evidence"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="https://purl.org/heals/eo#Numerical_Evidence"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#object_record"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <terms:description>Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.
@@ -1438,6 +1451,18 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
         <rdfs:label>Statistical Explanation</rdfs:label>
         <skos:definition>Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.</skos:definition>
         <skos:example>Addresses questions of the form, &quot;What percentage of similar patients who received this treatment recovered?&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/eo#SystemRecommendation -->
+
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#SystemRecommendation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
+        <rdfs:label>System Recommendation</rdfs:label>
+        <skos:definition>an output of an AI system that stitches together the system&apos;s output from tasks and/or includes external knowledge used by the task (s)</skos:definition>
     </owl:Class>
     
 
@@ -1464,7 +1489,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
                                 <owl:someValuesFrom>
@@ -1566,7 +1591,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
                             </owl:Restriction>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
@@ -1597,7 +1622,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="https://purl.org/heals/eo#system_recommendation"/>
+                                    <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
                                         <owl:someValuesFrom>
@@ -1636,18 +1661,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdfs:label>Scientific Explanation</rdfs:label>
         <skos:definition>References the results of rigorous scientific methods, observations, and measurements.</skos:definition>
         <skos:example>Addresses a question of the form, &quot;What is the biological basis for this recommendation?&quot;</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- https://purl.org/heals/eo#system_recommendation -->
-
-
-    <owl:Class rdf:about="https://purl.org/heals/eo#system_recommendation">
-        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
-        <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
-        <rdfs:label>System Recommendation</rdfs:label>
-        <skos:definition>an output of an AI system that stitches together the system&apos;s output from tasks and/or includes external knowledge used by the task (s)</skos:definition>
     </owl:Class>
     
 
@@ -1823,7 +1836,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
         <rdfs:label>Drug A is not sufficient for this patient</rdfs:label>
     </owl:NamedIndividual>
@@ -1834,7 +1847,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#system_recommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
     </owl:NamedIndividual>

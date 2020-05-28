@@ -205,11 +205,11 @@ rdfs:label rdf:type owl:AnnotationProperty .
                                                                               ] ,
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                                owl:someValuesFrom :knowledge
+                                                                                owl:someValuesFrom :SystemRecommendation
                                                                               ] ,
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                                owl:someValuesFrom :system_recommendation
+                                                                                owl:someValuesFrom :knowledge
                                                                               ] ,
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
@@ -400,7 +400,7 @@ rdfs:label rdf:type owl:AnnotationProperty .
         rdfs:subClassOf <http://semanticscience.org/resource/SIO_000649> ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
-                          owl:someValuesFrom :system_recommendation
+                          owl:someValuesFrom :SystemRecommendation
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
@@ -421,7 +421,7 @@ rdfs:label rdf:type owl:AnnotationProperty .
         <http://purl.org/dc/elements/1.1/description> "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem" ;
         <http://purl.org/dc/terms/source> "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289." ,
                                           "https://en.wikipedia.org/wiki/Task_(project_management)" ;
-        rdfs:label "Artificial Intelligence Task" ;
+        rdfs:label "AI Task" ;
         <http://www.w3.org/2004/02/skos/core#example> "Deductive task" .
 
 
@@ -447,7 +447,7 @@ rdfs:label rdf:type owl:AnnotationProperty .
                                             owl:someValuesFrom [ owl:intersectionOf ( <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation>
                                                                                       [ rdf:type owl:Restriction ;
                                                                                         owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                                                     owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
                                                                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :AITask
@@ -486,7 +486,7 @@ current situation.""" ;
                owl:equivalentClass [ rdf:type owl:Class ;
                                      owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                             owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                            owl:someValuesFrom :system_recommendation
+                                                                            owl:someValuesFrom :SystemRecommendation
                                                                           ]
                                                                           [ rdf:type owl:Restriction ;
                                                                             owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
@@ -504,7 +504,7 @@ current situation.""" ;
                                                    ]
                                                    [ rdf:type owl:Restriction ;
                                                      owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                     owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                     owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                [ rdf:type owl:Restriction ;
                                                                                                  owl:onProperty <http://www.w3.org/ns/prov#used> ;
                                                                                                  owl:someValuesFrom [ owl:intersectionOf ( :ExperentialKnowledge
@@ -558,7 +558,7 @@ current situation.""" ;
                                                                   ]
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                    owl:someValuesFrom :system_recommendation
+                                                                    owl:someValuesFrom :SystemRecommendation
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
@@ -588,7 +588,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
 :ContrastiveExplanation rdf:type owl:Class ;
                         owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                      owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                     owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                     owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                                [ rdf:type owl:Restriction ;
                                                                                                                  owl:onProperty <http://www.w3.org/ns/prov#used> ;
                                                                                                                  owl:someValuesFrom :Fact
@@ -599,7 +599,7 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                                                                    ]
                                                                    [ rdf:type owl:Restriction ;
                                                                      owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                     owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                                     owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                                [ rdf:type owl:Restriction ;
                                                                                                                  owl:onProperty <http://www.w3.org/ns/prov#used> ;
                                                                                                                  owl:someValuesFrom :Foil
@@ -627,7 +627,7 @@ event that did not occur), the output of interest.""" ;
 :CounterfactualExplanation rdf:type owl:Class ;
                            owl:equivalentClass [ rdf:type owl:Restriction ;
                                                  owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                 owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                 owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                            [ rdf:type owl:Restriction ;
                                                                                              owl:onProperty <http://www.w3.org/ns/prov#used> ;
                                                                                              owl:someValuesFrom [ owl:intersectionOf ( :knowledge
@@ -709,14 +709,14 @@ event that did not occur), the output of interest.""" ;
                                                                                 ]
                                                                                 [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                                  owl:someValuesFrom :system_recommendation
+                                                                                  owl:someValuesFrom :SystemRecommendation
                                                                                 ]
                                                                               ) ;
                                                            rdf:type owl:Class
                                                          ]
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                           owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                           owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                      [ rdf:type owl:Class ;
                                                                                                        owl:unionOf ( [ rdf:type owl:Restriction ;
                                                                                                                        owl:onProperty <http://www.w3.org/ns/prov#used> ;
@@ -755,7 +755,8 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                                                        "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence, vol. 267, pp. 1–38, 2019." ;
                      rdfs:label "Everyday Explanation" ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Uses accounts of the real world that appeal to the user, given their general understanding and knowledge." ;
-                     <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\"" .
+                     <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\"" ,
+                                                                   "Addresses a question of the form, \"Why does option A make sense?\"" .
 
 
 ###  https://purl.org/heals/eo#Evidence_Based_Explanation
@@ -897,7 +898,7 @@ Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and
 :SimulationBasedExplanation rdf:type owl:Class ;
                             owl:equivalentClass [ rdf:type owl:Restriction ;
                                                   owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                  owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                  owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                             [ rdf:type owl:Restriction ;
                                                                                               owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
                                                                                               owl:someValuesFrom [ owl:intersectionOf ( :AITask
@@ -905,8 +906,8 @@ Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and
                                                                                                                                           owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
                                                                                                                                           owl:someValuesFrom [ owl:intersectionOf ( :object_record
                                                                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                                                                      owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
-                                                                                                                                                                                      owl:someValuesFrom :knowledge
+                                                                                                                                                                                      owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ;
+                                                                                                                                                                                      owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
                                                                                                                                                                                     ]
                                                                                                                                                                                   ) ;
                                                                                                                                                                rdf:type owl:Class
@@ -932,16 +933,23 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
 ###  https://purl.org/heals/eo#StatisticalExplanation
 :StatisticalExplanation rdf:type owl:Class ;
-                        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                     owl:someValuesFrom :Numerical_Evidence
-                                                                   ]
-                                                                   [ rdf:type owl:Restriction ;
-                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                     owl:someValuesFrom :system_recommendation
-                                                                   ]
-                                                                 ) ;
-                                              rdf:type owl:Class
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                              owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                          owl:someValuesFrom [ owl:intersectionOf ( :Numerical_Evidence
+                                                                                                                                    [ rdf:type owl:Restriction ;
+                                                                                                                                      owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                      owl:someValuesFrom :object_record
+                                                                                                                                    ]
+                                                                                                                                  ) ;
+                                                                                                               rdf:type owl:Class
+                                                                                                             ]
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ]
                                             ] ;
                         rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
                         <http://purl.org/dc/terms/description> """Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.
@@ -950,6 +958,14 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                         rdfs:label "Statistical Explanation" ;
                         <http://www.w3.org/2004/02/skos/core#definition> "Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result." ;
                         <http://www.w3.org/2004/02/skos/core#example> "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\"" .
+
+
+###  https://purl.org/heals/eo#SystemRecommendation
+:SystemRecommendation rdf:type owl:Class ;
+                      rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ;
+                      rdfs:isDefinedBy "Shruthi Chari" ;
+                      rdfs:label "System Recommendation" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
 
 
 ###  https://purl.org/heals/eo#SystemTrace
@@ -964,7 +980,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 :TraceBasedExplanation rdf:type owl:Class ;
                        owl:equivalentClass [ rdf:type owl:Restriction ;
                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                             owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                             owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                        [ rdf:type owl:Restriction ;
                                                                                          owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
                                                                                          owl:someValuesFrom [ owl:intersectionOf ( :AITask
@@ -1034,7 +1050,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                        owl:equivalentClass [ rdf:type owl:Class ;
                                              owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                                    owl:someValuesFrom :system_recommendation
+                                                                                    owl:someValuesFrom :SystemRecommendation
                                                                                   ]
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
@@ -1059,7 +1075,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                                            ]
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                             owl:someValuesFrom [ owl:intersectionOf ( :system_recommendation
+                                                             owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                        [ rdf:type owl:Restriction ;
                                                                                                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
                                                                                                          owl:someValuesFrom [ owl:intersectionOf ( :ScientificKnowledge
@@ -1093,14 +1109,6 @@ vol. 267, pp. 1–38, 2019.""" ;
                        rdfs:label "Scientific Explanation" ;
                        <http://www.w3.org/2004/02/skos/core#definition> "References the results of rigorous scientific methods, observations, and measurements." ;
                        <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is the biological basis for this recommendation?\"" .
-
-
-###  https://purl.org/heals/eo#system_recommendation
-:system_recommendation rdf:type owl:Class ;
-                       rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ;
-                       rdfs:isDefinedBy "Shruthi Chari" ;
-                       rdfs:label "System Recommendation" ;
-                       <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
 
 
 ###  https://purl.org/heals/eo#user
@@ -1210,14 +1218,14 @@ vol. 267, pp. 1–38, 2019.""" ;
 
 ###  https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA
 :SystemRecExampleForContrastiveExpA rdf:type owl:NamedIndividual ,
-                                             :system_recommendation ;
+                                             :SystemRecommendation ;
                                     <http://www.w3.org/ns/prov#used> :ContextualKnowledgePatientA ;
                                     rdfs:label "Drug A is not sufficient for this patient" .
 
 
 ###  https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB
 :SystemRecExampleForContrastiveExpB rdf:type owl:NamedIndividual ,
-                                             :system_recommendation ;
+                                             :SystemRecommendation ;
                                     <http://www.w3.org/ns/prov#used> :GuidelineEvidence ;
                                     rdfs:label "Guidelines recommend Drug B" .
 
