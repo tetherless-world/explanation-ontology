@@ -138,7 +138,7 @@ title: Modeling Snippets
     ('System Recommendation'
      <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span> 
         ('Scientific Knowledge'
-         <span style="color:#39bfaf">and</span> ((wasGeneratedBy some study) <span style="color:#39bfaf">or</span> (wasGeneratedBy <span style="color:#bf399e">some</span><span style="color:#bf399e">some</span> 'Scientific Method')))))
+         <span style="color:#39bfaf">and</span> ((wasGeneratedBy some study) <span style="color:#39bfaf">or</span> (wasGeneratedBy <span style="color:#bf399e">some</span> 'Scientific Method')))))
 )
       </pre></li>
   </ul>
