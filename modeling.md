@@ -17,7 +17,7 @@ title: Modeling Snippets
   
   
 <h3>Modeling of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, <a href="#contextual">contextual</a>, <a href="#contrastive">contrastive</a>, counterfactual, everyday, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. The explanation types are; <a href="#casebased">case based</a>, <a href="#contextual">contextual</a>, <a href="#contrastive">contrastive</a>, <a href="#counterfactual">counterfactual</a>, <a href="#everyday">everyday</a>, scientific, simulation based, statistical and trace based. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type.</p>
   
   <h4> Explanation Types </h4>
   <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL syntax</a>, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
@@ -74,6 +74,49 @@ title: Modeling Snippets
  (isBasedOn <span style="color:#bf399e">some</span>
     ('System Recommendation'
      <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span> Foil)))
+      </pre></li>
+  </ul>
+  </li>
+
+   <li id="counterfactual">
+<table><td><strong>Counterfactual Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
+    <li> <strong>Definition:</strong>Addresses the question of what solutions would have been obtained with a different set of inputs than those used.</li>
+    <li><strong>Prototypical Question:</strong> What if input A was over 1000?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there a different set of inputs that can be  considered? <br/> If so what is the alternate `system recommendation'?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+    isBasedOn <span style="color:#bf399e">some</span> 
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> (used <span style="color:#bf399e">some</span> 
+        (Knowledge
+         <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> 'Object Record'))))
+      </pre></li>
+  </ul>
+  </li>
+
+  <li id="everyday">
+<table><td><strong>Everyday Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
+    <li> <strong>Definition:</strong>Uses accounts of the real world that appeal to the user, given their general understanding and knowledge.</li>
+    <li><strong>Prototypical Question:</strong>Why does Option A make sense?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Can accounts of the real world be simplified to appeal to the user based on their general understanding and `knowledge'?</li>
+    <li> <strong>OWL Restriction:</strong> <br/>
+      <pre>
+    (
+((isBasedOn <span style="color:#bf399e">some</span>  
+    (Situation
+     <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> User))) <span style="color:#39bfaf">or</span> (isBasedOn <span style="color:#bf399e">some</span>  
+    ('Experential Knowledge'
+     <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span>  User))))
+ <span style="color:#39bfaf">and</span> (isBasedOn <span style="color:#bf399e">some</span>  'System Recommendation')) 
+<span style="color:#39bfaf">or</span>
+(isBasedOn <span style="color:#bf399e">some</span>  
+    ('System Recommendation'
+     <span style="color:#39bfaf">and</span> ((used <span style="color:#bf399e">some</span> 
+        (Situation
+         <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> User))) <span style="color:#39bfaf">or</span> (used <span style="color:#bf399e">some</span>  
+        ('Experential Knowledge'
+         <span style="color:#39bfaf">and</span> ('in relation to' <span style="color:#bf399e">some</span> User)))))
+)
       </pre></li>
   </ul>
   </li>
