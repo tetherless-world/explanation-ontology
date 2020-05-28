@@ -19,16 +19,16 @@ title: Modeling Snippets
 <h3>Catalog of Explanation Types</h3>
   <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. Utilizing the schema provided by our explanations ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type. The explanation types are:
   <table>
-    <tr><th>Explanation Type</th></tr>
-    <tr><a href="#casebased">Case Based</a></tr>
-    <tr><a href="#contextual">Contextual</a></tr>
-    <tr><a href="#contrastive">Contrastive</a></tr>
-    <tr><a href="#counterfactual">Counterfactual</a></tr>
-    <tr><a href="#everyday">Everyday</a></tr>
-    <tr><a href="#scientific">Scientific</a></tr>
-    <tr><a href="#simulationbased">Simulation Based</a></tr>
-    <tr><a href="#statistical">Statistical</a></tr>
-    <tr><a href="#tracebased">Trace Based</a></tr> 
+    <th>Explanation Type</th>
+    <tr><td><a href="#casebased">Case Based</a></td></tr>
+    <tr><td><a href="#contextual">Contextual</a></td></tr>
+    <tr><td><a href="#contrastive">Contrastive</a></td></tr>
+    <tr><td><a href="#counterfactual">Counterfactual</a></td></tr>
+    <tr><td><a href="#everyday">Everyday</a></td></tr>
+    <tr><td><a href="#scientific">Scientific</a></td></tr>
+    <tr><td><a href="#simulationbased">Simulation Based</a></td></tr>
+    <tr><td><a href="#statistical">Statistical</a></td></tr>
+    <tr><td><a href="#tracebased">Trace Based</a></td></tr> 
     </table></p>
   
   <h3 id="modelingexplanations"> Explanation Types </h3>
