@@ -22,8 +22,8 @@ title: Modeling Snippets
   <h4> Explanation Types </h4>
   <p class="message">We depict logical formalization of our encoding of the generational needs for explanation type in <a href="https://www.w3.org/TR/owl2-manchester-syntax/">Manchester OWL syntax</a>, in that classes in the OWL restriction are referred to via their labels, and the color highlights are similar to those that can be viewed in Protege. These logical formalizations presented against the <strong>OWL restrictions</strong> label for each explanation type are a representation of the <strong>sufficiency conditions</strong> mentioned before the restrictions.</p>
  <ol>
-  <li id="casebased"><strong>Case Based Explanation</strong>
-  <ul type = "circle">
+  <li id="casebased">
+<table><td><strong>Case Based Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong> Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation. </li>
     <li><strong>Prototypical Question:</strong> To what other situations has this recommendation been applied? </li>
     <li><strong>Sufficency Condition:</strong> <br/>Is there at least one other prior `case' similar to this situation that requires an `explanation'? <br/>Is there a similarity between this case, and that other case?</li>
@@ -42,7 +42,8 @@ title: Modeling Snippets
 </ol>
 
 <ol>
-  <li id="contextual"><strong>Contextual Explanation</strong>
+  <li id="contextual">
+    <table><td><strong>Contextual Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>
   <ul type = "circle">
     <li> <strong>Definition:</strong> Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. </li>
     <li><strong>Prototypical Question:</strong> What broader information about the current situation prompted the suggestion of this recommendation?</li>
@@ -62,8 +63,8 @@ title: Modeling Snippets
   </li>
 </ol>
 <ol>
-  <li id="contrastive"><strong>Contrastive Explanation</strong>
-  <ul type = "circle">
+  <li id="contrastive">
+<table><td><strong>Contrastive Explanation</strong></td><td style="text-align: right;"><a href="#explanationtypes">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong> Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it).</li>
     <li><strong>Prototypical Question:</strong> Why drug A over drug B the one I am typically prescribed?</li>
     <li><strong>Sufficency Condition:</strong> <br/>Is there a `system recommendation' that was made let’s call it A)? <br/> What `facts' led to it? <br/> Is there another `system recommendation' that could have happened or did occur, (let’s call it B)? <br/> What was the `foil that led to B? <br/> Can A and B be compared?</li>
