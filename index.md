@@ -52,7 +52,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   </tr>-->
     <tr>
     <td>Clincal Example</td>
-    <td><a href="modeling#clinicalexample">Example of a Contrastive Explanation</a> </td> 
+    <td><a href="clinicalexample">Example of a Contrastive Explanation</a> </td> 
   </tr>
    <tr>
     <td>Competency Questions </td>
