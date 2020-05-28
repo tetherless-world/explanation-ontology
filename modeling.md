@@ -3,15 +3,15 @@ layout: default
 title: Modeling Snippets
 ---
 
-[Modeling of Explanation Types](#explanationtypes) | [A Clinical Example](#clinicalexample)
+[Modeling of Explanation Types](#explanationtypes)
 
 <article class="mb-5" id="modelingsnippets">
 <content>
   
   
 <h2 id="modelingabout">Modeling of Explanation Types and a Clinical Example</h2>
-  <p>In this section, we show how our <a href="#ontology">Explanations Ontology</a> can be used to represent the generational needs of different explanation types we identified from our literature review as well as support generation of some examples of explanations we observed or encoded into our prototype AI system that we designed during our requirements gathering session with Duke clinicians. For more details about our requirements gathering sessions or the explanation types itself, refer to our paper submission. In this website we present modeling snippets that use classes and properties from our ontology.</p>
-  
+  <p>In this section, we show how our <a href="#ontology">Explanation Ontology</a> can be used to represent the generational needs of different explanation types we identified from our literature review. For more details about our explanation types itself, refer to our paper submission. In this website we present modeling snippets that use classes and properties from our ontology.</p>
+    
   <article class="mb-5" id="explanationtypes">
 <content>
   
@@ -199,21 +199,4 @@ title: Modeling Snippets
   <!--can cite our book chapter here-->
  </content>
  
- <article class="mb-5" id="clinicalexample">
-<content>
-  
-  
-<h3>Example from Clinical Requirement Gatherings Session</h3>
-  <p>We present an example of how our explanations ontology could be used to address a question, "Why Drug B over Drug A?" that clearly requires a contrastive explanation. Given that a contrastive explanation is the most suitable explanation type to address this question, our ontology if loaded into a system can help guide a system designer to locate the <strong>facts</strong> in support of Drug A and <strong>foil</strong> in support/against Drug B. While this is a real question that was asked by one of the clincians to a prototype decision support tool that we built to walk them through a complicated type-2 diabetes patient case, we omit the exact explanation as it is difficult to explain without the entire context of the patient case and the knowledge available to the system. Instead, we present an abstracted up example of a contrastive explanation in <a href="#fig2">Fig. 2</a>. In <a href="#fig3">Fig. 3</a>, we also show how our ontology would have inferred the explanation to be of a <strong>contrastive</strong> kind if the system had generated two recommendations one based on the facts supporting Drug A and one on the foil ruling out drug B.</p>
-  
- <img src="../images/rdfviewerexample.png" style="width:100%; height:100%"/>  
-  <caption id="fig2">Fig 2. A visual overview of the RDF representation of a contrastive explanation that addresses the question, "Why Drug B over A?"</caption>
-  <br>
-    <p>The RDF snippet can be browsed at and is available within our Github repository at : <a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/annotations/contrastiveexp.rdf">https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/annotations/contrastiveexp.rdf</a></p>
-  
-  <br>
-  <br>
-<img src="../images/ProtegeSnapshot.png" style="width:100%; height:100%">  
-  <caption id="fig3">Fig 3. A snapshot of classification results obtained by running <a href="https://github.com/stardog-union/pellet">Pellet reasoner</a> within <a href="https://protege.stanford.edu/">Protege</a> which depict how an explanation based on two system recommendations that were supported by a fact and foil respectively were inferred to be of a contrastive type. The reasoner leveraged the encoding of <a href="#explanationtypes">sufficiency conditions for each explanation type</a> that we support as OWL restrictions within our ontology.</caption>
-  
- </content>
+ 
