@@ -160,6 +160,7 @@ select ?class ?restriction where {
   <li id="question5"><strong>Which explanation type best suits the user question, ``Which explanation type can expose numerical evidence about  patients that did well on this drug?,'' and how will the system generate the answer?</strong>
   <ul type = "circle">
     <li> <strong>Query:</strong> <br/>
+      <p class="">In this query, we look for the evidence embedded with a system recommendation upon which an explanation is based?</p>
       <pre>
 prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 prefix owl:<http://www.w3.org/2002/07/owl#>
