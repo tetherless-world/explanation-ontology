@@ -41,7 +41,7 @@ title: Competency Questions
   </tr>
   <tr>
     <td>Real-time</td>
-    <td>Which explanation type best suits the user question, ``Which explanation type can expose <br> numerical evidence about  patients that did well on this drug?,'' <br> and how will the system generate the answer?</td>
+    <td><a href="#question5">Q5.</a> Which explanation type best suits the user question, ``Which explanation type can expose <br> numerical evidence about  patients that did well on this drug?,'' <br> and how will the system generate the answer?</td>
     <td>Explanation type: statistical <br>System: run `Inductive' AI task with `Clustering' method to generate numerical evidence</td>
   </tr>
 </tbody>
@@ -151,6 +151,60 @@ select ?class ?restriction where {
     <td>Scientific <br>Explanation</td>
     <td>(ep:isBasedOn some (eo:`Scientific Knowledge' and ((prov:wasGeneratedBy <br> some `Study')  or (prov:wasAssociatedWith some `Scientific Method'))) and <br>  (isBasedOn some `System Recommendation')) or <br>
 (ep:isBasedOn some (`System Recommendation' and <br> (prov:used some (eo:`Scientific Knowledge' and ((prov:wasGeneratedBy <br> some `Study') or (prov:wasAssociatedWith some <br> `Scientific Method'))))))</td>
+  </tr>
+</tbody>
+</table>
+  </li>
+  </ul>
+  </li>
+  <li id="question5"><strong>Which explanation type best suits the user question, ``Which explanation type can expose numerical evidence about  patients that did well on this drug?,'' and how will the system generate the answer?</strong>
+  <ul type = "circle">
+    <li> <strong>Query:</strong> <br/>
+      <pre>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:<http://www.w3.org/2002/07/owl#>
+prefix eo: <https://purl.org/heals/eo#>
+prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+prefix prov: <http://www.w3.org/ns/prov#>
+
+select ?class ?object where {
+{
+select DISTINCT ?classLabel ?object where {
+?class (rdfs:subClassOf|owl:equivalentClass)/owl:onProperty ep:isBasedOn .
+?class (rdfs:subClassOf|owl:equivalentClass)/owl:someValuesFrom ?object .
+?object owl:intersectionOf ?collections .
+ ?collections rdf:rest*/rdf:first ?comps .
+?comps a owl:Restriction .
+?comps owl:onProperty prov:wasGeneratedBy .
+?comps owl:someValuesFrom ?compObject .
+?compObject owl:intersectionOf ?subCollections .
+ ?subCollections rdf:rest*/rdf:first ?subComps .
+?subComps a owl:Restriction .
+?subComps owl:someValuesFrom ?subCompObject .
+?subCompObject owl:intersectionOf ?innerCollections .
+ ?innerCollections rdf:rest*/rdf:first ?innerComps .
+?innerComps a owl:Class .
+?innerComps rdfs:label "Numerical Evidence" .
+?class rdfs:label ?classLabel .
+?class rdfs:subClassOf* ep:Explanation .
+}
+}
+?class rdfs:label ?classLabel .
+
+}
+      </pre></li>
+      <li><strong>Answer</strong> <br/>
+  <table>
+<thead>
+  <tr>
+    <th>Class</th>
+    <th>Object</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Statistical <br>Explanation</td>
+    <td>'System Recommendation' and (GeneratedBy some ('Inductive Task' and ('has output' some ('Numerical Evidence' and ('in relation to' some 'Object Record')))))</td>
   </tr>
 </tbody>
 </table>
