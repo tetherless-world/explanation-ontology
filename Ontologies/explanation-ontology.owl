@@ -1232,7 +1232,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>a statistical value that backs and quantifies a recommendation</dc:description>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Evidence</rdfs:label>
+        <rdfs:label>Numerical Evidence</rdfs:label>
     </owl:Class>
     
 
@@ -1335,14 +1335,24 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
                                 <owl:someValuesFrom>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="https://purl.org/heals/eo#Numerical_Evidence"/>
+                                            <rdf:Description rdf:about="https://purl.org/heals/eo#InductiveTask"/>
                                             <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
-                                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#object_record"/>
+                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="https://purl.org/heals/eo#Numerical_Evidence"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
+                                                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#object_record"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
