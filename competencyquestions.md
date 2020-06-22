@@ -36,7 +36,7 @@ title: Competency Questions
   </tr>
   <tr>
     <td>Real-time</td>
-    <td>Given the system was performing abductive <br>reasoning and has ranked specific recommendations by comparing <br>different medications, what explanations can be provided for that recommendation?</td>
+    <td><a href="#question4">(Q4).</a> Given the system was performing abductive <br>reasoning and has ranked specific recommendations by comparing <br>different medications, what explanations can be provided for that recommendation?</td>
     <td>Contrastive Explanation</td>
   </tr>
   <tr>
@@ -157,6 +157,48 @@ select ?class ?restriction where {
   </li>
   </ul>
   </li>
+
+  <li id="question4"><strong>Given the system was performing abductive reasoning and has ranked specific recommendations by comparing different medications, what explanations can be provided for that recommendation??</strong>
+  <ul type = "circle">
+    <li> <strong>Query:</strong> <br/>
+      <pre>
+prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+prefix owl:<http://www.w3.org/2002/07/owl#>
+prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+prefix eo: <http://purl.org/eo#>
+prefix prov: <http://www.w3.org/ns/prov#>
+
+select DISTINCT ?expType where {
+?expType owl:equivalentClass/owl:intersectionOf/rdf:rest*/rdf:first/owl:someValuesFrom ?compObject .
+?compObject a owl:Class ;
+                     owl:intersectionOf [ rdf:rest*/rdf:first ?otherClass ] .
+?expType rdfs:subClassOf* ep:Explanation .
+?expType rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty prov:wasGeneratedBy ;
+    owl:someValuesFrom ?tasker 
+  ] .
+?otherClass rdfs:label "System Recommendation" .
+?tasker rdfs:label "Abductive Task" .
+}
+      </pre></li>
+      <li><strong>Answer</strong> <br/>
+  <table>
+<thead>
+  <tr>
+    <th>Explanation Type</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Contrastive Explanation</td>   
+  </tr>
+</tbody>
+</table>
+  </li>
+  </ul>
+  </li>
+
   <li id="question5"><strong>Which explanation type best suits the user question, ``Which explanation type can expose numerical evidence about  patients that did well on this drug?,'' and how will the system generate the answer?</strong>
   <ul type = "circle">
     <li> <strong>Query:</strong> <br/>
