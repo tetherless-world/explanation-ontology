@@ -19,7 +19,7 @@
 
 :CounterfactualExpInstance 
     a eo:CounterfactualExplanation;
-    ep:isBasedOn :SystemRecExample, :PatientKnowledge;
+    ep:isBasedOn :SystemRecExample;
     rdfs:label "SGLT-2 drug is recommended for the patient upon taking into account guideline evidence and ASCVD risk.";
     eo:addresses :CounterfactualQuestion .
  
@@ -40,7 +40,7 @@
     rdfs:label "Inductive Task" .
     
 :GuidelineEvidence 
-    a eo:ScientificKnowledge, eo:Fact;
+    a eo:ScientificKnowledge;
     sio:000231 :AITaskExample;
     rdfs:label "SGLT-2i is the preferred drug" .
 
