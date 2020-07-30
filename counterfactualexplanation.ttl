@@ -21,7 +21,7 @@
     a eo:CounterfactualExplanation;
     ep:isBasedOn :SystemRecExample, :PatientKnowledge;
     rdfs:label "SGLT-2 drug is recommended for the patient upon taking into account guideline evidence and ASCVD risk.";
-    :addresses :TraceBasedQuestion .
+    eo:addresses :CounterfactualQuestion .
  
 :PatientKnowledge 
    a eo:ContextualKnowledge ;
