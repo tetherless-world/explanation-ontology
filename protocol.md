@@ -3,7 +3,9 @@ layout: default
 title: Explanation Ontology: A Model of Explanations for User-Centered AI - Protocol
 ---
 
-<h2>Protocol for usage of our Explanation Ontology</h2>
+[Protocol](#protocol) | [Associated Resources](#resources) 
+
+<h2 id="protocol">Protocol for usage of our Explanation Ontology</h2>
 Below, we present a protocol that can be used as a guide to reuse our explanation ontology in a sketched-out use case.
 
 <h3>The protocol</h3><br/>
@@ -24,7 +26,7 @@ Below, we present a protocol that can be used as a guide to reuse our explanatio
     </ol></li>
 </ol>
 
-<h3>Resource to supplement protocol</h3>
+<h3 id="resources">Resource to supplement protocol</h3>
 This protocol can be further understood, by browsing the resources we have made available:
    <ul>
    <li>Example questions addressed by each explanation type can be browsed via our <a href="modeling">modeling page</a></li>
