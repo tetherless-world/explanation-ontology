@@ -1,7 +1,7 @@
 <h2>Protocol for usage of our Explanation Ontology</h2>
 Below, we present a protocol that can be used as a guide to reuse our explanation ontology in a sketched-out use case.
 
-<h3>The protocol<h3><br/>
+<h3>The protocol</h3><br/>
 <ol>
 <li><b>Gathering requirements</b>
 <ol>
