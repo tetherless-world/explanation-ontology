@@ -38,6 +38,10 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
     <th>Resources</th>
     <th>Links</th> 
   </tr>
+   <tr>
+    <td>Protocol Guidance on Usage of Ontology</td>
+    <td><a href="protocol">Protocol</a> </td> 
+  </tr>
   <tr>
     <td>Ontology</td>
     <td><a href="ontology">Explanation Ontology</a> </td> 
