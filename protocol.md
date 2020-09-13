@@ -23,8 +23,9 @@ Below, we present a protocol that can be used as a guide to reuse our explanatio
        <li>Use the <b>structure of sufficiency conditions</b> to encode the desired set of explanations</li>
     </ol></li>
 </ol>
- <br/>  
-   This protocol can be further understood, by browsing the resources we have made available:
+
+<h3>Resource to supplement protocol</h3>
+This protocol can be further understood, by browsing the resources we have made available:
    <ul>
    <li>Example questions addressed by each explanation type can be browsed via our <a href="modeling">modeling page</a></li>
    <li>Components of each explanation type can be queried by competency question <a href="competencyquestions/#question2">#2</a></li>
