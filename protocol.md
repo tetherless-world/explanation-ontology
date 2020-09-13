@@ -1,3 +1,8 @@
+---
+layout: default
+title: Explanation Ontology: A Model of Explanations for User-Centered AI - Protocol
+---
+
 <h2>Protocol for usage of our Explanation Ontology</h2>
 Below, we present a protocol that can be used as a guide to reuse our explanation ontology in a sketched-out use case.
 
@@ -21,7 +26,7 @@ Below, we present a protocol that can be used as a guide to reuse our explanatio
  <br/>  
    This protocol can be further understood, by browsing the resources we have made available:
    <ul>
-   <li>Example questions addressed by each explanation type can be browsed via our <a href="/modeling">modeling page</a></li>
-   <li>Components of each explanation type can be queried by competency question <a href="/competencyquestions/#question2">#2</a></li>
-   <li>Sufficiency conditions can be browsed via the explanation types <a href="/modeling">modeling page</a></li>
+   <li>Example questions addressed by each explanation type can be browsed via our <a href="modeling">modeling page</a></li>
+   <li>Components of each explanation type can be queried by competency question <a href="competencyquestions/#question2">#2</a></li>
+   <li>Sufficiency conditions can be browsed via the explanation types <a href="modeling">modeling page</a></li>
    </ul>
