@@ -1,0 +1,57 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix owl2: <http://www.w3.org/2006/12/owl2#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix chear: <http://hadatac.org/ont/chear#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sio:   <http://semanticscience.org/resource/> .
+@prefix eo: <http://purl.org/heals/eo#> .
+@prefix : <http://purl.org/heals/eo_instance#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix ep: <http://linkedu.eu/dedalo/explanationPattern.owl#> .
+
+
+:CounterfactualQuestion 
+    a sio:000085;
+    rdfs:label "What if the patient had ASCVD risk factors?" .
+
+:CounterfactualExpInstance 
+    a eo:CounterfactualExplanation;
+    ep:isBasedOn :SystemRecExample;
+    rdfs:label "SGLT-2 drug is recommended for the patient upon taking into account guideline evidence and ASCVD risk.";
+    eo:addresses :CounterfactualQuestion .
+ 
+:PatientKnowledge 
+   a eo:ContextualKnowledge ;
+   sio:000668 [a sio:Patient] . 
+
+:SystemRecExample
+    a eo:SystemRecommendation;
+    prov:used :GuidelineEvidence, :PatientKnowledge;
+    rdfs:label "SGLT-2i can be administered for the patient" . 
+
+:AITaskExample 
+    a eo:InductiveTask;
+    sio:000229 :SystemRecExample;
+    ep:hasSetting [a eo:ReasoningMode; rdfs:label "Treatment Planning"];
+    prov:used :GuidelineEvidence;
+    rdfs:label "Inductive Task" .
+    
+:GuidelineEvidence 
+    a eo:ScientificKnowledge;
+    sio:000231 :AITaskExample;
+    rdfs:label "SGLT-2i is the preferred drug" .
+
+sio:000085 a owl:class;
+   rdfs:label "question" .
+
+sio:000231 a owl:ObjectProperty;
+   rdfs:label "is input in" .
+
+sio:000229 a owl:ObjectProperty;
+   rdfs:label "has output" .
+
+sio:000668 a owl:ObjectProperty;
+   rdfs:label "in relation to" .

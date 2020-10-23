@@ -3,7 +3,7 @@ layout: default
 title: Explanation Ontology: A Model of Explanations for User-Centered AI
 ---
 
-[Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) 
+[Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Publications](#publications)
 
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATION ONTOLOGY: A MODEL OF EXPLANATIONS FOR USER-CENTERED AI</h1>
@@ -37,6 +37,10 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
     <tr>
     <th>Resources</th>
     <th>Links</th> 
+  </tr>
+   <tr>
+    <td>Protocol Guidance on Usage of Ontology</td>
+    <td><a href="protocol">Protocol</a> </td> 
   </tr>
   <tr>
     <td>Ontology</td>
@@ -83,6 +87,14 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   </content>
   <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
  
+  <article class="mb-5" id="publications">
+<content>
+  <h2>Publications</h2>
+  <ul>
+    <li>Explanation Ontology: A Model of Explanations for User-Centered AI; Shruthi Chari , Oshani Seneviratne , Daniel M. Gruen ,  Morgan A. Foreman , Amar K. Das, Deborah L. McGuinness; Resource Track,19th International Semantic Web Conference 2020</li>
+    <li>Explanation Ontology in Action: A Clinical Use-Case; Shruthi Chari , Oshani Seneviratne , Daniel M. Gruen ,  Morgan A. Foreman , Amar K. Das, Deborah L. McGuinness; Posters and Demo Track,19th International Semantic Web Conference 2020</li>
+  </ul>
+  </content>
 <!-- 
 <div class="posts">
   {% for post in paginator.posts %}
