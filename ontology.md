@@ -21,6 +21,7 @@ title: Explanation Ontology
   <ul>
   <li>Ontology documentation generated using the <a href="https://github.com/dgarijo/Widoco">Widoco</a> tool can be browsed at: <a href="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html">https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html</a></li>
   <li>Ontology can be accessed from <a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a></li>
+  <li class="note">We are aware of issues with the PURL service at the moment, please use this shortened URL pointing to the ontology resource until then. <a href="https://rb.gy/gsydy0">https://rb.gy/gsydy0</a></li>
   </ul>
   
   <article class="mb-5" id="ontologymetadata">
