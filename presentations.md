@@ -15,7 +15,7 @@ Slide: <iframe src="https://drive.google.com/file/d/1FutUYgFMYoxHnH-hNcqXnMj7GhE
 <h2>International Semantic Web Conference (ISWC) 2020</h2>
 <h3>Resource Paper: "Explanation Ontology: A Model of Explanations for User-Centered AI"</h3>
 Video:
-<iframe src="https://drive.google.com/file/d/1WigmXnmxyuGmWNyMOxlzVe7RT48Nkmsb/preview" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://drive.google.com/file/d/1WigmXnmxyuGmWNyMOxlzVe7RT48Nkmsb/preview" frameborder="0" width="960" height="569"></iframe>
 
 Link to slides: <a href="https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60I0GYSFgAlA/view?usp=sharing">https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60I0GYSFgAlA/view?usp=sharing</a>
 
