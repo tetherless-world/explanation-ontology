@@ -2,18 +2,19 @@
 layout: default
 title: presentations
 ---
+[MCBK 2020](#mcbk) | [ISWC 2020](#iswc) 
 
 <h1>Presentations</h1>
 
 On this page we list the various presentations made on this work at different conference venues. We also link recordings where available. 
 
-<h2>Mobilizing Computing Biomedical Knowledge (MCBK) Meeting 2020</h2>
+<h2 id="mcbk">Mobilizing Computing Biomedical Knowledge (MCBK) Meeting 2020</h2>
 <p>Slide:</p>
 <iframe src="https://drive.google.com/file/d/1FutUYgFMYoxHnH-hNcqXnMj7GhE8T8as/preview" style="width:100%; height: 500px"></iframe>
 
 
 
-<h2>International Semantic Web Conference (ISWC) 2020</h2>
+<h2 id="iswc">International Semantic Web Conference (ISWC) 2020</h2>
 <h3>Resource Paper: "Explanation Ontology: A Model of Explanations for User-Centered AI"</h3>
 <p>Video:</p>
 <iframe src="https://drive.google.com/file/d/1WigmXnmxyuGmWNyMOxlzVe7RT48Nkmsb/preview" frameborder="0" width="960" height="569"></iframe>
