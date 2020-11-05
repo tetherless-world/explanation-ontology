@@ -21,7 +21,9 @@ Link to slides: <a href="https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60
 
 <h3>Poster on "Explanation Ontology In Action: A Clinical Use-Case"</h3>
 
-Video: <iframe width="560" height="315" src="https://www.youtube.com/embed/2m9FVYlavsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Video: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2m9FVYlavsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Link to slides: <a href="https://drive.google.com/file/d/1mgs6piRzQ1RchKbvpCDV-WcqtChQN7LE/view?usp=sharing">https://drive.google.com/file/d/1mgs6piRzQ1RchKbvpCDV-WcqtChQN7LE/view?usp=sharing</a>
 
