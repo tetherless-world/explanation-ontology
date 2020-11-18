@@ -18,8 +18,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:void="http://rdfs.org/ns/void#"
-     xmlns:prov1="http://www.w3.org/TR/prov-o/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:prov-o="http://www.w3.org/TR/prov-o/"
      xmlns:schema="http://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
@@ -27,7 +27,7 @@
         <owl:versionIRI rdf:resource="https://purl.org/heals/eo/1.0.0"/>
         <owl:imports rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <owl:imports rdf:resource="https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl"/>
-        <owl:imports rdf:resource="https://www.w3.org/ns/prov-o#"/>
+        <owl:imports rdf:resource="https://www.w3.org/ns/prov-o.owl"/>        
         <terms:contributor>Amar K. Das</terms:contributor>
         <terms:contributor>Daniel M. Gruen</terms:contributor>
         <terms:contributor>Deborah L. McGuinness</terms:contributor>
