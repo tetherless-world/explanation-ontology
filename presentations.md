@@ -16,10 +16,14 @@ On this page we list the various presentations made on this work at different co
 
 <h2 id="iswc">International Semantic Web Conference (ISWC) 2020</h2>
 <h3>Resource Paper: "Explanation Ontology: A Model of Explanations for User-Centered AI"</h3>
-<p>Video:</p>
-<iframe src="https://drive.google.com/file/d/1WigmXnmxyuGmWNyMOxlzVe7RT48Nkmsb/preview" frameborder="0" width="960" height="569"></iframe>
-
+<!-- <p>Video:</p>
+<iframe src="https://drive.google.com/file/d/1WigmXnmxyuGmWNyMOxlzVe7RT48Nkmsb/preview" frameborder="0" width="960" height="569"></iframe> 
 Link to slides: <a href="https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60I0GYSFgAlA/view?usp=sharing">https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60I0GYSFgAlA/view?usp=sharing</a>
+-->
+<p>Slide:</p>
+<iframe src="https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60I0GYSFgAlA/preview">https://drive.google.com/file/d/1gCjdqguDVTi1z3iKDE-s60I0GYSFgAlA/view" style="width:100%; height: 500px"></iframe>
+
+
 
 <h3>Poster on "Explanation Ontology In Action: A Clinical Use-Case"</h3>
 
