@@ -2,7 +2,7 @@
 layout: default
 title: presentations
 ---
-[MCBK 2020](#mcbk) | [ISWC 2020](#iswc) | [Department Presentation] (#department)
+[MCBK 2020](#mcbk) | [ISWC 2020](#iswc) | [Department Presentation](#department)
 
 <h1>Presentations</h1>
 
