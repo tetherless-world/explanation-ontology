@@ -9,7 +9,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
 <h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATION ONTOLOGY: A MODEL OF EXPLANATIONS FOR USER-CENTERED AI</h1>
 <h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>, Amar K. Das<sup>2</sup></h3>
 <h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://www.research.ibm.com/labs/cambridge/"><sup>2</sup>IBM Research, Cambridge</a></h3>
-<p class="message">A website to navigate resources open-sourced via the associated and best resource paper award-winning ISWC 2020 submission. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
+<p class="message">A website to navigate resources open-sourced for the Explanation Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
 
 <!-- <table>
   <tbody>
