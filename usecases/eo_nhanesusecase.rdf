@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/heals/eo_nhanesusescase#"
+     xml:base="https://purl.org/heals/eo_nhanesusescase"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:prov-o="http://www.w3.org/TR/prov-o/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"
+     xmlns:explanationPattern="http://linkedu.eu/dedalo/explanationPattern.owl#">
+    <owl:Ontology rdf:about="https://purl.org/heals/eo_nhanesusescase">
+        <owl:versionIRI rdf:resource="https://purl.org/heals/eo_nhanesusescase"/>
+        <owl:imports rdf:resource="https://purl.org/heals/eo/2.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo#HyperglycemiaPatient -->
+
+    <rdf:Description rdf:about="https://purl.org/heals/eo#HyperglycemiaPatient">
+        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000396"/>
+        <resource:SIO_000059 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient_B"/>
+        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_nhanesusescase#SummarizationOfProtodashOutputs"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_nhanesusescase#SummarizerMethod"/>
+        <rdfs:label>Early childhood questionnaire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#ExplanationQuestionnaires -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#ExplanationQuestionnaires">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire"/>
+        <rdfs:label>Explanations of most representative questionnaires</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#ExplanationRepresentativePatient -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#ExplanationRepresentativePatient">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient2"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient_B"/>
+        <rdfs:label>Explanation representing most representative patient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#Patient1Income -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#Patient1Income">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/NCIT_C41150"/>
+        <rdfs:label>Income of patient 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#Patient2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#Patient2">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
+        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Protodash"/>
+        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Protodash"/>
+        <prov:wasGeneratedBy rdf:resource="https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask"/>
+        <rdfs:label>Patient 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#Patient_B -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#Patient_B">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient1Income"/>
+        <resource:SIO_000095 rdf:resource="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire"/>
+        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Protodash"/>
+        <prov:wasGeneratedBy rdf:resource="https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask"/>
+        <rdfs:label>Patient 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#Protodash -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#Protodash">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ExemplarMethods"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient2"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient_B"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient2"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient_B"/>
+        <rdfs:label>Protodash run on Income Questionnaire Answers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#PrototypeExplanationTask">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#InterprationAndExplanationTask"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_nhanesusescase#Protodash"/>
+        <rdfs:label>Prototype finding task for Income Questionnaire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#SummarizationOfProtodashOutputs -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#SummarizationOfProtodashOutputs">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#InterprationAndExplanationTask"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_nhanesusescase#Protodash"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_nhanesusescase#SummarizerMethod"/>
+        <rdfs:label>Summarization of Protodash Outputs Task</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#SummarizerMethod -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#SummarizerMethod">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#KnowledgeDistillationMethod"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_nhanesusescase#Patient_B"/>
+        <rdfs:label>Summarizer method run on Protodash outputs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_nhanesusescase#SummarizerRecommendation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_nhanesusescase#SummarizerRecommendation">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_nhanesusescase#EarlyChildhoodQuestionnaire"/>
+        <prov:wasGeneratedBy rdf:resource="https://purl.org/heals/eo_nhanesusescase#SummarizationOfProtodashOutputs"/>
+        <rdfs:label>System recommendation generated by summarizer task</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

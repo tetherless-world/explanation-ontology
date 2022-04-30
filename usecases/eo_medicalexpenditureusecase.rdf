@@ -1,0 +1,418 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/heals/eo_medicalexpenditureusecase#"
+     xml:base="https://purl.org/heals/eo_medicalexpenditureusecase"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:prov-o="http://www.w3.org/TR/prov-o/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:explanationPattern="http://linkedu.eu/dedalo/explanationPattern.owl#">
+    <owl:Ontology rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase">
+        <owl:imports rdf:resource="https://purl.org/heals/eo/2.0.0"/>
+        <terms:source>https://nbviewer.org/github/IBM/AIX360/blob/master/examples/tutorials/MEPS.ipynb</terms:source>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#ACTLim31 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#ACTLim31">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:hasSynonym>ACTLIM31</resource:hasSynonym>
+        <rdfs:label>Any activity limitations at work, in housework, or at school</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#ADHDAbsent -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#ADHDAbsent">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#ADHDColumn"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>ADHD Absent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#ADHDColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#ADHDColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:hasSynonym>ADHDADDX</resource:hasSynonym>
+        <rdfs:label>Attention-deficit disorder column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Activity_limitations_absent -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Activity_limitations_absent">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#ACTLim31"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>Activity limitations absent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Activity_limitations_present -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Activity_limitations_present">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#ACTLim31"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</resource:SIO_000300>
+        <rdfs:label>Activity limitations present</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#BRCG -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#BRCG">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#HighLevelFeatureLearningMethod"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#BRCGSystemRec"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#System_Recommendation_of_high-cost_patient_-_physical_limitations,_lower_physical_health_status_and_some_health_insurance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#BRCGSystemRec -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#BRCGSystemRec">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Activity_limitations_present"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Bachelors_degree_present"/>
+        <rdfs:label>System Recommendation of high-cost patient - bachelor degree holders with limitations at work</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Bachelors_degree_column -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Bachelors_degree_column">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Bachelors degree column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Bachelors_degree_present -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Bachelors_degree_present">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Bachelors_degree_column"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</resource:SIO_000300>
+        <rdfs:label>Bachelors degree present</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#COGLIM31Column -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#COGLIM31Column">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:hasSynonym>COGLIM31</resource:hasSynonym>
+        <rdfs:label>Cognitive Limitations 31 Column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#CognitiveLimitationsAbsent -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#CognitiveLimitationsAbsent">
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#COGLIM31Column"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>Cognitive Limitations Absent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Absent -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Absent">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Column"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>Difficulty seeing without labels absent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Column -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Column">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:hasSynonym>DFSEE42</resource:hasSynonym>
+        <rdfs:label>Serious difficulty seeing without glasses /42 column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Explanation_based_on_higher-degree_rule_for_high-cost_patient_identification -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Explanation_based_on_higher-degree_rule_for_high-cost_patient_identification">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#BRCGSystemRec"/>
+        <rdfs:label>Explanation based on higher-degree rule for high-cost patient identification.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HealthInsuranceCoverageTrue -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HealthInsuranceCoverageTrue">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#InsuranceCoverageColumn"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</resource:SIO_000300>
+        <rdfs:label>Health insurance coverage - true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HighCostPatientExplanation2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HighCostPatientExplanation2">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#System_Recommendation_of_high-cost_patient_-_physical_limitations,_lower_physical_health_status_and_some_health_insurance"/>
+        <rdfs:label>Explanation based on high-cost patient pattern rule 2.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule1">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#LinearRuleRegression"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#PregnancyCell"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#self-reportedpoorhealthcell"/>
+        <rdfs:label>Higher degree rule for low medical expenditure prediction: rule 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule1Explanation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule1Explanation">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule1"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule2"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule3"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule4"/>
+        <rdfs:label>Explanation based on higher degree rules for low-cost medical expenditure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule2">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#CognitiveLimitationsAbsent"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#LinearRuleRegression"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#ADHDAbsent"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Absent"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#PregnancyCell"/>
+        <rdfs:label>Higher-degree rule for low medical expenditure: rule 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule3 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule3">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#LinearRuleRegression"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Activity_limitations_absent"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#PregnancyCell"/>
+        <rdfs:label>Higher degree rule for low medical expenditure: rule 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule4 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule4">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#LinearRuleRegression"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Absent"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Northeast_region"/>
+        <rdfs:label>Higher degree rule 4 for low cost medical expenditure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#InsuranceCoverageColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#InsuranceCoverageColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Health insurance coverage column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#LinearRuleRegression -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#LinearRuleRegression">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#HighLevelFeatureLearningMethod"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule1"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule2"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule3"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HigherDegreeRule4"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#MEPS"/>
+        <rdfs:label>Linear rule regression (LinRR) method to find rules for medical expenditure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#MEPS -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#MEPS">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#ACTLim31"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#ADHDColumn"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#COGLIM31Column"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#DFSEE42Column"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Pregnancy"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#RegionColumn"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Self-reported_poor_health"/>
+        <terms:source>https://meps.ahrq.gov/mepsweb//data_stats/download_data_files_detail.jsp?cboPufNumber=HC-181&amp;prfricon=yes</terms:source>
+        <rdfs:label>Medical Expenditure Dataset</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Northeast_region -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Northeast_region">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Location"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#RegionColumn"/>
+        <rdfs:label>Northeast census region</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#PhysicalLimitationsColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#PhysicalLimitationsColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Limitations in physical functioning</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#PhysicalLimitationsPresent -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#PhysicalLimitationsPresent">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#PhysicalLimitationsColumn"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</resource:SIO_000300>
+        <rdfs:label>Limitations in physical functioning - present</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Pregnancy -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Pregnancy">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:hasSynonym>PREGNT31</resource:hasSynonym>
+        <rdfs:label>Pregnancy column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#PregnancyCell -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#PregnancyCell">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Pregnancy"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>Pregnancy absent cell</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#RegionColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#RegionColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Region column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Self-reportedPoorHealthTrue -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Self-reportedPoorHealthTrue">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Self-reported_poor_health"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</resource:SIO_000300>
+        <rdfs:label>Self-reported poor health - true</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#Self-reported_poor_health -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#Self-reported_poor_health">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:hasSynonym>RTHLTH31</resource:hasSynonym>
+        <rdfs:label>Self-reported poor health column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#self-reportedpoorhealthcell -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#self-reportedpoorhealthcell">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Self-reported_poor_health"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>Self-reported poor health absent cell</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_medicalexpenditureusecase#System_Recommendation_of_high-cost_patient_-_physical_limitations,_lower_physical_health_status_and_some_health_insurance -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_medicalexpenditureusecase#System_Recommendation_of_high-cost_patient_-_physical_limitations,_lower_physical_health_status_and_some_health_insurance">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#BRCG"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#HealthInsuranceCoverageTrue"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#PhysicalLimitationsPresent"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_medicalexpenditureusecase#Self-reportedPoorHealthTrue"/>
+        <rdfs:label>System Recommendation of high-cost patient = physical limitations, lower physical health status and some health insurance coverage.</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/heals/eo_creditapprovalusecase#"
+     xml:base="https://purl.org/heals/eo_creditapprovalusecase"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:eo="https://purl.org/heals/eo#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:prov-o="http://www.w3.org/TR/prov-o/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:explanationPattern="http://linkedu.eu/dedalo/explanationPattern.owl#">
+    <owl:Ontology rdf:about="https://purl.org/heals/eo_creditapprovalusecase">
+        <owl:imports rdf:resource="https://purl.org/heals/eo/2.0.0"/>
+        <terms:source>https://nbviewer.org/github/IBM/AIX360/blob/master/examples/tutorials/HELOC.ipynb</terms:source>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdfs:label>loan applicant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Applicant1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Applicant1">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Protodash"/>
+        <prov:wasGeneratedBy rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#FindPrototypicalExamples"/>
+        <rdfs:comment>For illustration purpose, we only represent a few features linked to the Protodash algorithm&apos;s prototypical example: https://nbviewer.org/github/IBM/AIX360/blob/master/examples/tutorials/HELOC.ipynb#prototypes.</rdfs:comment>
+        <rdfs:label>Applicant 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Applicant2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Applicant2">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp2"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant2"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Protodash"/>
+        <rdfs:label>Prototypical Applicant 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Applicant3 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Applicant3">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp3"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant3"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Protodash"/>
+        <rdfs:label>Prototypical Applicant 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Applicant4 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Applicant4">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp4"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant4"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Protodash"/>
+        <rdfs:label>Prototypical Applicant 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Applicant5 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Applicant5">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp5"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant5"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Protodash"/>
+        <rdfs:label>Prototypical Applicant 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ApplicantGoodIndex -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ApplicantGoodIndex">
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantMonthSinceLastTradeOpen"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantsRiskEstimate"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumSatisfactoryTradesGoodApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqValueGoodApplicant"/>
+        <rdfs:comment>For illustration purpose, we only represent a few features linked to the Protodash algorithm&apos;s prototypical example: https://nbviewer.org/github/IBM/AIX360/blob/master/examples/tutorials/HELOC.ipynb#prototypes.</rdfs:comment>
+        <rdfs:label>Applicant who served as good index - applicant 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ApplicantLoanDenied -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ApplicantLoanDenied">
+        <rdf:type rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#LoanApplicant"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#OutputApplicant9"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#HELOCDataset"/>
+        <rdfs:label>Applicant whose loan was denied</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileBadApplicant -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileBadApplicant">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileColumn"/>
+        <resource:SIO_001403 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ApplicantLoanDenied"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">68.0</resource:SIO_000300>
+        <rdfs:label>Average time loan application needs to be on file to flip credit decision for applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Average time, loan application is on file column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#BRCG -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#BRCG">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#HighLevelFeatureLearningMethod"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#HELOCDataset"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#OutputColumn"/>
+        <rdfs:label>Boolean Rule Column Generator (BRCG)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#CEM -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#CEM">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#HELOCDataset"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#OutputColumn"/>
+        <rdfs:label>Contrastive Explainer Method (CEM)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#CEMPPRec -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#CEMPPRec">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#CEM"/>
+        <resource:SIO_001403 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ApplicantGoodIndex"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantsRiskEstimate"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumSatisfactoryTradesGoodApplicant"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqValueGoodApplicant"/>
+        <rdfs:label>Pertinent positive output from CEM method for applicant 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood1">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Applicant1"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion"/>
+        <rdfs:label>Explanation of first prototypical loan applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood3 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood3">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Applicant3"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion"/>
+        <rdfs:label>Explanation of third prototypical loan applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood4 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood4">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Applicant4"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion"/>
+        <rdfs:label>Explanation of fourth prototypical loan applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood5 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#CaseBasedExplanationGood5">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Applicant5"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion"/>
+        <rdfs:label>Explanation of fifth prototypical loan applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ContrastiveExplainerTask -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ContrastiveExplainerTask">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#InterprationAndExplanationTask"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#CEM"/>
+        <rdfs:label>Contrastive explanation task to find contributors to loan applicant&apos;s credit risk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ContrastiveQuestionPositive -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ContrastiveQuestionPositive">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>Asks, &quot;What features minimally lead the applicant to be accepted and not rejected?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Customer -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Customer">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#user"/>
+        <rdfs:label>Customer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#DataExplanationRiskPerformance -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#DataExplanationRiskPerformance">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#SystemRecLowRisk"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#DataScientistQuestion"/>
+        <rdfs:label>Explanation for low risk performance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#DataScientist -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#DataScientist">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#user"/>
+        <eo:asks rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#DataScientistQuestion"/>
+        <rdfs:label>Data Scientist</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#DataScientistQuestion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#DataScientistQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>Asks, &quot;What are features that most impact low credit approval risk?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExplanationGoodExample2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExplanationGoodExample2">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Applicant2"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion"/>
+        <rdfs:label>Explanation of second prototypical loan applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>External Risk Estimate Column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimateLessThan75 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimateLessThan75">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">75.0</resource:SIO_000300>
+        <rdfs:label>External Risk Estimate less than 75</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant1 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant1">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</resource:SIO_000300>
+        <rdfs:label>External Risk Estimate of Prototypical Applicant 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant3 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant3">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</resource:SIO_000300>
+        <rdfs:label>External Risk Estimate of Prototypical Applicant 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant4 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant4">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</resource:SIO_000300>
+        <rdfs:label>External Risk Estimate of Prototypical Applicant 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant5 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimatePrototypicalApplicant5">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</resource:SIO_000300>
+        <rdfs:label>External Risk Estimate of Prototypical Applicant 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimateToChangeDecision -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimateToChangeDecision">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">81.0</resource:SIO_000300>
+        <rdfs:label>External Risk Estimate Value necessary to turn decision</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#FindPrototypicalExamples -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#FindPrototypicalExamples">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#AITask"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#Protodash"/>
+        <rdfs:label>Task to find prototypical good applicants</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantMonthSinceLastTradeOpen -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantMonthSinceLastTradeOpen">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">280</resource:SIO_000300>
+        <rdfs:label>Month since last trade open of good applicant index</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantsRiskEstimate -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#GoodApplicantsRiskEstimate">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">82</resource:SIO_000300>
+        <rdfs:label>Risk Estimate value for good applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>Asks, &quot;Who are good examples for low risk?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#HELOCDataset -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#HELOCDataset">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileColumn"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesColumn"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#OutputColumn"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqColumn"/>
+        <rdfs:label>HELOC Dataset</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#LoanOfficer -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#LoanOfficer">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#user"/>
+        <eo:asks rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#GoodExampleQuestion"/>
+        <rdfs:label>Loan Officer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp2">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">379</resource:SIO_000300>
+        <rdfs:label>Month since last trade open of prototypical applicant 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp3 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp3">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">338</resource:SIO_000300>
+        <rdfs:label>Month since last trade open of prototypical applicant 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp4 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp4">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">789</resource:SIO_000300>
+        <rdfs:label>Month since last trade open of prototypical applicant 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp5 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastCreditProtoApp5">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">230</resource:SIO_000300>
+        <rdfs:label>Month since last trade open of prototypical applicant 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#MonthSinceLastTradeOpen">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Month since last trade open</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#NumSatisfactoryTradesGoodApplicant -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#NumSatisfactoryTradesGoodApplicant">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesColumn"/>
+        <rdfs:label>Number of satisfactory trades value of good applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#NumberOfSatisfactoryTradesToTurnDecision -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#NumberOfSatisfactoryTradesToTurnDecision">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesColumn"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</resource:SIO_000300>
+        <rdfs:label>Number of Satisfactory Trades necessary to change applicant&apos;s loan decision</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Number Satisfactory Trades Column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesLessThan17Cell -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesLessThan17Cell">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesColumn"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.0</resource:SIO_000300>
+        <rdfs:label>Number Satisfactory Trades less than 17</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#OutputApplicant9 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#OutputApplicant9">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#OutputColumn"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+        <rdfs:label>Output risk performance for applicant whose loan was denied</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#OutputColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#OutputColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Output- Risk Perfomance Column</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqColumn -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqColumn">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdfs:label>Percentage trades never delinquent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqValueGoodApplicant -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqValueGoodApplicant">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#PercentTradesNeverDelqColumn"/>
+        <rdfs:label>Percent trades never delinquent value for good applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeExplanation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeExplanation">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeOutputCEM"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeQuestion"/>
+        <rdfs:label>Explanation that includes features that would flip a decision in favor of the applicant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeOutputCEM -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeOutputCEM">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#CEM"/>
+        <resource:SIO_001403 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ApplicantLoanDenied"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#AverageTimeLoanApplicationOnFileBadApplicant"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimateToChangeDecision"/>
+        <prov:used rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumberOfSatisfactoryTradesToTurnDecision"/>
+        <rdfs:label>Pertinent Negative Output from CEM</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeQuestion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#PertinentNegativeQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>Asks, &quot;What features if changed would flip the applicant&apos;s loan approval to be accepted?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#PertinentPositiveExplanation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#PertinentPositiveExplanation">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#CEMPPRec"/>
+        <eo:addresses rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ContrastiveQuestionPositive"/>
+        <rdfs:label>Explanation that includes features in support of applicant&apos;s low credit risk prediction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#Protodash -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#Protodash">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ExemplarMethods"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ApplicantGoodIndex"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#HELOCDataset"/>
+        <rdfs:label>Protodash explainer - good examples</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant2 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant2">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimate"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">89</resource:SIO_000300>
+        <rdfs:label>Risk estimate value of prototypical applicant 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant3 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant3"/>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant4 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant4"/>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant5 -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#RiskEstimateApplicant5"/>
+    
+
+
+    <!-- https://purl.org/heals/eo_creditapprovalusecase#SystemRecLowRisk -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_creditapprovalusecase#SystemRecLowRisk">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#OutputColumn"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#BRCG"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#ExternalRiskEstimateLessThan75"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_creditapprovalusecase#NumberSatisfactoryTradesLessThan17Cell"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</resource:SIO_000300>
+        <rdfs:label>Risk performance - low</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
