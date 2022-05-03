@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/charis/ontologies/2022/3/untitled-ontology-151#"
+     xml:base="http://www.semanticweb.org/charis/ontologies/2022/3/untitled-ontology-151"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:eo="http://purl.org/heals/eo#"
+     xmlns:eo1="https://purl.org/heals/eo#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:prov-o="http://www.w3.org/TR/prov-o/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:heals-kb="http://idea.rpi.edu/heals/kb/"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:explanationPattern="http://linkedu.eu/dedalo/explanationPattern.owl#">
+    <owl:Ontology rdf:about="https://purl.org/heals/eo_foodrecommendationusecase">
+        <owl:imports rdf:resource="https://purl.org/heals/eo/2.0.0"/>
+        <terms:source>https://punya-sparql.csail.mit.edu/foodkg/</terms:source>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://idea.rpi.edu/heals/kb/ingredient -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/heals/kb/ingredient">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ObjectCharacteristic"/>
+        <terms:source>https://punya-sparql.csail.mit.edu/foodkg/</terms:source>
+        <rdfs:label>Ingredient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://idea.rpi.edu/heals/kb/recipe -->
+
+    <owl:Class rdf:about="http://idea.rpi.edu/heals/kb/recipe">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <terms:source>https://punya-sparql.csail.mit.edu/foodkg/</terms:source>
+        <rdfs:label>Recipe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#season -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#season">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000612"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_000414"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>a period of the year characterized by or associated with a particular activity or phenomenon</terms:description>
+        <terms:source>https://www.merriam-webster.com/dictionary/season</terms:source>
+        <rdfs:label>Season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#QAMethod -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#QAMethod">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMIT_0010354"/>
+        <rdfs:label>Knowledge based question-answering method</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#cauliflower -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower">
+        <rdf:type rdf:resource="http://idea.rpi.edu/heals/kb/ingredient"/>
+        <eo:isAvailibleIn rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter"/>
+        <rdfs:label>Cauliflower</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#cauliflowerSoupQuestion -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowerSoupQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdfs:label>Asks, &quot;Why should I eat spiced cauliflower soup?&quot;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#cauliflowersoupsource -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowersoupsource">
+        <resource:SIO_000300>http://www.food.com/recipe/spiced-cauliflower-soup-335838</resource:SIO_000300>
+        <rdfs:label>Food.com source for spiced cauliflower soup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#delveIntoCauliflowerMethod -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#delveIntoCauliflowerMethod">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
+        <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup"/>
+        <rdfs:label>Logical reasoner that picks up on season as an important attribute to recommend cauliflower</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#inseasonexplanation -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#inseasonexplanation">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter"/>
+        <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup"/>
+        <eo1:addresses rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowerSoupQuestion"/>
+        <rdfs:label>Explanation that provides context around the recommendation for eating spiced cauliflower soup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#season"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower"/>
+        <rdfs:label>Late summer - early winter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#recommendingCauliflowerSoup -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#recommendingCauliflowerSoup">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#QAMethod"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup"/>
+        <rdfs:label>Eat spiced cauliflower soup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup">
+        <rdf:type rdf:resource="http://idea.rpi.edu/heals/kb/recipe"/>
+        <resource:SIO_000059 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower"/>
+        <prov:wasDerivedFrom rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowersoupsource"/>
+        <rdfs:label>Spiced cauliflower soup</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
