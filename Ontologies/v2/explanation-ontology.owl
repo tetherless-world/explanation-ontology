@@ -229,8 +229,9 @@
     <!-- http://purl.org/heals/eo#isAvailibleIn -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/heals/eo#isAvailibleIn">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#hasCharacteristic"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#isCharacteristicOf"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#isSupportedBy"/>
+        <owl:inverseOf rdf:resource="https://purl.org/heals/eo#hasAvailability"/>
         <rdfs:label>is available in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -428,6 +429,15 @@
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_001403"/>
         <dc:description>a property that associates a person entity with the object they consume</dc:description>
         <rdfs:label>is consumer of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.org/heals/eo#hasAvailability -->
+
+    <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#hasAvailability">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#hasCharacteristic"/>
+        <rdfs:label>has availability</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1380,6 +1390,38 @@ Contextual knowledge in turn is the knowledge that is derived from such relevant
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Fact"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Foil"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
         </owl:equivalentClass>
         <dc:description>As described
 by (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present
@@ -2977,8 +3019,8 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     <owl:Class rdf:about="https://purl.org/heals/eo#object_record">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000231"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#AITask"/>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001278"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
@@ -2992,6 +3034,12 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000231"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#AITask"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000231"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>a collection of fields that has been gathered for a particular object and the selection is fed to a computer program</dc:description>
