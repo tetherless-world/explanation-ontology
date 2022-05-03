@@ -25,7 +25,7 @@ title: Explanation Ontology
         <li>V2: <a href="https://purl.org/heals/eo/2.0.0">https://purl.org/heals/eo/2.0.0</a></li>
          <li>V1: <a href="https://purl.org/heals/eo/1.0.0">https://purl.org/heals/eo/1.0.0</a></li>
     </ul>
-<!--   <li class="note">We are aware of issues with the PURL service at the moment, please use this shortened URL pointing to the ontology resource until then. <a href="https://rb.gy/gsydy0">https://rb.gy/gsydy0</a></li> -->
+  <li class="note">If the PURL service doesn't work, please use this shortened URL pointing to the ontology resource. <a href="https://bit.ly/3vD4mmD">https://bit.ly/3vD4mmD</a></li>
   </ul>
   
   <article class="mb-5" id="ontologymetadata">
