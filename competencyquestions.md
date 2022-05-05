@@ -36,7 +36,7 @@ title: Competency Questions
   </tr>
   <tr>
     <td>Real-time</td>
-    <td><a href="#question4">(Q4).</a> Given the system was performing abductive <br>reasoning and has ranked specific recommendations by comparing <br>different medications, what explanations can be provided for that recommendation?</td>
+    <td><a href="#question4">(Q4).</a> Given the system has ranked specific <br> recommendations by comparing different <br> medications, what explanations can be <br> provided for that recommendation?</td>
     <td>Contrastive Explanation</td>
   </tr>
   <tr>
