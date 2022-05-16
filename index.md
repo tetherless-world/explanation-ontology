@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Explanation Ontology: A Model of Explanations for User-Centered AI
+title: Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations
 ---
 
 [Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Publications](#publications)
