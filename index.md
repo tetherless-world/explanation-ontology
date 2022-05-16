@@ -46,11 +46,7 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
     <tr>
     <th>Resources</th>
     <th>Links</th> 
-  </tr>
-   <tr>
-    <td>Protocol Guidance on Usage of Ontology</td>
-    <td><a href="protocol">Protocol</a> </td> 
-  </tr>
+  </tr>  
   <tr>
     <td>Ontology</td>
     <td><a href="ontology">Explanation Ontology</a> </td> 
@@ -72,6 +68,10 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
     <td><a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
   </tr>
    <tr>
+      <tr>
+    <td>Protocol Guidance on Usage of Ontology</td>
+    <td><a href="protocol">Protocol</a> </td> 
+  </tr>
     <td>Tools Used </td>
     <td><a href="index#toolsused">References to tools used</a> </td> 
   </tr>
