@@ -97,6 +97,7 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
   <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
   
     <hr/>
+   
     <article class="mb-5" id="contributors">
 <content>
   <h2>Team</h2>
