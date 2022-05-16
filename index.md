@@ -101,10 +101,10 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
     <article class="mb-5" id="contributors">
 <content>
   <h2>Team</h2>
-  <h2>Current Contributors</h2>
-   <h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Mohamed Ghalwash<sup>2</sup>, Sola Shirai<sup>1</sup> Daniel M. Gruen<sup>1</sup>, Pablo Meyer<sup>2</sup>, Prithwish Chakraborty<sup>2</sup>, Deborah L. McGuinness<sup>1</sup></h3>
-  <h2>Past Contributors</h2>
-  <h3 style="color:dimgrey;">Morgan Foreman<sup>2</sup>,  Amar K. Das<sup>2</sup></h3>
+  <h3>Current Contributors</h3>
+   Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Mohamed Ghalwash<sup>2</sup>, Sola Shirai<sup>1</sup> Daniel M. Gruen<sup>1</sup>, Pablo Meyer<sup>2</sup>, Prithwish Chakraborty<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>
+  <h3>Past Contributors</h3>
+  Morgan Foreman<sup>2</sup>,  Amar K. Das<sup>2</sup>
 <h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://research.ibm.com/science"><sup>2</sup>IBM Research</a></h3>
    </content>
  
