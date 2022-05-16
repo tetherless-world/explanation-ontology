@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Explanation Ontology: A Model of Explanations for User-Centered AI
+title: Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations
 ---
 
-[Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Publications](#publications)
+[Abstract](#abstract) | [Resources](#resources) | [Tools Used](#toolsused) | [Team](#contributors) | [Publications](#publications)
 
 
-<h1 class="page-title" style="text-transform:uppercase;" id="header">EXPLANATION ONTOLOGY: A MODEL OF EXPLANATIONS FOR USER-CENTERED AI</h1>
-<h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>, Amar K. Das<sup>2</sup></h3>
-<h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://www.research.ibm.com/labs/cambridge/"><sup>2</sup>IBM Research, Cambridge</a></h3>
+<h1 class="page-title" style="text-transform:uppercase;" id="header">Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations</h1>
+
 <p class="message">A website to navigate resources open-sourced for the Explanation Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
 
 <!-- <table>
@@ -25,7 +24,17 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   
   
 <h2>Abstract</h2>
-  <p>Explainability has been a goal for Artificial Intelligence systems since their conception, with the need for explanations only growing as machine learning models are increasingly used in critical settings such as healthcare. Currently, explanations are often treated as a nice-to-have feature added in a post-hoc manner. With greater adoption of these systems and emphasis on user-centric explainability, there is a need for a structured representation that treats explainability as a primary consideration, mapping end user needs to specfic explanation types. We design an explanations ontology to formalize the generation of explanations in a machine-readable format, accounting for the system and user attributes in the process. Within our ontology, we support the modeling of different literature-derived explanation types, whose requirements and generational needs were further refined through a requirements gathering exercise conducted with clinicians. Through this ontology, we hope to benefit system designers to include explanation generation facilities in their systems. We evaluate our ontology via competency questions that are inspired by learnings from our clinical requirements gathering exercise and are geared towards a system designer who might use our ontology to learn about the best explanation types to include, given a combination of users' needs and a system's capabilities, both in real-time and system design settings.</p>
+  <p>In the past decade, trustworthy Artificial Intelligence (AI) has emerged as a focus for the AI community to ensure better adoption of AI models, and explainable AI is a cornerstone in this area. Over the years, the focus has shifted from building transparent AI methods to making recommendations on how to make black-box or opaque machine learning models and their results more understandable by experts and non-expert users. 
+    <br/>
+    In our <a href="https://arxiv.org/abs/2010.01479">previous work</a>, to address the goal of supporting user-centered explanations that make model recommendations more explainable, we developed an Explanation Ontology (EO), a general-purpose representation, to help system designers, our intended users of the EO, connect explanations to their underlying data and knowledge. 
+  <br/>
+    We now addresses the apparent need for improved interoperability to support a wider range of use cases. We expand the EO, mainly in the system attributes contributing to explanations, by introducing new classes and properties to support a broader range of state-of-the-art explainer models. We present the expanded ontology model, highlighting the classes and properties that are important to model a larger set of <em>fifteen</em> literature-backed explanation types that are supported within the EO.
+  <br/>
+    We build on these explanation type descriptions to show how to utilize the EO model to represent explanations in <em>five</em> use cases spanning the domains of finance, food, and healthcare. We include competency questions that evaluate the EO's capabilities to provide guidance for system designers on how to apply our ontology to their own use cases. This guidance includes allowing system designers to query the EO directly and providing them exemplar queries to explore content in the EO represented use cases. 
+  <br/>
+    We have released this significantly expanded version of the Explanation Ontology at <a href="https://purl.org/heals/eo" >https://purl.org/heals/eo</a> and updated here on our <a href ="https://tetherless-world.github.io/explanation-ontology">resource website</a>, with supporting documentation. 
+  <br/>
+    Overall, through the EO model, we aim to help system designers be better informed about explanations and support these explanations that can be composed, given their systems' outputs from various AI models, including a mix of machine learning, logical and explainer models, and different types of data and knowledge available to their systems.</p>
  </content>
  
  <hr/>
@@ -37,11 +46,7 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
     <tr>
     <th>Resources</th>
     <th>Links</th> 
-  </tr>
-   <tr>
-    <td>Protocol Guidance on Usage of Ontology</td>
-    <td><a href="protocol">Protocol</a> </td> 
-  </tr>
+  </tr>  
   <tr>
     <td>Ontology</td>
     <td><a href="ontology">Explanation Ontology</a> </td> 
@@ -55,14 +60,18 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
     <td> (b) <a href="./application.html">Faceted Browser</a> </td> 
   </tr>-->
     <tr>
-    <td>Clincal Example</td>
-    <td><a href="clinicalexample">Example of a Contrastive Explanation</a> </td> 
+    <td>Examples</td>
+    <td><a href="clinicalexample">Use Case Examples</a> </td> 
   </tr>
    <tr>
     <td>Competency Questions </td>
     <td><a href="competencyquestions#sparql">SPARQL Queries</a> </td> 
   </tr>
    <tr>
+      <tr>
+    <td>Protocol Guidance on Usage of Ontology</td>
+    <td><a href="protocol">Protocol</a> </td> 
+  </tr>
     <td>Tools Used </td>
     <td><a href="index#toolsused">References to tools used</a> </td> 
   </tr>
@@ -82,10 +91,22 @@ title: Explanation Ontology: A Model of Explanations for User-Centered AI
   <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
   <li>Conceptual Diagram created using <a href="https://www.omnigroup.com/omnigraffle/">Omnigraffle</a></li>
   <li>Ontology documentation tool, <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
-  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a></li>
+  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a> and <a href="https://github.com/protegeproject/ontograf">Ontograf</a> in Protege</li>
   </ul>
   </content>
   <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
+  
+    <hr/>
+   
+    <article class="mb-5" id="contributors">
+<content>
+  <h2>Team</h2>
+  <h3>Current Contributors</h3>
+   Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Mohamed Ghalwash<sup>2</sup>, Sola Shirai<sup>1</sup> Daniel M. Gruen<sup>1</sup>, Pablo Meyer<sup>2</sup>, Prithwish Chakraborty<sup>2</sup>, Deborah L. McGuinness<sup>1</sup>
+  <h3>Past Contributors</h3>
+  Morgan Foreman<sup>2</sup>,  Amar K. Das<sup>2</sup>
+<h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://research.ibm.com/science"><sup>2</sup>IBM Research</a></h3>
+   </content>
  
   <article class="mb-5" id="publications">
 <content>

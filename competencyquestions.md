@@ -36,12 +36,12 @@ title: Competency Questions
   </tr>
   <tr>
     <td>Real-time</td>
-    <td><a href="#question4">(Q4).</a> Given the system was performing abductive <br>reasoning and has ranked specific recommendations by comparing <br>different medications, what explanations can be provided for that recommendation?</td>
+    <td><a href="#question4">(Q4).</a> Given the system has ranked specific <br> recommendations by comparing different <br> medications, what explanations can be <br> provided for that recommendation?</td>
     <td>Contrastive Explanation</td>
   </tr>
   <tr>
     <td>Real-time</td>
-    <td><a href="#question5">(Q5).</a> Which explanation type best suits the user question, ``Which explanation type can expose <br> numerical evidence about  patients that did well on this drug?,'' <br> and how will the system generate the answer?</td>
+    <td><a href="#question5">(Q5).</a>  Which explanation type best suits the <br> user question, asking about numerical evidence <br> for patients on a drug?,'' and how <br> will the system generate the answer?</td>
     <td>Explanation type: statistical <br>System: run `Inductive' AI task with `Clustering' method to generate numerical evidence</td>
   </tr>
 </tbody>
