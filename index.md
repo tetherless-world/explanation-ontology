@@ -7,7 +7,7 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
 
 
 <h1 class="page-title" style="text-transform:uppercase;" id="header">Explanation Ontology: A General-Purpose, Semantic Representation for Supporting User-Centered Explanations</h1>
-<h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Mohamed Ghalwash<sup>2</sup>, Sola Shirai<sup>1</sup> Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>,  Amar K. Das<sup>2</sup>, Pablo Meyer<sup>2</sup></h3>, Prithwish Chakraborty<sup>2</sup>, Deborah L. McGuinness<sup>1</sup></h3>
+<h3 style="color:dimgrey;">Shruthi Chari<sup>1</sup>, Oshani Seneviratne<sup>1</sup>, Mohamed Ghalwash<sup>2</sup>, Sola Shirai<sup>1</sup> Daniel M. Gruen<sup>2</sup>, Morgan Foreman<sup>2</sup>,  Amar K. Das<sup>2</sup>, Pablo Meyer<sup>2</sup>, Prithwish Chakraborty<sup>2</sup>, Deborah L. McGuinness<sup>1</sup></h3>
 <h3><a href="https://www.rpi.edu/"><sup>1</sup>Rensselaer Polytechnic Institute</a> | <a href="https://www.research.ibm.com/labs/cambridge/"><sup>2</sup>IBM Research</a></h3>
 <p class="message">A website to navigate resources open-sourced for the Explanation Ontology. Use the side navigation panel to explore different sections of the website and click on an add symbol for more navigation options under some sections.</p>
 
