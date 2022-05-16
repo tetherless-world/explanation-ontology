@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"https://purl.org/heals/eo","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purl.org/heals/eo","name":"Explanation Ontology", "headline":"The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users' situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.", "datePublished":"Thu May 28 09:25:17 EDT 2020", "version":"1.0.0", "author":[{"@type":"Person","name":"Shruthi Chari"}], "contributor":[{"@type":"Person","name":"Amar K. Das"},{"@type":"Person","name":"Daniel M. Gruen"},{"@type":"Person","name":"Deborah L. McGuinness"},{"@type":"Person","name":"Morgan Foreman"},{"@type":"Person","name":"Oshani Seneviratne"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://purl.org/heals/eo","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://purl.org/heals/eo","name":"Explanation Ontology", "headline":"The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users' situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.", "datePublished":"05/16/2022", "author":[{"@type":"Person","name":"Shruthi Chari"}], "contributor":[{"@type":"Person","name":"Amar K. Das"},{"@type":"Person","name":"Daniel M. Gruen"},{"@type":"Person","name":"Deborah L. McGuinness"},{"@type":"Person","name":"Mohamed Ghalwash"},{"@type":"Person","name":"Morgan Foreman"},{"@type":"Person","name":"Oshani Seneviratne"},{"@type":"Person","name":"Pablo Meyers"},{"@type":"Person","name":"Prithwish Chakraborty"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -50,6 +50,7 @@ function loadTOC(){
       $("#overview").load("sections/overview-en.html"); 
       $("#description").load("sections/description-en.html"); 
       $("#references").load("sections/references-en.html"); 
+      $("#changelog").load("sections/changelog-en.html"); 
       $("#crossref").load("sections/crossref-en.html", null, loadHash); 
     });
     </script> 
@@ -60,29 +61,44 @@ function loadTOC(){
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>Explanation Ontology</h1>
+<h2>Release 05/16/2022</h2>
 
 
 <dl>
 <dt>This version:</dt>
+<dd><a href="https://purl.org/heals/eo/2.0.0">https://purl.org/heals/eo/2.0.0</a></dd>
+<dt>Latest version:</dt>
+<dd><a href="https://purl.org/heals/eo">https://purl.org/heals/eo</a></dd>
+<dt>Previous version:</dt>
 <dd><a href="https://purl.org/heals/eo/1.0.0">https://purl.org/heals/eo/1.0.0</a></dd>
-<dt>Revision:</dt>
-<dd>1.0.0</dd>
 <dt>Authors:</dt>
 <dd>Shruthi Chari</dd>
 
 <dt>Contributors:</dt>
-<dd>Oshani Seneviratne</dd><dd>Daniel M. Gruen</dd><dd>Morgan Foreman</dd><dd>Amar K. Das</dd><dd>Deborah L. McGuinness</dd>
+<dd>Amar K. Das</dd><dd>Daniel M. Gruen</dd><dd>Deborah L. McGuinness</dd><dd>Mohamed Ghalwash</dd><dd>Morgan Foreman</dd><dd>Oshani Seneviratne</dd><dd>Pablo Meyers</dd><dd>Prithwish Chakraborty</dd>
 
 <dt>Imported Ontologies:</dt>
-<dd><a href="http://linkedu.eu/dedalo/explanationPattern.owl">explanationPattern.owl</a></dd><dd><a href="http://semanticscience.org/ontology/sio.owl">sio.owl</a></dd><dd><a href="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl">cpannotationschema.owl</a></dd><dd><a href="http://www.w3.org/ns/prov-o#">prov-o#</a></dd>
+<dd><a href="http://semanticscience.org/ontology/sio.owl">sio.owl</a></dd><dd><a href="http://www.w3.org/ns/prov-o#">prov-o#</a></dd>
 
-<dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://www.apache.org/licenses/LICENSE-2.0" alt="" />Apache 2.0</a>
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-Copyright%202022%20IBM%20Research%20and%20Rensselaer%20Polytechnic%20Institute
+
+			Licensed%20under%20the%20Apache%20License,%20Version%202.0%20(the%20"License");
+	you%20may%20not%20use%20this%20file%20except%20in%20compliance%20with%20the%20License.
+	You%20may%20obtain%20a%20copy%20of%20the%20License%20at
+
+		http://www.apache.org/licenses/LICENSE_2.0
+
+	Unless%20required%20by%20applicable%20law%20or%20agreed%20to%20in%20writing,%20software
+	distributed%20under%20the%20License%20is%20distributed%20on%20an%20"AS%20IS"%20BASIS,
+	WITHOUT%20WARRANTIES%20OR%20CONDITIONS%20OF%20ANY%20KIND,%20either%20express%20or%20implied.
+	See%20the%20License%20for%20the%20specific%20language%20governing%20permissions%20and
+	limitations%20under%20the%20License.-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
-<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Chari S., Seneviratne O., Gruen D. M., Foreman M., Das A. K., McGuinness, D. L.. Explanation Ontology. Retrieved from: https://purl.org/heals/eo/1.0.0</dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Shruthi Chari. Explanation Ontology. Retrieved from: https://purl.org/heals/eo/2.0.0</dd>
 </dl>
 
-<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+<hr/>
 </div>
 <div class="status">
 <div>
@@ -94,14 +110,16 @@ function loadTOC(){
      <div id="description"></div>
      <div id="crossref"></div>
      <div id="references"></div>
-<div id="acknowledgements">
-<h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+     <div id="changelog"></div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
-	This work is done as part of the <a href="https://idea.rpi.edu/research/projects/heals">HEALS project</a>, and is partially supported by <a href="https://www.research.ibm.com/artificial-intelligence/">IBM Research AI</a> through the AI Horizons Network. We thank our colleagues from IBM Research, including Ching-Hua Chen, and from <a href="https://rpi.edu">RPI</a>, James P. McCusker, Sabbir M. Rashid and Rebecca Cowan, who provided insight and expertise that greatly assisted the research.
+	This work is done as part of the <a href="https://idea.rpi.edu/research/projects/heals">HEALS project</a>, and is partially supported by <a href="https://www.research.ibm.com/artificial-intelligence/">IBM Research AI</a> through the AI Horizons Network. We thank our colleagues from IBM Research, including Ching-Hua Chen, and from <a href="https://rpi.edu">RPI</a>, Jamie P. McCusker, Sabbir M. Rashid and Rebecca Cowan, who provided insight and expertise that greatly assisted the research.
 	</p>
 	<br>
 <p>
-Additionally, the authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
 </div>
 
 

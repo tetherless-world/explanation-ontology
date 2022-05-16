@@ -4,21 +4,23 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://purl.org/heals/eo> .
+@base <https://purl.org/heals/eo#> .
 
 <https://purl.org/heals/eo> rdf:type owl:Ontology ;
-                             owl:versionIRI <https://purl.org/heals/eo/1.0.0> ;
+                             owl:versionIRI <https://purl.org/heals/eo/2.0.0> ;
                              owl:imports <http://semanticscience.org/ontology/sio.owl> ,
-                                         <https://raw.githubusercontent.com/tetherless-world/explanations-ontology/master/Ontologies/explanations-pattern-ontology.owl> ,
-                                         <https://www.w3.org/ns/prov-o#> ;
+                                         <https://www.w3.org/ns/prov-o.owl> ;
                              <http://purl.org/dc/terms/contributor> "Amar K. Das" ,
                                                                     "Daniel M. Gruen" ,
                                                                     "Deborah L. McGuinness" ,
+                                                                    "Mohamed Ghalwash" ,
                                                                     "Morgan Foreman" ,
-                                                                    "Oshani Seneviratne" ;
+                                                                    "Oshani Seneviratne" ,
+                                                                    "Pablo Meyers" ,
+                                                                    "Prithwish Chakraborty" ;
                              <http://purl.org/dc/terms/creator> "Shruthi Chari" ;
                              <http://purl.org/dc/terms/description> "The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users' situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs." ;
-                             <http://purl.org/dc/terms/license> """Copyright 2019 IBM Research and Rensselaer Polytechnic Institute
+                             <http://purl.org/dc/terms/license> """Copyright 2022 IBM Research and Rensselaer Polytechnic Institute
 
 			Licensed under the Apache License, Version 2.0 (the \"License\");
 	you may not use this file except in compliance with the License.
@@ -32,7 +34,8 @@
 	See the License for the specific language governing permissions and
 	limitations under the License.""" ;
                              <http://purl.org/dc/terms/title> "Explanation Ontology" ;
-                             rdfs:label "Explanation Ontology" .
+                             rdfs:label "Explanation Ontology" ;
+                             <http://www.w3.org/ns/prov#wasRevisionOf> "https://purl.org/heals/eo/1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -96,6 +99,114 @@ rdfs:label rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
+###  http://linkedu.eu/dedalo/data/interacts
+<http://linkedu.eu/dedalo/data/interacts> rdf:type owl:ObjectProperty .
+
+
+###  http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn
+<http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> rdf:type owl:ObjectProperty ;
+                                                            rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_001403> ;
+                                                            rdfs:label "is based on" .
+
+
+###  http://purl.org/heals/eo#hasCharacteristic
+<http://purl.org/heals/eo#hasCharacteristic> rdf:type owl:ObjectProperty ;
+                                             rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000008> ;
+                                             owl:inverseOf <http://purl.org/heals/eo#isCharacteristicOf> ;
+                                             rdfs:range <http://purl.org/heals/eo#Characteristic> ;
+                                             rdfs:label "has characteristic" .
+
+
+###  http://purl.org/heals/eo#hasExplanationType
+<http://purl.org/heals/eo#hasExplanationType> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://purl.org/heals/eo#hasCharacteristic> .
+
+
+###  http://purl.org/heals/eo#hasGoal
+<http://purl.org/heals/eo#hasGoal> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/heals/eo#hasParameter
+<http://purl.org/heals/eo#hasParameter> rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf <http://purl.org/heals/eo#hasCharacteristic> ;
+                                        rdfs:range <http://purl.org/heals/eo#Parameter> ;
+                                        rdfs:label "has parameter" .
+
+
+###  http://purl.org/heals/eo#hasPrimaryParameter
+<http://purl.org/heals/eo#hasPrimaryParameter> rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf <http://purl.org/heals/eo#hasParameter> ;
+                                               rdfs:label "has primary parameter" .
+
+
+###  http://purl.org/heals/eo#hasSecondaryParameter
+<http://purl.org/heals/eo#hasSecondaryParameter> rdf:type owl:ObjectProperty ;
+                                                 rdfs:subPropertyOf <http://purl.org/heals/eo#hasParameter> ;
+                                                 rdfs:label "has secondary parameter" .
+
+
+###  http://purl.org/heals/eo#isAvailibleIn
+<http://purl.org/heals/eo#isAvailibleIn> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://purl.org/heals/eo#isCharacteristicOf> ,
+                                                            <http://purl.org/heals/eo#isSupportedBy> ;
+                                         owl:inverseOf :hasAvailability ;
+                                         rdfs:label "is available in" .
+
+
+###  http://purl.org/heals/eo#isCharacteristicOf
+<http://purl.org/heals/eo#isCharacteristicOf> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000011> ;
+                                              rdfs:label "is characteristic of" .
+
+
+###  http://purl.org/heals/eo#isOpposedBy
+<http://purl.org/heals/eo#isOpposedBy> rdf:type owl:ObjectProperty ;
+                                       rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000212> ;
+                                       owl:inverseOf <http://purl.org/heals/eo#opposes> ;
+                                       rdfs:label "is opposed by" .
+
+
+###  http://purl.org/heals/eo#isParameterOfType
+<http://purl.org/heals/eo#isParameterOfType> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/heals/eo#isSupportedBy
+<http://purl.org/heals/eo#isSupportedBy> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000212> ;
+                                         owl:inverseOf <http://purl.org/heals/eo#supports> ;
+                                         rdfs:label "is supported by" .
+
+
+###  http://purl.org/heals/eo#opposes
+<http://purl.org/heals/eo#opposes> rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000628> ;
+                                   rdfs:label "opposes" .
+
+
+###  http://purl.org/heals/eo#pertainsTo
+<http://purl.org/heals/eo#pertainsTo> rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/heals/eo#recommendedBy
+<http://purl.org/heals/eo#recommendedBy> rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000212> ;
+                                         owl:inverseOf <http://purl.org/heals/eo#recommends> ;
+                                         rdfs:label "recommended by" .
+
+
+###  http://purl.org/heals/eo#recommends
+<http://purl.org/heals/eo#recommends> rdf:type owl:ObjectProperty ;
+                                      rdfs:subPropertyOf <http://purl.org/heals/eo#isCharacteristicOf> ,
+                                                         <http://purl.org/heals/eo#isSupportedBy> ;
+                                      rdfs:label "recommends" .
+
+
+###  http://purl.org/heals/eo#supports
+<http://purl.org/heals/eo#supports> rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000628> ;
+                                    rdfs:label "supports" .
+
+
 ###  http://semanticscience.org/resource/SIO_000008
 <http://semanticscience.org/resource/SIO_000008> rdf:type owl:ObjectProperty .
 
@@ -140,6 +251,16 @@ rdfs:label rdf:type owl:AnnotationProperty .
 <http://semanticscience.org/resource/SIO_001403> rdf:type owl:ObjectProperty .
 
 
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> rdf:type owl:ObjectProperty ;
+                                                                        rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000008> ;
+                                                                        rdfs:label "has setting" .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> rdf:type owl:ObjectProperty .
+
+
 ###  http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty .
 
@@ -165,11 +286,10 @@ rdfs:label rdf:type owl:AnnotationProperty .
           rdfs:label "is consumer of" .
 
 
-###  https://purl.org/heals/eo#hasPreferenceFor
-:hasPreferenceFor rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000628> ;
-                  <http://purl.org/dc/elements/1.1/description> "a property that captures what form of output an entity a is presented in" ;
-                  rdfs:label "has preference for" .
+###  https://purl.org/heals/eo#hasAvailability
+:hasAvailability rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.org/heals/eo#hasCharacteristic> ;
+                 rdfs:label "has availability" .
 
 
 ###  https://purl.org/heals/eo#hasPresentation
@@ -186,6 +306,13 @@ rdfs:label rdf:type owl:AnnotationProperty .
             rdfs:label "implements" .
 
 
+###  https://purl.org/heals/eo#isUsedBy
+:isUsedBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_001403> ;
+          <http://purl.org/dc/terms/description> "a property that associates an entity with the object that uses it" ;
+          rdfs:label "is used by" .
+
+
 ###  https://purl.org/heals/eo#possess
 :possess rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://semanticscience.org/resource/SIO_000223> ;
@@ -194,15 +321,21 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/heals/eo#isInternal
+<http://purl.org/heals/eo#isInternal> rdf:type owl:DatatypeProperty ;
+                                      rdfs:range xsd:boolean .
+
+
+#################################################################
 #    Classes
 #################################################################
 
 ###  http://linkedu.eu/dedalo/explanationPattern.owl#Explanation
-<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ,
-                                                                              [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> ;
-                                                                                owl:someValuesFrom <http://semanticscience.org/resource/SIO_000776>
-                                                                              ] ,
+<http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ,
                                                                               [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
                                                                                 owl:someValuesFrom :SystemRecommendation
@@ -216,10 +349,6 @@ rdfs:label rdf:type owl:AnnotationProperty .
                                                                                 owl:someValuesFrom :ExplanationGoal
                                                                               ] ,
                                                                               [ rdf:type owl:Restriction ;
-                                                                                owl:onProperty <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy> ;
-                                                                                owl:someValuesFrom :AITask
-                                                                              ] ,
-                                                                              [ rdf:type owl:Restriction ;
                                                                                 owl:onProperty :addresses ;
                                                                                 owl:someValuesFrom <http://semanticscience.org/resource/SIO_000085>
                                                                               ] ,
@@ -230,6 +359,97 @@ rdfs:label rdf:type owl:AnnotationProperty .
                                                               <http://purl.org/dc/terms/source> "Chari, S., Gruen, D. M., Seneviratne, O., & McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520." ;
                                                               rdfs:label "Explanation" ;
                                                               <http://www.w3.org/2004/02/skos/core#definition> "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C120451
+<http://purl.obolibrary.org/obo/NCIT_C120451> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41150> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                              rdfs:label "Social Security Retirement Benefit" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C120452
+<http://purl.obolibrary.org/obo/NCIT_C120452> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41150> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                              rdfs:label "Pension" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C154890
+<http://purl.obolibrary.org/obo/NCIT_C154890> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41150> ;
+                                              <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                              rdfs:label "Income Level" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C17468
+<http://purl.obolibrary.org/obo/NCIT_C17468> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C20188> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Socioeconomic Factors" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C19308
+<http://purl.obolibrary.org/obo/NCIT_C19308> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C70811> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Average Household Income" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20181
+<http://purl.obolibrary.org/obo/NCIT_C20181> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://semanticscience.org/resource/SIO_000776> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Conceptual Entity" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C20188
+<http://purl.obolibrary.org/obo/NCIT_C20188> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C20181> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Social Circumstances" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C41150
+<http://purl.obolibrary.org/obo/NCIT_C41150> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C20181> ,
+                                                             <http://purl.org/heals/eo#Characteristic> ,
+                                                             <http://semanticscience.org/resource/SIO_010410> ,
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/SIO_000300> ;
+                                                               owl:someValuesFrom xsd:double
+                                                             ] ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Income" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C53333
+<http://purl.obolibrary.org/obo/NCIT_C53333> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C17468> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Socioeconomic Indicator" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C53334
+<http://purl.obolibrary.org/obo/NCIT_C53334> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41150> ,
+                                                             <http://purl.obolibrary.org/obo/NCIT_C53333> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Median Income" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C70811
+<http://purl.obolibrary.org/obo/NCIT_C70811> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41150> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Household Income" .
+
+
+###  http://purl.obolibrary.org/obo/NCIT_C85406
+<http://purl.obolibrary.org/obo/NCIT_C85406> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://purl.obolibrary.org/obo/NCIT_C41150> ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/ncit.owl> ;
+                                             rdfs:label "Gross Income" .
 
 
 ###  http://purl.obolibrary.org/obo/OMIT_0001177
@@ -283,7 +503,7 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 ###  http://purl.obolibrary.org/obo/OMIT_0017046
 <http://purl.obolibrary.org/obo/OMIT_0017046> rdf:type owl:Class ;
-                                              rdfs:subClassOf :ArtificialIntelligenceMethod ;
+                                              rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0001483> ;
                                               <http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/omit.owl> ;
                                               rdfs:label "Neural Networks (Computer)" .
 
@@ -323,16 +543,38 @@ rdfs:label rdf:type owl:AnnotationProperty .
                                               rdfs:label "Biological Ontologies" .
 
 
+###  http://purl.org/heals/eo#Characteristic
+<http://purl.org/heals/eo#Characteristic> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://semanticscience.org/resource/SIO_000000> ;
+                                          rdfs:label "Characteristic" ;
+                                          <http://www.w3.org/ns/prov#definition> "a distinguishing trait, quality, or property of an object record" .
+
+
+###  http://purl.org/heals/eo#Parameter
+<http://purl.org/heals/eo#Parameter> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://purl.org/heals/eo#Characteristic> .
+
+
+###  http://purl.org/heals/eo#System
+<http://purl.org/heals/eo#System> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_000004> ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://purl.org/heals/eo#hasCharacteristic> ;
+                                                    owl:someValuesFrom :SystemCharacteristic
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000061> ;
+                                                    owl:someValuesFrom <http://semanticscience.org/resource/SIO_000414>
+                                                  ] ;
+                                  rdfs:label "System" .
+
+
 ###  http://semanticscience.org/resource/SIO_000004
 <http://semanticscience.org/resource/SIO_000004> rdf:type owl:Class .
 
 
 ###  http://semanticscience.org/resource/SIO_000010
-<http://semanticscience.org/resource/SIO_000010> rdf:type owl:Class ;
-                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                   owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans> ;
-                                                                   owl:someValuesFrom <http://semanticscience.org/resource/SIO_000776>
-                                                                 ] .
+<http://semanticscience.org/resource/SIO_000010> rdf:type owl:Class .
 
 
 ###  http://semanticscience.org/resource/SIO_000069
@@ -340,7 +582,11 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 
 ###  http://semanticscience.org/resource/SIO_000085
-<http://semanticscience.org/resource/SIO_000085> rdf:type owl:Class .
+<http://semanticscience.org/resource/SIO_000085> rdf:type owl:Class ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://purl.org/heals/eo#hasParameter> ;
+                                                                   owl:someValuesFrom <http://purl.org/heals/eo#Parameter>
+                                                                 ] .
 
 
 ###  http://semanticscience.org/resource/SIO_000097
@@ -352,7 +598,11 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 
 ###  http://semanticscience.org/resource/SIO_000498
-<http://semanticscience.org/resource/SIO_000498> rdf:type owl:Class .
+<http://semanticscience.org/resource/SIO_000498> rdf:type owl:Class ;
+                                                 rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
+                                                                   owl:someValuesFrom <http://purl.obolibrary.org/obo/NCIT_C41150>
+                                                                 ] .
 
 
 ###  http://semanticscience.org/resource/SIO_000602
@@ -395,19 +645,16 @@ rdfs:label rdf:type owl:AnnotationProperty .
 <http://semanticscience.org/resource/SIO_001243> rdf:type owl:Class .
 
 
+###  http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation
+<http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation> rdf:type owl:Class ;
+                                                                       rdfs:label "Situation" .
+
+
 ###  https://purl.org/heals/eo#AITask
 :AITask rdf:type owl:Class ;
         rdfs:subClassOf <http://semanticscience.org/resource/SIO_000649> ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
-                          owl:someValuesFrom :SystemRecommendation
-                        ] ,
-                        [ rdf:type owl:Restriction ;
                           owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
-                          owl:someValuesFrom :knowledge
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ;
                           owl:someValuesFrom :Reasoning_Mode
                         ] ,
                         [ rdf:type owl:Restriction ;
@@ -435,33 +682,80 @@ rdfs:label rdf:type owl:AnnotationProperty .
 
 ###  https://purl.org/heals/eo#ArtificialIntelligenceMethod
 :ArtificialIntelligenceMethod rdf:type owl:Class ;
-                              rdfs:subClassOf <http://semanticscience.org/resource/SIO_000667> ;
+                              rdfs:subClassOf <http://semanticscience.org/resource/SIO_000667> ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty <http://semanticscience.org/resource/SIO_000068> ;
+                                                owl:someValuesFrom <http://purl.org/heals/eo#System>
+                                              ] ;
                               <http://purl.org/dc/elements/1.1/description> "a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value" ;
                               rdfs:label "AI Method" .
 
 
 ###  https://purl.org/heals/eo#CaseBasedExplanation
 :CaseBasedExplanation rdf:type owl:Class ;
-                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://semanticscience.org/resource/SIO_001277> ;
+                                                                                                        owl:someValuesFrom :object_record
+                                                                                                      ]
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                                    owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                                                                                                                                                                                owl:someValuesFrom :object_record
+                                                                                                                                                                                              ]
+                                                                                                                                                                                            ) ;
+                                                                                                                                                                         rdf:type owl:Class
+                                                                                                                                                                       ]
+                                                                                                                                                  ]
+                                                                                                                                                ) ;
+                                                                                                                             rdf:type owl:Class
+                                                                                                                           ]
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( :object_record
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                                    owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                                                                                                                                                                                owl:someValuesFrom :object_record
+                                                                                                                                                                                              ]
+                                                                                                                                                                                            ) ;
+                                                                                                                                                                         rdf:type owl:Class
+                                                                                                                                                                       ]
+                                                                                                                                                  ]
+                                                                                                                                                ) ;
+                                                                                                                             rdf:type owl:Class
+                                                                                                                           ]
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                          ]
+                                                        )
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
                                             owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                            owl:someValuesFrom [ owl:intersectionOf ( <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation>
+                                            owl:someValuesFrom [ owl:intersectionOf ( :LocalExplanation
                                                                                       [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
-                                                                                                                                  [ rdf:type owl:Restriction ;
-                                                                                                                                    owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
-                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :AITask
-                                                                                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
-                                                                                                                                                                                owl:someValuesFrom :object_record
-                                                                                                                                                                              ]
-                                                                                                                                                                            ) ;
-                                                                                                                                                         rdf:type owl:Class
-                                                                                                                                                       ]
-                                                                                                                                  ]
-                                                                                                                                ) ;
-                                                                                                             rdf:type owl:Class
-                                                                                                           ]
+                                                                                        owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                                                        owl:someValuesFrom :ExemplarMethods
                                                                                       ]
                                                                                     ) ;
                                                                  rdf:type owl:Class
@@ -535,9 +829,34 @@ current situation.""" ;
                                                                     owl:unionOf ( [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :Contextual_Knowledge
-                                                                                                                              [ rdf:type owl:Restriction ;
-                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
-                                                                                                                                owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                                                                                                              [ rdf:type owl:Class ;
+                                                                                                                                owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000011> ;
+                                                                                                                                                owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                                                                                                                              ]
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                                owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                              ]
+                                                                                                                            ) ;
+                                                                                                         rdf:type owl:Class
+                                                                                                       ]
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :Contextual_Knowledge
+                                                                                                                              [ rdf:type owl:Class ;
+                                                                                                                                owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000011> ;
+                                                                                                                                                owl:someValuesFrom :object_record
+                                                                                                                                              ]
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                                owl:someValuesFrom :object_record
+                                                                                                                                              ]
+                                                                                                                                            )
                                                                                                                               ]
                                                                                                                             ) ;
                                                                                                          rdf:type owl:Class
@@ -547,7 +866,7 @@ current situation.""" ;
                                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
                                                                                     owl:someValuesFrom [ owl:intersectionOf ( :Contextual_Knowledge
                                                                                                                               [ rdf:type owl:Restriction ;
-                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
                                                                                                                                 owl:someValuesFrom :object_record
                                                                                                                               ]
                                                                                                                             ) ;
@@ -558,7 +877,11 @@ current situation.""" ;
                                                                   ]
                                                                   [ rdf:type owl:Restriction ;
                                                                     owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
-                                                                    owl:someValuesFrom :SystemRecommendation
+                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( :SystemRecommendation
+                                                                                                       :object_record
+                                                                                                     )
+                                                                                       ]
                                                                   ]
                                                                 ) ;
                                              rdf:type owl:Class
@@ -575,18 +898,40 @@ technical and physical environments” (I.O. for standardization).""" ;
 
 ###  https://purl.org/heals/eo#Contextual_Knowledge
 :Contextual_Knowledge rdf:type owl:Class ;
-                      rdfs:subClassOf :knowledge ;
-                      <http://purl.org/dc/terms/description> """Contextual knowledge is all the knowledge that is relevant and can be mobilized to understand a given situated decision problem. By \"situated\" we mean in given, dated, well specified circumstances (Clancey 1991). Contextual knowledge is evoked by situations and events, and loosely
-tied to a task or a goal. However, when the task becomes more precise (e.g., an event occurs), a large part of this contextual knowledge can be proceduralized according to the current focus of the decision making.""" ;
-                      <http://purl.org/dc/terms/source> "Brézillon, P., & Pomerol, J. C. (1999, July). Contextual knowledge and proceduralized context. In Proceedings of the AAAI-99 Workshop on Modeling Context in AI Applications, Orlando, Florida, USA, July. AAAI Technical Report." ,
-                                                        "Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7." ;
-                      rdfs:label "Contextual Knowledge" ;
-                      <http://www.w3.org/2004/02/skos/core#definition> "all the knowledge that is relevant and can be mobilized to understand a given situated decision problem." .
+                      rdfs:subClassOf :knowledge ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000011> ;
+                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                             owl:unionOf ( <http://semanticscience.org/resource/SIO_000498>
+                                                                           :object_record
+                                                                         )
+                                                           ]
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                        owl:someValuesFrom [ rdf:type owl:Class ;
+                                                             owl:unionOf ( <http://semanticscience.org/resource/SIO_000498>
+                                                                           :object_record
+                                                                         )
+                                                           ]
+                                      ] ;
+                      <http://purl.org/dc/terms/description> """Context is any information that can be used to characterize the situation of an entity, where an entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves. (Dey 2001)
+Contextual knowledge in turn is the knowledge that is derived from such relevant context, where relevance depends on the AI task. Contextual knowledge is related to, but distinct from, information that is used by an AI task to produce an output recommendation.""" ;
+                      <http://purl.org/dc/terms/source> "Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7." ;
+                      rdfs:label "Contextual Knowledge" .
 
 
 ###  https://purl.org/heals/eo#ContrastiveExplanation
 :ContrastiveExplanation rdf:type owl:Class ;
-                        owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                        owl:equivalentClass [ owl:intersectionOf ( <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation>
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                     owl:someValuesFrom :AbductiveTask
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ,
+                                            [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                      owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
                                                                      owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                                                [ rdf:type owl:Restriction ;
@@ -610,8 +955,29 @@ tied to a task or a goal. However, when the task becomes more precise (e.g., an 
                                                                    ]
                                                                  ) ;
                                               rdf:type owl:Class
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                              owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                          owl:someValuesFrom :Fact
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ]
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                              owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                          owl:someValuesFrom :Foil
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ]
                                             ] ;
-                        rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
                         <http://purl.org/dc/elements/1.1/description> """As described
 by (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present
 contrasts between the fact (the event that did occur), the given output, and the foil (the
@@ -627,10 +993,25 @@ event that did not occur), the output of interest.""" ;
 :CounterfactualExplanation rdf:type owl:Class ;
                            owl:equivalentClass [ rdf:type owl:Restriction ;
                                                  owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                 owl:someValuesFrom [ owl:intersectionOf ( :ModelExplanationOutputs
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                             owl:someValuesFrom :SaliencyMethods
+                                                                                           ]
+                                                                                         ) ;
+                                                                      rdf:type owl:Class
+                                                                    ]
+                                               ] ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
                                                  owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                            [ rdf:type owl:Restriction ;
                                                                                              owl:onProperty <http://www.w3.org/ns/prov#used> ;
-                                                                                             owl:someValuesFrom [ owl:intersectionOf ( :knowledge
+                                                                                             owl:someValuesFrom [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                                                                                         owl:unionOf ( <http://purl.org/heals/eo#Characteristic>
+                                                                                                                                                       :knowledge
+                                                                                                                                                     )
+                                                                                                                                       ]
                                                                                                                                        [ rdf:type owl:Restriction ;
                                                                                                                                          owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
                                                                                                                                          owl:someValuesFrom :object_record
@@ -655,6 +1036,94 @@ event that did not occur), the output of interest.""" ;
                            <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?\"" .
 
 
+###  https://purl.org/heals/eo#DataExplanation
+:DataExplanation rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Class ;
+                                       owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                              owl:someValuesFrom :object_record
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                              owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty <http://semanticscience.org/resource/SIO_001277> ;
+                                                                                                                          owl:someValuesFrom :object_record
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ]
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ]
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                       owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                                                                   owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://semanticscience.org/resource/SIO_000230> ;
+                                                                                                                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                    owl:unionOf ( <http://semanticscience.org/resource/SIO_000089>
+                                                                                                                                                                                  <http://semanticscience.org/resource/SIO_000752>
+                                                                                                                                                                                  <http://semanticscience.org/resource/SIO_000753>
+                                                                                                                                                                                )
+                                                                                                                                                                  ]
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ]
+                                                                                                 ]
+                                                                                               ) ;
+                                                                            rdf:type owl:Class
+                                                                          ]
+                                                     ]
+                                                   )
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( :ModelExplanationOutputs
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                                                   owl:someValuesFrom :ExemplarMethods
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( :ModelExplanationOutputs
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                                                   owl:someValuesFrom :FeatureRelevanceMethods
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( :ModelExplanationOutputs
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                                                   owl:someValuesFrom :HighLevelFeatureLearningMethod
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ;
+                 rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                                 :SafetyAndPerformanceExplanation ;
+                 <http://purl.org/dc/elements/1.1/description> "focuses on what the data is and how it has been used in a particular decision, as well as what data and how it has been used to train and test the ML model. This type of explanation can help users understand the influence of data on decisions." ;
+                 <http://purl.org/dc/terms/source> "Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO & The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19." ,
+                                                   "Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020" ;
+                 <http://purl.org/vocab/vann/preferredNamespaceUri> "Addresses the questions, \"What the data is?\", \"How it has been used in a particular decision?\", \"How has the data been used to train the ML model?\"" ;
+                 rdfs:label "Data Explanation" .
+
+
 ###  https://purl.org/heals/eo#DecisionTree
 :DecisionTree rdf:type owl:Class ;
               rdfs:subClassOf <http://purl.obolibrary.org/obo/OMIT_0001483> ;
@@ -673,9 +1142,23 @@ event that did not occur), the output of interest.""" ;
 
 ###  https://purl.org/heals/eo#Environmental_Context
 :Environmental_Context rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <http://semanticscience.org/resource/SIO_000009>
+                                                                                  <http://semanticscience.org/resource/SIO_000612>
+                                                                                  <http://semanticscience.org/resource/SIO_001194>
+                                                                                  <http://www.w3.org/ns/prov#Location>
+                                                                                )
+                                                                  ]
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
+                                                                    owl:someValuesFrom :object_record
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
                        rdfs:subClassOf :Contextual_Knowledge ;
-                       <http://purl.org/dc/elements/1.1/description> "deals with the physical aspects of the experimental situation" ;
-                       <http://purl.org/dc/terms/source> "Smith, S. M., Glenberg, A., & Bjork, R. A. (1978). Environmental context and human memory. Memory & Cognition, 6(4), 342-353." ;
+                       <http://purl.org/dc/elements/1.1/description> "Environmental context is relevant information pertaining to the physical elements that describe the experimental situation. This information may extend to physical location, physical characteristics and properties of objects, movement, and time." ;
+                       <http://purl.org/dc/terms/source> "Bauer, C., & Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393." ;
                        rdfs:label "Environmental Context" .
 
 
@@ -780,6 +1263,22 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                             <http://www.w3.org/2004/02/skos/core#example> "Address questions of the form, \"What studies support this recommendation?\"" .
 
 
+###  https://purl.org/heals/eo#ExemplarMethods
+:ExemplarMethods rdf:type owl:Class ;
+                 rdfs:subClassOf :ExplanationMethod ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                   owl:someValuesFrom :LocalExplanation
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                   owl:someValuesFrom :StaticExplanation
+                                 ] ;
+                 <http://purl.org/dc/terms/description> "This category explains the predictions of test instances using similar or influential training instances. It is considered as static local post-hoc explanations with samples." ;
+                 <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                 rdfs:label "Exemplar Method" .
+
+
 ###  https://purl.org/heals/eo#ExperentialKnowledge
 :ExperentialKnowledge rdf:type owl:Class ;
                       rdfs:subClassOf :knowledge ;
@@ -790,12 +1289,33 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                       <http://www.w3.org/2004/02/skos/core#definition> "information and wisdom gained from lived experience" .
 
 
+###  https://purl.org/heals/eo#ExplanationCollection
+:ExplanationCollection rdf:type owl:Class ;
+                       rdfs:subClassOf <http://semanticscience.org/resource/SIO_000620> ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://semanticscience.org/resource/SIO_000059> ;
+                                         owl:someValuesFrom <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation>
+                                       ] .
+
+
 ###  https://purl.org/heals/eo#ExplanationGoal
 :ExplanationGoal rdf:type owl:Class ;
                  rdfs:subClassOf <http://semanticscience.org/resource/SIO_000337> ;
                  <http://purl.org/dc/elements/1.1/description> "the impact that an explanation has on a user or the purpose it was designed to achieve" ;
                  rdfs:label "Explanation Goal" ;
                  <http://www.w3.org/2004/02/skos/core#example> "educational" .
+
+
+###  https://purl.org/heals/eo#ExplanationMethod
+:ExplanationMethod rdf:type owl:Class ;
+                   rdfs:subClassOf :ArtificialIntelligenceMethod ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                     owl:someValuesFrom :ModelExplanationOutputs
+                                   ] ;
+                   <http://purl.org/dc/elements/1.1/description> "mechanisms that can provide explanations that are understandable to humans (interpretability) and accurately describe model behaviour in the entire feature space (fidelity)" ;
+                   <http://purl.org/dc/terms/source> "Zhou, J., Gandomi, A. H., Chen, F., & Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593." ;
+                   rdfs:label "Explanation Method" .
 
 
 ###  https://purl.org/heals/eo#ExplanationModality
@@ -806,12 +1326,61 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                      rdfs:label "Explanation Modality" .
 
 
+###  https://purl.org/heals/eo#ExplanationType
+:ExplanationType rdf:type owl:Class ;
+                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001326> ;
+                 rdfs:label "Explanation Type wrt Model and Interactivity" .
+
+
 ###  https://purl.org/heals/eo#Fact
 :Fact rdf:type owl:Class ;
       rdfs:subClassOf :knowledge ;
       <http://purl.org/dc/elements/1.1/description> "inputs and other considerations that led to a system recommendation that did occur" ;
       rdfs:isDefinedBy "Daniel Gruen" ;
       rdfs:label "Fact" .
+
+
+###  https://purl.org/heals/eo#FairnessExplanation
+:FairnessExplanation rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                           owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
+                                                                                       owl:someValuesFrom :StatementOfBias
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ]
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                           owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                     [ rdf:type owl:Restriction ;
+                                                                                       owl:onProperty <http://semanticscience.org/resource/SIO_001277> ;
+                                                                                       owl:someValuesFrom <http://semanticscience.org/resource/SIO_000089>
+                                                                                     ]
+                                                                                   ) ;
+                                                                rdf:type owl:Class
+                                                              ]
+                                         ] ;
+                     rdfs:subClassOf :ImpactExplanation ,
+                                     :SafetyAndPerformanceExplanation ;
+                     <http://purl.org/dc/terms/description> "This type of explanation provides steps taken across the design and implementation of an ML system to ensure that the decisions it assists are generally unbiased, and whether or not an individual has been treated equitably. This type of explanation is key to increasing individuals’ confidence in an Artificial Intelligence (AI) system. It can foster meaningful trust by explaining to an individual how bias and discrimination in decisions are avoided." ;
+                     <http://purl.org/dc/terms/source> "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130." ;
+                     rdfs:label "Fairness Explanation" .
+
+
+###  https://purl.org/heals/eo#FeatureRelevanceMethods
+:FeatureRelevanceMethods rdf:type owl:Class ;
+                         rdfs:subClassOf :ExplanationMethod ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                           owl:someValuesFrom :GlobalExplanationOutput
+                                         ] ;
+                         <http://purl.org/dc/elements/1.1/description> "Methods such as partial dependence plots (PDP) and sensitivity analysis are used to study the (global) effects of different input features on the output values and are typically consumed through appropriate visualizations (e.g., PDP plots, scatter plots, control charts)." ;
+                         <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                         rdfs:label "Feature Relevance Method" .
 
 
 ###  https://purl.org/heals/eo#Foil
@@ -822,6 +1391,64 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
       rdfs:label "Foil" .
 
 
+###  https://purl.org/heals/eo#GlobalExplanationOutput
+:GlobalExplanationOutput rdf:type owl:Class ;
+                         owl:equivalentClass [ rdf:type owl:Class ;
+                                               owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                               owl:someValuesFrom :HighLevelFeatureLearningMethod
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                               owl:someValuesFrom :KnowledgeDistillationMethod
+                                                             ]
+                                                           )
+                                             ] ;
+                         rdfs:subClassOf :ModelExplanationOutputs ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/heals/eo#hasExplanationType> ;
+                                           owl:someValuesFrom :GlobalExplanationType
+                                         ] ;
+                         rdfs:label "Global Explanation" .
+
+
+###  https://purl.org/heals/eo#GlobalExplanationType
+:GlobalExplanationType rdf:type owl:Class ;
+                       rdfs:subClassOf :ExplanationType ;
+                       rdfs:label "Type - Global Explanation" .
+
+
+###  https://purl.org/heals/eo#HighLevelFeatureLearningMethod
+:HighLevelFeatureLearningMethod rdf:type owl:Class ;
+                                rdfs:subClassOf :ExplanationMethod ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                                  owl:someValuesFrom :GlobalExplanationOutput
+                                                ] ;
+                                <http://purl.org/dc/elements/1.1/description> "Methods that learn high-level features in an unsupervised manner through variational autoencoder or generative adversarial network frameworks would naturally fall under the data followed by features category. Even supervised methods of learning high-level interpretable features would lie in this category." ;
+                                <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                                rdfs:label "High level feature learning method" .
+
+
+###  https://purl.org/heals/eo#ImpactExplanation
+:ImpactExplanation rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                         owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                   [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
+                                                                                     owl:someValuesFrom <http://semanticscience.org/resource/SIO_001384>
+                                                                                   ]
+                                                                                 ) ;
+                                                              rdf:type owl:Class
+                                                            ]
+                                       ] ;
+                   rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                   <http://purl.org/dc/elements/1.1/description> "This type of explanation concerns the impact that the use of an ML system and its decisions has or may have on an individual and on a wider society. This type of explanation gives individuals some power and control over their involvement in ML-assisted decisions. By understanding the possible consequences of the decision, an individual can better assess their participation in the process and how the outcomes of the decision may affect them. Therefore, this type of explanation is often suited to delivery before an ML-assisted decision is made." ;
+                   <http://purl.org/dc/terms/source> "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130." ;
+                   rdfs:label "Impact Explanation" .
+
+
 ###  https://purl.org/heals/eo#InductiveTask
 :InductiveTask rdf:type owl:Class ;
                rdfs:subClassOf :AITask ;
@@ -830,10 +1457,94 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                rdfs:label "Inductive Task" .
 
 
+###  https://purl.org/heals/eo#InteractiveExplanation
+:InteractiveExplanation rdf:type owl:Class ;
+                        rdfs:subClassOf :ModelExplanationOutputs ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.org/heals/eo#hasExplanationType> ;
+                                          owl:someValuesFrom :InteractiveExplanationType
+                                        ] ;
+                        rdfs:label "Interactive Explanation" .
+
+
+###  https://purl.org/heals/eo#InteractiveExplanationType
+:InteractiveExplanationType rdf:type owl:Class ;
+                            rdfs:subClassOf :ExplanationType ;
+                            rdfs:label "Type - Interactive Explanation" .
+
+
+###  https://purl.org/heals/eo#InterprationAndExplanationTask
+:InterprationAndExplanationTask rdf:type owl:Class ;
+                                rdfs:subClassOf :AITask ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                  owl:someValuesFrom :ExplanationMethod
+                                                ] ;
+                                <http://purl.org/dc/elements/1.1/description> "a task that produces interpretations or explanations, which are an account of the system, its workings, the implicit and explicit knowledge it uses to arrive at conclusions in general and the specific decision at hand, that is sensitive to the end-user’s understanding, context, and current needs." ;
+                                <http://purl.org/dc/terms/source> "Chari, S., Gruen, D., Seneviratne, O.W., & McGuinness, D.L. (2020). Directions for Explainable Knowledge-Enabled Systems. Knowledge Graphs for eXplainable Artificial Intelligence." ;
+                                rdfs:label "Interpretation and Explanation Task" .
+
+
 ###  https://purl.org/heals/eo#KnowledgeBasedSystems
 :KnowledgeBasedSystems rdf:type owl:Class ;
                        rdfs:subClassOf :ArtificialIntelligenceMethod ;
                        rdfs:label "Knowledge based Systems" .
+
+
+###  https://purl.org/heals/eo#KnowledgeDistillationMethod
+:KnowledgeDistillationMethod rdf:type owl:Class ;
+                             rdfs:subClassOf :ExplanationMethod ,
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                               owl:someValuesFrom :GlobalExplanationOutput
+                                             ] ;
+                             <http://purl.org/dc/elements/1.1/description> "Knowledge distillation-type approaches, which learn a simpler model based on a complex model’s predictions, would be considered as global interpretations that are learned using a post-hoc surrogate model." ;
+                             <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                             rdfs:label "Knowledge Distillation Method" .
+
+
+###  https://purl.org/heals/eo#KnowledgeExtractionTask
+:KnowledgeExtractionTask rdf:type owl:Class ;
+                         rdfs:subClassOf :AITask ;
+                         <http://purl.org/dc/elements/1.1/description> "a task of extracting pre-specified types of facts from written texts or speech transcripts, and converting them into structured representations (e.g., databases)." ;
+                         <http://purl.org/dc/terms/source> "Ji H. (2009) Information Extraction. In: LIU L., ÖZSU M.T. (eds) Encyclopedia of Database Systems. Springer, Boston, MA. https://doi.org/10.1007/978-0-387-39940-9_204" ;
+                         <http://semanticscience.org/resource/hasSynonym> "Information Extraction" ;
+                         rdfs:label "Knowledge Extraction Task" .
+
+
+###  https://purl.org/heals/eo#LocalExplanation
+:LocalExplanation rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Class ;
+                                        owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                        owl:someValuesFrom :ExemplarMethods
+                                                      ]
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                        owl:someValuesFrom :RationaleProvidingMethods
+                                                      ]
+                                                    )
+                                      ] ;
+                  rdfs:subClassOf :ModelExplanationOutputs ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://purl.org/heals/eo#hasExplanationType> ;
+                                    owl:someValuesFrom :LocalExplanationType
+                                  ] ;
+                  rdfs:label "Local Explanation" .
+
+
+###  https://purl.org/heals/eo#LocalExplanationType
+:LocalExplanationType rdf:type owl:Class ;
+                      rdfs:subClassOf :ExplanationType ;
+                      rdfs:label "Type - Local Explanation" .
+
+
+###  https://purl.org/heals/eo#LookupTask
+:LookupTask rdf:type owl:Class ;
+            rdfs:subClassOf :AITask ;
+            <http://purl.org/dc/elements/1.1/description> "Looks through a row or column for a key and returns the value of the cell in a result range located in the same position as the search row or column" ;
+            <http://purl.org/dc/terms/source> "https://support.google.com/docs/answer/3256570?hl=en" ;
+            rdfs:label "Lookup Task" .
 
 
 ###  https://purl.org/heals/eo#Mechanistic_Explanation
@@ -856,6 +1567,32 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                          <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What is a biological basis for this recommendation?\"" .
 
 
+###  https://purl.org/heals/eo#ModelExplanationOutputs
+:ModelExplanationOutputs rdf:type owl:Class ;
+                         rdfs:subClassOf :SystemRecommendation ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.org/heals/eo#hasExplanationType> ;
+                                           owl:someValuesFrom :ExplanationType
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                           owl:someValuesFrom :ExplanationMethod
+                                         ] ;
+                         rdfs:label "Model Explanation Output" .
+
+
+###  https://purl.org/heals/eo#NeuralNetworkVisualizationMethod
+:NeuralNetworkVisualizationMethod rdf:type owl:Class ;
+                                  rdfs:subClassOf :ExplanationMethod ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                                    owl:someValuesFrom :GlobalExplanationOutput
+                                                  ] ;
+                                  <http://purl.org/dc/terms/description> "Methods that visualize intermediate representations/layers of a neural network would fall under the global post-hoc category as people typically use these visualizations to gain confidence in the model and inspect the type of high-level features being extracted." ;
+                                  <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                                  rdfs:label "Neural Network Visualization Method" .
+
+
 ###  https://purl.org/heals/eo#Numerical_Evidence
 :Numerical_Evidence rdf:type owl:Class ;
                     rdfs:subClassOf :knowledge ,
@@ -867,6 +1604,89 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                     rdfs:label "Numerical Evidence" .
 
 
+###  https://purl.org/heals/eo#ObjectCharacteristic
+:ObjectCharacteristic rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/heals/eo#Characteristic> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                        owl:someValuesFrom :object_record
+                                      ] ;
+                      rdfs:label "Object Characteristic" .
+
+
+###  https://purl.org/heals/eo#RationaleExplanation
+:RationaleExplanation rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                                    owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                                                                    owl:someValuesFrom :ExplanationMethod
+                                                                                                                                                  ]
+                                                                                                                                                ) ;
+                                                                                                                             rdf:type owl:Class
+                                                                                                                           ]
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                            owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                      [ rdf:type owl:Restriction ;
+                                                                                                        owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                                        owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                                                                    owl:onProperty <http://www.w3.org/ns/prov#used> ;
+                                                                                                                                                    owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                                                                                                                                                                                owl:someValuesFrom :SystemTrace
+                                                                                                                                                                                              ]
+                                                                                                                                                                                            ) ;
+                                                                                                                                                                         rdf:type owl:Class
+                                                                                                                                                                       ]
+                                                                                                                                                  ]
+                                                                                                                                                ) ;
+                                                                                                                             rdf:type owl:Class
+                                                                                                                           ]
+                                                                                                      ]
+                                                                                                    ) ;
+                                                                                 rdf:type owl:Class
+                                                                               ]
+                                                          ]
+                                                        )
+                                          ] ;
+                      rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                        owl:someValuesFrom :LocalExplanation
+                                      ] ;
+                      <http://purl.org/dc/elements/1.1/description> "This type of explanation is about the “why” of an ML decision and provides reasons that led to a decision, and is delivered in an accessible and understandable way, especially for lay users. If the ML decision was not what users expected, this type of explanation allows users to assess whether they believe the reasoning of the decision is flawed. While, if so, the explanation supports them to formulate reasonable arguments for why they think this is the case." ;
+                      <http://purl.org/dc/terms/source> "Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO & The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19." ,
+                                                        "Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020" ,
+                                                        "Zhou, J., Gandomi, A. H., Chen, F., & Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593." ;
+                      rdfs:label "Rationale Explanation" ;
+                      <http://www.w3.org/2004/02/skos/core#example> "Addresses example question, \"Why of an ML decision and provides reasons that led to a decision?\"" .
+
+
+###  https://purl.org/heals/eo#RationaleProvidingMethods
+:RationaleProvidingMethods rdf:type owl:Class ;
+                           rdfs:subClassOf :ExplanationMethod ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                             owl:someValuesFrom :LocalExplanation
+                                           ] ;
+                           <http://purl.org/dc/terms/description> "Work in the natural language processing and computer vision domains that generates rationales/explanations derived from input text would be considered as local self explanations. Here however, new words or phrases could be generated so the feature space can be richer than the original input space." ;
+                           <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                           rdfs:label "Providing rationale method" .
+
+
 ###  https://purl.org/heals/eo#Reasoning_Mode
 :Reasoning_Mode rdf:type owl:Class ;
                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
@@ -876,6 +1696,145 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <http://www.w3.org/2004/02/skos/core#example> """The treatment planning process proceeds in four steps. First, the play therapist must develop accurate, comprehensive treatment goals that are consistent with the case formulation and the theoretical model being used. Because these goals are formulated from a theoretical perspective, they may not fully align with the goals of the child and his or her caregivers. Therefore, in the second step, the play therapist must work with both the child client and his or her caregivers to develop a treatment contract that takes the goals created in the first step and addresses each party’s needs. This will ensure they will remain actively engaged in the treatment process over time. Third, the play therapist must organize the treatment goals and the treatment contracts into a realistic and sequential treatment plan. Finally, the play therapist must devise both experiential and cognitive/verbal interventions to move the client toward the treatment goals.
 
 Source: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and interventions: The ecosystemic model and workbook. Academic Press.""" .
+
+
+###  https://purl.org/heals/eo#ResponsibilityExplanation
+:ResponsibilityExplanation rdf:type owl:Class ;
+                           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                 owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                 owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                           [ rdf:type owl:Restriction ;
+                                                                                             owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                             owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                                                         owl:onProperty <http://semanticscience.org/resource/SIO_000068> ;
+                                                                                                                                         owl:someValuesFrom [ owl:intersectionOf ( :System
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty <http://semanticscience.org/resource/SIO_000364> ;
+                                                                                                                                                                                     owl:someValuesFrom :SystemDeveloper
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 ) ;
+                                                                                                                                                              rdf:type owl:Class
+                                                                                                                                                            ]
+                                                                                                                                       ]
+                                                                                                                                     ) ;
+                                                                                                                  rdf:type owl:Class
+                                                                                                                ]
+                                                                                           ]
+                                                                                         ) ;
+                                                                      rdf:type owl:Class
+                                                                    ]
+                                               ] ;
+                           rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                           <http://purl.org/dc/elements/1.1/description> "This type of explanation concerns “who” is involved in the development, management, and implementation of an ML system, and “who” to contact for a human review of a decision. This type of explanation helps by directing the individual to the person or team responsible for a decision. It also makes accountability traceable." ;
+                           <http://purl.org/dc/terms/source> "Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO & The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19." ,
+                                                             "Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020" ,
+                                                             "Zhou, J., Gandomi, A. H., Chen, F., & Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593." ;
+                           rdfs:label "Responsibility Explanation" ;
+                           <http://www.w3.org/2004/02/skos/core#example> "Addresses the example questions, \"Who is involved in the development, management, and implementation of an ML system?\" and “Who to contact for a human review of a decision?\"" .
+
+
+###  https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures
+:RestrictedNeuralNetworkArchitectures rdf:type owl:Class ;
+                                      rdfs:subClassOf :ExplanationMethod ;
+                                      <http://purl.org/dc/terms/description> "Methods that propose certain restrictions on the neural network architecture to make it interpretable, yet maintain richness of the hypothesis space to model complicated decision boundaries would fall under the global directly interpretable category." ;
+                                      <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                                      rdfs:label "Restricted Neural Network Architecture" .
+
+
+###  https://purl.org/heals/eo#SafetyAndPerformanceExplanation
+:SafetyAndPerformanceExplanation rdf:type owl:Class ;
+                                 owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                              owl:someValuesFrom :object_record
+                                                                            ]
+                                                                            [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                              owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                                        [ rdf:type owl:Restriction ;
+                                                                                                                          owl:onProperty <http://semanticscience.org/resource/SIO_001277> ;
+                                                                                                                          owl:someValuesFrom :object_record
+                                                                                                                        ]
+                                                                                                                      ) ;
+                                                                                                   rdf:type owl:Class
+                                                                                                 ]
+                                                                            ]
+                                                                          ) ;
+                                                       rdf:type owl:Class
+                                                     ] ,
+                                                     [ rdf:type owl:Class ;
+                                                       owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                       owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                                                                                                   owl:someValuesFrom [ owl:intersectionOf ( :ArtificialIntelligenceMethod
+                                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                                               owl:onProperty <http://semanticscience.org/resource/SIO_000068> ;
+                                                                                                                                                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/heals/eo#System>
+                                                                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                           owl:onProperty <http://purl.org/heals/eo#hasCharacteristic> ;
+                                                                                                                                                                                                           owl:someValuesFrom <http://www.w3.org/ns/prov#Plan>
+                                                                                                                                                                                                         ]
+                                                                                                                                                                                                       ) ;
+                                                                                                                                                                                    rdf:type owl:Class
+                                                                                                                                                                                  ]
+                                                                                                                                                             ]
+                                                                                                                                                           ) ;
+                                                                                                                                        rdf:type owl:Class
+                                                                                                                                      ]
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ]
+                                                                     ]
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
+                                                                       owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
+                                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                                   owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                                                   owl:someValuesFrom [ owl:intersectionOf ( :AITask
+                                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                                               owl:onProperty <http://semanticscience.org/resource/SIO_000068> ;
+                                                                                                                                                               owl:someValuesFrom [ owl:intersectionOf ( <http://purl.org/heals/eo#System>
+                                                                                                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                           owl:onProperty <http://purl.org/heals/eo#hasCharacteristic> ;
+                                                                                                                                                                                                           owl:someValuesFrom <http://www.w3.org/ns/prov#Plan>
+                                                                                                                                                                                                         ]
+                                                                                                                                                                                                       ) ;
+                                                                                                                                                                                    rdf:type owl:Class
+                                                                                                                                                                                  ]
+                                                                                                                                                             ]
+                                                                                                                                                           ) ;
+                                                                                                                                        rdf:type owl:Class
+                                                                                                                                      ]
+                                                                                                                 ]
+                                                                                                               ) ;
+                                                                                            rdf:type owl:Class
+                                                                                          ]
+                                                                     ]
+                                                                   )
+                                                     ] ;
+                                 rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                                 <http://purl.org/dc/elements/1.1/description> "This type of explanation deals with steps taken across the design and implementation of an ML system to maximise the accuracy, reliability, security, and robustness of its decisions and behaviours. This type of explanation helps to assure individuals that an ML system is safe and reliable by explanation to test and monitor the accuracy, reliability, security, and robustness of the ML model." ;
+                                 <http://purl.org/dc/terms/source> "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130." ;
+                                 rdfs:label "Safety and Performance Explanation" .
+
+
+###  https://purl.org/heals/eo#SaliencyMethods
+:SaliencyMethods rdf:type owl:Class ;
+                 rdfs:subClassOf :ExplanationMethod ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                   owl:someValuesFrom :LocalExplanation
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                   owl:someValuesFrom :StaticExplanation
+                                 ] ;
+                 <http://purl.org/dc/elements/1.1/description> "Saliency based methods, which highlight different portions in an image whose classification we want to understand, can be categorized as local explanation methods that are static and provide feature-based explanations in terms of highlighting pixels/superpixels. In fact, popular methods such as LIME and SHAP  also fall under this umbrella. Counterfactual explanations which are similar to contrastive explanations where one tries to find a minimal change that would alter the decision of the classifier, are another type of explanation in this category." ;
+                 <http://purl.org/dc/terms/source> "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012." ;
+                 rdfs:label "Saliency Method" .
 
 
 ###  https://purl.org/heals/eo#ScientificKnowledge
@@ -931,17 +1890,48 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                             <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What would happen if this recommendation is followed?\"" .
 
 
+###  https://purl.org/heals/eo#StatementOfBias
+:StatementOfBias rdf:type owl:Class ;
+                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_001384> ;
+                 <http://purl.org/dc/elements/1.1/description> "a statement concerning the action of supporting or opposing a particular person or thing in an unfair way, because of allowing personal opinions to influence your judgment" ;
+                 <http://purl.org/dc/terms/source> "https://dictionary.cambridge.org/us/dictionary/english/bias" ;
+                 rdfs:label "statement of bias" .
+
+
+###  https://purl.org/heals/eo#StaticExplanation
+:StaticExplanation rdf:type owl:Class ;
+                   rdfs:subClassOf :ModelExplanationOutputs ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://purl.org/heals/eo#hasExplanationType> ;
+                                     owl:someValuesFrom :StaticExplanationType
+                                   ] ;
+                   rdfs:label "Static Explanation" .
+
+
+###  https://purl.org/heals/eo#StaticExplanationType
+:StaticExplanationType rdf:type owl:Class ;
+                       rdfs:subClassOf :ExplanationType ;
+                       rdfs:label "Type - Static Explanation" .
+
+
 ###  https://purl.org/heals/eo#StatisticalExplanation
 :StatisticalExplanation rdf:type owl:Class ;
                         owl:equivalentClass [ rdf:type owl:Restriction ;
                                               owl:onProperty <http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn> ;
                                               owl:someValuesFrom [ owl:intersectionOf ( :SystemRecommendation
                                                                                         [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty <http://www.w3.org/ns/prov#used> ;
-                                                                                          owl:someValuesFrom [ owl:intersectionOf ( :Numerical_Evidence
+                                                                                          owl:onProperty <http://www.w3.org/ns/prov#wasGeneratedBy> ;
+                                                                                          owl:someValuesFrom [ owl:intersectionOf ( :InductiveTask
                                                                                                                                     [ rdf:type owl:Restriction ;
-                                                                                                                                      owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
-                                                                                                                                      owl:someValuesFrom :object_record
+                                                                                                                                      owl:onProperty <http://semanticscience.org/resource/SIO_000229> ;
+                                                                                                                                      owl:someValuesFrom [ owl:intersectionOf ( :Numerical_Evidence
+                                                                                                                                                                                [ rdf:type owl:Restriction ;
+                                                                                                                                                                                  owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                                                                                                                                                  owl:someValuesFrom :object_record
+                                                                                                                                                                                ]
+                                                                                                                                                                              ) ;
+                                                                                                                                                           rdf:type owl:Class
+                                                                                                                                                         ]
                                                                                                                                     ]
                                                                                                                                   ) ;
                                                                                                                rdf:type owl:Class
@@ -960,9 +1950,55 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                         <http://www.w3.org/2004/02/skos/core#example> "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\"" .
 
 
+###  https://purl.org/heals/eo#System
+:System rdf:type owl:Class .
+
+
+###  https://purl.org/heals/eo#SystemCharacteristic
+:SystemCharacteristic rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.org/heals/eo#Characteristic> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                        owl:someValuesFrom <http://purl.org/heals/eo#System>
+                                      ] ;
+                      rdfs:label "System Characteristic" .
+
+
+###  https://purl.org/heals/eo#SystemDesigner
+:SystemDesigner rdf:type owl:Class ;
+                rdfs:subClassOf <http://semanticscience.org/resource/SIO_000498> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://semanticscience.org/resource/SIO_000228> ;
+                                  owl:someValuesFrom :corporate_role
+                                ] ;
+                <http://purl.org/dc/elements/1.1/description> "a person who utilizes and analyzes gathered user reuqirements and provides expertise on building different technical capabilities into systems. These people generally interact with different roles in technical teams including software architects and system developers." ;
+                <http://purl.org/dc/terms/source> "Chari S., Seneviratne O., Gruen D.M., Foreman M.A., Das A.K., McGuinness D.L. (2020) Explanation Ontology: A Model of Explanations for User-Centered AI. In: Pan J.Z. et al. (eds) The Semantic Web – ISWC 2020. ISWC 2020. Lecture Notes in Computer Science, vol 12507. Springer, Cham. https://doi.org/10.1007/978-3-030-62466-8_15" ;
+                rdfs:label "System Designer" .
+
+
+###  https://purl.org/heals/eo#SystemDeveloper
+:SystemDeveloper rdf:type owl:Class ;
+                 rdfs:subClassOf <http://semanticscience.org/resource/SIO_000498> ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty <http://semanticscience.org/resource/SIO_000228> ;
+                                   owl:someValuesFrom :corporate_role
+                                 ] ;
+                 <http://purl.org/dc/elements/1.1/description> "a person who creates computer software. The term computer programmer can refer to a specialist in one area of computers or to a generalist who writes computer programs." ;
+                 <http://purl.org/dc/terms/source> "https://en.wikipedia.org/wiki/Programmer" ;
+                 rdfs:label "System Developer" .
+
+
 ###  https://purl.org/heals/eo#SystemRecommendation
 :SystemRecommendation rdf:type owl:Class ;
-                      rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ;
+                      rdfs:subClassOf <http://semanticscience.org/resource/SIO_000602> ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_000232> ;
+                                        owl:someValuesFrom :ArtificialIntelligenceMethod
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <http://semanticscience.org/resource/SIO_001277> ;
+                                        owl:someValuesFrom :object_record
+                                      ] ;
                       rdfs:isDefinedBy "Shruthi Chari" ;
                       rdfs:label "System Recommendation" ;
                       <http://www.w3.org/2004/02/skos/core#definition> "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)" .
@@ -970,10 +2006,32 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
 ###  https://purl.org/heals/eo#SystemTrace
 :SystemTrace rdf:type owl:Class ;
-             rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ;
+             rdfs:subClassOf <http://semanticscience.org/resource/SIO_000097> ,
+                             :LocalExplanation ;
              <http://purl.org/dc/elements/1.1/description> "sequence of underlying system steps and rules that led to a system recommendation" ;
              <http://purl.org/dc/terms/source> "Swartout, W. R., & Moore, J. D. (1993). Explanation in second generation expert systems. In Second generation expert systems (pp. 543-585). Springer, Berlin, Heidelberg." ;
              rdfs:label "System Trace" .
+
+
+###  https://purl.org/heals/eo#Technological_Context
+:Technological_Context rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( <http://semanticscience.org/resource/SIO_000956>
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty :isUsedBy ;
+                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                         owl:unionOf ( <http://purl.org/heals/eo#System>
+                                                                                                       :AITask
+                                                                                                       :ArtificialIntelligenceMethod
+                                                                                                     )
+                                                                                       ]
+                                                                  ]
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :Contextual_Knowledge ;
+                       <http://purl.org/dc/elements/1.1/description> "Technological context is any relevant information that characterizes the devices that are used to interact with or operate the AI system." ;
+                       <http://purl.org/dc/terms/source> "Bauer, C., & Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393." ;
+                       rdfs:label "Technological Context" .
 
 
 ###  https://purl.org/heals/eo#TraceBasedExplanation
@@ -1007,7 +2065,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                                                                   rdf:type owl:Class
                                                                 ]
                                            ] ;
-                       rdfs:subClassOf <http://linkedu.eu/dedalo/explanationPattern.owl#Explanation> ;
+                       rdfs:subClassOf :RationaleExplanation ;
                        <http://purl.org/dc/elements/1.1/description> "Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009)." ;
                        <http://purl.org/dc/terms/source> "B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128" ;
                        rdfs:label "Trace Based Explanation" ;
@@ -1015,30 +2073,72 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                        <http://www.w3.org/2004/02/skos/core#example> "Addresses a question of the form, \"What steps were taken by the system to generate this recommendation?\"" .
 
 
+###  https://purl.org/heals/eo#UserCharacteristic
+:UserCharacteristic rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.org/heals/eo#Characteristic> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                      owl:someValuesFrom :user
+                                    ] ;
+                    rdfs:label "User Characteristic" .
+
+
 ###  https://purl.org/heals/eo#User_Context
 :User_Context rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000011> ;
+                                                    owl:someValuesFrom <http://semanticscience.org/resource/SIO_000498>
+                                                  ]
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                                    owl:someValuesFrom <http://semanticscience.org/resource/SIO_000498>
+                                                  ]
+                                                )
+                                  ] ;
               rdfs:subClassOf :Contextual_Knowledge ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty <http://semanticscience.org/resource/SIO_000668> ;
+                                owl:onProperty <http://semanticscience.org/resource/SIO_000001> ;
                                 owl:someValuesFrom :user
                               ] ;
-              <http://purl.org/dc/elements/1.1/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby." ;
-              <http://purl.org/dc/terms/source> "https://www.igi-global.com/dictionary/researching-mobile-learning/37179" ;
+              <http://purl.org/dc/elements/1.1/description> "User context is any relevant information that can be used to characterize the user which was not used as input to some AI task." ;
               rdfs:label "User Context" .
+
+
+###  https://purl.org/heals/eo#corporate_role
+:corporate_role rdf:type owl:Class ;
+                rdfs:subClassOf <http://semanticscience.org/resource/SIO_000706> ;
+                <http://purl.org/dc/terms/description> "A corporate employee role is the role of an individual that is employed for some organization and does some tasks with them." ;
+                rdfs:label "corporate employee role" .
 
 
 ###  https://purl.org/heals/eo#knowledge
 :knowledge rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory> ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty <http://semanticscience.org/resource/SIO_000231> ;
+                             owl:someValuesFrom :ArtificialIntelligenceMethod
+                           ] ;
            rdfs:label "Knowledge" .
 
 
 ###  https://purl.org/heals/eo#object_record
 :object_record rdf:type owl:Class ;
+               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://semanticscience.org/resource/SIO_001278> ;
+                                     owl:someValuesFrom :SystemRecommendation
+                                   ] ;
                rdfs:subClassOf <http://semanticscience.org/resource/SIO_000069> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://purl.org/heals/eo#hasCharacteristic> ;
+                                 owl:someValuesFrom :ObjectCharacteristic
+                               ] ,
                                [ rdf:type owl:Restriction ;
                                  owl:onProperty <http://semanticscience.org/resource/SIO_000231> ;
                                  owl:someValuesFrom :AITask
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://semanticscience.org/resource/SIO_000231> ;
+                                 owl:someValuesFrom :ArtificialIntelligenceMethod
                                ] ;
                <http://purl.org/dc/elements/1.1/description> "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program" ;
                rdfs:isDefinedBy "Shruthi Chari" ;
@@ -1119,6 +2219,10 @@ vol. 267, pp. 1–38, 2019.""" ;
                         owl:someValuesFrom :AITask
                       ] ,
                       [ rdf:type owl:Restriction ;
+                        owl:onProperty <http://semanticscience.org/resource/SIO_000008> ;
+                        owl:someValuesFrom :UserCharacteristic
+                      ] ,
+                      [ rdf:type owl:Restriction ;
                         owl:onProperty <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting> ;
                         owl:someValuesFrom <http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation>
                       ] ,
@@ -1143,6 +2247,11 @@ vol. 267, pp. 1–38, 2019.""" ;
 #    Individuals
 #################################################################
 
+###  http://purl.org/heals/eo#Parameter
+<http://purl.org/heals/eo#Parameter> rdf:type owl:NamedIndividual ,
+                                              <http://purl.org/heals/eo#Characteristic> .
+
+
 ###  https://purl.org/heals/eo#AITaskExample
 :AITaskExample rdf:type owl:NamedIndividual ,
                         :DeductiveTask ;
@@ -1154,7 +2263,6 @@ vol. 267, pp. 1–38, 2019.""" ;
 
 ###  https://purl.org/heals/eo#ContextualKnowledgePatientA
 :ContextualKnowledgePatientA rdf:type owl:NamedIndividual ,
-                                      :Contextual_Knowledge ,
                                       :Foil ;
                              <http://semanticscience.org/resource/SIO_000231> :AITaskExample ;
                              <http://semanticscience.org/resource/SIO_000668> :HyperglycemiaPatient ;
@@ -1201,7 +2309,7 @@ vol. 267, pp. 1–38, 2019.""" ;
 ###  https://purl.org/heals/eo#HyperglycemiaPatient
 :HyperglycemiaPatient rdf:type owl:NamedIndividual ,
                                <http://semanticscience.org/resource/SIO_000393> ;
-                      rdfs:label "Patient A with a condition" .
+                      rdfs:label "Patient 100" .
 
 
 ###  https://purl.org/heals/eo#QuestionFromUserStudy1
@@ -1230,4 +2338,12 @@ vol. 267, pp. 1–38, 2019.""" ;
                                     rdfs:label "Guidelines recommend Drug B" .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+#################################################################
+#    Annotations
+#################################################################
+
+<http://purl.org/heals/eo#Parameter> rdfs:label "Question Parameter" ;
+                                     <http://www.w3.org/ns/prov#definition> "A characteristic of a question" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
