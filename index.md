@@ -25,15 +25,15 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
   
 <h2>Abstract</h2>
   <p>In the past decade, trustworthy Artificial Intelligence (AI) has emerged as a focus for the AI community to ensure better adoption of AI models, and explainable AI is a cornerstone in this area. Over the years, the focus has shifted from building transparent AI methods to making recommendations on how to make black-box or opaque machine learning models and their results more understandable by experts and non-expert users. 
-    <hr/>
+    <br/>
     In our <a href="https://arxiv.org/abs/2010.01479">previous work</a>, to address the goal of supporting user-centered explanations that make model recommendations more explainable, we developed an Explanation Ontology (EO), a general-purpose representation, to help system designers, our intended users of the EO, connect explanations to their underlying data and knowledge. 
-  <hr/>
+  <br/>
     We now addresses the apparent need for improved interoperability to support a wider range of use cases. We expand the EO, mainly in the system attributes contributing to explanations, by introducing new classes and properties to support a broader range of state-of-the-art explainer models. We present the expanded ontology model, highlighting the classes and properties that are important to model a larger set of <em>fifteen</em> literature-backed explanation types that are supported within the EO.
-  <hr/>
+  <br/>
     We build on these explanation type descriptions to show how to utilize the EO model to represent explanations in <em>five</em> use cases spanning the domains of finance, food, and healthcare. We include competency questions that evaluate the EO's capabilities to provide guidance for system designers on how to apply our ontology to their own use cases. This guidance includes allowing system designers to query the EO directly and providing them exemplar queries to explore content in the EO represented use cases. 
-  <hr/>
+  <br/>
     We have released this significantly expanded version of the Explanation Ontology at <a href="https://purl.org/heals/eo" >https://purl.org/heals/eo</a> and updated here on our <a href ="https://tetherless-world.github.io/explanation-ontology">resource website</a>, with supporting documentation. 
-  <hr/>
+  <br/>
     Overall, through the EO model, we aim to help system designers be better informed about explanations and support these explanations that can be composed, given their systems' outputs from various AI models, including a mix of machine learning, logical and explainer models, and different types of data and knowledge available to their systems.</p>
  </content>
  
