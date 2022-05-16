@@ -1,0 +1,4874 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid105"
+    }, {
+      "@id" : "_:genid103"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000011"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000011"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid108"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://semanticscience.org/resource/SIO_000498"
+    }, {
+      "@id" : "https://purl.org/heals/eo#object_record"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001194"
+  } ]
+}, {
+  "@id" : "_:genid111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid112"
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://semanticscience.org/resource/SIO_000498"
+    }, {
+      "@id" : "https://purl.org/heals/eo#object_record"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+    }, {
+      "@id" : "_:genid117"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#AbductiveTask"
+  } ]
+}, {
+  "@id" : "_:genid119",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid127"
+    }, {
+      "@id" : "_:genid121"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000230"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#Reasoning_Mode"
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid122"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid124"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#Foil"
+  } ]
+}, {
+  "@id" : "_:genid127",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid128"
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid130"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#Fact"
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid133"
+  } ]
+}, {
+  "@id" : "_:genid133",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid135"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid135",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#Fact"
+  } ]
+}, {
+  "@id" : "_:genid137",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid138"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid140"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#implements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ]
+}, {
+  "@id" : "_:genid140",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#Foil"
+  } ]
+}, {
+  "@id" : "_:genid142",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid143"
+  } ]
+}, {
+  "@id" : "_:genid143",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+    }, {
+      "@id" : "_:genid145"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid145",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SaliencyMethods"
+  } ]
+}, {
+  "@id" : "_:genid147",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid148"
+  } ]
+}, {
+  "@id" : "_:genid148",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid150"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000068"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/heals/eo#System"
+  } ]
+}, {
+  "@id" : "_:genid150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid151"
+  } ]
+}, {
+  "@id" : "_:genid151",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid155"
+    }, {
+      "@id" : "_:genid153"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid153",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/heals/eo#Characteristic"
+    }, {
+      "@id" : "https://purl.org/heals/eo#knowledge"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid159",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid175"
+    }, {
+      "@id" : "_:genid161"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid32"
+    }, {
+      "@id" : "_:genid18"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid161",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid162"
+  } ]
+}, {
+  "@id" : "_:genid162",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid164"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid164",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid165"
+  } ]
+}, {
+  "@id" : "_:genid165",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+    }, {
+      "@id" : "_:genid167"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid167",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000230"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid168"
+  } ]
+}, {
+  "@id" : "_:genid168",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://semanticscience.org/resource/SIO_000089"
+    }, {
+      "@id" : "http://semanticscience.org/resource/SIO_000752"
+    }, {
+      "@id" : "http://semanticscience.org/resource/SIO_000753"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid175",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid183"
+    }, {
+      "@id" : "_:genid177"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid177",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid178"
+  } ]
+}, {
+  "@id" : "_:genid178",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid180"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "_:genid180",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001277"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid183",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid184",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid185"
+  } ]
+}, {
+  "@id" : "_:genid185",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+    }, {
+      "@id" : "_:genid187"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid187",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExemplarMethods"
+  } ]
+}, {
+  "@id" : "_:genid189",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid190"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#object_record"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid190",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+    }, {
+      "@id" : "_:genid192"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid192",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#FeatureRelevanceMethods"
+  } ]
+}, {
+  "@id" : "_:genid194",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid195"
+  } ]
+}, {
+  "@id" : "_:genid195",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+    }, {
+      "@id" : "_:genid197"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid197",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#HighLevelFeatureLearningMethod"
+  } ]
+}, {
+  "@id" : "_:genid199",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid203"
+    }, {
+      "@id" : "_:genid201"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  } ]
+}, {
+  "@id" : "_:genid201",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid203",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://semanticscience.org/resource/SIO_000009"
+    }, {
+      "@id" : "http://semanticscience.org/resource/SIO_000612"
+    }, {
+      "@id" : "http://semanticscience.org/resource/SIO_001194"
+    }, {
+      "@id" : "http://www.w3.org/ns/prov#Location"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid208",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid228"
+    }, {
+      "@id" : "_:genid210"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "_:genid210",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid211"
+  } ]
+}, {
+  "@id" : "_:genid211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid213"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid213",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid221"
+    }, {
+      "@id" : "_:genid215"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid215",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid216"
+  } ]
+}, {
+  "@id" : "_:genid216",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ExperentialKnowledge"
+    }, {
+      "@id" : "_:genid218"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid218",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid221",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid222"
+  } ]
+}, {
+  "@id" : "_:genid222",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+    }, {
+      "@id" : "_:genid224"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid224",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid228",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid232"
+    }, {
+      "@id" : "_:genid230"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ]
+}, {
+  "@id" : "_:genid232",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid240"
+    }, {
+      "@id" : "_:genid234"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid234",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid235"
+  } ]
+}, {
+  "@id" : "_:genid235",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ExperentialKnowledge"
+    }, {
+      "@id" : "_:genid237"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid237",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid25"
+  } ]
+}, {
+  "@id" : "_:genid240",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid241"
+  } ]
+}, {
+  "@id" : "_:genid241",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+    }, {
+      "@id" : "_:genid243"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid243",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid245",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid246"
+  } ]
+}, {
+  "@id" : "_:genid246",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+    }, {
+      "@id" : "_:genid248"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid248",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001066"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+    }, {
+      "@id" : "_:genid27"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid250",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#LocalExplanation"
+  } ]
+}, {
+  "@id" : "_:genid251",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#StaticExplanation"
+  } ]
+}, {
+  "@id" : "_:genid252",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000059"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ]
+}, {
+  "@id" : "_:genid253",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+  } ]
+}, {
+  "@id" : "_:genid254",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid255"
+  } ]
+}, {
+  "@id" : "_:genid255",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid257"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid257",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#StatementOfBias"
+  } ]
+}, {
+  "@id" : "_:genid259",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid260"
+  } ]
+}, {
+  "@id" : "_:genid260",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid262"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid262",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001277"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000089"
+  } ]
+}, {
+  "@id" : "_:genid264",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#GlobalExplanationOutput"
+  } ]
+}, {
+  "@id" : "_:genid265",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid269"
+    }, {
+      "@id" : "_:genid267"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid267",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#KnowledgeDistillationMethod"
+  } ]
+}, {
+  "@id" : "_:genid269",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#HighLevelFeatureLearningMethod"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000230"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid270",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasExplanationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#GlobalExplanationType"
+  } ]
+}, {
+  "@id" : "_:genid271",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#GlobalExplanationOutput"
+  } ]
+}, {
+  "@id" : "_:genid272",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid273"
+  } ]
+}, {
+  "@id" : "_:genid273",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid275"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid275",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001384"
+  } ]
+}, {
+  "@id" : "_:genid277",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasExplanationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#InteractiveExplanationType"
+  } ]
+}, {
+  "@id" : "_:genid278",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  } ]
+}, {
+  "@id" : "_:genid279",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#GlobalExplanationOutput"
+  } ]
+}, {
+  "@id" : "_:genid280",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid284"
+    }, {
+      "@id" : "_:genid282"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid282",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#RationaleProvidingMethods"
+  } ]
+}, {
+  "@id" : "_:genid284",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExemplarMethods"
+  } ]
+}, {
+  "@id" : "_:genid285",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasExplanationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#LocalExplanationType"
+  } ]
+}, {
+  "@id" : "_:genid286",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid287"
+  } ]
+}, {
+  "@id" : "_:genid287",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+    }, {
+      "@id" : "_:genid289"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid289",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ScientificMethod"
+  } ]
+}, {
+  "@id" : "_:genid291",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasExplanationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationType"
+  } ]
+}, {
+  "@id" : "_:genid292",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  } ]
+}, {
+  "@id" : "_:genid293",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#GlobalExplanationOutput"
+  } ]
+}, {
+  "@id" : "_:genid294",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001243"
+  } ]
+}, {
+  "@id" : "_:genid295",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid296",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid312"
+    }, {
+      "@id" : "_:genid298"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid298",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid299"
+  } ]
+}, {
+  "@id" : "_:genid299",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid301"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationGoal"
+  } ]
+}, {
+  "@id" : "_:genid301",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid302"
+  } ]
+}, {
+  "@id" : "_:genid302",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid304"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid304",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid305"
+  } ]
+}, {
+  "@id" : "_:genid305",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+    }, {
+      "@id" : "_:genid307"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid307",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemTrace"
+  } ]
+}, {
+  "@id" : "_:genid312",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid313"
+  } ]
+}, {
+  "@id" : "_:genid313",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid315"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid315",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid316"
+  } ]
+}, {
+  "@id" : "_:genid316",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid318"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid318",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "_:genid321",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#LocalExplanation"
+  } ]
+}, {
+  "@id" : "_:genid322",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#LocalExplanation"
+  } ]
+}, {
+  "@id" : "_:genid323",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid324"
+  } ]
+}, {
+  "@id" : "_:genid324",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid326"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid326",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid327"
+  } ]
+}, {
+  "@id" : "_:genid327",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid329"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid329",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000068"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid330"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid330",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#System"
+    }, {
+      "@id" : "_:genid332"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid332",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000364"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemDeveloper"
+  } ]
+}, {
+  "@id" : "_:genid336",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid344"
+    }, {
+      "@id" : "_:genid338"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid338",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid339"
+  } ]
+}, {
+  "@id" : "_:genid339",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid341"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid341",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001277"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid344",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid345",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid361"
+    }, {
+      "@id" : "_:genid347"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid347",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid348"
+  } ]
+}, {
+  "@id" : "_:genid348",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid350"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "_:genid350",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid351"
+  } ]
+}, {
+  "@id" : "_:genid351",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid353"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid353",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000068"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid354"
+  } ]
+}, {
+  "@id" : "_:genid354",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/heals/eo#System"
+    }, {
+      "@id" : "_:genid356"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid356",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Plan"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid361",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid362"
+  } ]
+}, {
+  "@id" : "_:genid362",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid364"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid364",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid365"
+  } ]
+}, {
+  "@id" : "_:genid365",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+    }, {
+      "@id" : "_:genid367"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid367",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000068"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid368"
+  } ]
+}, {
+  "@id" : "_:genid368",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/heals/eo#System"
+    }, {
+      "@id" : "_:genid370"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid370",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Plan"
+  } ]
+}, {
+  "@id" : "_:genid374",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#LocalExplanation"
+  } ]
+}, {
+  "@id" : "_:genid375",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#StaticExplanation"
+  } ]
+}, {
+  "@id" : "_:genid376",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid377"
+  } ]
+}, {
+  "@id" : "_:genid377",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid379"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid379",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid380"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid39"
+  } ]
+}, {
+  "@id" : "_:genid380",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid382"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid382",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000230"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid383"
+  } ]
+}, {
+  "@id" : "_:genid383",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#object_record"
+    }, {
+      "@id" : "_:genid385"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid385",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+  } ]
+}, {
+  "@id" : "_:genid389",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasExplanationType"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#StaticExplanationType"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+    }, {
+      "@id" : "_:genid41"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid390",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid391"
+  } ]
+}, {
+  "@id" : "_:genid391",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid393"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid393",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid394"
+  } ]
+}, {
+  "@id" : "_:genid394",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#InductiveTask"
+    }, {
+      "@id" : "_:genid396"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid396",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid397"
+  } ]
+}, {
+  "@id" : "_:genid397",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#Numerical_Evidence"
+    }, {
+      "@id" : "_:genid399"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid399",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#addresses"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ]
+}, {
+  "@id" : "_:genid403",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/heals/eo#System"
+  } ]
+}, {
+  "@id" : "_:genid404",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000228"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#corporate_role"
+  } ]
+}, {
+  "@id" : "_:genid405",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000228"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#corporate_role"
+  } ]
+}, {
+  "@id" : "_:genid406",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "_:genid407",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001277"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid408",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://semanticscience.org/resource/SIO_000956"
+    }, {
+      "@id" : "_:genid410"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000230"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid410",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#isUsedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid411"
+  } ]
+}, {
+  "@id" : "_:genid411",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://purl.org/heals/eo#System"
+    }, {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid416",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid417"
+  } ]
+}, {
+  "@id" : "_:genid417",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid419"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid419",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid420"
+  } ]
+}, {
+  "@id" : "_:genid420",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#AITask"
+    }, {
+      "@id" : "_:genid422"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid422",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid423"
+  } ]
+}, {
+  "@id" : "_:genid423",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid427"
+    }, {
+      "@id" : "_:genid425"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid425",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000229"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemTrace"
+  } ]
+}, {
+  "@id" : "_:genid427",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#DecisionTree"
+    }, {
+      "@id" : "https://purl.org/heals/eo#KnowledgeBasedSystems"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid432",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid433",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid437"
+    }, {
+      "@id" : "_:genid435"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid435",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  } ]
+}, {
+  "@id" : "_:genid437",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000011"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  } ]
+}, {
+  "@id" : "_:genid438",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000001"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid439",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000231"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "_:genid440",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001278"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ]
+}, {
+  "@id" : "_:genid441",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ObjectCharacteristic"
+  } ]
+}, {
+  "@id" : "_:genid442",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000231"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "_:genid443",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000231"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "_:genid444",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid460"
+    }, {
+      "@id" : "_:genid446"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid446",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid447"
+  } ]
+}, {
+  "@id" : "_:genid447",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid449"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid449",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid450"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001277"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid450",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+    }, {
+      "@id" : "_:genid452"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid452",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid456"
+    }, {
+      "@id" : "_:genid454"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid454",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ScientificMethod"
+  } ]
+}, {
+  "@id" : "_:genid456",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001066"
+  } ]
+}, {
+  "@id" : "_:genid460",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid472"
+    }, {
+      "@id" : "_:genid462"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid462",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid463"
+  } ]
+}, {
+  "@id" : "_:genid463",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+    }, {
+      "@id" : "_:genid465"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid465",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid469"
+    }, {
+      "@id" : "_:genid467"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid467",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ScientificMethod"
+  } ]
+}, {
+  "@id" : "_:genid469",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001066"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid48"
+  } ]
+}, {
+  "@id" : "_:genid472",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ]
+}, {
+  "@id" : "_:genid473",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/data/interacts"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "_:genid474",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#UserCharacteristic"
+  } ]
+}, {
+  "@id" : "_:genid475",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation"
+  } ]
+}, {
+  "@id" : "_:genid476",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#asks"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ]
+}, {
+  "@id" : "_:genid477",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#consumes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ]
+}, {
+  "@id" : "_:genid478",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#possess"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#LocalExplanation"
+    }, {
+      "@id" : "_:genid50"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://purl.org/heals/eo#hasPresentation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationModality"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000232"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#ExemplarMethods"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid64"
+    }, {
+      "@id" : "_:genid54"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid55"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "_:genid57"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/prov#used"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ExperentialKnowledge"
+    }, {
+      "@id" : "_:genid60"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000300"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid72"
+    }, {
+      "@id" : "_:genid66"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid67"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#ExperentialKnowledge"
+    }, {
+      "@id" : "_:genid69"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#user"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemCharacteristic"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid80"
+    }, {
+      "@id" : "_:genid75"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid76"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+    }, {
+      "@id" : "https://purl.org/heals/eo#object_record"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000061"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000414"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid98"
+    }, {
+      "@id" : "_:genid88"
+    }, {
+      "@id" : "_:genid82"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid83"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
+    }, {
+      "@id" : "_:genid85"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
+    }, {
+      "@id" : "_:genid91"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://purl.org/heals/eo#hasParameter"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://purl.org/heals/eo#Parameter"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid95"
+    }, {
+      "@id" : "_:genid93"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000668"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000011"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://purl.org/heals/eo#object_record"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid99"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
+    }, {
+      "@id" : "_:genid101"
+    } ]
+  } ]
+}, {
+  "@id" : "http://linkedu.eu/dedalo/data/interacts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Chari, S., Gruen, D. M., Seneviratne, O., & McGuinness, D. L. (2020). Foundations of Explainable Knowledge-Enabled Systems. arXiv preprint arXiv:2003.07520."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000602"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an account of the system, its workings, the  implicit and explicit knowledge used in its reasoning processes and the specific decision, that is sensitive to the end-user's understanding, context, and current needs"
+  } ]
+}, {
+  "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is based on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001403"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000115" : [ {
+    "@language" : "en",
+    "@value" : "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+  }, {
+    "@language" : "en",
+    "@value" : "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "definition"
+  }, {
+    "@value" : "definition"
+  }, {
+    "@value" : "textual definition"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "imported from"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C120451",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Social Security Retirement Benefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C120452",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C154890",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Income Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C17468",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Socioeconomic Factors"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C20188"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C19308",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Average Household Income"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C70811"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C20181",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Conceptual Entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000776"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C20188",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Social Circumstances"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C20181"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Income"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C20181"
+  }, {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  }, {
+    "@id" : "http://semanticscience.org/resource/SIO_010410"
+  }, {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C53333",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Socioeconomic Indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C17468"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C53334",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Median Income"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  }, {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C53333"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C70811",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Household Income"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/NCIT_C85406",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/ncit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gross Income"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/NCIT_C41150"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001177",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Computer Heuristics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001480",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Machine Learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Supervised Machine Learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001480"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0001486",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unsupervised Machine Learning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001480"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0006327",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expert Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#KnowledgeBasedSystems"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0010354",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Natural Language Processing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0013278",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Robotics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0017046",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Neural Networks (Computer)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0017538",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fuzzy Logic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0024712",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge Bases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0027764",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Support Vector Machine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0028314",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gene Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0028401"
+  } ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/OMIT_0028401",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000412" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/omit.owl"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Biological Ontologies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0024712"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/heals/eo#Characteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000000"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@value" : "a distinguishing trait, quality, or property of an object record"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Question Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  } ],
+  "http://www.w3.org/ns/prov#definition" : [ {
+    "@value" : "A characteristic of a question"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000004"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#hasCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/heals/eo#isCharacteristicOf"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#hasExplanationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#hasGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/heals/eo#hasParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/heals/eo#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#hasPrimaryParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has primary parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#hasParameter"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#hasSecondaryParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has secondary parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#hasParameter"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#isAvailibleIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is available in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#isCharacteristicOf"
+  }, {
+    "@id" : "http://purl.org/heals/eo#isSupportedBy"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://purl.org/heals/eo#hasAvailability"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#isCharacteristicOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is characteristic of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000011"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#isInternal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#isOpposedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is opposed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000212"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/heals/eo#opposes"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#isParameterOfType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/heals/eo#isSupportedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is supported by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000212"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/heals/eo#supports"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#opposes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "opposes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000628"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#pertainsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/heals/eo#recommendedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "recommended by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000212"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/heals/eo#recommends"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#recommends",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "recommends"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#isCharacteristicOf"
+  }, {
+    "@id" : "http://purl.org/heals/eo#isSupportedBy"
+  } ]
+}, {
+  "@id" : "http://purl.org/heals/eo#supports",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "supports"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000628"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000004",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000008",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000010",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000069",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000085",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000097",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000223",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000229",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000230",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000231",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000294",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000337",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000365",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000498",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000602",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000612",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000628",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000649",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000667",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000668",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000747",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_000776",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_001066",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_001194",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_001243",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/SIO_001403",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://semanticscience.org/resource/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Situation"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has setting"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#isConceptualizedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/TR/prov-o/used",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://purl.org/heals/eo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Amar K. Das"
+  }, {
+    "@value" : "Daniel M. Gruen"
+  }, {
+    "@value" : "Deborah L. McGuinness"
+  }, {
+    "@value" : "Mohamed Ghalwash"
+  }, {
+    "@value" : "Morgan Foreman"
+  }, {
+    "@value" : "Oshani Seneviratne"
+  }, {
+    "@value" : "Pablo Meyers"
+  }, {
+    "@value" : "Prithwish Chakraborty"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users' situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright 2022 IBM Research and Rensselaer Polytechnic Institute\n\n\t\t\tLicensed under the Apache License, Version 2.0 (the \"License\");\n\tyou may not use this file except in compliance with the License.\n\tYou may obtain a copy of the License at\n\n\t\thttp://www.apache.org/licenses/LICENSE-2.0\n\n\tUnless required by applicable law or agreed to in writing, software\n\tdistributed under the License is distributed on an \"AS IS\" BASIS,\n\tWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n\tSee the License for the specific language governing permissions and\n\tlimitations under the License."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Explanation Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://semanticscience.org/ontology/sio.owl"
+  }, {
+    "@id" : "https://www.w3.org/ns/prov-o.owl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://purl.org/heals/eo/2.0.0"
+  } ],
+  "http://www.w3.org/ns/prov#wasRevisionOf" : [ {
+    "@value" : "https://purl.org/heals/eo/1.0.0"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#AITask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "is an activity that uses a reasoning type to accomplish within a defined period of time a goal within a larger problem"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Tu, S. W., Eriksson, H., Gennari, J. H., Shahar, Y., & Musen, M. A. (1995). Ontology-based configuration of problem-solving methods and generation of knowledge-acquisition tools: application of PROTEGE-II to protocol-based decision support. Artificial intelligence in medicine, 7(3), 257-289."
+  }, {
+    "@value" : "https://en.wikipedia.org/wiki/Task_(project_management)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AI Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000649"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Deductive task"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#AITaskExample",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000229" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"
+  }, {
+    "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#DeductiveTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Deductive task that generated a recommnendation used as a basis for a contrastive explanation"
+  } ],
+  "https://purl.org/heals/eo#implements" : [ {
+    "@id" : "https://purl.org/heals/eo#ContrastiveQuestion"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#AbductiveTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Abduction is a task which tries to identify those initial conditions which deduction starts from, given general laws and some singular statements called final states."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Abductive Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a subroutine that implements a single family of AI models and takes as input certain inputs and outputs a value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AI Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000667"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#CaseBasedExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Case-based explanations contain results that “are based on actual prior cases that can be presented to the user to provide\ncompelling support for the system’s conclusions” (Cunningham et al., 2003). Borrowing from Leake, 1988 and Ahmed, 2015, we opine\nthat an AI system generating case-based explanations needs to remember and adapt explanations of similar prior cases (Leake, 1988), or, “has to reason from experiences (old cases) in an effort to solve\nproblems, critique solutions and explain anomalous situation” (Ahmed, 2015). Case-based explanations can involve analogical reasoning, relying on similarities between features of the case and of the\ncurrent situation."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Ahmed IM, Alfonse M, Aref M, Salem ABM. Reasoning Techniques for Diabetics Expert Systems. Procedia Computer Science. 2015;65:813–820"
+  }, {
+    "@value" : "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130."
+  }, {
+    "@value" : "Leake DB. Evaluating Explanations. In: AAAI; 1988. p. 251–255"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Case Based Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid47"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses question of the form, \"To what other situations has this recommendation been applied?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ClinicalPearl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Lorin, M.I., Palazzi, D.L., Turner, T.L., Ward, M.A.: What is a clinical pearl andwhat is its role in medical education? Medical teacher30(9-10), 870–874 (2008)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clinical Pearls"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#EverydayExplanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid52"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "small bits of free-standing, clinically relevant information based on experience or observation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What is a fact a system should consider when prescribing this medication?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ContextualExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Contextual explanations are those that refer to information\nabout items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. Providing such information requires that a system be “context-aware,” and can include information about a “user’s tasks, significant user attributes, organizational environment, and\ntechnical and physical environments” (I.O. for standardization)."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "I. O. for Standardization, Human-centred design processes for interactive systems. Int. Organization for Standardization, 1999"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contextual Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid73"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What broader information about the current situation prompted the suggestion of this recommendation?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ContextualKnowledgePatientA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000231" : [ {
+    "@id" : "https://purl.org/heals/eo#AITaskExample"
+  } ],
+  "http://semanticscience.org/resource/SIO_000668" : [ {
+    "@id" : "https://purl.org/heals/eo#HyperglycemiaPatient"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#Foil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Patient has hyperglycemia"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Contextual_Knowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Context is any information that can be used to characterize the situation of an entity, where an entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves. (Dey 2001)\nContextual knowledge in turn is the knowledge that is derived from such relevant context, where relevance depends on the AI task. Contextual knowledge is related to, but distinct from, information that is used by an AI task to produce an output recommendation."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contextual Knowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  }, {
+    "@id" : "_:genid107"
+  }, {
+    "@id" : "_:genid111"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ContrastiveExpInstance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"
+  }, {
+    "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Guidelines recommend Drug B for this patient"
+  } ],
+  "https://purl.org/heals/eo#addresses" : [ {
+    "@id" : "https://purl.org/heals/eo#ContrastiveQuestion"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ContrastiveExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "As described\nby (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present\ncontrasts between the fact (the event that did occur), the given output, and the foil (the\nevent that did not occur), the output of interest."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "J. van der Waa, M. Robeer, J. van Diggelen, M. Brinkhuis, and M. Neerincx, “Contrastive explanations with local foil trees,” arXiv preprint arXiv:1806.07470, 2018."
+  }, {
+    "@value" : "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence, vol. 267, pp. 1–38, 2019"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contrastive Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid115"
+  }, {
+    "@id" : "_:genid119"
+  }, {
+    "@id" : "_:genid132"
+  }, {
+    "@id" : "_:genid137"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"Why administer this new drug over the one I would typically prescribe?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ContrastiveQuestion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "\"Why Drug A over Drug B?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#CounterfactualExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Amar Das"
+  }, {
+    "@value" : "Deborah L. McGuinness"
+  }, {
+    "@value" : "Morgan Foreman"
+  }, {
+    "@value" : "Oshani Seneviratne"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Daniel M. Gruen"
+  }, {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Counterfactual Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid142"
+  }, {
+    "@id" : "_:genid147"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Addresses the question of what solutions would have been obtained with a different set of inputs than those used."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#CounterfactualProbable1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#CounterfactualExplanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Addresses \"What other factors about the patient does the system know of?\""
+  } ],
+  "https://purl.org/heals/eo#addresses" : [ {
+    "@id" : "https://purl.org/heals/eo#QuestionFromUserStudy1"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#CounterfactualProbable2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#CounterfactualExplanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Addresses \"What if the major problem was a fasting plasma glucose?\""
+  } ],
+  "https://purl.org/heals/eo#addresses" : [ {
+    "@id" : "https://purl.org/heals/eo#QuestionFromUserStudy2"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#DataExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "focuses on what the data is and how it has been used in a particular decision, as well as what data and how it has been used to train and test the ML model. This type of explanation can help users understand the influence of data on decisions."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO & The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19."
+  }, {
+    "@value" : "Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "Addresses the questions, \"What the data is?\", \"How it has been used in a particular decision?\", \"How has the data been used to train the ML model?\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  }, {
+    "@id" : "https://purl.org/heals/eo#SafetyAndPerformanceExplanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid159"
+  }, {
+    "@id" : "_:genid184"
+  }, {
+    "@id" : "_:genid189"
+  }, {
+    "@id" : "_:genid194"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#DecisionTree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Decision_tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Decision Tree"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/OMIT_0001483"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "is a decision support tool that uses a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm that only contains conditional control statements."
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#DeductiveTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Deduction allows us to derive from each candidate hypothesis what one expects to be true (consequence) if that hypothesis is true"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Deductive Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Environmental_Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Environmental context is relevant information pertaining to the physical elements that describe the experimental situation. This information may extend to physical location, physical characteristics and properties of objects, movement, and time."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Bauer, C., & Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Environmental Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid199"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#EverydayExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Accounts of the real world that appeal to the user based on their general\nunderstanding and knowledge [(McNeil and Krajack, 2008) of how the world works, and that help them understand why particular facts (events, properties, decisions, etc.) occurred (Miller, 2019)."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "K. L. McNeill and J. Krajcik, “Inquiry and scientific explanations: Helping students use evidence and reasoning,” Sci. as inquiry in the secondary setting, pp. 121–134, 2008"
+  }, {
+    "@value" : "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence, vol. 267, pp. 1–38, 2019."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Everyday Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid208"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Uses accounts of the real world that appeal to the user, given their general understanding and knowledge."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"Why are gloves recommended when dealing with high-risk patients?\""
+  }, {
+    "@value" : "Addresses a question of the form, \"Why does option A make sense?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Evidence_Based_Explanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "account that articulates how or why an event occured that is supported by evidence and scientific ideas"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.sciencepracticesleadership.com/definitions.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evidence Based Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#scientificExplanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid245"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Address questions of the form, \"What studies support this recommendation?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExemplarMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This category explains the predictions of test instances using similar or influential training instances. It is considered as static local post-hoc explanations with samples."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Exemplar Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid250"
+  }, {
+    "@id" : "_:genid251"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExperentialKnowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://methods.sagepub.com/reference/sage-encyc-qualitative-research-methods/n162.xml"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Marsha A. Schubert"
+  }, {
+    "@value" : "Thomasina J. Borkman"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Experential Knowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "information and wisdom gained from lived experience"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExplanationCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000620"
+  }, {
+    "@id" : "_:genid252"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExplanationGoal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "the impact that an explanation has on a user or the purpose it was designed to achieve"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation Goal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000337"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "educational"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExplanationMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "mechanisms that can provide explanations that are understandable to humans (interpretability) and accurately describe model behaviour in the entire feature space (fidelity)"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Zhou, J., Gandomi, A. H., Chen, F., & Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  }, {
+    "@id" : "_:genid253"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExplanationModality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a particular form/media in which an explanation exists is expressed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation Modality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000612"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ExplanationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Explanation Type wrt Model and Interactivity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001326"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Fact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "inputs and other considerations that led to a system recommendation that did occur"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Daniel Gruen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#FairnessExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "This type of explanation provides steps taken across the design and implementation of an ML system to ensure that the decisions it assists are generally unbiased, and whether or not an individual has been treated equitably. This type of explanation is key to increasing individuals’ confidence in an Artificial Intelligence (AI) system. It can foster meaningful trust by explaining to an individual how bias and discrimination in decisions are avoided."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fairness Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ImpactExplanation"
+  }, {
+    "@id" : "https://purl.org/heals/eo#SafetyAndPerformanceExplanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid254"
+  }, {
+    "@id" : "_:genid259"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#FeatureRelevanceMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Methods such as partial dependence plots (PDP) and sensitivity analysis are used to study the (global) effects of different input features on the output values and are typically consumed through appropriate visualizations (e.g., PDP plots, scatter plots, control charts)."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature Relevance Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid264"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Foil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "facts that would have led to a system recommendation that could have occured"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Daniel Gruen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Foil"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#GlobalExplanationOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Global Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+  }, {
+    "@id" : "_:genid270"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid265"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#GlobalExplanationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Type - Global Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationType"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#GuidelineEvidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://semanticscience.org/resource/SIO_000231" : [ {
+    "@id" : "https://purl.org/heals/eo#AITaskExample"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#Fact"
+  }, {
+    "@id" : "https://purl.org/heals/eo#ScientificKnowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug B is a preferred drug"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#HighLevelFeatureLearningMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Methods that learn high-level features in an unsupervised manner through variational autoencoder or generative adversarial network frameworks would naturally fall under the data followed by features category. Even supervised methods of learning high-level interpretable features would lie in this category."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "High level feature learning method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid271"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#HyperglycemiaPatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://semanticscience.org/resource/SIO_000393" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Patient 100"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ImpactExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This type of explanation concerns the impact that the use of an ML system and its decisions has or may have on an individual and on a wider society. This type of explanation gives individuals some power and control over their involvement in ML-assisted decisions. By understanding the possible consequences of the decision, an individual can better assess their participation in the process and how the outcomes of the decision may affect them. Therefore, this type of explanation is often suited to delivery before an ML-assisted decision is made."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Impact Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid272"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#InductiveTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Induction is able to match single statement to single statement and, therefore, to match a single statement derived as a prediction from a hypothesis with a single statement describing a portion of the real state of airs in the patient."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Stefanelli, M., & Ramoni, M. (1992). Epistemological constraints on medical knowledge-based systems. In Advanced models of cognition for medical training and practice (pp. 3-20). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Inductive Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#InteractiveExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interactive Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+  }, {
+    "@id" : "_:genid277"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#InteractiveExplanationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Type - Interactive Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationType"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#InterprationAndExplanationTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a task that produces interpretations or explanations, which are an account of the system, its workings, the implicit and explicit knowledge it uses to arrive at conclusions in general and the specific decision at hand, that is sensitive to the end-user’s understanding, context, and current needs."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Chari, S., Gruen, D., Seneviratne, O.W., & McGuinness, D.L. (2020). Directions for Explainable Knowledge-Enabled Systems. Knowledge Graphs for eXplainable Artificial Intelligence."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interpretation and Explanation Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  }, {
+    "@id" : "_:genid278"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#KnowledgeBasedSystems",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge based Systems"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ArtificialIntelligenceMethod"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#KnowledgeDistillationMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Knowledge distillation-type approaches, which learn a simpler model based on a complex model’s predictions, would be considered as global interpretations that are learned using a post-hoc surrogate model."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge Distillation Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid279"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#KnowledgeExtractionTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a task of extracting pre-specified types of facts from written texts or speech transcripts, and converting them into structured representations (e.g., databases)."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Ji H. (2009) Information Extraction. In: LIU L., ÖZSU M.T. (eds) Encyclopedia of Database Systems. Springer, Boston, MA. https://doi.org/10.1007/978-0-387-39940-9_204"
+  } ],
+  "http://semanticscience.org/resource/hasSynonym" : [ {
+    "@value" : "Information Extraction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge Extraction Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#LocalExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Local Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+  }, {
+    "@id" : "_:genid285"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid280"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#LocalExplanationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Type - Local Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationType"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#LookupTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Looks through a row or column for a key and returns the value of the cell in a result range located in the same position as the search row or column"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://support.google.com/docs/answer/3256570?hl=en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lookup Task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#AITask"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Mechanistic_Explanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a mechanistic explanation involves presenting a model of the mechanism (the explanans) responsible for some phenomenon of interest (the explanandum). A mechanism is an entity or structure, such as an organ (though a mechanism need not be delineated by such clear physical boundaries) that performs a function by virtue of its component parts, operations and, importantly, their spatial and temporal organisation (Bechtel & Abrahamsen 2005: 421–23). That is, a mechanism does not just consist in its physical parts, but in the ‘organised interplay’ of the activities of those parts (Soom 2012: 656). Examples of phenomena (i.e.,functions or behaviours performed by mechanisms) include such things as the heart’s pumping blood, metabolism and memory."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Dessaix, D. Mechanistic Explanation: Some Limits and their Significance. The ANU Undergraduate Research Journal, 51."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mechanistic Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#scientificExplanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid286"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What is a biological basis for this recommendation?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Model Explanation Output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  }, {
+    "@id" : "_:genid291"
+  }, {
+    "@id" : "_:genid292"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#NeuralNetworkVisualizationMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Methods that visualize intermediate representations/layers of a neural network would fall under the global post-hoc category as people typically use these visualizations to gain confidence in the model and inspect the type of high-level features being extracted."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Neural Network Visualization Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid293"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Numerical_Evidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a statistical value that backs and quantifies a recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Numerical Evidence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  }, {
+    "@id" : "_:genid294"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ObjectCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Object Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  }, {
+    "@id" : "_:genid295"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#QuestionFromUserStudy1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "What other factors about the patient does the system know of?"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#QuestionFromUserStudy2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000085"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "What if the major problem was a fasting plasma glucose?"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#RationaleExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This type of explanation is about the “why” of an ML decision and provides reasons that led to a decision, and is delivered in an accessible and understandable way, especially for lay users. If the ML decision was not what users expected, this type of explanation allows users to assess whether they believe the reasoning of the decision is flawed. While, if so, the explanation supports them to formulate reasonable arguments for why they think this is the case."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO & The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19."
+  }, {
+    "@value" : "Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020"
+  }, {
+    "@value" : "Zhou, J., Gandomi, A. H., Chen, F., & Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rationale Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  }, {
+    "@id" : "_:genid321"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid296"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses example question, \"Why of an ML decision and provides reasons that led to a decision?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#RationaleProvidingMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Work in the natural language processing and computer vision domains that generates rationales/explanations derived from input text would be considered as local self explanations. Here however, new words or phrases could be generated so the feature space can be richer than the original input space."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Providing rationale method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid322"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Reasoning_Mode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a process being executed by the system that achieves a particular goal; e.g. inference models such as treatment planning involved in medical diagnosis can be considered reasoning modes where system is executing a set of tasks"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Ramoni, M., Stefanelli, M., Magnani, L., & Barosi, G. (1992). An epistemological framework for medical knowledge-based systems. IEEE Transactions on Systems, Man, and Cybernetics, 22(6), 1361-1375."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Reasoning Mode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000097"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "The treatment planning process proceeds in four steps. First, the play therapist must develop accurate, comprehensive treatment goals that are consistent with the case formulation and the theoretical model being used. Because these goals are formulated from a theoretical perspective, they may not fully align with the goals of the child and his or her caregivers. Therefore, in the second step, the play therapist must work with both the child client and his or her caregivers to develop a treatment contract that takes the goals created in the first step and addresses each party’s needs. This will ensure they will remain actively engaged in the treatment process over time. Third, the play therapist must organize the treatment goals and the treatment contracts into a realistic and sequential treatment plan. Finally, the play therapist must devise both experiential and cognitive/verbal interventions to move the client toward the treatment goals.\n\nSource: O'Connor, K. J., & Ammen, S. (2012). Play therapy treatment planning and interventions: The ecosystemic model and workbook. Academic Press."
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ResponsibilityExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This type of explanation concerns “who” is involved in the development, management, and implementation of an ML system, and “who” to contact for a human review of a decision. This type of explanation helps by directing the individual to the person or team responsible for a decision. It also makes accountability traceable."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO & The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19."
+  }, {
+    "@value" : "Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020"
+  }, {
+    "@value" : "Zhou, J., Gandomi, A. H., Chen, F., & Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Responsibility Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid323"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses the example questions, \"Who is involved in the development, management, and implementation of an ML system?\" and “Who to contact for a human review of a decision?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Methods that propose certain restrictions on the neural network architecture to make it interpretable, yet maintain richness of the hypothesis space to model complicated decision boundaries would fall under the global directly interpretable category."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Restricted Neural Network Architecture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SafetyAndPerformanceExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This type of explanation deals with steps taken across the design and implementation of an ML system to maximise the accuracy, reliability, security, and robustness of its decisions and behaviours. This type of explanation helps to assure individuals that an ML system is safe and reliable by explanation to test and monitor the accuracy, reliability, security, and robustness of the ML model."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Safety and Performance Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid336"
+  }, {
+    "@id" : "_:genid345"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SaliencyMethods",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Saliency based methods, which highlight different portions in an image whose classification we want to understand, can be categorized as local explanation methods that are static and provide feature-based explanations in terms of highlighting pixels/superpixels. In fact, popular methods such as LIME and SHAP  also fall under this umbrella. Counterfactual explanations which are similar to contrastive explanations where one tries to find a minimal change that would alter the decision of the classifier, are another type of explanation in this category."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... & Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Saliency Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationMethod"
+  }, {
+    "@id" : "_:genid374"
+  }, {
+    "@id" : "_:genid375"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ScientificKnowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.thefreedictionary.com/scientific+knowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Scientific Knowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#knowledge"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "knowledge accumulated by systematic study and organized by general principles"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#ScientificMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "involves a question and suggested explanation (hypothesis) based on observation, followed by the careful design and execution of controlled experiments, and finally validation, refinement or rejection of this hypothesis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.nature.com/articles/nmeth0409-237"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Scientific Method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000747"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SimulationBasedExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Simulation-based explanations are those based on an imagined or implemented imitation of a system or process and the results that emerge from similar inputs. As simulations can often be run numerous\ntimes (e.g. Monte Carlo simulations), and the mechanisms in the simulation can often be observed and traced directly, simulation-based explanations can have elements of statistical and trace-based explanations. Heal suggests that these explanations (Heals, 1996) contain facts that humans would use to determine an outcome in a specified case, and these explanations are intended to “replace and amplify real experiences with guided ones, often “immersive” in nature, that evoke or replicate substantial aspects of the real world in a fully interactive fashion” (Lateef, 2010)"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "F. Lateef, “Simulation-based learning: Just like the real thing,” J. of Emergencies, Trauma and Shock, vol. 3, no. 4, p. 348, 2010"
+  }, {
+    "@value" : "J. Heal, “Simulation, theory, and content,” Theories of theories of mind, pp. 75–89, 1996."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Simulation Based Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid376"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Uses an imagined or implemented imitation of a system or process and the results that emerge from similar inputs"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What would happen if this recommendation is followed?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#StatementOfBias",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a statement concerning the action of supporting or opposing a particular person or thing in an unfair way, because of allowing personal opinions to influence your judgment"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://dictionary.cambridge.org/us/dictionary/english/bias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "statement of bias"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001384"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#StaticExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Static Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ModelExplanationOutputs"
+  }, {
+    "@id" : "_:genid389"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#StaticExplanationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Type - Static Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#ExplanationType"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#StatisticalExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Statistical explanations present an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result.\n(Hempel, 1962) add that a particularly high probability allows the outcome to be expected with practical certainty in any one case where the specified conditions occur."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "C. G. Hempel, “Deductive-nomological vs. statistical explanation,” University of Minnesota Press, Minneapolis, 1962."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Statistical Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid390"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Presents an account of the outcome based on data about the occurrence of events under specified (e.g., experimental) conditions. Statistical explanations refer to numerical evidence on the likelihood of factors or processes influencing the result."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses questions of the form, \"What percentage of similar patients who received this treatment recovered?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  }, {
+    "@id" : "_:genid403"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemDesigner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a person who utilizes and analyzes gathered user reuqirements and provides expertise on building different technical capabilities into systems. These people generally interact with different roles in technical teams including software architects and system developers."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Chari S., Seneviratne O., Gruen D.M., Foreman M.A., Das A.K., McGuinness D.L. (2020) Explanation Ontology: A Model of Explanations for User-Centered AI. In: Pan J.Z. et al. (eds) The Semantic Web – ISWC 2020. ISWC 2020. Lecture Notes in Computer Science, vol 12507. Springer, Cham. https://doi.org/10.1007/978-3-030-62466-8_15"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System Designer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  }, {
+    "@id" : "_:genid404"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemDeveloper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a person who creates computer software. The term computer programmer can refer to a specialist in one area of computers or to a generalist who writes computer programs."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://en.wikipedia.org/wiki/Programmer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System Developer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  }, {
+    "@id" : "_:genid405"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Drug A is not sufficient for this patient"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "https://purl.org/heals/eo#ContextualKnowledgePatientA"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/heals/eo#SystemRecommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Guidelines recommend Drug B"
+  } ],
+  "http://www.w3.org/ns/prov#used" : [ {
+    "@id" : "https://purl.org/heals/eo#GuidelineEvidence"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemRecommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System Recommendation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000602"
+  }, {
+    "@id" : "_:genid406"
+  }, {
+    "@id" : "_:genid407"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an output of an AI system that stitches together the system's output from tasks and/or includes external knowledge used by the task (s)"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#SystemTrace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "sequence of underlying system steps and rules that led to a system recommendation"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Swartout, W. R., & Moore, J. D. (1993). Explanation in second generation expert systems. In Second generation expert systems (pp. 543-585). Springer, Berlin, Heidelberg."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "System Trace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000097"
+  }, {
+    "@id" : "https://purl.org/heals/eo#LocalExplanation"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#Technological_Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Technological context is any relevant information that characterizes the devices that are used to interact with or operate the AI system."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "Bauer, C., & Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technological Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid408"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#TraceBasedExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Trace based explanations describe the underlying sequence of steps used by the system to arrive at a specific result. They reveal “the line of reasoning per case” (Lim et al., 2009), and “addresses the question of why and how the application did something” (Lim et al., 2009)."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "B. Y. Lim, A. K. Dey, and D. Avrahami, “Why and why not explanations improve the intelligibility of context-aware intelligent systems,” in Proc. of the SIGCHI Conf. on Human Factors in Computing Systems. ACM, 2009, pp. 2119–2128"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trace Based Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#RationaleExplanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid416"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Provides the underlying sequence of steps used by the system to arrive at a specific result, containing the line of reasoning per case and addressing the question of why and how the application did something."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What steps were taken by the system to generate this recommendation?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#UserCharacteristic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User Characteristic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/heals/eo#Characteristic"
+  }, {
+    "@id" : "_:genid432"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#User_Context",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "User context is any relevant information that can be used to characterize the user which was not used as input to some AI task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User Context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/heals/eo#Contextual_Knowledge"
+  }, {
+    "@id" : "_:genid438"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid433"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#addresses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a addresses b if a provides an answer to b"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "addresses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000294"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#asks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property between a creator and the question that the creator poses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "asks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000365"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#consumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that associates a person entity with the object they consume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is consumer of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001403"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#corporate_role",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "A corporate employee role is the role of an individual that is employed for some organization and does some tasks with them."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "corporate employee role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000706"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#hasAvailability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has availability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/heals/eo#hasCharacteristic"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#hasPresentation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that captures what form of output an entity a is presented in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has presentation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000008"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a property that associates a process with an object/informational content entity that it addresses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "implements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000132"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#isUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "a property that associates an entity with the object that uses it"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is used by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_001403"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#knowledge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Knowledge"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid439"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#object_record",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a collection of fields that has been gathered for a particular object and the selection is fed to a computer program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "Shruthi Chari"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Object Record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000069"
+  }, {
+    "@id" : "_:genid441"
+  }, {
+    "@id" : "_:genid442"
+  }, {
+    "@id" : "_:genid443"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid440"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#possess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "maps a property with its associated object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "possess"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000223"
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#scientificExplanation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Scientific explanations reference the results of rigorous scientific methods, such as observations and measurements, to explain something we see in the natural world (Moore, 2000). Adapting from (Miller, 2019),\nwe add that scientific explanations usually contain different components of interacting knowledge, including theories or mechanisms such as physiological ones, which are sets of principles that form building blocks for models; models which represent the relationships between entities and their attributes informed by taxonomies and other classification schemes; and data (e.g. measurements, observations)."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "J. Moore, “Varieties of scientific explanation,” The Behavior Analyst, vol. 23, no. 2, pp. 173–190, 2000."
+  }, {
+    "@value" : "T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence,\nvol. 267, pp. 1–38, 2019."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Scientific Explanation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid444"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "References the results of rigorous scientific methods, observations, and measurements."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Addresses a question of the form, \"What is the biological basis for this recommendation?\""
+  } ]
+}, {
+  "@id" : "https://purl.org/heals/eo#user",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "https://www.law.cornell.edu/uscode/text/22/8541"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://semanticscience.org/resource/SIO_000498"
+  }, {
+    "@id" : "_:genid473"
+  }, {
+    "@id" : "_:genid474"
+  }, {
+    "@id" : "_:genid475"
+  }, {
+    "@id" : "_:genid476"
+  }, {
+    "@id" : "_:genid477"
+  }, {
+    "@id" : "_:genid478"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the person that receives and ultimately uses the good, service, or technology"
+  } ]
+} ]

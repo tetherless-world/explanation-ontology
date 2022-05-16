@@ -1,0 +1,605 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#http://linkedu.eu/dedalo/explanationPattern.owl#Explanation">http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</a>
+<ul>
+<li><li></ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/OMIT_0017046">http://purl.obolibrary.org/obo/OMIT_0017046</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/OMIT_0001483</li>
+</ul>
+<ul>
+<li>Deleted: SubClass of https://purl.org/heals/eo#ArtificialIntelligenceMethod</li>
+</ul>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000010">http://semanticscience.org/resource/SIO_000010</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000085">http://semanticscience.org/resource/SIO_000085</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000498">http://semanticscience.org/resource/SIO_000498</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation">http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation</a>
+<ul>
+<li>Added: rdfs:label "Situation"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#AITask">https://purl.org/heals/eo#AITask</a>
+<ul>
+<li></ul>
+<ul>
+<li><li><li></ul>
+</li>
+<li><a href="#ArtificialIntelligenceMethod">https://purl.org/heals/eo#ArtificialIntelligenceMethod</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#CaseBasedExplanation">https://purl.org/heals/eo#CaseBasedExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#CaseBasedExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#LocalExplanation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#ExemplarMethods&gt;))))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#CaseBasedExplanation&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_001277&gt; &lt;https://purl.org/heals/eo#object_record&gt;) ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ArtificialIntelligenceMethod&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000230&gt; &lt;https://purl.org/heals/eo#object_record&gt;))))))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#object_record&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ArtificialIntelligenceMethod&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000230&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))))))))</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#CaseBasedExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#Explanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000230&gt; &lt;https://purl.org/heals/eo#object_record&gt;))))))))</li>
+</ul>
+</li>
+<li><a href="#ContextualExplanation">https://purl.org/heals/eo#ContextualExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ContextualExplanation&gt; ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#Contextual_Knowledge&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000011&gt; &lt;http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation&gt;)))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#Contextual_Knowledge&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000011&gt; &lt;https://purl.org/heals/eo#object_record&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#Contextual_Knowledge&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000008&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectUnionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; &lt;https://purl.org/heals/eo#object_record&gt;))))</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ContextualExplanation&gt; ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#Contextual_Knowledge&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation&gt;))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#Contextual_Knowledge&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; &lt;https://purl.org/heals/eo#SystemRecommendation&gt;)))</li>
+</ul>
+</li>
+<li><a href="#Contextual_Knowledge">https://purl.org/heals/eo#Contextual_Knowledge</a>
+<ul>
+<li><li><li>Added: <http://purl.org/dc/terms/description> "Context is any information that can be used to characterize the situation of an entity, where an entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves. (Dey 2001)
+Contextual knowledge in turn is the knowledge that is derived from such relevant context, where relevance depends on the AI task. Contextual knowledge is related to, but distinct from, information that is used by an AI task to produce an output recommendation."^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "all the knowledge that is relevant and can be mobilized to understand a given situated decision problem."^^xsd:string</li>
+<li>Deleted: <http://purl.org/dc/terms/source> "Brézillon, P., & Pomerol, J. C. (1999, July). Contextual knowledge and proceduralized context. In Proceedings of the AAAI-99 Workshop on Modeling Context in AI Applications, Orlando, Florida, USA, July. AAAI Technical Report."^^xsd:string</li>
+<li>Deleted: <http://purl.org/dc/terms/description> "Contextual knowledge is all the knowledge that is relevant and can be mobilized to understand a given situated decision problem. By \"situated\" we mean in given, dated, well specified circumstances (Clancey 1991). Contextual knowledge is evoked by situations and events, and loosely
+tied to a task or a goal. However, when the task becomes more precise (e.g., an event occurs), a large part of this contextual knowledge can be proceduralized according to the current focus of the decision making."^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#ContrastiveExplanation">https://purl.org/heals/eo#ContrastiveExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ContrastiveExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; &lt;https://purl.org/heals/eo#Fact&gt;))))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ContrastiveExplanation&gt; ObjectIntersectionOf(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#Explanation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; &lt;https://purl.org/heals/eo#AbductiveTask&gt;)))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ContrastiveExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; &lt;https://purl.org/heals/eo#Foil&gt;))))</li>
+</ul>
+<ul>
+<li><li>Deleted: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+</ul>
+</li>
+<li><a href="#CounterfactualExplanation">https://purl.org/heals/eo#CounterfactualExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#CounterfactualExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ModelExplanationOutputs&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; &lt;https://purl.org/heals/eo#SaliencyMethods&gt;))))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#CounterfactualExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; ObjectIntersectionOf(ObjectUnionOf(&lt;http://purl.org/heals/eo#Characteristic&gt; &lt;https://purl.org/heals/eo#knowledge&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;https://purl.org/heals/eo#object_record&gt;))))))</li>
+</ul>
+<ul>
+<li>Deleted: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#CounterfactualExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#knowledge&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;https://purl.org/heals/eo#object_record&gt;))))))</li>
+</ul>
+</li>
+<li><a href="#Environmental_Context">https://purl.org/heals/eo#Environmental_Context</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#Environmental_Context&gt; ObjectIntersectionOf(ObjectUnionOf(&lt;http://semanticscience.org/resource/SIO_000009&gt; &lt;http://semanticscience.org/resource/SIO_000612&gt; &lt;http://semanticscience.org/resource/SIO_001194&gt; &lt;http://www.w3.org/ns/prov#Location&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000008&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))</li>
+<li>Added: <http://purl.org/dc/terms/source> "Bauer, C., & Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393."^^xsd:string</li>
+<li>Added: <http://purl.org/dc/elements/1.1/description> "Environmental context is relevant information pertaining to the physical elements that describe the experimental situation. This information may extend to physical location, physical characteristics and properties of objects, movement, and time."^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://purl.org/dc/elements/1.1/description> "deals with the physical aspects of the experimental situation"^^xsd:string</li>
+<li>Deleted: <http://purl.org/dc/terms/source> "Smith, S. M., Glenberg, A., & Bjork, R. A. (1978). Environmental context and human memory. Memory & Cognition, 6(4), 342-353."^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#SystemRecommendation">https://purl.org/heals/eo#SystemRecommendation</a>
+<ul>
+<li><li></ul>
+</li>
+<li><a href="#SystemTrace">https://purl.org/heals/eo#SystemTrace</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#LocalExplanation</li>
+</ul>
+</li>
+<li><a href="#TraceBasedExplanation">https://purl.org/heals/eo#TraceBasedExplanation</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#RationaleExplanation</li>
+</ul>
+<ul>
+<li>Deleted: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+</ul>
+</li>
+<li><a href="#User_Context">https://purl.org/heals/eo#User_Context</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#User_Context&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000011&gt; &lt;http://semanticscience.org/resource/SIO_000498&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000668&gt; &lt;http://semanticscience.org/resource/SIO_000498&gt;)))</li>
+<li><li>Added: <http://purl.org/dc/elements/1.1/description> "User context is any relevant information that can be used to characterize the user which was not used as input to some AI task."^^xsd:string</li>
+</ul>
+<ul>
+<li><li>Deleted: <http://purl.org/dc/elements/1.1/description> "any relevant information that can be used to characterize the situation of a user. There are three important aspects of user context: where the user is, whom the user is with, and what resources are nearby."^^xsd:string</li>
+<li>Deleted: <http://purl.org/dc/terms/source> "https://www.igi-global.com/dictionary/researching-mobile-learning/37179"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#knowledge">https://purl.org/heals/eo#knowledge</a>
+<ul>
+<li></ul>
+<ul>
+<li>Deleted: SubClass of http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory</li>
+</ul>
+</li>
+<li><a href="#object_record">https://purl.org/heals/eo#object_record</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#object_record&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_001278&gt; &lt;https://purl.org/heals/eo#SystemRecommendation&gt;))</li>
+<li><li></ul>
+</li>
+<li><a href="#user">https://purl.org/heals/eo#user</a>
+<ul>
+<li></ul>
+</li>
+</ul></details><details><summary><u>Added classes</u></summary>
+<ul><li><a href="#http://purl.obolibrary.org/obo/NCIT_C120451">http://purl.obolibrary.org/obo/NCIT_C120451</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C41150</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C120452">http://purl.obolibrary.org/obo/NCIT_C120452</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C41150</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C154890">http://purl.obolibrary.org/obo/NCIT_C154890</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C41150</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C17468">http://purl.obolibrary.org/obo/NCIT_C17468</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C20188</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C19308">http://purl.obolibrary.org/obo/NCIT_C19308</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C70811</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C20181">http://purl.obolibrary.org/obo/NCIT_C20181</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_000776</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C20188">http://purl.obolibrary.org/obo/NCIT_C20188</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C20181</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C41150">http://purl.obolibrary.org/obo/NCIT_C41150</a>
+<ul>
+<li>Added: SubClass of http://purl.org/heals/eo#Characteristic</li>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_010410</li>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C20181</li>
+<li></ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C53333">http://purl.obolibrary.org/obo/NCIT_C53333</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C17468</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C53334">http://purl.obolibrary.org/obo/NCIT_C53334</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C53333</li>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C41150</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C70811">http://purl.obolibrary.org/obo/NCIT_C70811</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C41150</li>
+</ul>
+</li>
+<li><a href="#http://purl.obolibrary.org/obo/NCIT_C85406">http://purl.obolibrary.org/obo/NCIT_C85406</a>
+<ul>
+<li>Added: SubClass of http://purl.obolibrary.org/obo/NCIT_C41150</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#Characteristic">http://purl.org/heals/eo#Characteristic</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_000000</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#Parameter">http://purl.org/heals/eo#Parameter</a>
+<ul>
+<li>Added: SubClass of http://purl.org/heals/eo#Characteristic</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#System">http://purl.org/heals/eo#System</a>
+<ul>
+<li><li>Added: SubClass of http://semanticscience.org/resource/SIO_000004</li>
+<li></ul>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000000">http://semanticscience.org/resource/SIO_000000</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000009">http://semanticscience.org/resource/SIO_000009</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000089">http://semanticscience.org/resource/SIO_000089</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000414">http://semanticscience.org/resource/SIO_000414</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000620">http://semanticscience.org/resource/SIO_000620</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000706">http://semanticscience.org/resource/SIO_000706</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000752">http://semanticscience.org/resource/SIO_000752</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000753">http://semanticscience.org/resource/SIO_000753</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000956">http://semanticscience.org/resource/SIO_000956</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_001326">http://semanticscience.org/resource/SIO_001326</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_001384">http://semanticscience.org/resource/SIO_001384</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_010410">http://semanticscience.org/resource/SIO_010410</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#Location">http://www.w3.org/ns/prov#Location</a>
+</li>
+<li><a href="#http://www.w3.org/ns/prov#Plan">http://www.w3.org/ns/prov#Plan</a>
+</li>
+<li><a href="#DataExplanation">https://purl.org/heals/eo#DataExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#DataExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ModelExplanationOutputs&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#HighLevelFeatureLearningMethod&gt;))))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#DataExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ModelExplanationOutputs&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#ExemplarMethods&gt;))))</li>
+<li>Added: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+<li>Added: SubClass of https://purl.org/heals/eo#SafetyAndPerformanceExplanation</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#DataExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ModelExplanationOutputs&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#FeatureRelevanceMethods&gt;))))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#DataExplanation&gt; ObjectUnionOf(ObjectIntersectionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; &lt;https://purl.org/heals/eo#object_record&gt;) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_001277&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ArtificialIntelligenceMethod&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000230&gt; ObjectUnionOf(&lt;http://semanticscience.org/resource/SIO_000089&gt; &lt;http://semanticscience.org/resource/SIO_000752&gt; &lt;http://semanticscience.org/resource/SIO_000753&gt;))))))))</li>
+</ul>
+</li>
+<li><a href="#ExemplarMethods">https://purl.org/heals/eo#ExemplarMethods</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+<li><li></ul>
+</li>
+<li><a href="#ExplanationCollection">https://purl.org/heals/eo#ExplanationCollection</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_000620</li>
+<li></ul>
+</li>
+<li><a href="#ExplanationMethod">https://purl.org/heals/eo#ExplanationMethod</a>
+<ul>
+<li><li>Added: SubClass of https://purl.org/heals/eo#ArtificialIntelligenceMethod</li>
+</ul>
+</li>
+<li><a href="#ExplanationType">https://purl.org/heals/eo#ExplanationType</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_001326</li>
+</ul>
+</li>
+<li><a href="#FairnessExplanation">https://purl.org/heals/eo#FairnessExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#FairnessExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_001277&gt; &lt;http://semanticscience.org/resource/SIO_000089&gt;))))</li>
+<li>Added: SubClass of https://purl.org/heals/eo#ImpactExplanation</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#FairnessExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000008&gt; &lt;https://purl.org/heals/eo#StatementOfBias&gt;))))</li>
+<li>Added: SubClass of https://purl.org/heals/eo#SafetyAndPerformanceExplanation</li>
+</ul>
+</li>
+<li><a href="#FeatureRelevanceMethods">https://purl.org/heals/eo#FeatureRelevanceMethods</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+<li></ul>
+</li>
+<li><a href="#GlobalExplanationOutput">https://purl.org/heals/eo#GlobalExplanationOutput</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ModelExplanationOutputs</li>
+<li><li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#GlobalExplanationOutput&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#HighLevelFeatureLearningMethod&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#KnowledgeDistillationMethod&gt;)))</li>
+</ul>
+</li>
+<li><a href="#GlobalExplanationType">https://purl.org/heals/eo#GlobalExplanationType</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationType</li>
+</ul>
+</li>
+<li><a href="#HighLevelFeatureLearningMethod">https://purl.org/heals/eo#HighLevelFeatureLearningMethod</a>
+<ul>
+<li><li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+</ul>
+</li>
+<li><a href="#ImpactExplanation">https://purl.org/heals/eo#ImpactExplanation</a>
+<ul>
+<li>Added: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ImpactExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000008&gt; &lt;http://semanticscience.org/resource/SIO_001384&gt;))))</li>
+</ul>
+</li>
+<li><a href="#InteractiveExplanation">https://purl.org/heals/eo#InteractiveExplanation</a>
+<ul>
+<li><li>Added: SubClass of https://purl.org/heals/eo#ModelExplanationOutputs</li>
+</ul>
+</li>
+<li><a href="#InteractiveExplanationType">https://purl.org/heals/eo#InteractiveExplanationType</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationType</li>
+</ul>
+</li>
+<li><a href="#InterprationAndExplanationTask">https://purl.org/heals/eo#InterprationAndExplanationTask</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#AITask</li>
+<li></ul>
+</li>
+<li><a href="#KnowledgeDistillationMethod">https://purl.org/heals/eo#KnowledgeDistillationMethod</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+<li></ul>
+</li>
+<li><a href="#KnowledgeExtractionTask">https://purl.org/heals/eo#KnowledgeExtractionTask</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#AITask</li>
+</ul>
+</li>
+<li><a href="#LocalExplanation">https://purl.org/heals/eo#LocalExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#LocalExplanation&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#ExemplarMethods&gt;) ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; &lt;https://purl.org/heals/eo#RationaleProvidingMethods&gt;)))</li>
+<li>Added: SubClass of https://purl.org/heals/eo#ModelExplanationOutputs</li>
+<li></ul>
+</li>
+<li><a href="#LocalExplanationType">https://purl.org/heals/eo#LocalExplanationType</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationType</li>
+</ul>
+</li>
+<li><a href="#LookupTask">https://purl.org/heals/eo#LookupTask</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#AITask</li>
+</ul>
+</li>
+<li><a href="#ModelExplanationOutputs">https://purl.org/heals/eo#ModelExplanationOutputs</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#SystemRecommendation</li>
+<li><li></ul>
+</li>
+<li><a href="#NeuralNetworkVisualizationMethod">https://purl.org/heals/eo#NeuralNetworkVisualizationMethod</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+<li></ul>
+</li>
+<li><a href="#ObjectCharacteristic">https://purl.org/heals/eo#ObjectCharacteristic</a>
+<ul>
+<li>Added: SubClass of http://purl.org/heals/eo#Characteristic</li>
+<li></ul>
+</li>
+<li><a href="#RationaleExplanation">https://purl.org/heals/eo#RationaleExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#RationaleExplanation&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; &lt;https://purl.org/heals/eo#ExplanationMethod&gt;))))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#used&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ArtificialIntelligenceMethod&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000229&gt; &lt;https://purl.org/heals/eo#SystemTrace&gt;)))))))))</li>
+<li>Added: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+<li></ul>
+</li>
+<li><a href="#RationaleProvidingMethods">https://purl.org/heals/eo#RationaleProvidingMethods</a>
+<ul>
+<li><li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+</ul>
+</li>
+<li><a href="#ResponsibilityExplanation">https://purl.org/heals/eo#ResponsibilityExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#ResponsibilityExplanation&gt; ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000068&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#System&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000364&gt; &lt;https://purl.org/heals/eo#SystemDeveloper&gt;))))))))</li>
+<li>Added: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+</ul>
+</li>
+<li><a href="#RestrictedNeuralNetworkArchitectures">https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+</ul>
+</li>
+<li><a href="#SafetyAndPerformanceExplanation">https://purl.org/heals/eo#SafetyAndPerformanceExplanation</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#SafetyAndPerformanceExplanation&gt; ObjectUnionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000232&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#ArtificialIntelligenceMethod&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000068&gt; ObjectIntersectionOf(&lt;http://purl.org/heals/eo#System&gt; ObjectSomeValuesFrom(&lt;http://purl.org/heals/eo#hasCharacteristic&gt; &lt;http://www.w3.org/ns/prov#Plan&gt;))))))) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://www.w3.org/ns/prov#wasGeneratedBy&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#AITask&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_000068&gt; ObjectIntersectionOf(&lt;http://purl.org/heals/eo#System&gt; ObjectSomeValuesFrom(&lt;http://purl.org/heals/eo#hasCharacteristic&gt; &lt;http://www.w3.org/ns/prov#Plan&gt;)))))))))</li>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#SafetyAndPerformanceExplanation&gt; ObjectIntersectionOf(ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; &lt;https://purl.org/heals/eo#object_record&gt;) ObjectSomeValuesFrom(&lt;http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn&gt; ObjectIntersectionOf(&lt;https://purl.org/heals/eo#SystemRecommendation&gt; ObjectSomeValuesFrom(&lt;http://semanticscience.org/resource/SIO_001277&gt; &lt;https://purl.org/heals/eo#object_record&gt;)))))</li>
+<li>Added: SubClass of http://linkedu.eu/dedalo/explanationPattern.owl#Explanation</li>
+</ul>
+</li>
+<li><a href="#SaliencyMethods">https://purl.org/heals/eo#SaliencyMethods</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationMethod</li>
+<li><li></ul>
+</li>
+<li><a href="#StatementOfBias">https://purl.org/heals/eo#StatementOfBias</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_001384</li>
+</ul>
+</li>
+<li><a href="#StaticExplanation">https://purl.org/heals/eo#StaticExplanation</a>
+<ul>
+<li><li>Added: SubClass of https://purl.org/heals/eo#ModelExplanationOutputs</li>
+</ul>
+</li>
+<li><a href="#StaticExplanationType">https://purl.org/heals/eo#StaticExplanationType</a>
+<ul>
+<li>Added: SubClass of https://purl.org/heals/eo#ExplanationType</li>
+</ul>
+</li>
+<li><a href="#System">https://purl.org/heals/eo#System</a>
+</li>
+<li><a href="#SystemCharacteristic">https://purl.org/heals/eo#SystemCharacteristic</a>
+<ul>
+<li>Added: SubClass of http://purl.org/heals/eo#Characteristic</li>
+<li></ul>
+</li>
+<li><a href="#SystemDesigner">https://purl.org/heals/eo#SystemDesigner</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_000498</li>
+<li></ul>
+</li>
+<li><a href="#SystemDeveloper">https://purl.org/heals/eo#SystemDeveloper</a>
+<ul>
+<li><li>Added: SubClass of http://semanticscience.org/resource/SIO_000498</li>
+</ul>
+</li>
+<li><a href="#Technological_Context">https://purl.org/heals/eo#Technological_Context</a>
+<ul>
+<li>Added: EquivalentClasses EquivalentClasses(&lt;https://purl.org/heals/eo#Technological_Context&gt; ObjectIntersectionOf(&lt;http://semanticscience.org/resource/SIO_000956&gt; ObjectSomeValuesFrom(&lt;https://purl.org/heals/eo#isUsedBy&gt; ObjectUnionOf(&lt;http://purl.org/heals/eo#System&gt; &lt;https://purl.org/heals/eo#AITask&gt; &lt;https://purl.org/heals/eo#ArtificialIntelligenceMethod&gt;))))</li>
+<li>Added: SubClass of https://purl.org/heals/eo#Contextual_Knowledge</li>
+</ul>
+</li>
+<li><a href="#UserCharacteristic">https://purl.org/heals/eo#UserCharacteristic</a>
+<ul>
+<li>Added: SubClass of http://purl.org/heals/eo#Characteristic</li>
+<li></ul>
+</li>
+<li><a href="#corporate_role">https://purl.org/heals/eo#corporate_role</a>
+<ul>
+<li>Added: SubClass of http://semanticscience.org/resource/SIO_000706</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted classes</u></summary>
+<ul><li><a href="#http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory">http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Theory</a>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified object properties</u></summary>
+<ul><li><a href="#http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn">http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn</a>
+<ul>
+<li>Added: rdfs:label "is based on"^^xsd:string</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_001403</li>
+</ul>
+</li>
+<li><a href="#http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting">http://www.ontologydesignpatterns.org/cp/owl/situation.owl#hasSetting</a>
+<ul>
+<li>Added: rdfs:label "has setting"^^xsd:string</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000008</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added object properties</u></summary>
+<ul><li><a href="#http://purl.org/heals/eo#hasCharacteristic">http://purl.org/heals/eo#hasCharacteristic</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#hasCharacteristic&gt; &lt;http://purl.org/heals/eo#isCharacteristicOf&gt;)</li>
+<li>Added: Range http://purl.org/heals/eo#Characteristic</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000008</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#hasExplanationType">http://purl.org/heals/eo#hasExplanationType</a>
+<ul>
+<li>Added: SubProperty of http://purl.org/heals/eo#hasCharacteristic</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#hasGoal">http://purl.org/heals/eo#hasGoal</a>
+</li>
+<li><a href="#http://purl.org/heals/eo#hasParameter">http://purl.org/heals/eo#hasParameter</a>
+<ul>
+<li>Added: Range http://purl.org/heals/eo#Parameter</li>
+<li>Added: SubProperty of http://purl.org/heals/eo#hasCharacteristic</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#hasPrimaryParameter">http://purl.org/heals/eo#hasPrimaryParameter</a>
+<ul>
+<li>Added: SubProperty of http://purl.org/heals/eo#hasParameter</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#hasSecondaryParameter">http://purl.org/heals/eo#hasSecondaryParameter</a>
+<ul>
+<li>Added: SubProperty of http://purl.org/heals/eo#hasParameter</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#isAvailibleIn">http://purl.org/heals/eo#isAvailibleIn</a>
+<ul>
+<li>Added: SubProperty of http://purl.org/heals/eo#isCharacteristicOf</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#isAvailibleIn&gt; &lt;https://purl.org/heals/eo#hasAvailability&gt;)</li>
+<li>Added: SubProperty of http://purl.org/heals/eo#isSupportedBy</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#isCharacteristicOf">http://purl.org/heals/eo#isCharacteristicOf</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#hasCharacteristic&gt; &lt;http://purl.org/heals/eo#isCharacteristicOf&gt;)</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000011</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#isOpposedBy">http://purl.org/heals/eo#isOpposedBy</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#isOpposedBy&gt; &lt;http://purl.org/heals/eo#opposes&gt;)</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000212</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#isParameterOfType">http://purl.org/heals/eo#isParameterOfType</a>
+</li>
+<li><a href="#http://purl.org/heals/eo#isSupportedBy">http://purl.org/heals/eo#isSupportedBy</a>
+<ul>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000212</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#isSupportedBy&gt; &lt;http://purl.org/heals/eo#supports&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#opposes">http://purl.org/heals/eo#opposes</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#isOpposedBy&gt; &lt;http://purl.org/heals/eo#opposes&gt;)</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000628</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#pertainsTo">http://purl.org/heals/eo#pertainsTo</a>
+</li>
+<li><a href="#http://purl.org/heals/eo#recommendedBy">http://purl.org/heals/eo#recommendedBy</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#recommendedBy&gt; &lt;http://purl.org/heals/eo#recommends&gt;)</li>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000212</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#recommends">http://purl.org/heals/eo#recommends</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#recommendedBy&gt; &lt;http://purl.org/heals/eo#recommends&gt;)</li>
+<li>Added: SubProperty of http://purl.org/heals/eo#isSupportedBy</li>
+<li>Added: SubProperty of http://purl.org/heals/eo#isCharacteristicOf</li>
+</ul>
+</li>
+<li><a href="#http://purl.org/heals/eo#supports">http://purl.org/heals/eo#supports</a>
+<ul>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_000628</li>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#isSupportedBy&gt; &lt;http://purl.org/heals/eo#supports&gt;)</li>
+</ul>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000001">http://semanticscience.org/resource/SIO_000001</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000011">http://semanticscience.org/resource/SIO_000011</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000059">http://semanticscience.org/resource/SIO_000059</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000061">http://semanticscience.org/resource/SIO_000061</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000068">http://semanticscience.org/resource/SIO_000068</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000212">http://semanticscience.org/resource/SIO_000212</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000228">http://semanticscience.org/resource/SIO_000228</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000232">http://semanticscience.org/resource/SIO_000232</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000364">http://semanticscience.org/resource/SIO_000364</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_001277">http://semanticscience.org/resource/SIO_001277</a>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_001278">http://semanticscience.org/resource/SIO_001278</a>
+</li>
+<li><a href="#hasAvailability">https://purl.org/heals/eo#hasAvailability</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;http://purl.org/heals/eo#isAvailibleIn&gt; &lt;https://purl.org/heals/eo#hasAvailability&gt;)</li>
+<li>Added: SubProperty of http://purl.org/heals/eo#hasCharacteristic</li>
+</ul>
+</li>
+<li><a href="#isUsedBy">https://purl.org/heals/eo#isUsedBy</a>
+<ul>
+<li>Added: SubProperty of http://semanticscience.org/resource/SIO_001403</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Deleted object properties</u></summary>
+<ul><li><a href="#http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans">http://linkedu.eu/dedalo/explanationPattern.owl#hasExplanans</a>
+</li>
+<li><a href="#hasPreferenceFor">https://purl.org/heals/eo#hasPreferenceFor</a>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#http://purl.org/heals/eo#isInternal">http://purl.org/heals/eo#isInternal</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#boolean</li>
+</ul>
+</li>
+<li><a href="#http://semanticscience.org/resource/SIO_000300">http://semanticscience.org/resource/SIO_000300</a>
+</li>
+</ul></details></div>
