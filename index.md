@@ -81,7 +81,7 @@ title: Explanation Ontology: A General-Purpose, Semantic Representation for Supp
   <li>Ontology Editor: <a href="https://protege.stanford.edu/products.php#desktop-protege">Protege 5.5.0</a></li>
   <li>Conceptual Diagram created using <a href="https://www.omnigroup.com/omnigraffle/">Omnigraffle</a></li>
   <li>Ontology documentation tool, <a href="https://github.com/dgarijo/Widoco">Widoco</a></li>
-  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a> and Ontograf in Protege</li>
+  <li>RDF Visualization generated with <a href="http://jimmccusker.github.io/rdfviewer/">RDFViewer</a> and <a href="https://github.com/protegeproject/ontograf">Ontograf</a> in Protege</li>
   </ul>
   </content>
   <!--<iframe src="https://tetherless-world.github.io/explanation-ontology/WidocoDocumentation/index-en.html" style="width:100%;"/>-->
