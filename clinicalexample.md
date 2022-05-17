@@ -3,6 +3,19 @@ layout: default
 title: Clinical Example
 ---
 
+<article class="mb-5" id="usecases">
+<content>
+  
+  
+<h3>Exemplar use cases</h3>
+  <p>We showcase the utility and ability of the Explanation Ontology to represent use cases that span representative and high-precision domains of finance and healthcare. In each of these use cases, we show how the EO can represent explanations in instances where outputs of AI methods have been produced. We also show the explanation types inferred when the Protege reasoner is run on these use case knowledge graphs. Each of these use case files have also been made available on our Github. </p>
+  <table id="catalogusecases">
+    <th>Use Case</th><th>Explanation Types Inferred</th><th>File</th>
+    <tr><td><a href="#clinicalexample">Clinical</a></td><td>Contrastive</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/contrastiveexp.rdf">Clinical Example</a></td></tr>
+    </table></p>
+  
+ </content>
+ <hr/>
 <article class="mb-5" id="clinicalexample">
 <content>
   
