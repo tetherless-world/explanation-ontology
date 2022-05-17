@@ -12,6 +12,12 @@ title: Clinical Example
   <table id="catalogusecases">
     <th>Use Case</th><th>Explanation Types Inferred</th><th>File</th>
     <tr><td><a href="#clinicalexample">Clinical</a></td><td>Contrastive</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/contrastiveexp.rdf">Clinical Example</a></td></tr>
+    <tr><td><a href="#clinicalexample">Food Recommendation</a></td><td>Contrastive and Contextual</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/eo_foodrecommendationusecase.rdf">Food Rec. Example</a></td></tr>
+    <tr><td><a href="#clinicalexample">Proactive Retention</a></td><td>Rationale</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/eo_proactiveretentionusecase.rdf">Proactive Retention Example</a></td></tr>
+    <tr><td><a href="#clinicalexample">Health Survey Analysis</a></td><td>Case based and Contextual</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/eo_nhanesusecase.rdf">NHANES Example</a></td></tr>
+    <tr><td><a href="#clinicalexample">Medical Expenditure</a></td><td>Data</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/eo_medicalexpenditureusecase.rdf">Medical Expenditure Example</a></td></tr>
+    <tr><td><a href="#clinicalexample">Credit Approval</a></td><td>Data, Case based and Contrastive</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/eo_creditapprovalusecase.rdf">Credit Approval Example</a></td></tr>
+    
     </table>
   
  </content>
