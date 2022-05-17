@@ -12,8 +12,7 @@ title: Clinical Example
   <table id="catalogusecases">
     <th>Use Case</th><th>Explanation Types Inferred</th><th>File</th>
     <tr><td><a href="#clinicalexample">Clinical</a></td><td>Contrastive</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/contrastiveexp.rdf">Clinical Example</a></td></tr>
-    <tr><td><a href="#clinicalexample">Food Recommendation</a></td><td>Contrastive and Contextual</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/eo_foodrecommendationusecase.rdf">Food Rec. Example</a></td></tr>
-   
+    
     
     </table>
   
