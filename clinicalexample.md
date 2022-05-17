@@ -12,7 +12,7 @@ title: Clinical Example
   <table id="catalogusecases">
     <th>Use Case</th><th>Explanation Types Inferred</th><th>File</th>
     <tr><td><a href="#clinicalexample">Clinical</a></td><td>Contrastive</td><td><a href="https://raw.githubusercontent.com/tetherless-world/explanation-ontology/master/usecases/contrastiveexp.rdf">Clinical Example</a></td></tr>
-    </table></p>
+    </table>
   
  </content>
  <hr/>
