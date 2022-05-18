@@ -17,7 +17,7 @@ title: Modeling Snippets
   
   
 <h3>Catalog of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. Utilizing the schema provided by our explanation ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in a clinical setting and the logical formalization of the explanation type. The explanation types are:
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. Utilizing the schema provided by our explanation ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in different settings (mainly clinical) and the logical formalization of the explanation type. The explanation types are:
   <table id="catalogexplanations">
     <th>Explanation Type</th>
     <tr><td><a href="#casebased">Case Based</a></td></tr>
