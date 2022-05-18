@@ -10,14 +10,14 @@ title: Modeling Snippets
   
   
 <h2 id="modelingabout">Explanation Types</h2>
-  <p>In this section, we show how our <a href="#ontology">Explanation Ontology</a> can be used to represent the generational needs of different explanation types we identified from our literature review. For more details about our explanation types itself, refer to our paper submission. In this website we present modeling snippets that use classes and properties from our ontology.</p>
+  <p>In this section, we show how our <a href="#ontology">Explanation Ontology</a> can be used to represent the generational needs of <b>fifteen</b> different explanation types we identified from our literature review. For more details about our explanation types itself, refer to our paper submission. In this website we present modeling snippets that use classes and properties from our ontology.</p>
     
   <article class="mb-5" id="explanationtypes">
 <content>
   
   
 <h3>Catalog of Explanation Types</h3>
-  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. Utilizing the schema provided by our explanation ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in different settings (mainly clinical) and the logical formalization of the explanation type. The explanation types are:
+  <p>We identified nine explanation types, each with different foci and generational needs, from a literature review we conducted in the computer science and adjacent explanation science domains of philosophy and social sciences. Additionally, we also support six explanation types detailed in a recent paper, <a href="https://www.mdpi.com/1020146">Zhou et al</a>. Utilizing the schema provided by our explanation ontology, we can encode the generational needs of these explanation types as OWL restrictions. Below for each explanation type, we present our description, a prototypical question they can address in different settings (mainly clinical) and the logical formalization of the explanation type. The explanation types are:
   <table id="catalogexplanations">
     <th>Explanation Type</th>
     <tr><td><a href="#casebased">Case Based</a></td></tr>
