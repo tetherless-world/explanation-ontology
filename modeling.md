@@ -267,7 +267,7 @@ title: Modeling Snippets
     <li id="safety">
 <table><td><strong>Safety and Performance Explanation</strong></td><td style="text-align: right;"><a href="#catalogexplanations">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong>Deals with steps taken across the design and implementation  of  an  ML  system  to  maximise  the  accuracy,  reli-ability,  security,  and  robustness  of  its  decisions  and  behaviours. Safety and performance explanations help to assure individuals that an ML system is safe and reliable by explanation to test and monitor the accuracy, reliability,security, and robustness of the ML model.</li>
-    <li><strong>Prototypical Question:</strong>What steps were taken to ensure robustness and reliability of system? How has the data been used totrain the ML model?, What steps were taken to ensure robustness and reliability of AI method? What were the plans for the system development?</li>
+    <li><strong>Prototypical Question:</strong>What steps were taken to ensure robustness and reliability of system? How has the data been used totrain the ML model? What steps were taken to ensure robustness and reliability of AI method? What were the plans for the system development?</li>
     <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’ that is part of a ‘system’ that exposes its design ‘plans’? <br/> Is there a ‘system recommendation’ that includes ‘object records’ that are used to train / test the ‘AI method’?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
