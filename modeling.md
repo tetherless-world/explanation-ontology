@@ -116,7 +116,7 @@ title: Modeling Snippets
 <table><td><strong>Data Explanation</strong></td><td style="text-align: right;"><a href="#catalogexplanations">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong> Focuses on what the data is and how it has been used ina particular decision, as well as what data and how it hasbeen used to train and test the ML model. This type of ex-planation can help users understand the influence of dataon decisions.</li>
     <li><strong>Prototypical Question:</strong> What is the data?, How has the data been used in a particular decision?, How has the data been used to train the ML model?</li>
-    <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’that has as input, a ‘dataset’ or part of it? <br/> Is there a ‘system recommendation’ that includes ‘object records’ that are used to train / test the ‘AI method’?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’ that has as input, a ‘dataset’ or part of it? <br/> Is there a ‘system recommendation’ that includes ‘object records’ that are used to train / test the ‘AI method’?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
     isBasedOn <span style="color:#bf399e">some</span> 
@@ -159,7 +159,7 @@ title: Modeling Snippets
 <table><td><strong>Fairness Explanation</strong></td><td style="text-align: right;"><a href="#catalogexplanations">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong>Provides steps taken across the design and implementation of an ML system to ensure that the decisions it assistsare generally unbiased, and whether or not an individualhas been treated equitably. Fairness explanations are key to increasing individuals’ confidence in an AI system. It can foster meaningful trust by explaining to an individual how bias and discrimination in decisions are avoided.</li>
     <li><strong>Prototypical Question:</strong>Is there a bias consequence of this system recommendation? What data was used to arrive at this decision?</li>
-    <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’that has a ‘statement of consequence’? <br/> Is  there  a  ‘dataset’  in  the  ‘system  recommendation’ the explanation is based on?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’ that has a ‘statement of consequence’? <br/> Is  there a ‘dataset’ in  the ‘system  recommendation’ the explanation is based on?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
     (
@@ -213,7 +213,7 @@ title: Modeling Snippets
 <table><td><strong>Rationale Explanation</strong></td><td style="text-align: right;"><a href="#catalogexplanations">Top</a></td></table>  <ul type = "circle">
     <li> <strong>Definition:</strong>About the “why” of an ML decision and provides reasonsthat led to a decision, and is delivered in an accessible and understandable  way, especially  for  lay  users.  If  the  ML decision was not what users expected, rationale explanations allows users to assess whether they believe the reasoning of the decision is flawed. While, if so, the explanation supports them to formulate reasonable arguments for why they think this is the case.</li>
     <li><strong>Prototypical Question:</strong>Why was this ML decision made and provides reasons that led to a decision</li>
-    <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’ that has a ‘system trace’? <br/> Is there a ‘local explanation’ output that an ‘explanation’is based on?</li>
+    <li><strong>Sufficency Condition:</strong> <br/>Is there a ‘system recommendation’ from an ‘AI method’ that has a ‘system trace’? <br/> Is there a ‘local explanation’ output that an ‘explanation’ is based on?</li>
     <li> <strong>OWL Restriction:</strong> <br/>
       <pre>
     (
