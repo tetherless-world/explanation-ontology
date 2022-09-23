@@ -32,3 +32,29 @@ SELECT ?subject ?data
   filter( regex(str(?sl), "high-cost", "i" ))
 
 }
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT ?caseExplanation ?patient
+	WHERE { 
+?caseExplanation a eo:CaseBasedExplanation .
+?caseExplanation ep:isBasedOn ?patient .
+?patient a sio:SIO_000393 .
+ }
+
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT ?patient ?questionnaire
+	WHERE { 
+?patient a sio:SIO_000393 .
+?patient sio:SIO_000095 ?questionnaire .
+?questionnaire a sio:SIO_000396 .
+ }
