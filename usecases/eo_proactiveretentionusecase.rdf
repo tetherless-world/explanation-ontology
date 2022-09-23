@@ -38,6 +38,36 @@
     
 
 
+    <!-- https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
+        <rdfs:label>New Employee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_proactiveretentionusecase#RuleForRetention -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#RuleForRetention">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000094"/>
+        <resource:SIO_000059 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee"/>
+        <rdfs:label>Retention Rule Pattern - New Employee, Position 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer">
@@ -45,6 +75,7 @@
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#RuleForRetention"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
@@ -92,6 +123,9 @@
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
         <rdfs:label>Training Samples of (x,y) pairs</rdfs:label>
     </owl:NamedIndividual>
     
@@ -101,6 +135,7 @@
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#x1">
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemDeveloper"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee"/>
         <rdfs:label>Employee 1</rdfs:label>
     </owl:NamedIndividual>
     
