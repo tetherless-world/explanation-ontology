@@ -3,19 +3,14 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX eo: <https://purl.org/heals/eo#>
 PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
 PREFIX sio: <http://semanticscience.org/resource/>
-PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX ceo: <https://purl.org/heals/eo_creditapprovalusecase#>
 
-SELECT ?subject ?sysRec ?applicant ?fact
+SELECT DISTINCT ?explanation ?explanationType
 	WHERE { 
-?subject a eo:ContrastiveExplanation . 
-?subject rdfs:label ?s .
-?subject ep:isBasedOn ?sysRec .
-?sysRec prov:used ?fact .
-?fact a eo:Fact .
-?sysRec sio:SIO_001403 ?applicant .
-?applicant a ceo:LoanApplicant .
-}
+?explanation a ?explanationType .
+?explanationType rdfs:subClassOf* ep:Explanation .
+
+
+ }
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -23,17 +18,35 @@ PREFIX eo: <https://purl.org/heals/eo#>
 PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
-SELECT ?subject ?data
+SELECT DISTINCT ?dish ?ingredient ?context
 	WHERE { 
-?subject a eo:DataExplanation . 
-?subject rdfs:label ?sl .
-?subject ep:isBasedOn ?o .
-?o sio:SIO_001277 ?data .
-  filter( regex(str(?sl), "high-cost", "i" ))
+?dish a eo:object_record .
+?dish rdfs:label ?dishLabel .
+?dish sio:SIO_000059 ?ingredient .
+?ingredient ?relation ?context .
+?context a ?contextClass .
+?contextClass rdfs:subClassOf eo:Contextual_Knowledge .
+filter( regex(str(?dishLabel), "cauliflower", "i" )) 
 
-}
+ }
+
+
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT DISTINCT ?retentionAction
+	WHERE { 
+?retentionAction a eo:SystemRecommendation .
+?retentionAction sio:SIO_000011 ?emp .
+?emp a eo:SystemDeveloper .
+?emp rdfs:label "Employee 1" .
+ }
+
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX eo: <https://purl.org/heals/eo#>
 PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
@@ -57,6 +70,7 @@ SELECT ?patient ?questionnaire
 ?patient a sio:SIO_000393 .
 ?patient sio:SIO_000095 ?questionnaire .
 ?questionnaire a sio:SIO_000396 .
+?patient rdfs:label "Patient 1" .
  }
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -65,10 +79,34 @@ PREFIX eo: <https://purl.org/heals/eo#>
 PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
 PREFIX sio: <http://semanticscience.org/resource/>
 
-SELECT DISTINCT ?retentionAction
+SELECT ?subject ?data
 	WHERE { 
-?retentionAction a eo:SystemRecommendation .
-?retentionAction sio:SIO_000011 ?emp .
-?emp a eo:SystemDeveloper .
-?emp rdfs:label "Employee 1" .
- }
+?subject a eo:DataExplanation . 
+?subject rdfs:label ?sl .
+?subject ep:isBasedOn ?o .
+?o sio:SIO_001277 ?data .
+  filter( regex(str(?sl), "high-cost", "i" ))
+
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX ceo: <https://purl.org/heals/eo_creditapprovalusecase#>
+
+SELECT ?subject ?sysRec ?applicant ?fact
+	WHERE { 
+?subject a eo:ContrastiveExplanation . 
+?subject rdfs:label ?s .
+?subject ep:isBasedOn ?sysRec .
+?sysRec prov:used ?fact .
+?fact a eo:Fact .
+?sysRec sio:SIO_001403 ?applicant .
+?applicant a ceo:LoanApplicant .
+}
+
+
+

@@ -667,6 +667,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://purl.org/heals/eo#recommendedBy -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/heals/eo#recommendedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#hasCharacteristic"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#supports"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000212"/>
         <owl:inverseOf rdf:resource="http://purl.org/heals/eo#recommends"/>
         <rdfs:label>recommended by</rdfs:label>
@@ -679,6 +681,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <owl:ObjectProperty rdf:about="http://purl.org/heals/eo#recommends">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#isCharacteristicOf"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#isSupportedBy"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
         <rdfs:label>recommends</rdfs:label>
     </owl:ObjectProperty>
     
@@ -696,7 +699,9 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://semanticscience.org/resource/SIO_000001 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000001">
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <dc:identifier>SIO_000001</dc:identifier>
@@ -844,6 +849,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
         <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000145"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <dc:identifier>SIO_000061</dc:identifier>
         <terms:description xml:lang="en">A is located in B iff the spatialtemporial region occupied by A is part of the spatialtemporal region occupied by B. [T][R]</terms:description>
         <resource:equivalentTo>OBO_REL:located_in</resource:equivalentTo>
@@ -1018,6 +1024,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000145">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <dc:identifier>SIO_000145</dc:identifier>
         <terms:description xml:lang="en">A is location of B iff the spatialtemporal region occupied by A has the spatialtemporal region occupied by B as a part. [T][R]</terms:description>
         <resource:subset>nlp+</resource:subset>
@@ -1044,6 +1051,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000203">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000203"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:identifier>SIO_000203</dc:identifier>
@@ -1061,6 +1069,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000204">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000204"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000204</dc:identifier>
         <terms:description xml:lang="en">A is adjacent to B iff there is a small, but non-zero distance between A and B</terms:description>
@@ -1542,6 +1551,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000243">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000243"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:identifier>SIO_000243</dc:identifier>
@@ -1721,6 +1731,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000272">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000736"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000272"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:identifier>SIO_000272</dc:identifier>
@@ -1789,6 +1800,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000283">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000272"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000283"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000283</dc:identifier>
         <terms:description xml:lang="en">is similar to is a relation between two entities that share one or more features.</terms:description>
@@ -1801,6 +1813,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://semanticscience.org/resource/SIO_000286 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000286">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000245"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000497"/>
         <dc:identifier>SIO_000286</dc:identifier>
         <terms:description xml:lang="en">A is subsequent version of B iff A is a variant of B and A derives from B.</terms:description>
@@ -1814,6 +1827,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000288">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000203"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000288"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_010044"/>
@@ -1855,6 +1869,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000293">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000203"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000293"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
@@ -1959,7 +1974,9 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000322">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <dc:identifier>SIO_000322</dc:identifier>
         <terms:description xml:lang="en">A is spatiotemporally related to B iff A is in the spatial or temporal vicinity of B</terms:description>
         <resource:subset>core</resource:subset>
@@ -1998,6 +2015,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000325">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000322"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000325"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -2030,6 +2048,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000334">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000288"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000652"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000334"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000334</dc:identifier>
         <terms:description xml:lang="en">is covalently connected to is a relation between an atom and another atom.</terms:description>
@@ -2044,6 +2063,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000335">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000293"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000652"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000335"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000335</dc:identifier>
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
@@ -2124,6 +2144,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000356">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000062"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
         <dc:identifier>SIO_000356</dc:identifier>
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <rdfs:label xml:lang="en">is realized in</rdfs:label>
@@ -2315,6 +2336,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000482">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000283"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000482"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000275"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000275"/>
@@ -2331,6 +2353,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000484">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000482"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000484"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000484</dc:identifier>
         <resource:equivalentTo>http://www.w3.org/2004/02/skos/core#exactMatch</resource:equivalentTo>
@@ -2344,6 +2367,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000490">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000482"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000490"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000490</dc:identifier>
         <resource:equivalentTo>http://www.w3.org/2004/02/skos/core#closeMatch</resource:equivalentTo>
@@ -2357,6 +2381,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000491">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000482"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000491"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000491</dc:identifier>
         <resource:equivalentTo>http://www.w3.org/2004/02/skos/core#broadMatch</resource:equivalentTo>
@@ -2370,6 +2395,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000495">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000272"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000495"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000495</dc:identifier>
         <terms:description xml:lang="en">is dissimilar to is a relation between two entities in which one is considered dissimilar to the other based on some criteria.</terms:description>
@@ -2383,6 +2409,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000496">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000495"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000496"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000496</dc:identifier>
         <terms:description xml:lang="en">is opposite to is a relation between two entities in which one is diametrically opposed to the other. </terms:description>
@@ -2397,6 +2424,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000497">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000272"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000497"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:identifier>SIO_000497</dc:identifier>
@@ -2450,6 +2478,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000558">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_010302"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000558"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000558</dc:identifier>
         <terms:description xml:lang="en">is orthologous to is a relation between two biological entities that share a common ancestor and occur in different species.</terms:description>
@@ -2517,6 +2546,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000630">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_010302"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000630"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000630</dc:identifier>
         <terms:description xml:lang="en">is paralogous to is a relation between two entities which indicates their common ancestry as a result of a gene duplication.</terms:description>
@@ -2569,6 +2599,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000634">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000558"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000634"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000634</dc:identifier>
         <terms:description xml:lang="en">a relation between two entities which indicates their common ancestry but due to horizontal gene transfer.</terms:description>
@@ -2676,6 +2707,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000652">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000203"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000652"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000652</dc:identifier>
         <terms:description xml:lang="en">A is directly connected to B iff there exists a path direclty between A and B.</terms:description>
@@ -2891,6 +2923,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000697">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000709"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000697"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000697</dc:identifier>
         <terms:description xml:lang="en">a is mutual disposition of b if and only if the realization of the disposition  a necessarily causes the realization of the disposition b.</terms:description>
@@ -2918,6 +2951,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000709">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000709"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000709</dc:identifier>
         <terms:description xml:lang="en">a is mutually related to b if and only if the realization of the relation of a necessarily causes the realization of a relation to b.</terms:description>
@@ -2931,6 +2965,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000710">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000709"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000710"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000710</dc:identifier>
         <terms:description xml:lang="en">a is mutual role of b if and only if the realization of role  a necessarily causes the realization of role b.</terms:description>
@@ -2984,6 +3019,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000736">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000736"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000736</dc:identifier>
         <terms:description xml:lang="en">is comparable to is a relation between two entities that share at least one feature whose value can be compared.</terms:description>
@@ -2998,6 +3034,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000737">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000736"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000737"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000052"/>
@@ -3013,6 +3050,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000738">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000737"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000738"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:identifier>SIO_000738</dc:identifier>
@@ -3027,6 +3065,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000749">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000737"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000749"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_000749</dc:identifier>
         <terms:description xml:lang="en">is inequal to is a comparison relation between two quantities whose value are not the same.</terms:description>
@@ -3268,6 +3307,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001101">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000709"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_001101"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_001101</dc:identifier>
         <terms:description xml:lang="en">a is mutual capability of b if and only if the realization of capability  a necessarily causes the realization of capability b.</terms:description>
@@ -3317,6 +3357,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://semanticscience.org/resource/SIO_001157 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001157">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000352"/>
         <dc:identifier>SIO_001157</dc:identifier>
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
@@ -3341,6 +3382,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001159">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000062"/>
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
         <dc:identifier>SIO_001159</dc:identifier>
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <rdfs:label xml:lang="en">is affected by</rdfs:label>
@@ -3352,6 +3394,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001242">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000736"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_001242"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_001242</dc:identifier>
         <terms:description xml:lang="en">is identical to is a relation between two objects that are conceptually the same notwithstanding provenance or other non-intrinsic attributes.</terms:description>
@@ -3364,6 +3407,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://semanticscience.org/resource/SIO_001247 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001247">
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_001247"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <dc:identifier>SIO_001247</dc:identifier>
@@ -3378,6 +3422,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://semanticscience.org/resource/SIO_001277 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001277">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000212"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
         <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_001278"/>
         <rdfs:domain rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
@@ -3393,6 +3438,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <!-- http://semanticscience.org/resource/SIO_001278 -->
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_001278">
+        <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000212"/>
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000628"/>
         <rdfs:range rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <dc:identifier>SIO_001278</dc:identifier>
@@ -3557,6 +3603,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_010302">
         <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000272"/>
+        <owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_010302"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <dc:identifier>SIO_010302</dc:identifier>
         <terms:description xml:lang="en">a relation between two entities which indicates their common ancestry.</terms:description>
@@ -3696,6 +3743,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
@@ -3897,6 +3946,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#invalidated">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#influenced"/>
         <owl:inverseOf rdf:resource="http://www.w3.org/ns/prov#wasInvalidatedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
@@ -4192,6 +4243,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -4295,6 +4348,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasEndedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -4317,6 +4372,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -4431,6 +4488,8 @@ prov:wasInfluencedBy should not be used without also using one of its subpropert
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasInvalidatedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -4500,6 +4559,8 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasStartedBy">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasInfluencedBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
@@ -4552,6 +4613,7 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
 
     <owl:ObjectProperty rdf:about="https://purl.org/heals/eo#hasAvailability">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#hasCharacteristic"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/heals/eo#supports"/>
         <rdfs:label>has availability</rdfs:label>
     </owl:ObjectProperty>
     
@@ -5109,6 +5171,7 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
     <!-- http://semanticscience.org/resource/SIO_000000 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000000">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <dc:identifier>SIO_000000</dc:identifier>
         <terms:description xml:lang="en">Every thing is an entity.</terms:description>
         <resource:subset>core</resource:subset>
@@ -6657,6 +6720,7 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000122"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000342"/>
         <dc:identifier>SIO_000124</dc:identifier>
         <terms:description xml:lang="en">A hypernym is a term with a broader meaning.</terms:description>
@@ -6680,6 +6744,7 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000122"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000342"/>
         <dc:identifier>SIO_000125</dc:identifier>
         <terms:description xml:lang="en">A hyponym is a term with a narrower meaning.</terms:description>
@@ -6929,6 +6994,7 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000150">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000289"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000616"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000059"/>
@@ -10121,6 +10187,7 @@ Graph 1 of http://tinyurl.com/opwnvm</skos:example>
     <!-- http://semanticscience.org/resource/SIO_000473 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000473">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000469"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000470"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -10140,6 +10207,7 @@ Graph 1 of http://tinyurl.com/opwnvm</skos:example>
     <!-- http://semanticscience.org/resource/SIO_000474 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000474">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000469"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000470"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -11547,6 +11615,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_000589 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000589">
+        <owl:equivalentClass rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -11790,6 +11859,7 @@ of endpoints (a start point and an endpoint).</terms:description>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000593"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001154"/>
@@ -11808,6 +11878,7 @@ of endpoints (a start point and an endpoint).</terms:description>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000610">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_001158"/>
@@ -12658,6 +12729,7 @@ of endpoints (a start point and an endpoint).</terms:description>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000707">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000711"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#User_Context"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000227"/>
@@ -12677,6 +12749,7 @@ of endpoints (a start point and an endpoint).</terms:description>
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000708">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000711"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#User_Context"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000227"/>
@@ -13425,6 +13498,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_000763 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000763">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000675"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000762"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -13617,6 +13691,8 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_000779 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_000779">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010008"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -18356,6 +18432,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_001132 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001132">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <dc:identifier>SIO_001132</dc:identifier>
         <terms:description xml:lang="en">The process of maintaining some the frequency, rate or extent of another process.</terms:description>
@@ -18392,6 +18469,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_001135 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001135">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <dc:identifier>SIO_001135</dc:identifier>
         <terms:description xml:lang="en">regulation of a process duration is a process that modulates the frequency of another process relative to some reference process.</terms:description>
@@ -18404,6 +18482,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_001136 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001136">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <dc:identifier>SIO_001136</dc:identifier>
         <terms:description xml:lang="en">regulation of a process duration is a process that modulates the duration of another process relative to some reference process.</terms:description>
@@ -18440,6 +18519,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_001139 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001139">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <dc:identifier>SIO_001139</dc:identifier>
         <terms:description xml:lang="en">regulation of a process spatial extent is a process that modulates the spatial extent of another process relative to some reference process.</terms:description>
@@ -18513,6 +18593,7 @@ of endpoints (a start point and an endpoint).</terms:description>
     <!-- http://semanticscience.org/resource/SIO_001145 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001145">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -21779,6 +21860,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_001395 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001395">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000092"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010346"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22024,6 +22106,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001418">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001259"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000228"/>
@@ -22071,6 +22154,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001420">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001259"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000228"/>
@@ -22178,6 +22262,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_001427 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_001427">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000092"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010346"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22446,6 +22531,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010008 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010008">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000092"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010346"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -22882,6 +22968,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010038 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010038">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_011126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -23495,6 +23582,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010085 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010085">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010444"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -23586,6 +23674,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010092">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010010"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000225"/>
@@ -23908,6 +23997,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010287 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010287">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <dc:identifier>SIO_010287</dc:identifier>
         <terms:description xml:lang="en">regulation of biochemical process is a process that changes the frequency, rate or extent of a target biochemical process.</terms:description>
@@ -23957,6 +24047,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010295 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010295">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <owl:disjointWith rdf:resource="http://semanticscience.org/resource/SIO_010296"/>
         <dc:identifier>SIO_010295</dc:identifier>
@@ -23971,6 +24062,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010296 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010296">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000589"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000609"/>
         <dc:identifier>SIO_010296</dc:identifier>
         <terms:alternative xml:lang="en">negative regulation</terms:alternative>
@@ -24299,6 +24391,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010043"/>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -24318,6 +24411,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010344 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010344">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_011126"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -24383,6 +24477,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000314"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010072"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -24817,6 +24912,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
         <dc:identifier>SIO_010410</dc:identifier>
         <terms:description xml:lang="en">A specialized material entity is a material entity that is defined by having some quality, role or capability.</terms:description>
@@ -24948,6 +25044,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_011125"/>
         <dc:identifier>SIO_010423</dc:identifier>
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <rdfs:label xml:lang="en">target</rdfs:label>
@@ -25134,6 +25231,7 @@ The measure is defined here: http://www.disgenet.org/web/DisGeNET/menu/dbinfo#pl
     <!-- http://semanticscience.org/resource/SIO_010436 -->
 
     <owl:Class rdf:about="http://semanticscience.org/resource/SIO_010436">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_010410"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_011125"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -28095,14 +28193,22 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
     <!-- http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation -->
 
     <owl:Class rdf:about="http://www.ontologydesignpatterns.org/cp/owl/situation.owl#Situation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:label>Situation</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
     
 
 
     <!-- http://www.w3.org/ns/prov#Activity -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Activity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <rdfs:label>Activity</rdfs:label>
@@ -28141,6 +28247,7 @@ and having their side chains perpendicular to the planar axis.</terms:descriptio
     <!-- http://www.w3.org/ns/prov#Agent -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <rdfs:label>Agent</rdfs:label>
@@ -28294,11 +28401,6 @@ For example, a student acted on behalf of his supervisor, who acted on behalf of
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <rdfs:label xml:lang="en">EmptyCollection</rdfs:label>
-        <prov:category>expanded</prov:category>
-        <prov:component>collections</prov:component>
-        <prov:definition xml:lang="en">An empty collection is a collection without members.</prov:definition>
     </owl:Class>
     
 
@@ -28325,6 +28427,7 @@ For example, a student acted on behalf of his supervisor, who acted on behalf of
     <!-- http://www.w3.org/ns/prov#Entity -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <owl:disjointWith rdf:resource="http://www.w3.org/ns/prov#InstantaneousEvent"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <rdfs:label>Entity</rdfs:label>
@@ -28375,6 +28478,7 @@ For example, a student acted on behalf of his supervisor, who acted on behalf of
     <!-- http://www.w3.org/ns/prov#Influence -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Influence">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:comment xml:lang="en">An instance of prov:Influence provides additional descriptions about the binary prov:wasInfluencedBy relation from some influenced Activity, Entity, or Agent to the influencing Activity, Entity, or Agent. For example, :stomach_ache prov:wasInfluencedBy :spoon; prov:qualifiedInfluence [ a prov:Influence; prov:entity :spoon; :foo :bar ] . Because prov:Influence is a broad relation, the more specific relations (Communication, Delegation, End, etc.) should be used when applicable.</rdfs:comment>
         <rdfs:comment xml:lang="en">Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
@@ -28392,6 +28496,7 @@ For example, a student acted on behalf of his supervisor, who acted on behalf of
     <!-- http://www.w3.org/ns/prov#InstantaneousEvent -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#InstantaneousEvent">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:comment xml:lang="en">An instantaneous event, or event for short, happens in the world and marks a change in the world, in its activities and in its entities. The term &apos;event&apos; is commonly used in process algebra with a similar meaning. Events represent communications or interactions; they are assumed to be atomic and instantaneous.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <rdfs:label>InstantaneousEvent</rdfs:label>
@@ -28425,6 +28530,7 @@ For example, a student acted on behalf of his supervisor, who acted on behalf of
     <!-- http://www.w3.org/ns/prov#Location -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Location">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <rdfs:label>Location</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#atLocation"/>
@@ -28541,6 +28647,7 @@ A primary source relation is a particular case of derivation of secondary materi
     <!-- http://www.w3.org/ns/prov#Role -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Role">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
         <rdfs:label>Role</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#hadRole"/>
@@ -28610,6 +28717,7 @@ A primary source relation is a particular case of derivation of secondary materi
 
     <owl:Class rdf:about="https://purl.org/heals/eo#AITask">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000230"/>
@@ -28667,6 +28775,7 @@ A primary source relation is a particular case of derivation of secondary materi
     <!-- https://purl.org/heals/eo#CaseBasedExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#CaseBasedExplanation">
+        <owl:equivalentClass rdf:resource="https://purl.org/heals/eo#DataExplanation"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -29053,6 +29162,8 @@ Contextual knowledge in turn is the knowledge that is derived from such relevant
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <dc:description>As described
 by (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present
 contrasts between the fact (the event that did occur), the given output, and the foil (the
@@ -29133,6 +29244,7 @@ event that did not occur), the output of interest.</dc:description>
     <!-- https://purl.org/heals/eo#DataExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#DataExplanation">
+        <owl:equivalentClass rdf:resource="https://purl.org/heals/eo#SafetyAndPerformanceExplanation"/>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -29475,6 +29587,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     <!-- https://purl.org/heals/eo#ExplanationCollection -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationCollection">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000616"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000620"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -29580,6 +29693,8 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#CaseBasedExplanation"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#DataExplanation"/>
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ImpactExplanation"/>
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SafetyAndPerformanceExplanation"/>
         <terms:description>This type of explanation provides steps taken across the design and implementation of an ML system to ensure that the decisions it assists are generally unbiased, and whether or not an individual has been treated equitably. This type of explanation is key to increasing individuals’ confidence in an Artificial Intelligence (AI) system. It can foster meaningful trust by explaining to an individual how bias and discrimination in decisions are avoided.</terms:description>
@@ -30403,7 +30518,9 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
     <!-- https://purl.org/heals/eo#System -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#System"/>
+    <owl:Class rdf:about="https://purl.org/heals/eo#System">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+    </owl:Class>
     
 
 
@@ -30459,6 +30576,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     <!-- https://purl.org/heals/eo#SystemRecommendation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#SystemRecommendation">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -30513,6 +30631,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000956"/>
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
         <dc:description>Technological context is any relevant information that characterizes the devices that are used to interact with or operate the AI system.</dc:description>
         <terms:source>Bauer, C., &amp; Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393.</terms:source>
@@ -30579,6 +30698,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
 
     <owl:Class rdf:about="https://purl.org/heals/eo#UserCharacteristic">
         <rdfs:subClassOf rdf:resource="http://purl.org/heals/eo#Characteristic"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#User_Context"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000668"/>
@@ -30633,6 +30753,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     <!-- https://purl.org/heals/eo#knowledge -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#knowledge">
+        <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000231"/>
@@ -30842,25 +30963,42 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="http://purl.org/heals/eo#Parameter">
         <rdf:type rdf:resource="http://purl.org/heals/eo#Characteristic"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
     </owl:NamedIndividual>
     
 
 
     <!-- http://www.w3.org/ns/prov-o -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o"/>
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.w3.org/ns/prov-o-20130312 -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o-20130312"/>
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o-20130312">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#EmptyCollection -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+    </owl:NamedIndividual>
     
 
 
     <!-- http://www.w3.org/ns/prov-o# -->
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o#">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <prov:specializationOf rdf:resource="http://www.w3.org/ns/prov-o"/>
         <prov:wasRevisionOf rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
     </owl:NamedIndividual>
@@ -30870,6 +31008,12 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#AITaskExample -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#AITaskExample">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000999"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#AITask"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
@@ -30882,7 +31026,12 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#ContextualKnowledgePatientA -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContextualKnowledgePatientA">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#User_Context"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
         <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
         <resource:SIO_000668 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
         <rdfs:label>Patient has hyperglycemia</rdfs:label>
@@ -30894,6 +31043,12 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveExpInstance">
         <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveExplanation"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <eo1:addresses rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
@@ -30905,7 +31060,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#ContrastiveQuestion -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContrastiveQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000078"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdfs:label>&quot;Why Drug A over Drug B?&quot;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30914,6 +31075,11 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#CounterfactualProbable1 -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable1">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
         <eo1:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
         <rdfs:label>Addresses &quot;What other factors about the patient does the system know of?&quot;</rdfs:label>
@@ -30924,6 +31090,11 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#CounterfactualProbable2 -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CounterfactualProbable2">
+        <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
         <eo1:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
         <rdfs:label>Addresses &quot;What if the major problem was a fasting plasma glucose?&quot;</rdfs:label>
@@ -30934,8 +31105,11 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#GuidelineEvidence -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#GuidelineEvidence">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#ScientificKnowledge"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
         <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
         <rdfs:label>Drug B is a preferred drug</rdfs:label>
     </owl:NamedIndividual>
@@ -30945,7 +31119,11 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#HyperglycemiaPatient -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#HyperglycemiaPatient">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000393"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
         <rdfs:label>Patient 100</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30954,7 +31132,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#QuestionFromUserStudy1 -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy1">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000078"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdfs:label>What other factors about the patient does the system know of?</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30963,7 +31147,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#QuestionFromUserStudy2 -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy2">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000078"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdfs:label>What if the major problem was a fasting plasma glucose?</rdfs:label>
     </owl:NamedIndividual>
     
@@ -30972,6 +31162,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
         <rdfs:label>Drug A is not sufficient for this patient</rdfs:label>
@@ -30982,6 +31179,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
@@ -30993,6 +31197,12 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#QAMethod">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMIT_0010354"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000667"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000999"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <rdfs:label>Knowledge based question-answering method</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31002,6 +31212,15 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower">
         <rdf:type rdf:resource="http://idea.rpi.edu/heals/kb/ingredient"/>
+        <rdf:type rdf:resource="http://purl.org/heals/eo#Characteristic"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000004"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ObjectCharacteristic"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#object_record"/>
         <eo:isAvailibleIn rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter"/>
         <rdfs:label>Cauliflower</rdfs:label>
     </owl:NamedIndividual>
@@ -31011,7 +31230,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo_foodrecommendationusecase#cauliflowerSoupQuestion -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowerSoupQuestion">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000078"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdfs:label>Asks, &quot;Why should I eat spiced cauliflower soup?&quot;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31020,6 +31245,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo_foodrecommendationusecase#cauliflowersoupsource -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowersoupsource">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <resource:SIO_000300>http://www.food.com/recipe/spiced-cauliflower-soup-335838</resource:SIO_000300>
         <rdfs:label>Food.com source for spiced cauliflower soup</rdfs:label>
     </owl:NamedIndividual>
@@ -31029,6 +31256,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo_foodrecommendationusecase#delveIntoCauliflowerMethod -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#delveIntoCauliflowerMethod">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000006"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000667"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000999"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower"/>
@@ -31042,6 +31276,14 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#inseasonexplanation">
         <rdf:type rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#CaseBasedExplanation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ContextualExplanation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#DataExplanation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#SafetyAndPerformanceExplanation"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup"/>
         <eo1:addresses rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowerSoupQuestion"/>
@@ -31053,7 +31295,19 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#lateSummerEarlyWinter">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000612"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Environmental_Context"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#LocalExplanation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#season"/>
         <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower"/>
         <rdfs:label>Late summer - early winter</rdfs:label>
@@ -31064,6 +31318,12 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo_foodrecommendationusecase#recommendingCauliflowerSoup -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#recommendingCauliflowerSoup">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#QAMethod"/>
         <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup"/>
@@ -31076,6 +31336,16 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_foodrecommendationusecase#spicedCauliflowerSoup">
         <rdf:type rdf:resource="http://idea.rpi.edu/heals/kb/recipe"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000075"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000289"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000616"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#object_record"/>
         <resource:SIO_000059 rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflower"/>
         <prov:wasDerivedFrom rdf:resource="https://purl.org/heals/eo_foodrecommendationusecase#cauliflowersoupsource"/>
         <rdfs:label>Spiced cauliflower soup</rdfs:label>
@@ -34238,6 +34508,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <rdf:Description rdf:about="http://purl.org/heals/eo#Parameter">
         <prov:definition>A characteristic of a question</prov:definition>
         <rdfs:label>Question Parameter</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
+        <prov:definition xml:lang="en">An empty collection is a collection without members.</prov:definition>
+        <rdfs:label xml:lang="en">EmptyCollection</rdfs:label>
+        <prov:category>expanded</prov:category>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <prov:component>collections</prov:component>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#aq">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
