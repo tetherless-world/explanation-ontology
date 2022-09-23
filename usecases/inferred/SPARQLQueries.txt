@@ -1,0 +1,34 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX ceo: <https://purl.org/heals/eo_creditapprovalusecase#>
+
+SELECT ?subject ?sysRec ?applicant ?fact
+	WHERE { 
+?subject a eo:ContrastiveExplanation . 
+?subject rdfs:label ?s .
+?subject ep:isBasedOn ?sysRec .
+?sysRec prov:used ?fact .
+?fact a eo:Fact .
+?sysRec sio:SIO_001403 ?applicant .
+?applicant a ceo:LoanApplicant .
+}
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT ?subject ?data
+	WHERE { 
+?subject a eo:DataExplanation . 
+?subject rdfs:label ?sl .
+?subject ep:isBasedOn ?o .
+?o sio:SIO_001277 ?data .
+  filter( regex(str(?sl), "high-cost", "i" ))
+
+}
