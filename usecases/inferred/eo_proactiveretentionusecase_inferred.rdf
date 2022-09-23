@@ -30924,13 +30924,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="http://purl.org/heals/eo#Parameter">
         <rdf:type rdf:resource="http://purl.org/heals/eo#Characteristic"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
-        <resource:SIO_000001 rdf:resource="http://purl.org/heals/eo#Parameter"/>
-        <resource:SIO_000028 rdf:resource="http://purl.org/heals/eo#Parameter"/>
-        <resource:SIO_000061 rdf:resource="http://purl.org/heals/eo#Parameter"/>
-        <resource:SIO_000068 rdf:resource="http://purl.org/heals/eo#Parameter"/>
-        <resource:SIO_000145 rdf:resource="http://purl.org/heals/eo#Parameter"/>
-        <resource:SIO_000322 rdf:resource="http://purl.org/heals/eo#Parameter"/>
-        <resource:SIO_000325 rdf:resource="http://purl.org/heals/eo#Parameter"/>
     </owl:NamedIndividual>
     
 
@@ -30940,13 +30933,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <resource:SIO_000001 rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <resource:SIO_000028 rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <resource:SIO_000061 rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <resource:SIO_000068 rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <resource:SIO_000145 rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <resource:SIO_000322 rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <resource:SIO_000325 rdf:resource="http://www.w3.org/ns/prov-o"/>
     </owl:NamedIndividual>
     
 
@@ -30956,14 +30942,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o-20130312">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <resource:SIO_000001 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <resource:SIO_000028 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <resource:SIO_000061 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <resource:SIO_000068 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <resource:SIO_000145 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <resource:SIO_000322 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <resource:SIO_000325 rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <prov:influenced rdf:resource="http://www.w3.org/ns/prov-o#"/>
     </owl:NamedIndividual>
     
 
@@ -30972,13 +30950,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
 
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
-        <resource:SIO_000001 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-        <resource:SIO_000028 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-        <resource:SIO_000061 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-        <resource:SIO_000068 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-        <resource:SIO_000145 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-        <resource:SIO_000322 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
-        <resource:SIO_000325 rdf:resource="http://www.w3.org/ns/prov#EmptyCollection"/>
     </owl:NamedIndividual>
     
 
@@ -30988,17 +30959,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <owl:NamedIndividual rdf:about="http://www.w3.org/ns/prov-o#">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <resource:SIO_000001 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <resource:SIO_000028 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <resource:SIO_000061 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <resource:SIO_000068 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <resource:SIO_000145 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <resource:SIO_000322 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <resource:SIO_000325 rdf:resource="http://www.w3.org/ns/prov-o#"/>
-        <prov:alternateOf rdf:resource="http://www.w3.org/ns/prov-o"/>
         <prov:specializationOf rdf:resource="http://www.w3.org/ns/prov-o"/>
-        <prov:wasDerivedFrom rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
-        <prov:wasInfluencedBy rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
         <prov:wasRevisionOf rdf:resource="http://www.w3.org/ns/prov-o-20130312"/>
     </owl:NamedIndividual>
     
@@ -31014,35 +30975,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#AITask"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#DeductiveTask"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
         <eo:implements rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <rdfs:label>Deductive task that generated a recommnendation used as a basis for a contrastive explanation</rdfs:label>
     </owl:NamedIndividual>
@@ -31058,31 +30992,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#Foil"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#User_Context"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
         <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000628 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
         <resource:SIO_000668 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <prov:influenced rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <rdfs:label>Patient has hyperglycemia</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31100,31 +31011,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveExplanation"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000294 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_001403 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_001403 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <eo:addresses rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
         <rdfs:label>Guidelines recommend Drug B for this patient</rdfs:label>
     </owl:NamedIndividual>
@@ -31141,30 +31027,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000352 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
         <rdfs:label>&quot;Why Drug A over Drug B?&quot;</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31179,18 +31041,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000294 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
         <eo:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
         <rdfs:label>Addresses &quot;What other factors about the patient does the system know of?&quot;</rdfs:label>
     </owl:NamedIndividual>
@@ -31206,18 +31056,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualExplanation"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000294 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
         <eo:addresses rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
         <rdfs:label>Addresses &quot;What if the major problem was a fasting plasma glucose?&quot;</rdfs:label>
     </owl:NamedIndividual>
@@ -31232,29 +31070,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#Fact"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#ScientificKnowledge"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <prov:influenced rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <rdfs:label>Drug B is a preferred drug</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31268,22 +31084,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000498"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000212 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000892 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
         <rdfs:label>Patient 100</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31299,18 +31099,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy1"/>
-        <resource:SIO_000352 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable1"/>
         <rdfs:label>What other factors about the patient does the system know of?</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31326,18 +31114,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000113"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000483"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#QuestionFromUserStudy2"/>
-        <resource:SIO_000352 rdf:resource="https://purl.org/heals/eo#CounterfactualProbable2"/>
         <rdfs:label>What if the major problem was a fasting plasma glucose?</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31354,30 +31130,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <prov:wasInfluencedBy rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
         <rdfs:label>Drug A is not sufficient for this patient</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31394,31 +31147,55 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#HyperglycemiaPatient"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#AITaskExample"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContextualKnowledgePatientA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveExpInstance"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#ContrastiveQuestion"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpA"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo#SystemRecExampleForContrastiveExpB"/>
         <prov:used rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
-        <prov:wasInfluencedBy rdf:resource="https://purl.org/heals/eo#GuidelineEvidence"/>
         <rdfs:label>Guidelines recommend Drug B</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000755"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#User_Context"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization"/>
+        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</resource:SIO_000300>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000753"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
+        <rdfs:label>New Employee</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo_proactiveretentionusecase#RuleForRetention -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo_proactiveretentionusecase#RuleForRetention">
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000000"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000015"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000075"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000094"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000289"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000616"/>
+        <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
+        <resource:SIO_000059 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee"/>
+        <rdfs:label>Retention Rule Pattern - New Employee, Position 1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -31435,39 +31212,13 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000132 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
         <resource:SIO_000229 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
+        <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#RuleForRetention"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
         <resource:SIO_000230 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <prov:influenced rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
         <rdfs:label>TED Explainer</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31488,22 +31239,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleExplanation"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SafetyAndPerformanceExplanation"/>
         <explanationPattern:isBasedOn rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000243 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_001403 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
         <rdfs:label>Explanation generated by TED for employee 1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31519,17 +31254,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#AITask"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#InterprationAndExplanationTask"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <prov:generated rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <prov:influenced rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
         <prov:used rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <prov:wasInfluencedBy rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
         <rdfs:label>Explanation task to find supervised explanation rules for decisions</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31548,37 +31273,11 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#LocalExplanation"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000212 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000212 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
         <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000628 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000628 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
         <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
         <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
         <prov:wasGeneratedBy rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <prov:wasInfluencedBy rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationTask"/>
-        <resource:SIO_000300 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">New employee, Org 1, Position 2</resource:SIO_000300>
+        <resource:SIO_000300>New employee, Org 1, Position 2</resource:SIO_000300>
         <rdfs:label>A output from TED Classifier of (x1, y1) retention pair</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31593,28 +31292,10 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000089"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000602"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
         <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#NewOrganization"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
+        <resource:SIO_001277 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
         <rdfs:label>Training Samples of (x,y) pairs</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31632,23 +31313,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemDeveloper"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#object_record"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000212 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000628 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_001278 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
+        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#Emp1NewEmployee"/>
         <rdfs:label>Employee 1</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31662,29 +31327,6 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000776"/>
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_001353"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemDeveloper"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000008 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000231 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
         <rdfs:label>Employee 2</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31706,32 +31348,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#User_Context"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#object_record"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
         <resource:SIO_000011 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000212 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
         <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000628 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_001278 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
         <rdfs:label>Retention risk for employee 1: present</rdfs:label>
     </owl:NamedIndividual>
     
@@ -31752,29 +31370,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
         <rdf:type rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#User_Context"/>
         <rdf:type rdf:resource="https://purl.org/heals/eo#knowledge"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplanationEmp1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000001 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
         <resource:SIO_000011 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000028 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000061 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000062 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000068 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000145 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
         <resource:SIO_000232 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDExplainer"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TEDOutput1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#TrainingXYSamples"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#x2"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y1"/>
-        <resource:SIO_000322 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
-        <resource:SIO_000325 rdf:resource="https://purl.org/heals/eo_proactiveretentionusecase#y2"/>
         <rdfs:label>Retention risk for employee 2: absent</rdfs:label>
     </owl:NamedIndividual>
     <rdf:Description>
@@ -34939,8 +34536,8 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#EmptyCollection">
         <prov:definition xml:lang="en">An empty collection is a collection without members.</prov:definition>
         <rdfs:label xml:lang="en">EmptyCollection</rdfs:label>
-        <prov:category>expanded</prov:category>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/prov-o#"/>
+        <prov:category>expanded</prov:category>
         <prov:component>collections</prov:component>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.w3.org/ns/prov#aq">

@@ -46,7 +46,7 @@ SELECT ?caseExplanation ?patient
 ?patient a sio:SIO_000393 .
  }
 
- PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX eo: <https://purl.org/heals/eo#>
 PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
@@ -57,4 +57,18 @@ SELECT ?patient ?questionnaire
 ?patient a sio:SIO_000393 .
 ?patient sio:SIO_000095 ?questionnaire .
 ?questionnaire a sio:SIO_000396 .
+ }
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX eo: <https://purl.org/heals/eo#>
+PREFIX ep: <http://linkedu.eu/dedalo/explanationPattern.owl#>
+PREFIX sio: <http://semanticscience.org/resource/>
+
+SELECT DISTINCT ?retentionAction
+	WHERE { 
+?retentionAction a eo:SystemRecommendation .
+?retentionAction sio:SIO_000011 ?emp .
+?emp a eo:SystemDeveloper .
+?emp rdfs:label "Employee 1" .
  }
