@@ -2,7 +2,7 @@
 layout: default
 title: Competency Questions
 ---
-[Questions](#competencyquestions) | [SPARQL Queries](#sparql) | [Call for Participation] (#call)
+[Questions](#competencyquestions) | [SPARQL Queries](#sparql) | [Call for Participation](#call)
 
 <article class="mb-5" id="competencyquestions">
 <content>
