@@ -265,6 +265,6 @@ select DISTINCT ?classLabel ?object where {
   
 <h2>Call for Competency Questions</h2>
   <p>We have put together a set of competency questions that we consider representative questions that system designers would want to address by the Explanation Ontology (EO). We vetted the validity and usefulness of these questions with a small expert panel within our lab. In addition, given that explainability needs are evolving and use cases are diverse, we are actively looking and are excited for other competency questions that the EO can help address. <br/>
-  If you are interested to provide us questions, please reach out to the project authors, Shruthi: charis@rpi.edu, Prof. Oshani Seneviratne, senevo@rpi.edu and Prof. Deborah L. McGuinness, dlm@cs.rpi.edu, with a subject title "Competency Questions for the Explanation Ontology". </p>
+  If you are interested to provide us questions, please reach out to the project authors, Shruthi: charis@rpi.edu, Prof. Oshani Seneviratne, senevo@rpi.edu and Prof. Deborah L. McGuinness, dlm@cs.rpi.edu, with a subject line titled "Competency Questions for the Explanation Ontology". </p>
   
   </content>
