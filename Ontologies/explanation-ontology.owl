@@ -1957,6 +1957,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <terms:description>This type of explanation provides steps taken across the design and implementation of an ML system to ensure that the decisions it assists are generally unbiased, and whether or not an individual has been treated equitably. This type of explanation is key to increasing individuals’ confidence in an Artificial Intelligence (AI) system. It can foster meaningful trust by explaining to an individual how bias and discrimination in decisions are avoided.</terms:description>
         <terms:source>Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130.</terms:source>
         <rdfs:label>Fairness Explanation</rdfs:label>
+        <skos:example>Addresses questions of the form, &quot;Is there a bias consequence of this system recommendation?&quot; and &quot;What data was used to arrive at this decision?&quot;</skos:example>
     </owl:Class>
     
 
@@ -2589,6 +2590,7 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
         <dc:description>This type of explanation deals with steps taken across the design and implementation of an ML system to maximise the accuracy, reliability, security, and robustness of its decisions and behaviours. This type of explanation helps to assure individuals that an ML system is safe and reliable by explanation to test and monitor the accuracy, reliability, security, and robustness of the ML model.</dc:description>
         <terms:source>Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130.</terms:source>
         <rdfs:label>Safety and Performance Explanation</rdfs:label>
+        <skos:example>Addresses questions of the form, &quot;What steps were taken to ensure robustness and reliability of system?&quot;,  &quot;How has the data been used to train the ML model?&quot;, &quot;What steps were taken to ensure robustness and reliability of AI method?&quot; and &quot;What were the plans for the system development?&quot;</skos:example>
     </owl:Class>
     
 
