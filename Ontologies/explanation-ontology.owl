@@ -1617,7 +1617,6 @@ event that did not occur), the output of interest.</dc:description>
         <dc:description>focuses on what the data is and how it has been used in a particular decision, as well as what data and how it has been used to train and test the ML model. This type of explanation can help users understand the influence of data on decisions.</dc:description>
         <terms:source>Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO &amp; The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19.</terms:source>
         <terms:source>Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020</terms:source>
-        <vann:preferredNamespaceUri>Addresses the questions, &quot;What the data is?&quot;, &quot;How it has been used in a particular decision?&quot;, &quot;How has the data been used to train the ML model?&quot;</vann:preferredNamespaceUri>
         <rdfs:label>Data Explanation</rdfs:label>
         <skos:example>Addresses a question of the form, &quot;What is the data?&quot;, &quot;How has the data been used in a particular decision?&quot; and &quot;How has the data been used to train the ML model?&quot;</skos:example>
     </owl:Class>
