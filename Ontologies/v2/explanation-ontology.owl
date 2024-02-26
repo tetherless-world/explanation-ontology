@@ -35,7 +35,7 @@
         <terms:contributor>Pablo Meyers</terms:contributor>
         <terms:contributor>Prithwish Chakraborty</terms:contributor>
         <terms:creator>Shruthi Chari</terms:creator>
-        <terms:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users&apos; situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.</terms:description>
+        <terms:description>The Explanation Ontology (EO) is an ontology that encodes the system- and user- attributes of explanations that would allow them to be generated computationally. This resource is mainly for system designers to guide them to think about the available AI methods and reasoning tasks within their system that would create explanations to suit the end-users&apos; situation and requirements. EO includes attributes directly included in explanations and others that would help in their process of generation. EO also includes different explanation types that address a range of questions each and their generational needs.</terms:description>
         <terms:license>Copyright 2022 IBM Research and Rensselaer Polytechnic Institute
 
 			Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);
@@ -73,8 +73,8 @@
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -687,7 +687,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001177">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Heuristics</rdfs:label>
+        <rdfs:label>Computer Heuristics</rdfs:label>
     </owl:Class>
     
 
@@ -697,7 +697,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001480">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Machine Learning</rdfs:label>
+        <rdfs:label>Machine Learning</rdfs:label>
     </owl:Class>
     
 
@@ -707,7 +707,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001483">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001480"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supervised Machine Learning</rdfs:label>
+        <rdfs:label>Supervised Machine Learning</rdfs:label>
     </owl:Class>
     
 
@@ -717,7 +717,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0001486">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001480"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unsupervised Machine Learning</rdfs:label>
+        <rdfs:label>Unsupervised Machine Learning</rdfs:label>
     </owl:Class>
     
 
@@ -727,7 +727,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0006327">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#KnowledgeBasedSystems"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Expert Systems</rdfs:label>
+        <rdfs:label>Expert Systems</rdfs:label>
     </owl:Class>
     
 
@@ -737,7 +737,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0010354">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Natural Language Processing</rdfs:label>
+        <rdfs:label>Natural Language Processing</rdfs:label>
     </owl:Class>
     
 
@@ -747,7 +747,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0013278">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robotics</rdfs:label>
+        <rdfs:label>Robotics</rdfs:label>
     </owl:Class>
     
 
@@ -757,7 +757,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0017046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001483"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neural Networks (Computer)</rdfs:label>
+        <rdfs:label>Neural Networks (Computer)</rdfs:label>
     </owl:Class>
     
 
@@ -767,7 +767,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0017538">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuzzy Logic</rdfs:label>
+        <rdfs:label>Fuzzy Logic</rdfs:label>
     </owl:Class>
     
 
@@ -777,7 +777,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0024712">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ArtificialIntelligenceMethod"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Knowledge Bases</rdfs:label>
+        <rdfs:label>Knowledge Bases</rdfs:label>
     </owl:Class>
     
 
@@ -787,7 +787,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0027764">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0001483"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Support Vector Machine</rdfs:label>
+        <rdfs:label>Support Vector Machine</rdfs:label>
     </owl:Class>
     
 
@@ -797,7 +797,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0028314">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0028401"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gene Ontology</rdfs:label>
+        <rdfs:label>Gene Ontology</rdfs:label>
     </owl:Class>
     
 
@@ -807,7 +807,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIT_0028401">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIT_0024712"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/omit.owl"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological Ontologies</rdfs:label>
+        <rdfs:label>Biological Ontologies</rdfs:label>
     </owl:Class>
     
 
@@ -1299,7 +1299,7 @@ about items other than the explicit inputs and output, such as information about
 technical and physical environments” (I.O. for standardization).</dc:description>
         <terms:source>I. O. for Standardization, Human-centred design processes for interactive systems. Int. Organization for Standardization, 1999</terms:source>
         <rdfs:label>Contextual Explanation</rdfs:label>
-        <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation.</skos:definition>
+        <skos:definition>Refers to information about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation.</skos:definition>
         <skos:example>Addresses a question of the form, &quot;What broader information about the current situation prompted the suggestion of this recommendation?&quot;</skos:example>
     </owl:Class>
     
@@ -1338,7 +1338,7 @@ technical and physical environments” (I.O. for standardization).</dc:descripti
         <terms:description>Context is any information that can be used to characterize the situation of an entity, where an entity is a person, place, or object that is considered relevant to the interaction between a user and an application, including the user and applications themselves. (Dey 2001)
 Contextual knowledge in turn is the knowledge that is derived from such relevant context, where relevance depends on the AI task. Contextual knowledge is related to, but distinct from, information that is used by an AI task to produce an output recommendation.</terms:description>
         <terms:source>Dey, A. K. (2001). Understanding and using context. Personal and ubiquitous computing, 5(1), 4-7.</terms:source>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contextual Knowledge</rdfs:label>
+        <rdfs:label>Contextual Knowledge</rdfs:label>
     </owl:Class>
     
 
@@ -1423,6 +1423,7 @@ Contextual knowledge in turn is the knowledge that is derived from such relevant
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <dc:description>As described
 by (Van der Waa, 2018) and (Miller, 2019), contrastive explanations define an output of interest and present
 contrasts between the fact (the event that did occur), the given output, and the foil (the
@@ -1616,8 +1617,8 @@ event that did not occur), the output of interest.</dc:description>
         <dc:description>focuses on what the data is and how it has been used in a particular decision, as well as what data and how it has been used to train and test the ML model. This type of explanation can help users understand the influence of data on decisions.</dc:description>
         <terms:source>Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO &amp; The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19.</terms:source>
         <terms:source>Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020</terms:source>
-        <vann:preferredNamespaceUri>Addresses the questions, &quot;What the data is?&quot;, &quot;How it has been used in a particular decision?&quot;, &quot;How has the data been used to train the ML model?&quot;</vann:preferredNamespaceUri>
         <rdfs:label>Data Explanation</rdfs:label>
+        <skos:example>Addresses a question of the form, &quot;What is the data?&quot;, &quot;How has the data been used in a particular decision?&quot; and &quot;How has the data been used to train the ML model?&quot;</skos:example>
     </owl:Class>
     
 
@@ -1668,7 +1669,7 @@ event that did not occur), the output of interest.</dc:description>
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#Contextual_Knowledge"/>
         <dc:description>Environmental context is relevant information pertaining to the physical elements that describe the experimental situation. This information may extend to physical location, physical characteristics and properties of objects, movement, and time.</dc:description>
         <terms:source>Bauer, C., &amp; Novotny, A. (2017). A consolidated view of context for intelligent systems. J. Ambient Intell. Smart Environ., 9, 377-393.</terms:source>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Environmental Context</rdfs:label>
+        <rdfs:label>Environmental Context</rdfs:label>
     </owl:Class>
     
 
@@ -1955,6 +1956,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <terms:description>This type of explanation provides steps taken across the design and implementation of an ML system to ensure that the decisions it assists are generally unbiased, and whether or not an individual has been treated equitably. This type of explanation is key to increasing individuals’ confidence in an Artificial Intelligence (AI) system. It can foster meaningful trust by explaining to an individual how bias and discrimination in decisions are avoided.</terms:description>
         <terms:source>Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130.</terms:source>
         <rdfs:label>Fairness Explanation</rdfs:label>
+        <skos:example>Addresses questions of the form, &quot;Is there a bias consequence of this system recommendation?&quot; and &quot;What data was used to arrive at this decision?&quot;</skos:example>
     </owl:Class>
     
 
@@ -2065,6 +2067,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <dc:description>This type of explanation concerns the impact that the use of an ML system and its decisions has or may have on an individual and on a wider society. This type of explanation gives individuals some power and control over their involvement in ML-assisted decisions. By understanding the possible consequences of the decision, an individual can better assess their participation in the process and how the outcomes of the decision may affect them. Therefore, this type of explanation is often suited to delivery before an ML-assisted decision is made.</dc:description>
         <terms:source>Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130.</terms:source>
         <rdfs:label>Impact Explanation</rdfs:label>
+        <skos:example>What is the impact of a system recommendation?</skos:example>
     </owl:Class>
     
 
@@ -2586,6 +2589,7 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
         <dc:description>This type of explanation deals with steps taken across the design and implementation of an ML system to maximise the accuracy, reliability, security, and robustness of its decisions and behaviours. This type of explanation helps to assure individuals that an ML system is safe and reliable by explanation to test and monitor the accuracy, reliability, security, and robustness of the ML model.</dc:description>
         <terms:source>Cunningham P, Doyle D, Loughrey J. An evaluation of the usefulness of case-based explanation. In: International Conference on Case-Based Reasoning. Springer; 2003. p. 122–130.</terms:source>
         <rdfs:label>Safety and Performance Explanation</rdfs:label>
+        <skos:example>Addresses questions of the form, &quot;What steps were taken to ensure robustness and reliability of system?&quot;,  &quot;How has the data been used to train the ML model?&quot;, &quot;What steps were taken to ensure robustness and reliability of AI method?&quot; and &quot;What were the plans for the system development?&quot;</skos:example>
     </owl:Class>
     
 
@@ -2985,7 +2989,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>User context is any relevant information that can be used to characterize the user which was not used as input to some AI task.</dc:description>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Context</rdfs:label>
+        <rdfs:label>User Context</rdfs:label>
     </owl:Class>
     
 
@@ -3330,12 +3334,12 @@ vol. 267, pp. 1–38, 2019.</terms:source>
      -->
 
     <rdf:Description rdf:about="http://purl.org/heals/eo#Parameter">
-        <prov:definition>A characteristic of a question</prov:definition>
         <rdfs:label>Question Parameter</rdfs:label>
+        <prov:definition>A characteristic of a question</prov:definition>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
