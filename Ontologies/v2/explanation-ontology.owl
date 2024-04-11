@@ -72,8 +72,8 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
         <rdfs:label>textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -1142,7 +1142,7 @@ current situation.</terms:description>
         <terms:source>Leake DB. Evaluating Explanations. In: AAAI; 1988. p. 251–255</terms:source>
         <rdfs:label>Case Based Explanation</rdfs:label>
         <skos:definition>Provides solutions that are based on actual prior cases that can be presented to the user to provide compelling support for the system’s conclusions, and may involve analogical reasoning, relying on similarities between features of the case and of the current situation.</skos:definition>
-        <skos:example>Addresses question of the form, &quot;To what other situations has this recommendation been applied?&quot;</skos:example>
+        <skos:example>Addresses question of the form, &quot;To what other situations has this recommendation been applied?&quot;, &quot;What instances from the training data are considered indicative for this recommendation?&quot;</skos:example>
     </owl:Class>
     
 
@@ -1432,7 +1432,7 @@ event that did not occur), the output of interest.</dc:description>
         <terms:source>T. Miller, “Explanation in artificial intelligence: Insights from the social sciences,” Artificial Intelligence, vol. 267, pp. 1–38, 2019</terms:source>
         <rdfs:label>Contrastive Explanation</rdfs:label>
         <skos:definition>Answers the question “Why this output instead of that output,” making a contrast between the given output and the facts that led to it (inputs and other considerations),  and an alternate output of interest and the foil (facts that would have led to it).</skos:definition>
-        <skos:example>Addresses a question of the form, &quot;Why administer this new drug over the one I would typically prescribe?&quot;</skos:example>
+        <skos:example>Addresses a question of the form, &quot;Why administer this new drug over the one I would typically prescribe?&quot;, &quot;Why this and not that?&quot; and &quot;Why this feature and not that feature?&quot;</skos:example>
     </owl:Class>
     
 
