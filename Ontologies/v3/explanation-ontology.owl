@@ -1293,6 +1293,22 @@ current situation.</terms:description>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <dc:description>Contextual explanations are those that refer to information
 about items other than the explicit inputs and output, such as information about the user, situation, and broader environment that affected the computation. Providing such information requires that a system be “context-aware,” and can include information about a “user’s tasks, significant user attributes, organizational environment, and
@@ -1397,6 +1413,22 @@ Contextual knowledge in turn is the knowledge that is derived from such relevant
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethods"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://purl.org/heals/eo#SystemRecommendation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
@@ -1437,6 +1469,15 @@ event that did not occur), the output of interest.</dc:description>
     
 
 
+    <!-- https://purl.org/heals/eo#ContrastiveSaliencyMethods -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#ContrastiveSaliencyMethods">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdfs:label>Contrastive saliency methods</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#CounterfactualExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#CounterfactualExplanation">
@@ -1448,8 +1489,8 @@ event that did not occur), the output of interest.</dc:description>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#used"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#CounterfactualSaliencyMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1497,6 +1538,15 @@ event that did not occur), the output of interest.</dc:description>
         <rdfs:label>Counterfactual Explanation</rdfs:label>
         <skos:definition>Addresses the question of what solutions would have been obtained with a different set of inputs than those used.</skos:definition>
         <skos:example>Addresses a question of the form, &quot;What if the patient had a high risk for  cardiovascular disease? Would you still recommend  the same treatment plan?&quot;</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/eo#CounterfactualSaliencyMethod -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#CounterfactualSaliencyMethod">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdfs:label>Counterfactual saliency method</rdfs:label>
     </owl:Class>
     
 
@@ -2375,6 +2425,22 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#isBasedOn"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#LocalExplanation"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3227,6 +3293,17 @@ Proceedings of the 32nd International Conference on Neural Information Processin
     
 
 
+    <!-- https://purl.org/heals/eo#CEN -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CEN">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures"/>
+        <terms:source>Al-Shedivat, Maruan, Avinava Dubey, and Eric Xing. &quot;Contextual explanation networks.&quot; Journal of Machine Learning Research 21.194 (2020): 1-44.</terms:source>
+        <sio:hasSynonym>Contextual Explanation Network</sio:hasSynonym>
+        <rdfs:label>CEN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://purl.org/heals/eo#ContextualKnowledgePatientA -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#ContextualKnowledgePatientA">
@@ -3282,7 +3359,7 @@ Proceedings of the 32nd International Conference on Neural Information Processin
     <!-- https://purl.org/heals/eo#DICE -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#DICE">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#CounterfactualSaliencyMethod"/>
         <terms:source>Mothilal, Ramaravind K., Amit Sharma, and Chenhao Tan. &quot;Explaining machine learning classifiers through diverse counterfactual explanations.&quot; Proceedings of the 2020 conference on fairness, accountability, and transparency. 2020.</terms:source>
         <sio:hasSynonym>Diverse Counterfactual Explanations</sio:hasSynonym>
         <rdfs:label>DICE</rdfs:label>
@@ -3325,7 +3402,7 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
     <!-- https://purl.org/heals/eo#LIME -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#LIME">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethods"/>
         <terms:source>Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin. 2016. “&quot;Why should I trust you?&quot;: Explaining the Predictions of Any Classifier.” In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Kdd San Francisco, ca, 1135–44. New York, NY: Association for Computing Machinery.</terms:source>
         <sio:hasSynonym>Locally Interpretable Model-Agnostic Explanations</sio:hasSynonym>
         <rdfs:label>LIME</rdfs:label>
@@ -3364,7 +3441,7 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
     <!-- https://purl.org/heals/eo#SHAP -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SHAP">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethods"/>
         <terms:source>Lundberg, Scott M., and Su-In Lee. &quot;A unified approach to interpreting model predictions.&quot; Advances in neural information processing systems 30 (2017).</terms:source>
         <sio:hasSynonym>SHAPley Additive Explanations</sio:hasSynonym>
         <rdfs:label>SHAP</rdfs:label>
