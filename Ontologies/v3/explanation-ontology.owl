@@ -1124,7 +1124,7 @@
                             <rdf:Description rdf:about="https://purl.org/heals/eo#LocalExplanation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethods"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1302,7 +1302,7 @@ current situation.</terms:description>
                             <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitecture"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1472,7 +1472,7 @@ event that did not occur), the output of interest.</dc:description>
     <!-- https://purl.org/heals/eo#ContrastiveSaliencyMethods -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#ContrastiveSaliencyMethods">
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethod"/>
         <rdfs:label>Contrastive saliency methods</rdfs:label>
     </owl:Class>
     
@@ -1545,7 +1545,7 @@ event that did not occur), the output of interest.</dc:description>
     <!-- https://purl.org/heals/eo#CounterfactualSaliencyMethod -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#CounterfactualSaliencyMethod">
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethods"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethod"/>
         <rdfs:label>Counterfactual saliency method</rdfs:label>
     </owl:Class>
     
@@ -1623,7 +1623,7 @@ event that did not occur), the output of interest.</dc:description>
                             <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethods"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1639,7 +1639,7 @@ event that did not occur), the output of interest.</dc:description>
                             <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#FeatureRelevanceMethods"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#FeatureRelevanceMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1857,9 +1857,9 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#ExemplarMethods -->
+    <!-- https://purl.org/heals/eo#ExemplarMethod -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#ExemplarMethods">
+    <owl:Class rdf:about="https://purl.org/heals/eo#ExemplarMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2011,9 +2011,9 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#FeatureRelevanceMethods -->
+    <!-- https://purl.org/heals/eo#FeatureRelevanceMethod -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#FeatureRelevanceMethods">
+    <owl:Class rdf:about="https://purl.org/heals/eo#FeatureRelevanceMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2089,7 +2089,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         </rdfs:subClassOf>
         <dc:description>Methods that learn high-level features in an unsupervised manner through variational autoencoder or generative adversarial network frameworks would naturally fall under the data followed by features category. Even supervised methods of learning high-level interpretable features would lie in this category.</dc:description>
         <terms:source>Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... &amp; Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012.</terms:source>
-        <rdfs:label>High level feature learning method</rdfs:label>
+        <rdfs:label>High Level Feature Learning Method</rdfs:label>
     </owl:Class>
     
 
@@ -2220,11 +2220,11 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <owl:unionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethods"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethod"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -2434,7 +2434,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                             <rdf:Description rdf:about="https://purl.org/heals/eo#LocalExplanation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2458,9 +2458,9 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#RationaleProvidingMethods -->
+    <!-- https://purl.org/heals/eo#RationaleProvidingMethod -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#RationaleProvidingMethods">
+    <owl:Class rdf:about="https://purl.org/heals/eo#RationaleProvidingMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2539,9 +2539,9 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
     
 
 
-    <!-- https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures -->
+    <!-- https://purl.org/heals/eo#RestrictedNeuralNetworkArchitecture -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures">
+    <owl:Class rdf:about="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitecture">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <terms:description>Methods that propose certain restrictions on the neural network architecture to make it interpretable, yet maintain richness of the hypothesis space to model complicated decision boundaries would fall under the global directly interpretable category.</terms:description>
         <terms:source>Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... &amp; Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012.</terms:source>
@@ -2660,9 +2660,9 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
     
 
 
-    <!-- https://purl.org/heals/eo#SaliencyMethods -->
+    <!-- https://purl.org/heals/eo#SaliencyMethod -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#SaliencyMethods">
+    <owl:Class rdf:about="https://purl.org/heals/eo#SaliencyMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3284,7 +3284,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#BRCG -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#BRCG">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
         <terms:source>S. Dash, O. Günlük, and D. Wei. Boolean decision rules via column generation. In
 Proceedings of the 32nd International Conference on Neural Information Processing Systems (NeurIPS), 2018.</terms:source>
         <sio:hasSynonym>Boolean decision rules via column generation</sio:hasSynonym>
@@ -3296,7 +3296,7 @@ Proceedings of the 32nd International Conference on Neural Information Processin
     <!-- https://purl.org/heals/eo#CEN -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#CEN">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitectures"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitecture"/>
         <terms:source>Al-Shedivat, Maruan, Avinava Dubey, and Eric Xing. &quot;Contextual explanation networks.&quot; Journal of Machine Learning Research 21.194 (2020): 1-44.</terms:source>
         <sio:hasSynonym>Contextual Explanation Network</sio:hasSynonym>
         <rdfs:label>CEN</rdfs:label>
@@ -3370,7 +3370,7 @@ Proceedings of the 32nd International Conference on Neural Information Processin
     <!-- https://purl.org/heals/eo#GLRM -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#GLRM">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
         <terms:source>D. Wei, S. Dash, T. Gao, and O. Günlük. Generalized linear rule models. In
 Proceedings of the 36th International Conference on Machine Learning (ICML), 2019.</terms:source>
         <sio:hasSynonym>Generalized linear rule models</sio:hasSynonym>
@@ -3413,7 +3413,7 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
     <!-- https://purl.org/heals/eo#Protodash -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#Protodash">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#ExemplarMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ExemplarMethod"/>
         <terms:source>Gurumoorthy, Karthik S., et al. &quot;Efficient data representation by selecting prototypes with importance weights.&quot; 2019 IEEE International Conference on Data Mining (ICDM). IEEE, 2019.</terms:source>
         <rdfs:label>Protodash</rdfs:label>
     </owl:NamedIndividual>
