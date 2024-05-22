@@ -1416,7 +1416,7 @@ Contextual knowledge in turn is the knowledge that is derived from such relevant
                             <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethods"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1469,11 +1469,11 @@ event that did not occur), the output of interest.</dc:description>
     
 
 
-    <!-- https://purl.org/heals/eo#ContrastiveSaliencyMethods -->
+    <!-- https://purl.org/heals/eo#ContrastiveSaliencyMethod -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#ContrastiveSaliencyMethods">
+    <owl:Class rdf:about="https://purl.org/heals/eo#ContrastiveSaliencyMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethod"/>
-        <rdfs:label>Contrastive saliency methods</rdfs:label>
+        <rdfs:label>Contrastive Saliency Method</rdfs:label>
     </owl:Class>
     
 
@@ -1546,7 +1546,7 @@ event that did not occur), the output of interest.</dc:description>
 
     <owl:Class rdf:about="https://purl.org/heals/eo#CounterfactualSaliencyMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethod"/>
-        <rdfs:label>Counterfactual saliency method</rdfs:label>
+        <rdfs:label>Counterfactual Saliency Method</rdfs:label>
     </owl:Class>
     
 
@@ -2224,7 +2224,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
+                        <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
                     </owl:Restriction>
                 </owl:unionOf>
             </owl:Class>
@@ -2358,6 +2358,23 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
+    <!-- https://purl.org/heals/eo#ProvidingRationaleMethod -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#ProvidingRationaleMethod">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#LocalExplanation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description>Work in the natural language processing and computer vision domains that generates rationales/explanations derived from input text would be considered as local self explanations. Here however, new words or phrases could be generated so the feature space can be richer than the original input space.</terms:description>
+        <terms:source>Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... &amp; Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012.</terms:source>
+        <rdfs:label>Providing Rationale Method</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#RationaleExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#RationaleExplanation">
@@ -2434,7 +2451,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                             <rdf:Description rdf:about="https://purl.org/heals/eo#LocalExplanation"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
-                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
+                                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -2454,23 +2471,6 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <terms:source>Zhou, J., Gandomi, A. H., Chen, F., &amp; Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593.</terms:source>
         <rdfs:label>Rationale Explanation</rdfs:label>
         <skos:example>Addresses example question, &quot;Why of an ML decision and provides reasons that led to a decision?&quot;</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- https://purl.org/heals/eo#RationaleProvidingMethod -->
-
-    <owl:Class rdf:about="https://purl.org/heals/eo#RationaleProvidingMethod">
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMethod"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#LocalExplanation"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <terms:description>Work in the natural language processing and computer vision domains that generates rationales/explanations derived from input text would be considered as local self explanations. Here however, new words or phrases could be generated so the feature space can be richer than the original input space.</terms:description>
-        <terms:source>Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... &amp; Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012.</terms:source>
-        <rdfs:label>Providing rationale method</rdfs:label>
     </owl:Class>
     
 
@@ -3284,7 +3284,7 @@ vol. 267, pp. 1–38, 2019.</terms:source>
     <!-- https://purl.org/heals/eo#BRCG -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#BRCG">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
         <terms:source>S. Dash, O. Günlük, and D. Wei. Boolean decision rules via column generation. In
 Proceedings of the 32nd International Conference on Neural Information Processing Systems (NeurIPS), 2018.</terms:source>
         <sio:hasSynonym>Boolean decision rules via column generation</sio:hasSynonym>
@@ -3370,7 +3370,7 @@ Proceedings of the 32nd International Conference on Neural Information Processin
     <!-- https://purl.org/heals/eo#GLRM -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#GLRM">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#RationaleProvidingMethod"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
         <terms:source>D. Wei, S. Dash, T. Gao, and O. Günlük. Generalized linear rule models. In
 Proceedings of the 36th International Conference on Machine Learning (ICML), 2019.</terms:source>
         <sio:hasSynonym>Generalized linear rule models</sio:hasSynonym>
@@ -3402,7 +3402,7 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
     <!-- https://purl.org/heals/eo#LIME -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#LIME">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethod"/>
         <terms:source>Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin. 2016. “&quot;Why should I trust you?&quot;: Explaining the Predictions of Any Classifier.” In Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Kdd San Francisco, ca, 1135–44. New York, NY: Association for Computing Machinery.</terms:source>
         <sio:hasSynonym>Locally Interpretable Model-Agnostic Explanations</sio:hasSynonym>
         <rdfs:label>LIME</rdfs:label>
@@ -3441,7 +3441,7 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
     <!-- https://purl.org/heals/eo#SHAP -->
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#SHAP">
-        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethods"/>
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethod"/>
         <terms:source>Lundberg, Scott M., and Su-In Lee. &quot;A unified approach to interpreting model predictions.&quot; Advances in neural information processing systems 30 (2017).</terms:source>
         <sio:hasSynonym>SHAPley Additive Explanations</sio:hasSynonym>
         <rdfs:label>SHAP</rdfs:label>
