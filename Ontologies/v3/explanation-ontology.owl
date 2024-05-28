@@ -3442,7 +3442,6 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
 
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#RuleXAI">
         <rdf:type rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
-        <terms:source></terms:source>
         <terms:source>Macha, D., Kozielski, M., Wróbel, Ł., &amp; Sikora, M. (2022). RuleXAI—A package for rule-based explanations of machine learning model. SoftwareX, 20, 101209.</terms:source>
         <rdfs:label>RuleXAI</rdfs:label>
     </owl:NamedIndividual>
