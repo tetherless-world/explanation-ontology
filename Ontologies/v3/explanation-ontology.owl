@@ -2448,7 +2448,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#LocalExplanation"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
@@ -3434,6 +3434,17 @@ Proceedings of the 36th International Conference on Machine Learning (ICML), 201
     <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#QuestionFromUserStudy2">
         <rdf:type rdf:resource="http://semanticscience.org/resource/SIO_000085"/>
         <rdfs:label>What if the major problem was a fasting plasma glucose?</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/heals/eo#RuleXAI -->
+
+    <owl:NamedIndividual rdf:about="https://purl.org/heals/eo#RuleXAI">
+        <rdf:type rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
+        <terms:source></terms:source>
+        <terms:source>Macha, D., Kozielski, M., Wróbel, Ł., &amp; Sikora, M. (2022). RuleXAI—A package for rule-based explanations of machine learning model. SoftwareX, 20, 101209.</terms:source>
+        <rdfs:label>RuleXAI</rdfs:label>
     </owl:NamedIndividual>
     
 
