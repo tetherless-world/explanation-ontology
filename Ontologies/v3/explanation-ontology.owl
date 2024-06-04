@@ -1473,6 +1473,12 @@ event that did not occur), the output of interest.</dc:description>
 
     <owl:Class rdf:about="https://purl.org/heals/eo#ContrastiveSaliencyMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethod"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/heals/eo#hasPresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExplanationFeatures"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Contrastive Saliency Method</rdfs:label>
     </owl:Class>
     
@@ -1546,6 +1552,12 @@ event that did not occur), the output of interest.</dc:description>
 
     <owl:Class rdf:about="https://purl.org/heals/eo#CounterfactualSaliencyMethod">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SaliencyMethod"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/heals/eo#hasPresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExplanationInstances"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Counterfactual Saliency Method</rdfs:label>
     </owl:Class>
     
@@ -1873,6 +1885,12 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#StaticExplanation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/heals/eo#hasPresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExplanationInstances"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <terms:description>This category explains the predictions of test instances using similar or influential training instances. It is considered as static local post-hoc explanations with samples.</terms:description>
         <terms:source>Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... &amp; Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012.</terms:source>
         <rdfs:label>Exemplar Method</rdfs:label>
@@ -1907,6 +1925,15 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
+    <!-- https://purl.org/heals/eo#ExplanationFeatures -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationFeatures">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationModality"/>
+        <rdfs:label>Feature Importances</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#ExplanationGoal -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationGoal">
@@ -1914,6 +1941,15 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <dc:description>the impact that an explanation has on a user or the purpose it was designed to achieve</dc:description>
         <rdfs:label>Explanation Goal</rdfs:label>
         <skos:example>educational</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/eo#ExplanationInstances -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationInstances">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationModality"/>
+        <rdfs:label>Representative samples or instances</rdfs:label>
     </owl:Class>
     
 
@@ -1942,6 +1978,15 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <dc:description>a particular form/media in which an explanation exists is expressed</dc:description>
         <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
         <rdfs:label>Explanation Modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/eo#ExplanationRules -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationRules">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationModality"/>
+        <rdfs:label>Rules important for decision</rdfs:label>
     </owl:Class>
     
 
@@ -2019,6 +2064,12 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanationOutput"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/heals/eo#hasPresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExplanationFeatures"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Methods such as partial dependence plots (PDP) and sensitivity analysis are used to study the (global) effects of different input features on the output values and are typically consumed through appropriate visualizations (e.g., PDP plots, scatter plots, control charts).</dc:description>
@@ -2366,6 +2417,12 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#LocalExplanation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://purl.org/heals/eo#hasPresentation"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExplanationRules"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description>Work in the natural language processing and computer vision domains that generates rationales/explanations derived from input text would be considered as local self explanations. Here however, new words or phrases could be generated so the feature space can be richer than the original input space.</terms:description>
