@@ -1299,7 +1299,7 @@ current situation.</terms:description>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#RestrictedNeuralNetworkArchitecture"/>
@@ -1413,7 +1413,7 @@ Contextual knowledge in turn is the knowledge that is derived from such relevant
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ContrastiveSaliencyMethod"/>
@@ -1493,7 +1493,7 @@ event that did not occur), the output of interest.</dc:description>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#CounterfactualSaliencyMethod"/>
@@ -1632,7 +1632,7 @@ event that did not occur), the output of interest.</dc:description>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExemplarMethod"/>
@@ -1648,7 +1648,7 @@ event that did not occur), the output of interest.</dc:description>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#FeatureRelevanceMethod"/>
@@ -1664,7 +1664,7 @@ event that did not occur), the output of interest.</dc:description>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#HighLevelFeatureLearningMethod"/>
@@ -1952,7 +1952,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ModelExplanationOutput"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>mechanisms that can provide explanations that are understandable to humans (interpretability) and accurately describe model behaviour in the entire feature space (fidelity)</dc:description>
@@ -2062,7 +2062,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanationOutput"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2089,9 +2089,9 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#GlobalExplanationOutput -->
+    <!-- https://purl.org/heals/eo#GlobalExplanation -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#GlobalExplanationOutput">
+    <owl:Class rdf:about="https://purl.org/heals/eo#GlobalExplanation">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2106,7 +2106,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutput"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/heals/eo#hasExplanationType"/>
@@ -2134,7 +2134,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanationOutput"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Methods that learn high-level features in an unsupervised manner through variational autoencoder or generative adversarial network frameworks would naturally fall under the data followed by features category. Even supervised methods of learning high-level interpretable features would lie in this category.</dc:description>
@@ -2186,7 +2186,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     <!-- https://purl.org/heals/eo#InteractiveExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#InteractiveExplanation">
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutput"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/heals/eo#hasExplanationType"/>
@@ -2240,7 +2240,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanationOutput"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:description>Knowledge distillation-type approaches, which learn a simpler model based on a complex model’s predictions, would be considered as global interpretations that are learned using a post-hoc surrogate model.</dc:description>
@@ -2279,7 +2279,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutput"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/heals/eo#hasExplanationType"/>
@@ -2339,9 +2339,9 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#ModelExplanationOutputs -->
+    <!-- https://purl.org/heals/eo#ModelExplanationOutput -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs">
+    <owl:Class rdf:about="https://purl.org/heals/eo#ModelExplanationOutput">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SystemRecommendation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2367,7 +2367,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000229"/>
-                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanationOutput"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#GlobalExplanation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <terms:description>Methods that visualize intermediate representations/layers of a neural network would fall under the global post-hoc category as people typically use these visualizations to gain confidence in the model and inspect the type of high-level features being extracted.</terms:description>
@@ -2504,7 +2504,7 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+                            <rdf:Description rdf:about="https://purl.org/heals/eo#ModelExplanationOutput"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000232"/>
                                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ProvidingRationaleMethod"/>
@@ -2844,7 +2844,7 @@ times (e.g. Monte Carlo simulations), and the mechanisms in the simulation can o
     <!-- https://purl.org/heals/eo#StaticExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#StaticExplanation">
-        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutputs"/>
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ModelExplanationOutput"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.org/heals/eo#hasExplanationType"/>
