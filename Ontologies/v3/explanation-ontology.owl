@@ -1707,6 +1707,17 @@ event that did not occur), the output of interest.</dc:description>
     
 
 
+    <!-- https://purl.org/heals/eo#Diversity -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#Diversity">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+        <terms:source>Nguyen, A. P., &amp; Martínez, M. R. (2020). On quantitative aspects of model interpretability. arXiv preprint arXiv:2007.07584.</terms:source>
+        <rdfs:label>Diversity</rdfs:label>
+        <skos:definition>A highly diverse set of examples demonstrates the degree of integration of the explanation. The cognitive saliency, and ultimately the simplicity, of the explanation is simply encoded in the number NE of examples used: the least number of examples, the easier it is for a human to process the explanation</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#Environmental_Context -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#Environmental_Context">
@@ -1962,10 +1973,13 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
-    <!-- https://purl.org/heals/eo#ExplanationMetrics -->
+    <!-- https://purl.org/heals/eo#ExplanationMetric -->
 
-    <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationMetrics">
+    <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationMetric">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#EvaluationMetric"/>
+        <dc:description>For an explainability method the implementation of the metrics will change according to the explanation modality (Section 2.2).</dc:description>
+        <terms:source>Nguyen, A. P., &amp; Martínez, M. R. (2020). On quantitative aspects of model interpretability. arXiv preprint arXiv:2007.07584.</terms:source>
+        <rdfs:label>Explanation Metric</rdfs:label>
     </owl:Class>
     
 
@@ -1974,7 +1988,14 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
 
     <owl:Class rdf:about="https://purl.org/heals/eo#ExplanationModality">
         <rdfs:subClassOf rdf:resource="http://semanticscience.org/resource/SIO_000612"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <dc:description>a particular form/media in which an explanation exists is expressed</dc:description>
+        <terms:source>Nguyen, A. P., &amp; Martínez, M. R. (2020). On quantitative aspects of model interpretability. arXiv preprint arXiv:2007.07584.</terms:source>
         <rdfs:isDefinedBy>Shruthi Chari</rdfs:isDefinedBy>
         <rdfs:label>Explanation Modality</rdfs:label>
     </owl:Class>
@@ -2046,10 +2067,33 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
+    <!-- https://purl.org/heals/eo#Faithfulness -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#Faithfulness">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+        <terms:source>Alvarez Melis, D., &amp; Jaakkola, T. (2018). Towards robust interpretability with self-explaining neural networks. Advances in neural information processing systems, 31.</terms:source>
+        <rdfs:label>Faithfulness</rdfs:label>
+        <skos:definition>Are relevance scores indicative of &quot;true&quot; importance?</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#FeatureImportances -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#FeatureImportances">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationModality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Faithfulness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Monotonicity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Feature Importances</rdfs:label>
     </owl:Class>
     
@@ -2360,6 +2404,17 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
+    <!-- https://purl.org/heals/eo#Monotonicity -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#Monotonicity">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+        <terms:source>Nguyen, A. P., &amp; Martínez, M. R. (2020). On quantitative aspects of model interpretability. arXiv preprint arXiv:2007.07584.</terms:source>
+        <rdfs:label>Monotonicity</rdfs:label>
+        <skos:definition>The monotonicity for feature attributions ai is defined as the Spearman’s correlation coefficient ρS (a, e) [28]. a = (. . . , |ai |, . . . ) is a vector containing the absolute values of the attributions. e = (. . . , E(l(y∗, fi); Xi|x∗−i), . . . ) contains the corresponding (estimated) expectations, as computed in Eq.(1).</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#NeuralNetworkVisualizationMethod -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#NeuralNetworkVisualizationMethod">
@@ -2373,6 +2428,17 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
         <terms:description>Methods that visualize intermediate representations/layers of a neural network would fall under the global post-hoc category as people typically use these visualizations to gain confidence in the model and inspect the type of high-level features being extracted.</terms:description>
         <terms:source>Arya, V., Bellamy, R. K., Chen, P. Y., Dhurandhar, A., Hind, M., Hoffman, S. C., ... &amp; Zhang, Y. (2019). One explanation does not fit all: A toolkit and taxonomy of ai explainability techniques. arXiv preprint arXiv:1909.03012.</terms:source>
         <rdfs:label>Neural Network Visualization Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/heals/eo#NonRepresentativeness -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#NonRepresentativeness">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+        <terms:source>Nguyen, A. P., &amp; Martínez, M. R. (2020). On quantitative aspects of model interpretability. arXiv preprint arXiv:2007.07584.</terms:source>
+        <rdfs:label>Non Representativeness</rdfs:label>
+        <skos:definition>The non-representativeness is mainly a measure of the fidelity of the explanation.</skos:definition>
     </owl:Class>
     
 
@@ -2549,6 +2615,18 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
 
     <owl:Class rdf:about="https://purl.org/heals/eo#RepresentativeSamples">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationModality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Diversity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#NonRepresentativeness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Representative Samples</rdfs:label>
     </owl:Class>
     
