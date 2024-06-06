@@ -1034,6 +1034,18 @@
     
 
 
+    <!-- https://purl.org/heals/eo#AverageRuleLength -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#AverageRuleLength">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+        <terms:source>Lakkaraju, H., Kamar, E., Caruana, R., &amp; Leskovec, J. (2017). Interpretable &amp; explorable approximations of black box models. arXiv preprint arXiv:1707.01154.</terms:source>
+        <rdfs:label>Average Rule Length</rdfs:label>
+        <rdfs:label>The average number of antecedents, connected with the AND operator, of the rules contained in each ruleset
+Lakkaraju et al. (2016); Wu et al. (2018). a, represents the number of antecedents of the ith rule and R = |A| the number of rules</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#CaseBasedExplanation -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#CaseBasedExplanation">
@@ -2122,6 +2134,17 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
     
 
 
+    <!-- https://purl.org/heals/eo#Fidelity -->
+
+    <owl:Class rdf:about="https://purl.org/heals/eo#Fidelity">
+        <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationMetric"/>
+        <terms:source>Saad, E. W., &amp; Wunsch II, D. C. (2007). Neural network explanation using inversion. Neural networks, 20(1), 78-93.</terms:source>
+        <rdfs:label>Fidelity</rdfs:label>
+        <skos:definition>Ratio of input instances on which the predictions of model and rules agree (f) over total instances</skos:definition>
+    </owl:Class>
+    
+
+
     <!-- https://purl.org/heals/eo#Foil -->
 
     <owl:Class rdf:about="https://purl.org/heals/eo#Foil">
@@ -2697,6 +2720,18 @@ Source: O&apos;Connor, K. J., &amp; Ammen, S. (2012). Play therapy treatment pla
 
     <owl:Class rdf:about="https://purl.org/heals/eo#Rules">
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#ExplanationModality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#AverageRuleLength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://semanticscience.org/resource/SIO_000772"/>
+                <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#Fidelity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Rules</rdfs:label>
     </owl:Class>
     
