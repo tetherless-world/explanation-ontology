@@ -1688,10 +1688,10 @@ event that did not occur), the output of interest.</dc:description>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://linkedu.eu/dedalo/explanationPattern.owl#Explanation"/>
         <rdfs:subClassOf rdf:resource="https://purl.org/heals/eo#SafetyAndPerformanceExplanation"/>
-        <dc:description>focuses on what the data is and how it has been used in a particular decision, as well as what data and how it has been used to train and test the ML model. This type of explanation can help users understand the influence of data on decisions.</dc:description>
         <terms:source>Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO &amp; The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19.</terms:source>
         <terms:source>Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020</terms:source>
         <rdfs:label>Data Explanation</rdfs:label>
+        <skos:definition>focuses on what the data is and how it has been used in a particular decision, as well as what data and how it has been used to train and test the ML model. This type of explanation can help users understand the influence of data on decisions.</skos:definition>
         <skos:example>Addresses a question of the form, &quot;What is the data?&quot;, &quot;How has the data been used in a particular decision?&quot; and &quot;How has the data been used to train the ML model?&quot;</skos:example>
     </owl:Class>
     
@@ -2610,11 +2610,11 @@ understanding and knowledge [(McNeil and Krajack, 2008) of how the world works, 
                 <owl:someValuesFrom rdf:resource="https://purl.org/heals/eo#LocalExplanation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description>This type of explanation is about the “why” of an ML decision and provides reasons that led to a decision, and is delivered in an accessible and understandable way, especially for lay users. If the ML decision was not what users expected, this type of explanation allows users to assess whether they believe the reasoning of the decision is flawed. While, if so, the explanation supports them to formulate reasonable arguments for why they think this is the case.</dc:description>
         <terms:source>Explaining Decisions Made with AI: Draft Guidance for Consultation—Part 1: The Basics of Explaining AI; ICO &amp; The Alan Turing Institute: Wilmslow/Cheshire, UK, 2019; p. 19.</terms:source>
         <terms:source>Webb, M.E.; Fluck, A.; Magenheim, J.; Malyn-Smith, J.; Waters, J.; Deschênes, M.; Zagami, J. Machine Learning for Human Learners: Opportunities, Issues, Tensions and Threats Educ. Tech. Res. Dev.2020</terms:source>
         <terms:source>Zhou, J., Gandomi, A. H., Chen, F., &amp; Holzinger, A. (2021). Evaluating the quality of machine learning explanations: A survey on methods and metrics. Electronics, 10(5), 593.</terms:source>
         <rdfs:label>Rationale Explanation</rdfs:label>
+        <skos:definition>This type of explanation is about the “why” of an ML decision and provides reasons that led to a decision, and is delivered in an accessible and understandable way, especially for lay users. If the ML decision was not what users expected, this type of explanation allows users to assess whether they believe the reasoning of the decision is flawed. While, if so, the explanation supports them to formulate reasonable arguments for why they think this is the case.</skos:definition>
         <skos:example>Addresses example question, &quot;Why of an ML decision and provides reasons that led to a decision?&quot;</skos:example>
     </owl:Class>
     
